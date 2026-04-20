@@ -48,7 +48,7 @@ export function Navbar() {
             className="flex items-center gap-2 font-display font-bold text-xl text-dark dark:text-white"
           >
             <span className="w-8 h-8 rounded-lg bg-gold-gradient flex items-center justify-center text-white text-sm font-bold shadow-gold">
-              R
+              P
             </span>
             <span className="bg-gold-gradient bg-clip-text text-transparent">{navContent.brand}</span>
           </a>
