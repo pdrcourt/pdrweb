@@ -81,33 +81,62 @@ export function Footer() {
         </div>
 
         {/* Contact Bar */}
-        <div className="flex flex-wrap items-center gap-6 py-6 border-t border-white/10 border-b border-white/10 mb-6">
-          <div className="flex items-center gap-2 text-sm text-white/60">
-            <Mail className="text-primary" size={16} />
-            <a href={`mailto:${footerContent.contact.email}`} className="hover:text-primary transition-colors">
+        <div className="flex flex-wrap items-center gap-x-12 gap-y-6 py-6 border-t border-white/10 border-b border-white/10 mb-10">
+          <div className="flex items-center gap-3 text-sm text-white/60 group">
+            <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+              <Mail className="text-primary" size={14} />
+            </div>
+            <a href={`mailto:${footerContent.contact.email}`} className="hover:text-primary transition-colors tracking-wide">
               {footerContent.contact.email}
             </a>
           </div>
-          <div className="flex items-center gap-2 text-sm text-white/60">
-            <Phone className="text-primary" size={16} />
-            <a href={`tel:${footerContent.contact.phone}`} className="hover:text-primary transition-colors">
+          <div className="flex items-center gap-3 text-sm text-white/60 group">
+            <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+              <Phone className="text-primary" size={14} />
+            </div>
+            <a href={`tel:${footerContent.contact.phone}`} className="hover:text-primary transition-colors tracking-wide font-medium">
               {footerContent.contact.phone}
             </a>
           </div>
-          <div className="flex items-center gap-2 text-sm text-white/60">
-            <MapPin className="text-primary" size={16} />
-            <span>{footerContent.contact.address}</span>
-          </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
-          <p>{footerContent.copyright}</p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
+        {/* Regional Offices */}
+        {footerContent.regionalAddresses && (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-14">
+            {footerContent.regionalAddresses.map((office) => (
+              <div key={office.zone} className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <MapPin size={16} className="text-primary" />
+                  <h5 className="text-xs font-bold uppercase tracking-widest text-white/70">{office.zone}</h5>
+                </div>
+                <div className="pl-6">
+                  <p className="text-sm text-white/50 leading-relaxed">
+                    {office.address}
+                  </p>
+                  {office.landmark && (
+                    <p className="text-xs text-primary/60 mt-1 font-medium">Landmark: {office.landmark}</p>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
+        )}
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-white/5 flex flex-col gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+            <p className="font-medium">{footerContent.copyright}</p>
+            <div className="flex items-center gap-6">
+              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
+            </div>
+          </div>
+          {footerContent.trademark && (
+            <p className="text-[11px] leading-relaxed text-white/20 max-w-4xl">
+              {footerContent.trademark}
+            </p>
+          )}
         </div>
       </div>
     </footer>

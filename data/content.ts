@@ -671,16 +671,32 @@ export const footerContent = {
     },
   ],
   contact: {
-    email: "hello@PDR Court.in",
-    phone: "+91 98765 43210",
+    email: "legal@pdrcourt.com",
+    phone: "8976955540",
     address: "Mumbai | Delhi | Bengaluru",
   },
+  regionalAddresses: [
+    {
+      zone: "North Zone DELHI",
+      address: "A-19, Guru Nanak Pura, Street No. 3, Laxmi Nagar, Delhi-110092.",
+      landmark: "V3S Mall"
+    },
+    {
+      zone: "South Zone MUMBAI",
+      address: "Unit No. 208, 2nd Floor, Globe Business Park, Khuntavali, Ambernath, Thane, Kalyan, Maharashtra, India, 421501."
+    },
+    {
+      zone: "Other Locations",
+      address: "Bengaluru, Chennai, Hyderabad, Pune, Kolkata, Ahmedabad, Amritsar, Bhopal, Bhubaneswar, Chandigarh, Faridabad, Ghaziabad, Jamshedpur, Jaipur, Kochi, Lucknow, Nagpur, Patna, Raipur, Surat, Visakhapatnam, Agra, Ajmer, Kanpur and Mysuru"
+    }
+  ],
   social: [
     { name: "LinkedIn", href: "#" },
     { name: "Twitter", href: "#" },
     { name: "YouTube", href: "#" },
   ],
-  copyright: `© ${new Date().getFullYear()} PDR Court Technologies Pvt. Ltd. All rights reserved.`,
+  copyright: "Copyright ©PDR ORGANIZATION PRIVATE LIMITED. All rights reserved",
+  trademark: "The trademark \"PrivateCourt\" is solely owned by PDR Organization Private Limited. All other trademarks are registered under the ownership of PrivateCourt.",
 };
 
 // ─────────────────────────────────────────────────────────────
