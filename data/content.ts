@@ -104,7 +104,7 @@ export const navContent = {
 // HERO
 // ─────────────────────────────────────────────────────────────
 export const heroContent = {
-  badge: "Trusted by 500+ Enterprises",
+  badge: "70+ Banks & NBFCs | 500+ Enterprises Trust Us",
   headline: "Resolve Disputes.",
   headlineAccent: "Faster. Smarter. Online.",
   subheading:

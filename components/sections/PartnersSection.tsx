@@ -66,16 +66,19 @@ export function PartnersSection() {
 
           {/* Quick Metrics */}
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 pt-8 border-t border-cream-200 dark:border-white/5">
-            {partnersContent.reachStats?.map((stat, i) => (
-              <div key={i} className={`text-center px-6 py-4 rounded-2xl transition-all duration-300 ${stat.label.includes("Resolution Rate") ? "bg-primary/5 border border-primary/20 shadow-gold-sm" : ""}`}>
-                <div className={`text-2xl font-display font-bold ${stat.label.includes("Resolution Rate") ? "text-primary text-3xl" : "text-dark dark:text-white"}`}>
-                  {stat.value}
+            {partnersContent.reachStats?.map((stat, i) => {
+              const isHighlight = stat.label.includes("Resolution Rate") || stat.label.includes("Leading Banks & NBFCs");
+              return (
+                <div key={i} className={`text-center px-6 py-4 rounded-2xl transition-all duration-300 ${isHighlight ? "bg-primary/5 border border-primary/20 shadow-gold-sm" : ""}`}>
+                  <div className={`text-2xl font-display font-bold ${isHighlight ? "text-primary text-3xl" : "text-dark dark:text-white"}`}>
+                    {stat.value}
+                  </div>
+                  <div className={`text-sm ${isHighlight ? "text-primary/80 font-bold" : "text-dark/50 dark:text-white/50"}`}>
+                    {stat.label}
+                  </div>
                 </div>
-                <div className={`text-sm ${stat.label.includes("Resolution Rate") ? "text-primary/80 font-bold" : "text-dark/50 dark:text-white/50"}`}>
-                  {stat.label}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </motion.div>
 

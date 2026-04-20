@@ -108,7 +108,7 @@ export function HeroSection() {
                   <Zap className="text-primary" size={24} />
                   <div>
                     <div className="text-xs font-bold text-dark dark:text-white">Fast Resolution</div>
-                    <div className="text-xs text-dark/40 dark:text-white/40">Avg. 72 hours</div>
+                    {/* <div className="text-xs text-dark/40 dark:text-white/40">Avg. 72 hours</div> */}
                   </div>
                 </motion.div>
 
