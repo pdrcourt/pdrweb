@@ -5,7 +5,6 @@ import { partnersContent } from "@/data/content";
 import { SectionWrapper, itemVariants } from "@/components/ui/SectionWrapper";
 import { SectionBadge } from "@/components/ui/Badge";
 import Image from "next/image";
-import { Building2, ShieldCheck } from "lucide-react";
 
 export function PartnersSection() {
   // Duplicate for infinite marquee
@@ -65,59 +64,40 @@ export function PartnersSection() {
             ))}
           </div>
 
-          {/* Quick Metrics */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 pt-8 border-t border-cream-200 dark:border-white/5">
-            {partnersContent.reachStats?.map((stat, i) => {
-              const isHighlight = stat.label.includes("Resolution Rate") || stat.label.includes("Leading Banks & NBFCs");
-              const Icon = stat.label.includes("Resolution Rate") ? ShieldCheck : Building2;
-              
-              return (
-                <motion.div 
-                  key={i} 
-                  className={`relative group px-10 py-8 rounded-[2.5rem] transition-all duration-500 overflow-hidden ${
-                    isHighlight 
-                      ? "glass-card shadow-gold border-primary/20 min-w-[280px]" 
-                      : "bg-transparent border-transparent"
-                  }`}
-                  animate={isHighlight ? { y: [0, -8, 0] } : {}}
-                  transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: i * 0.5 }}
-                  whileHover={{ scale: 1.05, y: -4 }}
-                >
-                  {/* Decorative Background Accent */}
-                  {isHighlight && (
-                    <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                  )}
-                  
-                  <div className="relative z-10 flex flex-col items-center">
-                    {isHighlight && (
-                      <div className="mb-4 p-3 rounded-2xl bg-primary/10 text-primary transform group-hover:rotate-12 transition-transform duration-500">
-                        <Icon size={28} strokeWidth={1.5} />
+          {/* Hero Statistics Marquee */}
+          <div className="relative w-full overflow-hidden py-10 my-10 border-t border-b border-cream-200 dark:border-white/5">
+            {/* Fade masks */}
+            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent dark:from-dark z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent dark:from-dark z-10 pointer-events-none" />
+
+            <motion.div
+              className="flex gap-20 items-center w-max"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{
+                x: { repeat: Infinity, duration: 25, ease: "linear" },
+              }}
+            >
+              {[...Array(4)].map((_, groupIdx) => (
+                <div key={groupIdx} className="flex gap-20 items-center shrink-0">
+                  {partnersContent.reachStats
+                    ?.filter(s => s.label.includes("Resolution Rate") || s.label.includes("Leading Banks & NBFCs"))
+                    .map((stat, i) => (
+                      <div key={`${groupIdx}-${i}`} className="flex items-center gap-8 px-12 group">
+                        <div className="flex flex-col items-start gap-1">
+                          <div className="text-7xl md:text-9xl font-display font-bold gold-text tracking-tighter leading-none group-hover:scale-105 transition-transform duration-500">
+                            {stat.value}
+                          </div>
+                          <div className="text-sm md:text-base font-bold uppercase tracking-[0.3em] text-dark/40 dark:text-white/40 pl-2 border-l-2 border-primary/30">
+                            {stat.label}
+                          </div>
+                        </div>
+                        {/* Elegant Divider */}
+                        <div className="w-12 h-[2px] bg-gold-gradient opacity-20" />
                       </div>
-                    )}
-                    <div className={`font-display font-bold leading-none mb-2 ${
-                      isHighlight ? "text-4xl gold-text" : "text-2xl text-dark dark:text-white"
-                    }`}>
-                      {stat.value}
-                    </div>
-                    <div className={`text-xs uppercase tracking-[0.2em] font-bold ${
-                      isHighlight ? "text-primary/70" : "text-dark/40 dark:text-white/40"
-                    }`}>
-                      {stat.label}
-                    </div>
-                  </div>
-                  
-                  {/* Bottom animated border for high-end feel */}
-                  {isHighlight && (
-                    <motion.div 
-                      className="absolute bottom-0 left-0 right-0 h-1 bg-gold-gradient"
-                      initial={{ scaleX: 0 }}
-                      whileHover={{ scaleX: 1 }}
-                      transition={{ duration: 0.5 }}
-                    />
-                  )}
-                </motion.div>
-              );
-            })}
+                    ))}
+                </div>
+              ))}
+            </motion.div>
           </div>
         </motion.div>
 
