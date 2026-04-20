@@ -133,6 +133,36 @@ export function Footer() {
             </div>
           </div>
         </div>
+
+        {/* Legal Fine Print */}
+        {footerContent.legalSection && (
+          <div className="mt-12 pt-10 border-t border-white/5 space-y-8">
+            <div className="space-y-4">
+              <h5 className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">Disclaimer</h5>
+              <p className="text-[10px] leading-relaxed text-white/20 text-justify">
+                {footerContent.legalSection.disclaimer}
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-10">
+              <div className="space-y-4">
+                <h5 className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">Non-Discrimination Clause</h5>
+                <p className="text-[10px] leading-relaxed text-white/20 text-justify">
+                  {footerContent.legalSection.nonDiscrimination}
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <h5 className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">Digital Personal Data Protection</h5>
+                <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                  <p className="text-[10px] leading-relaxed text-primary/40 font-medium">
+                    {footerContent.legalSection.dataProtection}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </footer>
   );
