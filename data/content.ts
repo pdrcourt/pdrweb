@@ -383,7 +383,7 @@ export const partnersContent: {
   ],
   reachStats: [
     { value: "70+", label: "Leading Banks & NBFCs" },
-    { value: "61.23%", label: "Resolution Rate" },
+    { value: "60%+", label: "Resolution Rate" },
   ],
   items: [
     { name: "ICICI Home Finance", logo: "/images/800px-ICICI_Home_Finance_Company_logo 1.png" },
