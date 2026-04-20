@@ -379,6 +379,7 @@ export const partnersContent: {
   reports: [
     { year: "2023", cases: "3.5 Lac", settled: "2.3 Lac", successRate: "65%" },
     { year: "2024", cases: "12.7 Lac", settled: "8.6 Lac", successRate: "67%" },
+    { year: "2025", cases: "15.3 Lac", settled: "9.19 Lac", successRate: "60.04%" },
   ],
   reachStats: [
     { value: "70+", label: "Leading Banks & NBFCs" },
