@@ -118,7 +118,7 @@ export const heroContent = {
 // STATS
 // ─────────────────────────────────────────────────────────────
 export const statsContent = [
-  { value: "$2 Bn", label: "Cases in Motion" },
+  { value: "500+", label: "Corporate Clients" },
   { value: "12000+", label: "PIN codes served" },
   { value: "65%", label: "savings in time and cost" },
   { value: "7X", label: "increase in participation" },
