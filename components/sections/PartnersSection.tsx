@@ -14,7 +14,7 @@ export function PartnersSection() {
     <SectionWrapper id="partners" background="white" padded={false}>
       <div className="py-24 border-y border-cream-200 dark:border-white/5">
         {/* Header */}
-        <motion.div className="text-center mb-16 max-w-4xl mx-auto px-4" variants={itemVariants}>
+        <motion.div className="text-center mb-16 mx-auto px-4" variants={itemVariants}>
           <SectionBadge>{partnersContent.badge}</SectionBadge>
           <h2 className="heading-md mb-4">{partnersContent.headline}</h2>
           {partnersContent.subheading && (
@@ -24,7 +24,7 @@ export function PartnersSection() {
           )}
 
           {/* Report Statistics Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mb-16 text-left">
+          <div className="grid md:grid-cols-3 gap-6 mb-16 text-left">
             {partnersContent.reports?.map((report) => (
               <div 
                 key={report.year}
