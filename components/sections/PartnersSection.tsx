@@ -23,6 +23,42 @@ export function PartnersSection() {
             </p>
           )}
 
+          {/* Hero Statistics Marquee */}
+          <div className="relative w-full overflow-hidden py-6 mb-12 border-t border-b border-cream-200 dark:border-white/5">
+            {/* Fade masks */}
+            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent dark:from-dark z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent dark:from-dark z-10 pointer-events-none" />
+
+            <motion.div
+              className="flex gap-16 items-center w-max"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{
+                x: { repeat: Infinity, duration: 25, ease: "linear" },
+              }}
+            >
+              {[...Array(4)].map((_, groupIdx) => (
+                <div key={groupIdx} className="flex gap-16 items-center shrink-0">
+                  {partnersContent.reachStats
+                    ?.filter(s => s.label.includes("Resolution Rate") || s.label.includes("Leading Banks & NBFCs"))
+                    .map((stat, i) => (
+                      <div key={`${groupIdx}-${i}`} className="flex items-center gap-6 px-8 group">
+                        <div className="flex flex-col items-start gap-1">
+                          <div className="text-4xl md:text-6xl font-display font-bold gold-text tracking-tight leading-none group-hover:scale-105 transition-transform duration-500">
+                            {stat.value}
+                          </div>
+                          <div className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-dark/40 dark:text-white/40 pl-2 border-l-2 border-primary/30">
+                            {stat.label}
+                          </div>
+                        </div>
+                        {/* Elegant Divider */}
+                        <div className="w-8 h-[2px] bg-gold-gradient opacity-20" />
+                      </div>
+                    ))}
+                </div>
+              ))}
+            </motion.div>
+          </div>
+
           {/* Report Statistics Grid */}
           <div className="grid md:grid-cols-3 gap-6 mb-16 text-left">
             {partnersContent.reports?.map((report) => (
@@ -62,42 +98,6 @@ export function PartnersSection() {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Hero Statistics Marquee */}
-          <div className="relative w-full overflow-hidden py-10 my-10 border-t border-b border-cream-200 dark:border-white/5">
-            {/* Fade masks */}
-            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent dark:from-dark z-10 pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent dark:from-dark z-10 pointer-events-none" />
-
-            <motion.div
-              className="flex gap-20 items-center w-max"
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{
-                x: { repeat: Infinity, duration: 25, ease: "linear" },
-              }}
-            >
-              {[...Array(4)].map((_, groupIdx) => (
-                <div key={groupIdx} className="flex gap-20 items-center shrink-0">
-                  {partnersContent.reachStats
-                    ?.filter(s => s.label.includes("Resolution Rate") || s.label.includes("Leading Banks & NBFCs"))
-                    .map((stat, i) => (
-                      <div key={`${groupIdx}-${i}`} className="flex items-center gap-8 px-12 group">
-                        <div className="flex flex-col items-start gap-1">
-                          <div className="text-7xl md:text-9xl font-display font-bold gold-text tracking-tighter leading-none group-hover:scale-105 transition-transform duration-500">
-                            {stat.value}
-                          </div>
-                          <div className="text-sm md:text-base font-bold uppercase tracking-[0.3em] text-dark/40 dark:text-white/40 pl-2 border-l-2 border-primary/30">
-                            {stat.label}
-                          </div>
-                        </div>
-                        {/* Elegant Divider */}
-                        <div className="w-12 h-[2px] bg-gold-gradient opacity-20" />
-                      </div>
-                    ))}
-                </div>
-              ))}
-            </motion.div>
           </div>
         </motion.div>
 
