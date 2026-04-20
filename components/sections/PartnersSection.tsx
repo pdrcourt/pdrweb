@@ -67,9 +67,13 @@ export function PartnersSection() {
           {/* Quick Metrics */}
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 pt-8 border-t border-cream-200 dark:border-white/5">
             {partnersContent.reachStats?.map((stat, i) => (
-              <div key={i} className="text-center">
-                <div className="text-2xl font-display font-bold text-dark dark:text-white">{stat.value}</div>
-                <div className="text-sm text-dark/50 dark:text-white/50">{stat.label}</div>
+              <div key={i} className={`text-center px-6 py-4 rounded-2xl transition-all duration-300 ${stat.label.includes("Resolution Rate") ? "bg-primary/5 border border-primary/20 shadow-gold-sm" : ""}`}>
+                <div className={`text-2xl font-display font-bold ${stat.label.includes("Resolution Rate") ? "text-primary text-3xl" : "text-dark dark:text-white"}`}>
+                  {stat.value}
+                </div>
+                <div className={`text-sm ${stat.label.includes("Resolution Rate") ? "text-primary/80 font-bold" : "text-dark/50 dark:text-white/50"}`}>
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -104,7 +108,7 @@ export function PartnersSection() {
                     alt={`${partner.name} logo`}
                     width={160}
                     height={56}
-                    className="max-h-14 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-40 group-hover:opacity-100"
+                    className="max-h-14 max-w-full object-contain transition-all duration-300 group-hover:scale-105"
                   />
                 ) : (
                   <span className="text-sm font-semibold text-dark/40 dark:text-white/40 group-hover:text-primary transition-colors duration-300 text-center whitespace-nowrap">
