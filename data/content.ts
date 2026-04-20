@@ -696,7 +696,6 @@ export const footerContent = {
     { name: "YouTube", href: "#" },
   ],
   copyright: "Copyright ©PDR ORGANIZATION PRIVATE LIMITED. All rights reserved",
-  trademark: "The trademark \"PrivateCourt\" is solely owned by PDR Organization Private Limited. All other trademarks are registered under the ownership of PrivateCourt.",
 };
 
 // ─────────────────────────────────────────────────────────────

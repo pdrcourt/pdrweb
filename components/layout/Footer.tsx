@@ -132,11 +132,6 @@ export function Footer() {
               <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
             </div>
           </div>
-          {footerContent.trademark && (
-            <p className="text-[11px] leading-relaxed text-white/20 max-w-4xl">
-              {footerContent.trademark}
-            </p>
-          )}
         </div>
       </div>
     </footer>
