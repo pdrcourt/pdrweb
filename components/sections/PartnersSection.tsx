@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { partnersContent } from "@/data/content";
 import { SectionWrapper, itemVariants } from "@/components/ui/SectionWrapper";
 import { SectionBadge } from "@/components/ui/Badge";
+import Image from "next/image";
 
 export function PartnersSection() {
   // Duplicate for infinite marquee
@@ -98,9 +99,11 @@ export function PartnersSection() {
                 className="flex-shrink-0 flex items-center justify-center px-10 py-6 rounded-2xl bg-white dark:bg-dark-800 border border-cream-200 dark:border-white/10 shadow-sm hover:shadow-gold hover:border-primary/30 transition-all duration-300 group cursor-default min-w-[220px] h-[100px]"
               >
                 {partner.logo ? (
-                  <img
+                  <Image
                     src={partner.logo}
                     alt={`${partner.name} logo`}
+                    width={160}
+                    height={56}
                     className="max-h-14 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-40 group-hover:opacity-100"
                   />
                 ) : (

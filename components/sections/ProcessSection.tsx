@@ -6,6 +6,7 @@ import { SectionWrapper, itemVariants } from "@/components/ui/SectionWrapper";
 import { SectionBadge } from "@/components/ui/Badge";
 import { LucideIcon } from "@/components/ui/LucideIcon";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export function ProcessSection() {
   return (
@@ -31,9 +32,11 @@ export function ProcessSection() {
              </div>
              <span className="text-[10px] font-bold text-dark/20 dark:text-white/20 uppercase tracking-widest">Digital Flow Engine</span>
           </div>
-          <img 
+          <Image 
             src="/images/process.png" 
             alt="PDR Court Online Process Flow" 
+            width={800}
+            height={600}
             className="w-full h-auto object-contain"
           />
         </motion.div>

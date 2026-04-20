@@ -351,9 +351,11 @@ export function SolutionPageTemplate({
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <img 
+              <Image
                 src={showcaseImage} 
                 alt="PDR Court Platform Showcase" 
+                width={1200}
+                height={800}
                 className="w-full h-auto"
               />
             </motion.div>

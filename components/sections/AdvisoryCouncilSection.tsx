@@ -106,7 +106,7 @@ export function AdvisoryCouncilSection() {
             <div className="flex items-start gap-4">
               <div className="w-1 h-12 bg-primary rounded-full mt-1" />
               <p className="text-sm italic text-dark/50 dark:text-white/50">
-                "Our council provides the strategic foresight needed to bridge the gap between traditional legal wisdom and the speed of the digital age."
+                &ldquo;Our council provides the strategic foresight needed to bridge the gap between traditional legal wisdom and the speed of the digital age.&rdquo;
               </p>
             </div>
           </div>
