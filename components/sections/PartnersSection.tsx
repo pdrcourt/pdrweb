@@ -5,6 +5,7 @@ import { partnersContent } from "@/data/content";
 import { SectionWrapper, itemVariants } from "@/components/ui/SectionWrapper";
 import { SectionBadge } from "@/components/ui/Badge";
 import Image from "next/image";
+import { Building2, ShieldCheck } from "lucide-react";
 
 export function PartnersSection() {
   // Duplicate for infinite marquee
@@ -65,18 +66,56 @@ export function PartnersSection() {
           </div>
 
           {/* Quick Metrics */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16 pt-8 border-t border-cream-200 dark:border-white/5">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-12 pt-8 border-t border-cream-200 dark:border-white/5">
             {partnersContent.reachStats?.map((stat, i) => {
               const isHighlight = stat.label.includes("Resolution Rate") || stat.label.includes("Leading Banks & NBFCs");
+              const Icon = stat.label.includes("Resolution Rate") ? ShieldCheck : Building2;
+              
               return (
-                <div key={i} className={`text-center px-6 py-4 rounded-2xl transition-all duration-300 ${isHighlight ? "bg-primary/5 border border-primary/20 shadow-gold-sm" : ""}`}>
-                  <div className={`text-2xl font-display font-bold ${isHighlight ? "text-primary text-3xl" : "text-dark dark:text-white"}`}>
-                    {stat.value}
+                <motion.div 
+                  key={i} 
+                  className={`relative group px-10 py-8 rounded-[2.5rem] transition-all duration-500 overflow-hidden ${
+                    isHighlight 
+                      ? "glass-card shadow-gold border-primary/20 min-w-[280px]" 
+                      : "bg-transparent border-transparent"
+                  }`}
+                  animate={isHighlight ? { y: [0, -8, 0] } : {}}
+                  transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: i * 0.5 }}
+                  whileHover={{ scale: 1.05, y: -4 }}
+                >
+                  {/* Decorative Background Accent */}
+                  {isHighlight && (
+                    <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  )}
+                  
+                  <div className="relative z-10 flex flex-col items-center">
+                    {isHighlight && (
+                      <div className="mb-4 p-3 rounded-2xl bg-primary/10 text-primary transform group-hover:rotate-12 transition-transform duration-500">
+                        <Icon size={28} strokeWidth={1.5} />
+                      </div>
+                    )}
+                    <div className={`font-display font-bold leading-none mb-2 ${
+                      isHighlight ? "text-4xl gold-text" : "text-2xl text-dark dark:text-white"
+                    }`}>
+                      {stat.value}
+                    </div>
+                    <div className={`text-xs uppercase tracking-[0.2em] font-bold ${
+                      isHighlight ? "text-primary/70" : "text-dark/40 dark:text-white/40"
+                    }`}>
+                      {stat.label}
+                    </div>
                   </div>
-                  <div className={`text-sm ${isHighlight ? "text-primary/80 font-bold" : "text-dark/50 dark:text-white/50"}`}>
-                    {stat.label}
-                  </div>
-                </div>
+                  
+                  {/* Bottom animated border for high-end feel */}
+                  {isHighlight && (
+                    <motion.div 
+                      className="absolute bottom-0 left-0 right-0 h-1 bg-gold-gradient"
+                      initial={{ scaleX: 0 }}
+                      whileHover={{ scaleX: 1 }}
+                      transition={{ duration: 0.5 }}
+                    />
+                  )}
+                </motion.div>
               );
             })}
           </div>
