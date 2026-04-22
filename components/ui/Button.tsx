@@ -39,7 +39,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     
     return (
       <MotionComponent
-        // @ts-ignore
+        // @ts-expect-error - ref type mismatch between button and anchor
         ref={ref}
         href={href}
         className={classes}
