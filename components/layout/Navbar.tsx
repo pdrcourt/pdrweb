@@ -45,12 +45,13 @@ export function Navbar() {
           <a
             href="/"
             id="nav-logo"
-            className="flex items-center gap-2 font-display font-bold text-xl text-dark dark:text-white"
+            className="flex items-center gap-2"
           >
-            <span className="w-8 h-8 rounded-lg bg-gold-gradient flex items-center justify-center text-white text-sm font-bold shadow-gold">
-              P
-            </span>
-            <span className="bg-gold-gradient bg-clip-text text-transparent">{navContent.brand}</span>
+            <img 
+              src="/images/PDR_logo_final.png" 
+              alt={navContent.brand} 
+              className="h-10 w-auto"
+            />
           </a>
 
           {/* Desktop Links */}

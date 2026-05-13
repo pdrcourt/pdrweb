@@ -28,12 +28,11 @@ export function Footer() {
           {/* Brand Column — spans 2 */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             <a href="/" className="flex items-center gap-2 mb-4">
-              <span className="w-9 h-9 rounded-xl bg-gold-gradient flex items-center justify-center text-white font-display font-bold text-base shadow-gold">
-                P
-              </span>
-              <span className="font-display font-bold text-xl bg-gold-gradient bg-clip-text text-transparent">
-                {footerContent.brand.name}
-              </span>
+              <img 
+                src="/images/PDR_logo_final.png" 
+                alt={footerContent.brand.name} 
+                className="h-10 w-auto"
+              />
             </a>
             <p className="text-sm font-semibold text-primary mb-2">
               {footerContent.brand.tagline}

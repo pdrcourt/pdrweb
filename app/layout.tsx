@@ -1,17 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Cinzel } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const cinzel = Cinzel({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-poppins",
+  variable: "--font-cinzel",
   display: "swap",
 });
 
@@ -56,6 +49,11 @@ export const metadata: Metadata = {
     follow: true,
   },
   metadataBase: new URL("https://www.pdrcourt.in"),
+  icons: {
+    icon: "/images/PDR-Court_logo_without_text-removebg-preview.png",
+    shortcut: "/images/PDR-Court_logo_without_text-removebg-preview.png",
+    apple: "/images/PDR-Court_logo_without_text-removebg-preview.png",
+  },
 };
 
 export const viewport: Viewport = {
@@ -70,7 +68,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${poppins.variable} font-sans`}>
+      <body className={`${cinzel.variable} font-sans`}>
         {children}
       </body>
     </html>

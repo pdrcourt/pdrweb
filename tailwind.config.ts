@@ -43,8 +43,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
-        display: ["var(--font-poppins)", "Poppins", "system-ui", "sans-serif"],
+        sans: ["var(--font-cinzel)", "Cinzel", "serif"],
+        display: ["var(--font-cinzel)", "Cinzel", "serif"],
       },
       borderRadius: {
         "4xl": "2rem",
