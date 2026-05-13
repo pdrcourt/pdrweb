@@ -42,20 +42,22 @@ export function Navbar() {
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between" ref={dropdownRef}>
           {/* Logo */}
-          <a
+          <motion.a
             href="/"
             id="nav-logo"
-            className="flex items-center gap-2"
+            className="flex items-center gap-3 p-1.5 px-3 rounded-xl hover:bg-primary/5 transition-colors duration-300 group"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             <img 
               src="/images/PDR-Court_logo_without_text-removebg-preview.png" 
               alt="PDR Court" 
-              className="h-10 w-auto"
+              className="h-9 w-auto drop-shadow-sm group-hover:rotate-6 transition-transform duration-500"
             />
-            <span className="font-brand font-bold text-xl text-dark dark:text-white tracking-wider">
+            <span className="font-brand font-bold text-lg md:text-xl tracking-wider bg-gold-gradient bg-clip-text text-transparent drop-shadow-sm">
               PDR COURT
             </span>
-          </a>
+          </motion.a>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-1">
