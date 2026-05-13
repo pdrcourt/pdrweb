@@ -113,8 +113,8 @@ export function AdvisoryCouncilSection() {
         </motion.div>
       </div>
 
-      {/* Council Grid */}
-      <motion.div 
+      {/* Council Grid Hidden per request */}
+      {/* <motion.div 
         className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         variants={containerVariants}
         initial="hidden"
@@ -124,7 +124,7 @@ export function AdvisoryCouncilSection() {
         {councilContent.members.map((member, index) => (
           <AdvisorCard key={member.name} member={member} index={index} />
         ))}
-      </motion.div>
+      </motion.div> */}
 
       {/* Subtle Footer Quote / Trust Indicator */}
       <motion.div 

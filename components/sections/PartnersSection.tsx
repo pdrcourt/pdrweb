@@ -105,7 +105,7 @@ export function PartnersSection() {
         <div className="relative overflow-hidden pt-8">
           <div className="text-center mb-8">
             <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-dark/30 dark:text-white/30">
-              Trusted Institutional Partners
+              Trusted by more than 70+ bank & NBFCs
             </span>
           </div>
           {/* Fade masks */}

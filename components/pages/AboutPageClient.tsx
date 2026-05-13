@@ -176,91 +176,9 @@ export function AboutPageClient() {
         </div>
       </section>
 
-      {/* ── TIMELINE ─────────────────────────────────────── */}
-      <section className="py-24 bg-cream dark:bg-dark">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="text-center mb-16"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <motion.div variants={itemVariants}>
-              <SectionBadge>Our Journey</SectionBadge>
-              <h2 className="heading-lg mb-4">Milestones That Define Us</h2>
-            </motion.div>
-          </motion.div>
+      {/* TIMELINE REMOVED */}
 
-          <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-primary/20 hidden md:block" />
-
-            <div className="space-y-10">
-              {aboutContent.timeline.map((item, idx) => (
-                <motion.div
-                  key={item.year}
-                  className={`relative flex items-center gap-8 md:gap-0 ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
-                  initial={{ opacity: 0, x: idx % 2 === 0 ? -30 : 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.5, delay: idx * 0.08 }}
-                >
-                  {/* Content side */}
-                  <div className={`md:w-5/12 ${idx % 2 === 0 ? "md:text-right md:pr-12" : "md:text-left md:pl-12"}`}>
-                    <div className="bg-white dark:bg-dark-800 rounded-2xl border border-cream-300 dark:border-white/10 shadow-glass p-5 hover:shadow-gold hover:border-primary/30 transition-all duration-300">
-                      <div className="text-sm font-bold text-primary mb-2">{item.year}</div>
-                      <h3 className="font-display font-semibold text-dark dark:text-white mb-2">{item.title}</h3>
-                      <p className="text-sm text-dark/55 dark:text-white/55 leading-relaxed">{item.description}</p>
-                    </div>
-                  </div>
-
-                  {/* Dot */}
-                  <div className="hidden md:flex md:w-2/12 items-center justify-center flex-shrink-0">
-                    <div className="w-4 h-4 rounded-full bg-gold-gradient shadow-gold border-4 border-cream dark:border-dark" />
-                  </div>
-
-                  {/* Empty side */}
-                  <div className="hidden md:block md:w-5/12" />
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── TEAM ─────────────────────────────────────────── */}
-      <section className="py-24 bg-white dark:bg-dark-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="text-center mb-14"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <motion.div variants={itemVariants}>
-              <SectionBadge>Leadership</SectionBadge>
-              <h2 className="heading-lg mb-4">Meet the Team</h2>
-              <p className="body-lg max-w-2xl mx-auto">
-                Seasoned legal professionals and technology innovators united by a single purpose — making justice accessible to all.
-              </p>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            {aboutContent.team.map((member) => (
-              <TeamCard key={member.name} member={member} />
-            ))}
-          </motion.div>
-        </div>
-      </section>
+      {/* TEAM REMOVED */}
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="py-20 bg-gold-gradient">

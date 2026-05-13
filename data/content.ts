@@ -87,6 +87,7 @@ export const navContent = {
       href: "#",
       children: [
         { label: "Online Arbitration", href: "/solutions/arbitration" },
+        { label: "Online Conciliation", href: "/solutions/conciliation" },
         { label: "Digital Mediation", href: "/solutions/mediation" },
         { label: "Structured Negotiation", href: "/solutions/negotiation" },
       ],
@@ -135,7 +136,7 @@ export const sliderContent = {
       headline: "Resolve Disputes.",
       headlineAccent: "Faster. Smarter. Online.",
       subheading:
-        "PDR Court is India's most advanced Online Dispute Resolution platform — combining legal expertise with cutting-edge technology to deliver fast, secure, and legally binding resolutions from anywhere.",
+        "PDR Court transforms dispute resolution with innovative solutions, continually setting industry standards while inspiring hope for future generations.",
       image: "/images/hero_slide_1.png",
     },
     {
@@ -153,7 +154,7 @@ export const sliderContent = {
       headline: "Global Resolution.",
       headlineAccent: "Local Precision.",
       subheading:
-        "Resolve your multi-jurisdictional disputes efficiently through our expansive digital network. Connect globally without the delays and exorbitant costs of traditional litigation.",
+        "Resolve banking and financial disputes efficiently through our advanced digital dispute resolution network. Designed for Banks and NBFCs across India, our ODR platform enables faster, secure, and cost-effective resolution without the delays of traditional litigation.",
       image: "/images/hero_slide_3.png",
     },
   ],
@@ -189,6 +190,21 @@ export const servicesContent: {
       href: "/solutions/arbitration",
     },
     {
+      id: "conciliation",
+      iconName: "Link2",
+      title: "Online Conciliation",
+      description:
+        "A conciliator actively proposes solutions and bridges the gap between parties. Perfect for labor, consumer, and family disputes needing a proactive third party.",
+      features: [
+        "Proactive conciliator",
+        "Solution proposals",
+        "Legally recognized",
+        "Cost-efficient",
+      ],
+      image: "/images/offer_conciliation.png",
+      href: "/solutions/conciliation",
+    },
+    {
       id: "mediation",
       iconName: "Handshake",
       title: "Digital Mediation",
@@ -217,21 +233,6 @@ export const servicesContent: {
       ],
       image: "/images/offer_negotiation.png",
       href: "/solutions/negotiation",
-    },
-    {
-      id: "conciliation",
-      iconName: "Link2",
-      title: "Online Conciliation",
-      description:
-        "A conciliator actively proposes solutions and bridges the gap between parties. Perfect for labor, consumer, and family disputes needing a proactive third party.",
-      features: [
-        "Proactive conciliator",
-        "Solution proposals",
-        "Legally recognized",
-        "Cost-efficient",
-      ],
-      image: "/images/offer_conciliation.png",
-      href: "/solutions/arbitration",
     },
   ],
 };
@@ -319,8 +320,8 @@ export const featuresContent: {
       iconName: "Users",
       title: "Vetted Expert Panel",
       description:
-        "Access 200+ certified arbitrators, mediators, and legal experts with domain-specific knowledge.",
-      metric: "200+",
+        "Access 100+ certified arbitrators, mediators, and legal experts with domain-specific knowledge.",
+      metric: "100+",
       metricLabel: "Legal Experts",
       image: "/images/about-team.png",
     },
@@ -328,8 +329,8 @@ export const featuresContent: {
       iconName: "Zap",
       title: "Lightning-Fast Resolution",
       description:
-        "Average case turnaround of 72 hours — vs. months or years in traditional litigation.",
-      metric: "72hrs",
+        "Average case turnaround of 7 days — vs. months or years in traditional litigation.",
+      metric: "7 days",
       metricLabel: "Avg. Turnaround",
       image: "/images/feature_speed.png",
     },
@@ -337,8 +338,8 @@ export const featuresContent: {
       iconName: "BadgeDollarSign",
       title: "Fraction of the Cost",
       description:
-        "Reduce dispute resolution costs by up to 80% compared to traditional legal proceedings.",
-      metric: "80%",
+        "Reduce dispute resolution costs by up to 90% compared to traditional legal proceedings.",
+      metric: "90%",
       metricLabel: "Cost Savings",
       image: "/images/about-mission.png",
     },
@@ -638,9 +639,9 @@ export const footerContent = {
       title: "Solutions",
       links: [
         { label: "Online Arbitration", href: "/solutions/arbitration" },
+        { label: "Online Conciliation", href: "/solutions/conciliation" },
         { label: "Digital Mediation", href: "/solutions/mediation" },
         { label: "Structured Negotiation", href: "/solutions/negotiation" },
-        { label: "Online Conciliation", href: "/#services" },
       ],
     },
     {
@@ -719,7 +720,7 @@ export const aboutContent = {
   mission: {
     badge: "Our Mission",
     headline: "Democratizing Access to Justice",
-    body: "India faces a staggering backlog of over 50 million pending court cases. We exist to change that. PDR Court harnesses the power of technology, legal expertise, and human-centered design to resolve disputes in days — not years — while preserving relationships and reducing costs by up to 80%.",
+    body: "India faces a staggering backlog of over 50 million pending court cases. We exist to change that. PDR Court harnesses the power of technology, legal expertise, and human-centered design to resolve disputes in days — not years — while preserving relationships and reducing costs by up to 90%.",
     image: "/images/about-mission.png",
     values: [
       {
@@ -747,10 +748,10 @@ export const aboutContent = {
   stats: [
     { value: "15,000+", label: "Cases Resolved", iconName: "FileCheck" },
     { value: "98%", label: "Resolution Rate", iconName: "TrendingUp" },
-    { value: "72hrs", label: "Average Turnaround", iconName: "Clock" },
+    { value: "7 days", label: "Average Turnaround", iconName: "Clock" },
     { value: "500+", label: "Enterprise Clients", iconName: "Building2" },
-    { value: "200+", label: "Expert Neutrals", iconName: "Users" },
-    { value: "80%", label: "Cost Reduction", iconName: "BadgeDollarSign" },
+    { value: "100+", label: "Expert Neutrals", iconName: "Users" },
+    { value: "90%", label: "Cost Reduction", iconName: "BadgeDollarSign" },
   ],
   team: [
     {
@@ -910,6 +911,90 @@ export const arbitrationContent = {
     { id: 2, question: "Can I choose my arbitrator?", answer: "Yes. On PDR Court, you can browse arbitrator profiles, view credentials, and shortlist your preferred neutrals. The final appointment is made per your arbitration agreement or by mutual consent.", category: "Process" },
     { id: 3, question: "What is the typical cost of arbitration?", answer: "Costs depend on the dispute value, complexity, and duration. PDR Court provides a transparent fee schedule. Enterprise clients receive custom pricing. All costs are significantly lower than traditional litigation.", category: "Pricing" },
     { id: 4, question: "Are international arbitration cases supported?", answer: "Yes. PDR Court supports international arbitration with multi-language proceedings, cross-jurisdictional expertise, and awards recognized under the New York Convention.", category: "General" },
+  ] as FAQ[],
+};
+
+// ─────────────────────────────────────────────────────────────
+// SOLUTIONS — CONCILIATION
+// ─────────────────────────────────────────────────────────────
+export const conciliationContent = {
+  hero: {
+    badge: "Online Conciliation",
+    headline: "Proactive Resolution.",
+    headlineAccent: "Bridging the Gap.",
+    subheading:
+      "PDR Court Conciliation features expert neutrals who take a proactive role in proposing solutions and drafting settlement terms to resolve your dispute efficiently.",
+    primaryCta: { label: "Start Conciliation", href: "/#contact" },
+    secondaryCta: { label: "Talk to an Expert", href: "/#contact" },
+    image: "/images/conciliation-hero.png",
+    stats: [
+      { value: "5–10 Days", label: "Avg. Resolution Time" },
+      { value: "90%", label: "Settlement Rate" },
+      { value: "120+", label: "Expert Conciliators" },
+      { value: "Low", label: "Entry Barrier" },
+    ],
+  },
+  showcaseImage: "/images/offer_conciliation.png",
+  whatIs: {
+    headline: "What is Online Conciliation?",
+    body: "Conciliation is a proactive ADR process where a neutral third party — the conciliator — actively assists the parties in reaching a settlement by proposing potential solutions. Unlike a mediator who primarily facilitates communication, a conciliator can suggest terms of settlement. On PDR Court, this process is enhanced with digital tools for rapid document exchange and structured proposal tracking.",
+    points: [
+      "Proactive neutral who suggests settlement terms",
+      "Confidential and non-adversarial process",
+      "Settlements are documented and legally binding",
+      "Ideal for complex commercial and labor disputes",
+    ],
+  },
+  benefits: [
+    {
+      iconName: "Zap",
+      title: "Proactive Expert Guidance",
+      description: "Our conciliators don't just facilitate; they actively work to bridge differences by proposing fair and balanced settlement terms.",
+    },
+    {
+      iconName: "Clock",
+      title: "Rapid Turnaround",
+      description: "Average resolution in 5–10 days. The proactive nature of conciliation often leads to faster closure than traditional mediation.",
+    },
+    {
+      iconName: "ShieldCheck",
+      title: "Expert Panel",
+      description: "120+ domain-expert conciliators specializing in labor, finance, real estate, and consumer law.",
+    },
+    {
+      iconName: "FileCheck",
+      title: "Legally Binding",
+      description: "Settlements reached through conciliation and signed on our platform are legally enforceable under the Arbitration & Conciliation Act, 1996.",
+    },
+    {
+      iconName: "BadgeDollarSign",
+      title: "High Success Rate",
+      description: "Our structured conciliation process boasts a 90% settlement rate for commercial disputes.",
+    },
+    {
+      iconName: "Lock",
+      title: "Confidentiality Guaranteed",
+      description: "All proposals and discussions remain confidential and cannot be used in future litigation, protecting all parties.",
+    },
+  ] as SolutionBenefit[],
+  process: [
+    { step: 1, iconName: "FolderOpen", title: "Initiate Case", description: "Submit your dispute details and invite the counterparty to participate in conciliation." },
+    { step: 2, iconName: "UserCheck", title: "Conciliator Appointed", description: "A domain-expert conciliator is assigned to your case based on the dispute category." },
+    { step: 3, iconName: "MessageSquare", title: "Proactive Sessions", description: "The conciliator interacts with both parties to understand the core issues and friction points." },
+    { step: 4, iconName: "FilePlus", title: "Settlement Proposals", description: "The conciliator drafts and proposes one or more settlement terms for party consideration." },
+    { step: 5, iconName: "Award", title: "Resolution Finalized", description: "Once terms are accepted, a legally binding settlement deed is e-signed and archived." },
+  ],
+  useCases: [
+    { iconName: "Briefcase", title: "Labor & Employment", description: "Wage disputes, contract terminations, workplace grievances" },
+    { iconName: "Landmark", title: "Banking & Finance", description: "Loan restructuring, payment defaults, insurance claim disputes" },
+    { iconName: "Home", title: "Real Estate", description: "Possession delays, maintenance conflicts, lease disagreements" },
+    { iconName: "Users", title: "Family Disputes", description: "Inheritance settlements, property division, marital agreements" },
+  ],
+  faqs: [
+    { id: 1, question: "How is conciliation different from mediation?", answer: "In mediation, the mediator facilitates talk but doesn't usually suggest solutions. In conciliation, the conciliator can proactively propose settlement terms for parties to accept or modify.", category: "Process" },
+    { id: 2, question: "Is the conciliator's proposal binding?", answer: "No. The conciliator's proposals are suggestions. They only become binding once both parties mutually agree and sign the settlement deed.", category: "Legal" },
+    { id: 3, question: "What is the legal status of a conciliation settlement?", answer: "Under the Arbitration & Conciliation Act, 1996, a settlement reached through conciliation has the same status and effect as an arbitral award on agreed terms.", category: "Legal" },
+    { id: 4, question: "What if the parties cannot agree on a conciliator?", answer: "PDR Court can appoint a neutral, qualified conciliator based on the dispute's nature if parties cannot agree on one themselves.", category: "Process" },
   ] as FAQ[],
 };
 
