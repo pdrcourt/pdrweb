@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { councilContent } from "@/data/content";
 import { SectionWrapper, itemVariants } from "@/components/ui/SectionWrapper";
-import { SectionBadge, Badge } from "@/components/ui/Badge";
+import { SectionBadge } from "@/components/ui/Badge";
 import Image from "next/image";
 
 
