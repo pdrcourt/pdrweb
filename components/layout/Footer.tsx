@@ -27,12 +27,18 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-10 mb-14">
           {/* Brand Column — spans 2 */}
           <div className="col-span-2 md:col-span-4 lg:col-span-4">
-            <a href="/" className="flex items-center gap-2 mb-6">
-              <img 
-                src="/images/PDR_logo_final.png" 
-                alt={footerContent.brand.name} 
-                className="h-14 w-auto"
-              />
+            <a href="/" className="inline-block mb-6 group">
+              <motion.div 
+                className="bg-white p-4 rounded-2xl border border-white/10 shadow-lg"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
+                <img 
+                  src="/images/PDR_logo_final.png" 
+                  alt={footerContent.brand.name} 
+                  className="w-52 h-auto"
+                />
+              </motion.div>
             </a>
             <p className="text-sm font-semibold text-primary mb-2">
               {footerContent.brand.tagline}
