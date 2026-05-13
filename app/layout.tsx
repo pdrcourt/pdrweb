@@ -1,6 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Cinzel } from "next/font/google";
+import { Inter, Poppins, Cinzel } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -68,7 +81,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${cinzel.variable} font-sans`}>
+      <body className={`${inter.variable} ${poppins.variable} ${cinzel.variable} font-sans`}>
         {children}
       </body>
     </html>

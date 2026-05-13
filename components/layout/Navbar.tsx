@@ -48,10 +48,13 @@ export function Navbar() {
             className="flex items-center gap-2"
           >
             <img 
-              src="/images/PDR_logo_final.png" 
-              alt={navContent.brand} 
+              src="/images/PDR-Court_logo_without_text-removebg-preview.png" 
+              alt="PDR Court" 
               className="h-10 w-auto"
             />
+            <span className="font-brand font-bold text-xl text-dark dark:text-white tracking-wider">
+              PDR COURT
+            </span>
           </a>
 
           {/* Desktop Links */}

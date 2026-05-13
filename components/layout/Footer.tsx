@@ -27,11 +27,11 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 mb-14">
           {/* Brand Column — spans 2 */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
-            <a href="/" className="flex items-center gap-2 mb-4">
+            <a href="/" className="flex items-center gap-2 mb-6">
               <img 
                 src="/images/PDR_logo_final.png" 
                 alt={footerContent.brand.name} 
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </a>
             <p className="text-sm font-semibold text-primary mb-2">
