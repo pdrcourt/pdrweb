@@ -6,7 +6,7 @@ interface SectionWrapperProps {
   children: React.ReactNode;
   id?: string;
   className?: string;
-  background?: "cream" | "white" | "dark" | "gold-subtle";
+  background?: "cream" | "white" | "dark" | "gold-subtle" | "transparent";
   padded?: boolean;
 }
 
@@ -15,6 +15,7 @@ const bgMap: Record<string, string> = {
   white: "bg-white dark:bg-dark-800",
   dark: "bg-dark dark:bg-dark",
   "gold-subtle": "bg-gold-subtle",
+  transparent: "bg-transparent",
 };
 
 export const containerVariants = {

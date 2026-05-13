@@ -127,9 +127,9 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
             <p className="font-medium">{footerContent.copyright}</p>
             <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
+              <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a>
+              <a href="/terms" className="hover:text-primary transition-colors">Terms of Service</a>
+              <a href="/cookies" className="hover:text-primary transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>
