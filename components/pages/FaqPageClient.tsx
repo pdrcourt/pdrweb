@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { faqContent } from "@/data/content";
-import { SectionWrapper, itemVariants } from "@/components/ui/SectionWrapper";
+import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { SectionBadge } from "@/components/ui/Badge";
 import { Accordion } from "@/components/ui/Accordion";
 import { MessageSquare, ArrowRight, Search } from "lucide-react";

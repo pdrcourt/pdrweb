@@ -14,7 +14,7 @@ export default function IndividualsPage() {
           <div className="space-y-8">
             <section>
               <h2 className="text-2xl font-bold mb-4">Justice at Your Fingertips</h2>
-              <p>PDR Court makes professional dispute resolution accessible to everyone. Whether it's a consumer complaint, a rental disagreement, or a personal contract issue, you can now seek a fair and legally binding resolution without the cost and complexity of traditional courts.</p>
+              <p>PDR Court makes professional dispute resolution accessible to everyone. Whether it&apos;s a consumer complaint, a rental disagreement, or a personal contract issue, you can now seek a fair and legally binding resolution without the cost and complexity of traditional courts.</p>
             </section>
             <section>
               <h2 className="text-2xl font-bold mb-4">Preserving Personal Relationships</h2>

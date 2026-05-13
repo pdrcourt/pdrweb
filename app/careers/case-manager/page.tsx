@@ -19,7 +19,7 @@ export default function CaseManagerCareerPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">Requirements</h2>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Bachelor's degree in Law, Management, or related fields.</li>
+                <li>Bachelor&apos;s degree in Law, Management, or related fields.</li>
                 <li>Strong organizational and project management skills.</li>
                 <li>Experience in legal operations or customer success is a plus.</li>
                 <li>Ability to work in a fast-paced, technology-driven environment.</li>

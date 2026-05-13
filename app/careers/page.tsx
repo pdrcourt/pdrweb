@@ -15,7 +15,7 @@ export default function CareersPage() {
             <section>
               <h2 className="text-2xl font-bold mb-6">Why PDR Court?</h2>
               <p className="text-dark/60 dark:text-white/60 mb-8 leading-relaxed">
-                PDR Court is more than just a platform; it's a movement toward a more efficient and accessible legal system. We are looking for passionate individuals who want to solve complex legal and technical challenges while making a real-world impact.
+                PDR Court is more than just a platform; it&apos;s a movement toward a more efficient and accessible legal system. We are looking for passionate individuals who want to solve complex legal and technical challenges while making a real-world impact.
               </p>
               
               <div className="grid md:grid-cols-2 gap-6">

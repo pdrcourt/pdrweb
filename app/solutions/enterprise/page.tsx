@@ -22,7 +22,7 @@ export default function EnterprisePage() {
             </section>
             <section>
               <h2 className="text-2xl font-bold mb-4">Enterprise Integration</h2>
-              <p>PDR Court seamlessly integrates with your existing ERP and CRM systems via secure APIs, enabling automated case filing and real-time status updates across your organization.</p>
+              <p>PDR Court&apos;s ODR platform seamlessly integrates with your existing ERP and CRM systems via secure APIs, enabling automated case filing and real-time status updates across your organization.</p>
             </section>
           </div>
         }

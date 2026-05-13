@@ -8,7 +8,7 @@ export default function ArbitratorCareerPage() {
       <Navbar />
       <LegalPageClient
         title="Become an Arbitrator"
-        subtitle="Join India's most prestigious panel of digital-first arbitrators."
+        subtitle="Join India&apos;s most prestigious panel of digital-first arbitrators."
         lastUpdated="May 13, 2026"
         content={
           <div className="space-y-8">

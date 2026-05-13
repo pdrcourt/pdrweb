@@ -2,70 +2,11 @@
 
 import { motion } from "framer-motion";
 import { councilContent } from "@/data/content";
-import { SectionWrapper, itemVariants, containerVariants } from "@/components/ui/SectionWrapper";
+import { SectionWrapper, itemVariants } from "@/components/ui/SectionWrapper";
 import { SectionBadge, Badge } from "@/components/ui/Badge";
 import Image from "next/image";
 
-function AdvisorCard({ 
-  member, 
-  index 
-}: { 
-  member: typeof councilContent.members[0]; 
-  index: number 
-}) {
-  return (
-    <motion.div
-      className="group relative h-full flex flex-col p-8 rounded-3xl bg-white dark:bg-dark-800 border border-cream-300 dark:border-white/10 shadow-glass hover:shadow-gold-lg hover:-translate-y-2 transition-all duration-500 overflow-hidden"
-      variants={itemVariants}
-      custom={index}
-    >
-      {/* Background Accent */}
-      <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full translate-x-8 -translate-y-8 group-hover:bg-primary/10 transition-colors" />
 
-      {/* Top Section: Avatar & Identity */}
-      <div className="flex items-start gap-5 mb-6 relative z-10">
-        <div className="relative w-16 h-16 rounded-2xl overflow-hidden shadow-gold group-hover:scale-110 transition-transform duration-500">
-          {member.headshot ? (
-            <Image
-              src={member.headshot}
-              alt={member.name}
-              fill
-              className="object-cover"
-            />
-          ) : (
-            <div className="w-full h-full bg-gold-gradient flex items-center justify-center text-white font-bold text-xl">
-              {member.avatar}
-            </div>
-          )}
-        </div>
-        <div>
-          <h3 className="font-display font-bold text-lg text-dark dark:text-white group-hover:text-primary transition-colors leading-tight mb-1">
-            {member.name}
-          </h3>
-          <p className="text-primary text-sm font-semibold mb-0.5">{member.role}</p>
-          <p className="text-xs text-dark/40 dark:text-white/40 font-medium">{member.affiliation}</p>
-        </div>
-      </div>
-
-      {/* Bio */}
-      <p className="text-sm text-dark/60 dark:text-white/60 leading-relaxed mb-6 flex-grow relative z-10">
-        {member.bio}
-      </p>
-
-      {/* Expertise Badges */}
-      <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-cream-200 dark:border-white/5 relative z-10">
-        {member.expertise.map((exp) => (
-          <Badge key={exp} variant="gold" className="text-[10px] uppercase tracking-wider px-2.5 py-0.5">
-            {exp}
-          </Badge>
-        ))}
-      </div>
-
-      {/* Interactive Bottom Line */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gold-gradient scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-    </motion.div>
-  );
-}
 
 export function AdvisoryCouncilSection() {
   return (

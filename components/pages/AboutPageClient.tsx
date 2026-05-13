@@ -24,27 +24,7 @@ function StatCard({ value, label, iconName }: { value: string; label: string; ic
   );
 }
 
-function TeamCard({ member }: { member: { name: string; role: string; bio: string; avatar: string } }) {
-  return (
-    <motion.div
-      className="group p-6 rounded-2xl bg-white dark:bg-dark-800 border border-cream-300 dark:border-white/10 shadow-glass hover:shadow-gold hover:-translate-y-1 transition-all duration-300"
-      variants={itemVariants}
-    >
-      <div className="flex items-center gap-4 mb-4">
-        <div className="w-14 h-14 rounded-full bg-gold-gradient flex items-center justify-center text-white font-bold text-base flex-shrink-0 shadow-gold">
-          {member.avatar}
-        </div>
-        <div>
-          <h3 className="font-display font-semibold text-dark dark:text-white group-hover:text-primary transition-colors">
-            {member.name}
-          </h3>
-          <p className="text-sm text-primary font-medium">{member.role}</p>
-        </div>
-      </div>
-      <p className="text-sm text-dark/55 dark:text-white/55 leading-relaxed">{member.bio}</p>
-    </motion.div>
-  );
-}
+
 
 export function AboutPageClient() {
   return (

@@ -14,7 +14,7 @@ export default function ERPManagerCareerPage() {
           <div className="space-y-8">
             <section>
               <h2 className="text-2xl font-bold mb-4">Role Overview</h2>
-              <p>You will lead the integration of PDR Court's ODR platform with the internal ERP and CRM systems of our banking and enterprise clients.</p>
+              <p>You will lead the integration of PDR Court&apos;s ODR platform with the internal ERP and CRM systems of our banking and enterprise clients.</p>
             </section>
             <section>
               <h2 className="text-2xl font-bold mb-4">Requirements</h2>

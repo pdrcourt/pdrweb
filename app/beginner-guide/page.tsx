@@ -7,7 +7,7 @@ export default function BeginnerGuidePage() {
     <>
       <Navbar />
       <LegalPageClient
-        title="Beginner's Guide to ODR"
+        title="Beginner&apos;s Guide to ODR"
         subtitle="New to Online Dispute Resolution? Start here."
         lastUpdated="May 13, 2026"
         content={

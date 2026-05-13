@@ -22,7 +22,7 @@ export default function FinancialInstitutionsPage() {
             </section>
             <section>
               <h2 className="text-2xl font-bold mb-4">Scalable Solutions</h2>
-              <p>Whether it's retail loans, credit cards, or micro-finance, our platform handles high-volume cases with ease, providing centralized tracking and automated reporting for your legal and recovery teams.</p>
+              <p>Whether it&apos;s retail loans, credit cards, or micro-finance, our platform handles high-volume cases with ease, providing centralized tracking and automated reporting for your legal and recovery teams.</p>
             </section>
           </div>
         }

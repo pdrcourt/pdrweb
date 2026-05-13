@@ -22,7 +22,7 @@ export default function MediaKitPage() {
             </section>
             <section>
               <h2 className="text-2xl font-bold mb-4">Company Overview</h2>
-              <p>PDR Court is India's most advanced Online Dispute Resolution platform, combining legal expertise with cutting-edge technology to deliver fast, secure, and legally binding resolutions.</p>
+              <p>PDR Court is India&apos;s most advanced Online Dispute Resolution platform, combining legal expertise with cutting-edge technology to deliver fast, secure, and legally binding resolutions.</p>
             </section>
             <section>
               <h2 className="text-2xl font-bold mb-4">Core Values</h2>
