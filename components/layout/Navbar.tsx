@@ -52,7 +52,7 @@ export function Navbar() {
             <img 
               src="/images/PDR-Court_logo_without_text-removebg-preview.png" 
               alt="PDR Court" 
-              className="h-9 w-auto drop-shadow-sm group-hover:rotate-6 transition-transform duration-500"
+              className="h-9 w-auto drop-shadow-sm transition-transform duration-500"
             />
             <span className="font-brand font-bold text-lg md:text-xl tracking-wider bg-gold-gradient bg-clip-text text-transparent drop-shadow-sm">
               PDR COURT

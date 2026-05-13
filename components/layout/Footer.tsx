@@ -24,9 +24,9 @@ export function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
         {/* Main Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 mb-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-10 mb-14">
           {/* Brand Column — spans 2 */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-2">
+          <div className="col-span-2 md:col-span-4 lg:col-span-4">
             <a href="/" className="flex items-center gap-2 mb-6">
               <img 
                 src="/images/PDR_logo_final.png" 
