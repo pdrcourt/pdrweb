@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Exemption from Section 69 Bar: Calcutta High Court's Ruling on Arbitration Proceedings">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="-709.3" y="-80" width="90.1" height="875" transform="rotate(18 -709.3 337.5)" fill="#ecb478" opacity="0.11"/><rect x="-476.4" y="-80" width="86.4" height="875" transform="rotate(18 -476.4 337.5)" fill="#ecb478" opacity="0.08"/><rect x="-325.2" y="-80" width="61.0" height="875" transform="rotate(18 -325.2 337.5)" fill="#ecb478" opacity="0.17"/><rect x="-146.8" y="-80" width="106.5" height="875" transform="rotate(18 -146.8 337.5)" fill="#ecb478" opacity="0.12"/><rect x="33.3" y="-80" width="106.7" height="875" transform="rotate(18 33.3 337.5)" fill="#ecb478" opacity="0.11"/><rect x="241.6" y="-80" width="71.5" height="875" transform="rotate(18 241.6 337.5)" fill="#ecb478" opacity="0.08"/><rect x="364.9" y="-80" width="127.1" height="875" transform="rotate(18 364.9 337.5)" fill="#ecb478" opacity="0.11"/><rect x="545.0" y="-80" width="137.0" height="875" transform="rotate(18 545.0 337.5)" fill="#ecb478" opacity="0.12"/><rect x="728.9" y="-80" width="69.8" height="875" transform="rotate(18 728.9 337.5)" fill="#ecb478" opacity="0.06"/><rect x="920.9" y="-80" width="70.7" height="875" transform="rotate(18 920.9 337.5)" fill="#ecb478" opacity="0.07"/><rect x="1100.8" y="-80" width="62.4" height="875" transform="rotate(18 1100.8 337.5)" fill="#ecb478" opacity="0.07"/><rect x="1297.1" y="-80" width="107.9" height="875" transform="rotate(18 1297.1 337.5)" fill="#ecb478" opacity="0.10"/><rect x="1480.6" y="-80" width="61.0" height="875" transform="rotate(18 1480.6 337.5)" fill="#ecb478" opacity="0.10"/><rect x="1641.8" y="-80" width="111.7" height="875" transform="rotate(18 1641.8 337.5)" fill="#ecb478" opacity="0.15"/><rect x="0" y="0" width="1200" height="675" fill="url(#glow)" opacity="0.6"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#ecb478" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#faebd6" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#ecb478" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Exemption from Section 69</tspan><tspan x="80" dy="56">Bar: Calcutta High Court's</tspan><tspan x="80" dy="56">Ruling on Arbitration</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

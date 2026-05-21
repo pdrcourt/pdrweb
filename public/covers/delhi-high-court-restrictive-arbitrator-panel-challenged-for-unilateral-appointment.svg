@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Delhi High Court: Restrictive Arbitrator Panel Challenged for Unilateral Appointment">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><polygon points="1007.7,135.8 1035.3,191.0 980.1,191.0" fill="#f4d2ac" opacity="0.34"/><rect x="1138.7" y="462.0" width="57.5" height="57.5" rx="4" transform="rotate(305.7 1167.4 490.7)" fill="#ecb478" opacity="0.28"/><circle cx="593.3" cy="476.8" r="27.7" fill="#faebd6" opacity="0.18"/><polygon points="696.9,498.8 717.9,540.7 675.9,540.7" fill="#f4d2ac" opacity="0.19"/><rect x="640.0" y="424.6" width="17.7" height="17.7" rx="4" transform="rotate(299.8 648.9 433.5)" fill="#ecb478" opacity="0.11"/><circle cx="111.1" cy="200.8" r="8.5" fill="#faebd6" opacity="0.16"/><polygon points="639.1,177.8 649.1,197.8 629.1,197.8" fill="#f4d2ac" opacity="0.22"/><circle cx="1075.6" cy="485.2" r="31.6" fill="#faebd6" opacity="0.23"/><circle cx="522.9" cy="187.0" r="18.6" fill="#faebd6" opacity="0.34"/><circle cx="254.6" cy="127.5" r="28.7" fill="#faebd6" opacity="0.27"/><circle cx="1104.6" cy="494.6" r="17.2" fill="#faebd6" opacity="0.18"/><rect x="645.8" y="61.4" width="14.5" height="14.5" rx="4" transform="rotate(79.4 653.0 68.7)" fill="#ecb478" opacity="0.22"/><circle cx="1131.8" cy="303.3" r="18.0" fill="#faebd6" opacity="0.12"/><rect x="1139.9" y="294.4" width="48.7" height="48.7" rx="4" transform="rotate(284.0 1164.3 318.8)" fill="#ecb478" opacity="0.23"/><polygon points="358.3,312.9 365.6,327.6 350.9,327.6" fill="#f4d2ac" opacity="0.14"/><polygon points="416.6,329.3 432.2,360.6 401.0,360.6" fill="#f4d2ac" opacity="0.12"/><rect x="198.9" y="359.0" width="59.6" height="59.6" rx="4" transform="rotate(301.7 228.8 388.8)" fill="#ecb478" opacity="0.31"/><polygon points="373.9,533.1 389.6,564.5 358.3,564.5" fill="#f4d2ac" opacity="0.10"/><rect x="670.3" y="12.5" width="26.0" height="26.0" rx="4" transform="rotate(153.5 683.3 25.5)" fill="#ecb478" opacity="0.26"/><polygon points="1011.3,234.6 1037.2,286.5 985.3,286.5" fill="#f4d2ac" opacity="0.25"/><circle cx="101.9" cy="533.5" r="12.0" fill="#faebd6" opacity="0.31"/><rect x="104.1" y="270.7" width="53.0" height="53.0" rx="4" transform="rotate(145.5 130.7 297.2)" fill="#ecb478" opacity="0.29"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#ecb478" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#faebd6" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#ecb478" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Delhi High Court:</tspan><tspan x="80" dy="56">Restrictive Arbitrator</tspan><tspan x="80" dy="56">Panel Challenged for</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

@@ -1,33 +1,25 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { LegalPageClient } from "@/components/pages/LegalPageClient";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import LegalDocPage from "@/components/pages/LegalDocPage";
+import { getBySlug } from "@/lib/migrated-content";
+
+export const metadata: Metadata = {
+  title: "Cookie Policy | PDR COURT",
+  description:
+    "PDR COURT's cookie policy — what data we collect, how it's used, and how you can give consent or opt out before using our site.",
+};
 
 export default function CookiesPage() {
+  const page = getBySlug("any", "cookie-policy");
+  if (!page) return notFound();
   return (
-    <>
-      <Navbar />
-      <LegalPageClient
-        title="Cookie Policy"
-        subtitle="Information about how we use cookies to improve your experience."
-        lastUpdated="February 20, 2024"
-        content={
-          <div className="space-y-8">
-            <section>
-              <h2 className="text-2xl font-bold mb-4">What are Cookies?</h2>
-              <p>Cookies are small text files that are stored on your device when you visit a website. They help us remember your preferences and improve platform performance.</p>
-            </section>
-            <section>
-              <h2 className="text-2xl font-bold mb-4">How we use Cookies</h2>
-              <p>We use essential cookies for platform security and session management. We also use analytical cookies to understand how users interact with our platform to improve our services.</p>
-            </section>
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Managing Cookies</h2>
-              <p>You can control and manage cookies through your browser settings. However, disabling certain cookies may impact the functionality of the PDR Court platform.</p>
-            </section>
-          </div>
-        }
-      />
-      <Footer />
-    </>
+    <LegalDocPage
+      slug="cookie-policy"
+      eyebrow="Legal · Cookies"
+      title="Cookie"
+      titleAccent="Policy"
+      intro="We forthrightly announce our cookie policy — what data we collect and how it's used — so you can give consent or opt out of cookies before using our site."
+      blocks={page.blocks}
+    />
   );
 }

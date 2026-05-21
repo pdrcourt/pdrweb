@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Exclusive Jurisdiction and Seat of Arbitration: Delhi High Court's Ruling">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><rect x="617.5" y="135.0" width="44.8" height="44.8" rx="4" transform="rotate(20.6 639.8 157.3)" fill="#bd6b20" opacity="0.23"/><polygon points="1073.0,182.9 1091.3,219.4 1054.7,219.4" fill="#ecb478" opacity="0.26"/><rect x="282.5" y="485.3" width="23.3" height="23.3" rx="4" transform="rotate(253.4 294.2 496.9)" fill="#bd6b20" opacity="0.27"/><circle cx="693.9" cy="328.1" r="31.3" fill="#9a5518" opacity="0.22"/><polygon points="191.1,445.9 206.1,476.0 176.1,476.0" fill="#ecb478" opacity="0.25"/><circle cx="855.1" cy="138.6" r="26.0" fill="#9a5518" opacity="0.34"/><rect x="250.5" y="403.5" width="23.2" height="23.2" rx="4" transform="rotate(165.4 262.1 415.1)" fill="#bd6b20" opacity="0.23"/><circle cx="621.8" cy="69.3" r="8.0" fill="#9a5518" opacity="0.22"/><rect x="809.1" y="44.0" width="57.1" height="57.1" rx="4" transform="rotate(137.5 837.6 72.5)" fill="#bd6b20" opacity="0.34"/><polygon points="734.5,409.3 742.0,424.1 727.1,424.1" fill="#ecb478" opacity="0.28"/><rect x="942.3" y="329.7" width="22.9" height="22.9" rx="4" transform="rotate(204.9 953.7 341.1)" fill="#bd6b20" opacity="0.18"/><rect x="739.2" y="385.5" width="26.4" height="26.4" rx="4" transform="rotate(202.8 752.4 398.7)" fill="#bd6b20" opacity="0.28"/><polygon points="13.1,145.9 36.6,193.0 -10.4,193.0" fill="#ecb478" opacity="0.22"/><polygon points="1167.7,431.3 1177.6,451.1 1157.8,451.1" fill="#ecb478" opacity="0.26"/><polygon points="908.3,34.8 926.3,70.7 890.4,70.7" fill="#ecb478" opacity="0.23"/><rect x="1017.0" y="145.5" width="31.1" height="31.1" rx="4" transform="rotate(324.0 1032.6 161.0)" fill="#bd6b20" opacity="0.24"/><polygon points="461.2,356.0 492.0,417.8 430.3,417.8" fill="#ecb478" opacity="0.18"/><rect x="930.0" y="517.4" width="55.9" height="55.9" rx="4" transform="rotate(14.8 958.0 545.3)" fill="#bd6b20" opacity="0.29"/><circle cx="1016.1" cy="397.4" r="17.4" fill="#9a5518" opacity="0.21"/><rect x="546.9" y="221.7" width="52.0" height="52.0" rx="4" transform="rotate(50.6 572.9 247.7)" fill="#bd6b20" opacity="0.10"/><polygon points="319.8,270.6 334.1,299.2 305.5,299.2" fill="#ecb478" opacity="0.28"/><polygon points="930.8,43.6 940.8,63.6 920.8,63.6" fill="#ecb478" opacity="0.12"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#bd6b20" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#9a5518" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#bd6b20" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Exclusive Jurisdiction and</tspan><tspan x="80" dy="56">Seat of Arbitration: Delhi</tspan><tspan x="80" dy="56">High Court's Ruling</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

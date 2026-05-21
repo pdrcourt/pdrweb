@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Resolution of Dispute Between Interior Furnishing Company and Handloom Showroom Owner">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12100e"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#e09440"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,256.6 -20,251.6 10,247.4 40,244.0 70,241.6 100,240.1 130,239.7 160,240.4 190,242.1 220,244.7 250,248.3 280,252.7 310,257.9 340,263.7 370,270.1 400,276.7 430,283.6 460,290.6 490,297.4 520,304.0 550,310.2 580,315.8 610,320.8 640,325.0 670,328.3 700,330.7 730,332.1 760,332.4 790,331.7 820,330.0 850,327.3 880,323.6 910,319.1 940,313.9 970,308.1 1000,301.7 1030,295.0 1060,288.1 1090,281.2 1120,274.4 1150,267.8 1180,261.6 1210,256.0 1240,251.1 1250,725 -50,725" fill="#bd6b20" opacity="0.08"/><polygon points="-50,312.9 -20,306.1 10,300.1 40,294.9 70,290.7 100,287.6 130,285.6 160,284.8 190,285.2 220,286.9 250,289.6 280,293.5 310,298.3 340,304.1 370,310.6 400,317.8 430,325.4 460,333.3 490,341.4 520,349.3 550,357.1 580,364.4 610,371.1 640,377.1 670,382.2 700,386.3 730,389.4 760,391.3 790,392.0 820,391.5 850,389.9 880,387.0 910,383.1 940,378.2 970,372.4 1000,365.8 1030,358.6 1060,351.0 1090,343.0 1120,335.0 1150,327.1 1180,319.4 1210,312.1 1240,305.4 1250,725 -50,725" fill="#bd6b20" opacity="0.13"/><polygon points="-50,356.5 -20,359.7 10,364.2 40,370.1 70,377.1 100,385.1 130,394.0 160,403.5 190,413.4 220,423.4 250,433.5 280,443.3 310,452.6 340,461.2 370,468.9 400,475.6 430,481.1 460,485.2 490,488.0 520,489.2 550,488.9 580,487.1 610,483.9 640,479.2 670,473.3 700,466.2 730,458.2 760,449.3 790,439.8 820,429.8 850,419.8 880,409.7 910,399.9 940,390.7 970,382.1 1000,374.4 1030,367.8 1060,362.4 1090,358.3 1120,355.7 1150,354.6 1180,354.9 1210,356.8 1240,360.1 1250,725 -50,725" fill="#bd6b20" opacity="0.18"/><polygon points="-50,491.6 -20,482.9 10,474.5 40,466.5 70,459.1 100,452.6 130,446.9 160,442.3 190,438.9 220,436.7 250,435.8 280,436.3 310,438.0 340,440.9 370,445.1 400,450.4 430,456.7 460,463.8 490,471.5 520,479.8 550,488.4 580,497.2 610,505.8 640,514.3 670,522.2 700,529.5 730,536.1 760,541.7 790,546.2 820,549.5 850,551.7 880,552.5 910,552.0 940,550.2 970,547.2 1000,542.9 1030,537.6 1060,531.3 1090,524.1 1120,516.3 1150,508.0 1180,499.4 1210,490.6 1240,482.0 1250,725 -50,725" fill="#bd6b20" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#bd6b20" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#e09440" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Resolution of Dispute</tspan><tspan x="80" dy="56">Between Interior</tspan><tspan x="80" dy="56">Furnishing Company and</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

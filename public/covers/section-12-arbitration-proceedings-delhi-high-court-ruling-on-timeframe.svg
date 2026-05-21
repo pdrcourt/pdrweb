@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Supreme Court - Balancing CPC Principles and Section 9 Power in Interim Relief">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><polygon points="1177.4,477.1 1195.8,513.8 1159.0,513.8" fill="#ecb478" opacity="0.10"/><rect x="882.4" y="163.3" width="53.0" height="53.0" rx="4" transform="rotate(151.4 908.9 189.8)" fill="#bd6b20" opacity="0.19"/><circle cx="59.2" cy="0.5" r="8.3" fill="#9a5518" opacity="0.30"/><polygon points="405.0,431.1 421.1,463.2 389.0,463.2" fill="#ecb478" opacity="0.22"/><polygon points="1075.9,14.0 1101.6,65.4 1050.2,65.4" fill="#ecb478" opacity="0.28"/><rect x="467.6" y="74.5" width="39.9" height="39.9" rx="4" transform="rotate(186.2 487.6 94.4)" fill="#bd6b20" opacity="0.31"/><circle cx="1186.1" cy="220.2" r="10.3" fill="#9a5518" opacity="0.19"/><polygon points="157.8,442.4 181.3,489.3 134.4,489.3" fill="#ecb478" opacity="0.12"/><rect x="285.4" y="557.1" width="25.7" height="25.7" rx="4" transform="rotate(170.5 298.2 569.9)" fill="#bd6b20" opacity="0.26"/><circle cx="196.9" cy="129.5" r="14.1" fill="#9a5518" opacity="0.33"/><rect x="1138.5" y="116.0" width="60.2" height="60.2" rx="4" transform="rotate(339.5 1168.6 146.1)" fill="#bd6b20" opacity="0.27"/><circle cx="986.6" cy="170.8" r="24.0" fill="#9a5518" opacity="0.32"/><circle cx="800.5" cy="429.9" r="28.0" fill="#9a5518" opacity="0.12"/><rect x="192.2" y="48.9" width="49.7" height="49.7" rx="4" transform="rotate(168.5 217.1 73.7)" fill="#bd6b20" opacity="0.21"/><polygon points="705.8,13.1 716.3,34.0 695.4,34.0" fill="#ecb478" opacity="0.10"/><rect x="741.6" y="262.0" width="17.4" height="17.4" rx="4" transform="rotate(261.3 750.3 270.7)" fill="#bd6b20" opacity="0.29"/><circle cx="956.9" cy="113.6" r="23.0" fill="#9a5518" opacity="0.35"/><rect x="660.9" y="159.3" width="61.7" height="61.7" rx="4" transform="rotate(96.9 691.8 190.2)" fill="#bd6b20" opacity="0.21"/><polygon points="453.2,136.7 473.7,177.5 432.8,177.5" fill="#ecb478" opacity="0.12"/><circle cx="108.4" cy="497.3" r="16.5" fill="#9a5518" opacity="0.34"/><rect x="820.8" y="431.8" width="63.4" height="63.4" rx="4" transform="rotate(308.3 852.5 463.5)" fill="#bd6b20" opacity="0.34"/><polygon points="735.3,500.4 761.2,552.3 709.3,552.3" fill="#ecb478" opacity="0.21"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#bd6b20" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#9a5518" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#bd6b20" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Supreme Court - Balancing</tspan><tspan x="80" dy="56">CPC Principles and Section</tspan><tspan x="80" dy="56">9 Power in Interim Relief</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

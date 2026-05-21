@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Cycle Manufacturer and Distributor Dispute Resolution: A Case Study in Building Business Relations">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="677.9,154.1 833.5,-66.0 946.3,178.8" fill="#faebd6" opacity="0.19"/><polygon points="740.5,86.1 756.2,170.2 681.0,211.2 618.9,152.3 655.6,75.0" fill="#faebd6" opacity="0.12"/><polygon points="1098.2,-38.1 1154.1,17.1 1078.4,37.8" fill="#faebd6" opacity="0.18"/><polygon points="486.5,552.5 462.4,664.3 350.6,640.2 374.7,528.4" fill="#faebd6" opacity="0.18"/><polygon points="309.8,5.9 401.2,25.3 411.0,118.2 325.7,156.3 263.1,86.9" fill="#faebd6" opacity="0.09"/><polygon points="558.1,99.6 549.8,-58.0 690.4,13.6" fill="#faebd6" opacity="0.13"/><polygon points="318.3,264.9 208.9,405.6 41.3,345.0 47.0,166.9 218.2,117.4" fill="#faebd6" opacity="0.05"/><polygon points="175.9,441.8 14.0,306.0 212.6,233.7" fill="#faebd6" opacity="0.08"/><polygon points="233.3,55.0 333.3,-39.7 454.4,26.2 429.1,161.7 292.4,179.5" fill="#faebd6" opacity="0.17"/><polygon points="376.5,441.2 523.7,505.3 394.6,600.7" fill="#faebd6" opacity="0.07"/><polygon points="149.1,382.5 304.4,345.5 258.8,498.4" fill="#faebd6" opacity="0.16"/><polygon points="366.9,-75.2 460.6,-33.5 449.9,68.6 349.5,89.9 298.2,1.0" fill="#faebd6" opacity="0.07"/><polygon points="1000.7,495.5 895.3,338.7 1052.1,233.3 1157.5,390.1" fill="#faebd6" opacity="0.19"/><polygon points="66.1,190.5 140.8,307.1 24.2,381.9 -50.5,265.3" fill="#faebd6" opacity="0.17"/><circle cx="936.0" cy="202.5" r="180" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#ecb478" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#faebd6" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Cycle Manufacturer and</tspan><tspan x="80" dy="56">Distributor Dispute</tspan><tspan x="80" dy="56">Resolution: A Case Study</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

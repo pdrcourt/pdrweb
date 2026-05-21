@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Exploring the New York Times Controversy with OpenAI &amp; Microsoft">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#532d15"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e09440"/>
+      <stop offset="100%" stop-color="#fdf6ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e09440" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#e09440" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="90.9,122.1 -3.9,170.8 1.4,64.3" fill="#fdf6ee" opacity="0.07"/><polygon points="658.2,350.6 530.0,236.2 599.2,79.1 770.0,96.2 806.5,264.1" fill="#fdf6ee" opacity="0.18"/><polygon points="248.1,563.4 201.1,657.8 106.7,610.8 153.7,516.4" fill="#fdf6ee" opacity="0.12"/><polygon points="804.4,596.2 727.4,511.0 784.6,411.4 897.1,435.1 909.3,549.3" fill="#fdf6ee" opacity="0.12"/><polygon points="872.2,701.7 867.4,548.3 1002.6,620.8" fill="#fdf6ee" opacity="0.08"/><polygon points="455.4,405.2 547.6,586.0 366.8,678.1 274.6,497.3" fill="#fdf6ee" opacity="0.12"/><polygon points="1049.3,307.1 993.7,444.6 845.7,434.2 809.9,290.2 935.7,211.6" fill="#fdf6ee" opacity="0.06"/><polygon points="1011.6,432.3 1100.2,460.0 1031.9,522.9" fill="#fdf6ee" opacity="0.18"/><polygon points="540.7,64.0 620.0,74.4 609.6,153.7 530.3,143.3" fill="#fdf6ee" opacity="0.13"/><polygon points="230.7,410.6 301.5,384.7 348.0,444.0 305.9,506.6 233.4,486.0" fill="#fdf6ee" opacity="0.09"/><polygon points="233.0,166.5 38.8,229.6 81.2,29.9" fill="#fdf6ee" opacity="0.18"/><polygon points="360.1,232.5 417.6,375.2 299.6,473.9 169.3,392.3 206.7,243.1" fill="#fdf6ee" opacity="0.10"/><polygon points="1200.4,88.4 1144.8,260.7 963.7,261.0 907.5,88.9 1053.8,-17.8" fill="#fdf6ee" opacity="0.14"/><polygon points="1217.4,398.9 1206.7,445.0 1159.6,449.1 1141.1,405.5 1176.8,374.5" fill="#fdf6ee" opacity="0.11"/><circle cx="936.0" cy="202.5" r="180" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <rect x="-46" y="-60" width="92" height="115" fill="#e09440" opacity="0.18" rx="6"/>
+        <path d="M -28 -36 L 28 -36 M -28 -12 L 28 -12 M -28 12 L 18 12 M -28 36 L 28 36" stroke="#fdf6ee" stroke-width="3" stroke-linecap="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="101" height="38" fill="#e09440" opacity="0.18" stroke="#e09440" stroke-width="1.5"/>
+    <text x="50.5" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#e09440" text-anchor="middle">ARTICLE</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Exploring the New York</tspan><tspan x="80" dy="56">Times Controversy with</tspan><tspan x="80" dy="56">OpenAI &amp; Microsoft</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

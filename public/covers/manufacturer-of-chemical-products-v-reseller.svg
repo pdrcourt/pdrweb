@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Mediation Success: Resolving a Chemical Products Dispute in Madhya Pradesh">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#532d15"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e09440"/>
+      <stop offset="100%" stop-color="#fdf6ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e09440" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#e09440" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="783.7,361.8 930.3,483.8 808.3,630.4 661.7,508.4" fill="#fdf6ee" opacity="0.13"/><polygon points="106.4,166.3 159.3,172.7 169.5,225.0 123.0,251.0 83.9,214.7" fill="#fdf6ee" opacity="0.15"/><polygon points="341.9,518.0 304.0,417.4 388.0,350.3 477.8,409.5 449.2,513.1" fill="#fdf6ee" opacity="0.11"/><polygon points="1254.3,345.0 1180.5,517.8 1067.7,367.5" fill="#fdf6ee" opacity="0.12"/><polygon points="312.8,193.7 216.5,-82.9 504.3,-28.0" fill="#fdf6ee" opacity="0.11"/><polygon points="829.6,135.8 824.6,33.4 920.4,-3.0 984.6,76.9 928.5,162.7" fill="#fdf6ee" opacity="0.05"/><polygon points="1177.6,5.0 1254.0,85.6 1146.0,111.4" fill="#fdf6ee" opacity="0.15"/><polygon points="1091.3,485.0 903.0,618.9 881.1,388.9" fill="#fdf6ee" opacity="0.11"/><polygon points="1165.8,287.0 973.3,161.6 1098.8,-30.9 1291.2,94.5" fill="#fdf6ee" opacity="0.10"/><polygon points="484.6,112.9 397.4,183.3 303.5,122.1 332.7,13.9 444.6,8.2" fill="#fdf6ee" opacity="0.15"/><polygon points="1037.1,47.4 953.5,89.0 959.3,-4.2" fill="#fdf6ee" opacity="0.18"/><polygon points="116.9,-37.8 200.0,-68.3 254.7,1.3 205.4,74.8 120.2,50.7" fill="#fdf6ee" opacity="0.13"/><polygon points="463.1,131.7 495.3,231.1 393.1,209.3" fill="#fdf6ee" opacity="0.10"/><polygon points="98.3,-24.6 202.7,6.3 171.8,110.8 67.3,79.9" fill="#fdf6ee" opacity="0.08"/><circle cx="936.0" cy="202.5" r="180" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#e09440" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#fdf6ee" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#e09440" opacity="0.18" stroke="#e09440" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#e09440" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Mediation Success:</tspan><tspan x="80" dy="56">Resolving a Chemical</tspan><tspan x="80" dy="56">Products Dispute in Madhya</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

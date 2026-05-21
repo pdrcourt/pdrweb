@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="J&amp;K High Court Refers Rs. 7.88 Lakh Contract Dispute to Arbitration">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,320.9 -20,320.5 10,319.0 40,316.6 70,313.3 100,309.2 130,304.4 160,298.9 190,292.9 220,286.6 250,280.0 280,273.4 310,266.8 340,260.5 370,254.5 400,249.0 430,244.2 460,240.0 490,236.7 520,234.3 550,232.8 580,232.4 610,232.9 640,234.4 670,236.8 700,240.2 730,244.3 760,249.2 790,254.7 820,260.7 850,267.1 880,273.6 910,280.3 940,286.8 970,293.2 1000,299.1 1030,304.6 1060,309.4 1090,313.5 1120,316.7 1150,319.1 1180,320.5 1210,320.9 1240,320.4 1250,725 -50,725" fill="#ecb478" opacity="0.08"/><polygon points="-50,302.8 -20,300.5 10,299.3 40,299.2 70,300.1 100,302.2 130,305.3 160,309.4 190,314.3 220,320.0 250,326.3 280,333.2 310,340.3 340,347.7 370,355.1 400,362.3 430,369.2 460,375.6 490,381.5 520,386.6 550,390.8 580,394.1 610,396.3 640,397.5 670,397.5 700,396.5 730,394.4 760,391.2 790,387.1 820,382.2 850,376.4 880,370.0 910,363.2 940,356.0 970,348.6 1000,341.3 1030,334.1 1060,327.2 1090,320.8 1120,315.0 1150,309.9 1180,305.8 1210,302.5 1240,300.3 1250,725 -50,725" fill="#ecb478" opacity="0.13"/><polygon points="-50,411.1 -20,406.3 10,401.5 40,396.8 70,392.4 100,388.3 130,384.6 160,381.4 190,378.8 220,376.8 250,375.5 280,375.0 310,375.1 340,376.0 370,377.5 400,379.8 430,382.6 460,386.0 490,389.8 520,394.1 550,398.6 580,403.4 610,408.2 640,413.0 670,417.6 700,422.1 730,426.2 760,429.8 790,433.0 820,435.5 850,437.5 880,438.7 910,439.2 940,439.1 970,438.2 1000,436.6 1030,434.3 1060,431.4 1090,428.0 1120,424.1 1150,419.8 1180,415.3 1210,410.5 1240,405.7 1250,725 -50,725" fill="#ecb478" opacity="0.18"/><polygon points="-50,395.8 -20,394.4 10,394.5 40,396.3 70,399.7 100,404.6 130,411.0 160,418.5 190,427.2 220,436.8 250,447.0 280,457.7 310,468.6 340,479.5 370,490.1 400,500.2 430,509.5 460,517.9 490,525.2 520,531.1 550,535.6 580,538.6 610,540.0 640,539.7 670,537.8 700,534.4 730,529.4 760,523.0 790,515.4 820,506.6 850,497.0 880,486.8 910,476.0 940,465.1 970,454.2 1000,443.7 1030,433.6 1060,424.3 1090,416.0 1120,408.8 1150,402.9 1180,398.5 1210,395.6 1240,394.3 1250,725 -50,725" fill="#ecb478" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#ecb478" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#faebd6" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#ecb478" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">J&amp;K High Court Refers Rs.</tspan><tspan x="80" dy="56">7.88 Lakh Contract Dispute</tspan><tspan x="80" dy="56">to Arbitration</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

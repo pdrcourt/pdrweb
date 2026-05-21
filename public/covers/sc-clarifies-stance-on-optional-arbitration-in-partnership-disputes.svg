@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Supreme Court Rules Optional Arbitration' Clauses Invalid">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#291813"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4862a"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4862a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d4862a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,322.4 -20,318.1 10,313.3 40,308.1 70,302.6 100,297.1 130,291.5 160,286.1 190,280.9 220,276.1 250,271.7 280,267.9 310,264.7 340,262.3 370,260.6 400,259.8 430,259.8 460,260.6 490,262.3 520,264.7 550,267.9 580,271.7 610,276.0 640,280.9 670,286.1 700,291.5 730,297.1 760,302.6 790,308.0 820,313.2 850,318.0 880,322.4 910,326.1 940,329.3 970,331.6 1000,333.3 1030,334.0 1060,334.0 1090,333.1 1120,331.4 1150,329.0 1180,325.8 1210,321.9 1240,317.6 1250,725 -50,725" fill="#d4862a" opacity="0.08"/><polygon points="-50,382.3 -20,383.3 10,383.3 40,382.4 70,380.5 100,377.8 130,374.2 160,369.8 190,364.8 220,359.2 250,353.2 280,346.9 310,340.5 340,334.0 370,327.7 400,321.7 430,316.1 460,311.0 490,306.6 520,303.0 550,300.2 580,298.3 610,297.3 640,297.3 670,298.3 700,300.2 730,303.0 760,306.7 790,311.1 820,316.2 850,321.8 880,327.8 910,334.1 940,340.5 970,347.0 1000,353.3 1030,359.3 1060,364.8 1090,369.9 1120,374.2 1150,377.8 1180,380.6 1210,382.4 1240,383.3 1250,725 -50,725" fill="#d4862a" opacity="0.13"/><polygon points="-50,442.6 -20,446.6 10,449.9 40,452.4 70,454.1 100,455.0 130,454.9 160,454.0 190,452.2 220,449.5 250,446.1 280,442.0 310,437.4 340,432.2 370,426.7 400,420.9 430,414.9 460,409.0 490,403.3 520,397.8 550,392.7 580,388.1 610,384.1 640,380.9 670,378.4 700,376.8 730,376.0 760,376.1 790,377.1 820,378.9 850,381.6 880,385.0 910,389.2 940,393.9 970,399.1 1000,404.6 1030,410.4 1060,416.4 1090,422.3 1120,428.0 1150,433.5 1180,438.5 1210,443.1 1240,447.0 1250,725 -50,725" fill="#d4862a" opacity="0.18"/><polygon points="-50,489.8 -20,499.9 10,509.5 40,518.4 70,526.4 100,533.3 130,539.0 160,543.3 190,546.2 220,547.5 250,547.3 280,545.5 310,542.2 340,537.5 370,531.5 400,524.2 430,515.9 460,506.8 490,497.0 520,486.9 550,476.5 580,466.1 610,456.1 640,446.5 670,437.6 700,429.7 730,422.8 760,417.2 790,413.0 820,410.2 850,409.0 880,409.3 910,411.1 940,414.5 970,419.3 1000,425.4 1030,432.7 1060,441.1 1090,450.2 1120,460.0 1150,470.2 1180,480.6 1210,491.0 1240,501.0 1250,725 -50,725" fill="#d4862a" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#d4862a" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#bd6b20" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#d4862a" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#d4862a" opacity="0.18" stroke="#d4862a" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#d4862a" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Supreme Court Rules</tspan><tspan x="80" dy="56">Optional Arbitration'</tspan><tspan x="80" dy="56">Clauses Invalid</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

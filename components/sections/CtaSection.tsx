@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ctaContent } from "@/data/content";
 import { Button } from "@/components/ui/Button";
-import { Lock, Scale, Star, Globe, ArrowRight } from "lucide-react";
+import { Lock, Scale, Star, Globe } from "lucide-react";
 
 export function CtaSection() {
   return (
@@ -62,18 +62,15 @@ export function CtaSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button href={ctaContent.primaryCta.href} size="lg" variant="primary">
-              <span className="flex items-center gap-2">
-                {ctaContent.primaryCta.label} <ArrowRight size={18} />
-              </span>
+            <Button href={ctaContent.primaryCta.href} variant="primary">
+              {ctaContent.primaryCta.label}
             </Button>
-            <Button
+            <a
               href={ctaContent.secondaryCta.href}
-              size="lg"
-              className="border-2 border-white/30 text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm rounded-xl font-semibold transition-all duration-200"
+              className="inline-flex items-center justify-center rounded-full border border-white/30 text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm font-semibold transition-all duration-200 px-7 py-3.5"
             >
               {ctaContent.secondaryCta.label}
-            </Button>
+            </a>
           </div>
 
           {/* Trust Badges */}

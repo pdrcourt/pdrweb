@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="The Power of PDR COURT in Action
+Three Defaults. One Trusted Platform. One Peaceful Resolution.">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,268.6 -20,262.3 10,256.6 40,251.6 70,247.5 100,244.3 130,242.0 160,240.9 190,240.8 220,241.7 250,243.7 280,246.8 310,250.8 340,255.6 370,261.2 400,267.4 430,274.0 460,281.0 490,288.2 520,295.4 550,302.4 580,309.1 610,315.4 640,321.1 670,326.0 700,330.1 730,333.3 760,335.5 790,336.6 820,336.6 850,335.6 880,333.5 910,330.4 940,326.4 970,321.5 1000,315.9 1030,309.7 1060,303.0 1090,296.0 1120,288.8 1150,281.6 1180,274.6 1210,267.9 1240,261.7 1250,725 -50,725" fill="#ecb478" opacity="0.08"/><polygon points="-50,326.3 -20,320.1 10,314.7 40,310.3 70,307.0 100,304.8 130,303.8 160,303.9 190,305.3 220,307.9 250,311.5 280,316.2 310,321.8 340,328.2 370,335.3 400,342.8 430,350.7 460,358.7 490,366.7 520,374.5 550,381.9 580,388.8 610,394.9 640,400.2 670,404.6 700,407.8 730,410.0 760,410.9 790,410.7 820,409.3 850,406.6 880,402.9 910,398.2 940,392.5 970,386.1 1000,379.0 1030,371.4 1060,363.5 1090,355.5 1120,347.5 1150,339.7 1180,332.4 1210,325.5 1240,319.4 1250,725 -50,725" fill="#ecb478" opacity="0.13"/><polygon points="-50,347.5 -20,345.6 10,345.1 40,345.9 70,348.0 100,351.4 130,356.1 160,361.8 190,368.6 220,376.2 250,384.4 280,393.1 310,402.1 340,411.2 370,420.1 400,428.7 430,436.8 460,444.2 490,450.8 520,456.3 550,460.7 580,463.8 610,465.6 640,466.1 670,465.3 700,463.0 730,459.5 760,454.8 790,449.0 820,442.2 850,434.6 880,426.3 910,417.6 940,408.6 970,399.5 1000,390.6 1030,382.0 1060,373.9 1090,366.6 1120,360.1 1150,354.6 1180,350.3 1210,347.3 1240,345.5 1250,725 -50,725" fill="#ecb478" opacity="0.18"/><polygon points="-50,501.6 -20,489.2 10,476.5 40,463.8 70,451.4 100,439.6 130,428.6 160,418.7 190,410.2 220,403.1 250,397.7 280,394.1 310,392.4 340,392.5 370,394.6 400,398.5 430,404.2 460,411.5 490,420.3 520,430.4 550,441.6 580,453.5 610,466.0 640,478.7 670,491.4 700,503.7 730,515.5 760,526.4 790,536.2 820,544.7 850,551.7 880,557.0 910,560.5 940,562.1 970,561.8 1000,559.7 1030,555.6 1060,549.8 1090,542.4 1120,533.5 1150,523.4 1180,512.2 1210,500.2 1240,487.8 1250,725 -50,725" fill="#ecb478" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#ecb478" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#faebd6" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">The Power of PDR COURT in</tspan><tspan x="80" dy="56">Action Three Defaults. One</tspan><tspan x="80" dy="56">Trusted Platform. One</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

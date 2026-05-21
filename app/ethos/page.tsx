@@ -1,37 +1,30 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { LegalPageClient } from "@/components/pages/LegalPageClient";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import ExperiencePage from "@/components/pages/ExperiencePage";
+import { EXPERIENCE_CONFIG } from "@/lib/experience-config";
+import { getBySlug } from "@/lib/migrated-content";
 
-export default function EthosPage() {
+// Auto-generated — situational ExperiencePage layout.
+const ROUTE = "ethos";
+const MIGRATED_SLUG = "our-ethos";
+
+export function generateMetadata(): Metadata {
+  const p = getBySlug("any", MIGRATED_SLUG);
+  return {
+    title: p ? `${p.title} | PDR COURT` : "PDR COURT",
+    description: p?.description || undefined,
+  };
+}
+
+export default function Page() {
+  const cfg = EXPERIENCE_CONFIG[ROUTE];
+  const page = getBySlug("any", MIGRATED_SLUG);
+  if (!cfg || !page) return notFound();
   return (
-    <>
-      <Navbar />
-      <LegalPageClient
-        title="Our Ethos"
-        subtitle="The values and principles that drive PDR Court."
-        lastUpdated="May 13, 2026"
-        content={
-          <div className="space-y-8">
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Neutrality & Integrity</h2>
-              <p>We maintain absolute neutrality in every proceeding. Our platform is a dedicated space for justice, ensuring that both parties are heard and that every resolution is backed by procedural integrity.</p>
-            </section>
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Accessibility for All</h2>
-              <p>We believe that justice should not be a privilege of the few. Our technology is built to be accessible to anyone, anywhere, regardless of their legal or technical expertise.</p>
-            </section>
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Innovation with Purpose</h2>
-              <p>Every feature we build is designed to remove friction from the dispute resolution lifecycle. We leverage AI and digital-first workflows to make justice faster and fairer.</p>
-            </section>
-            <section>
-              <h2 className="text-2xl font-bold mb-4">Preserving Dignity</h2>
-              <p>Conflict is difficult. Our platform is designed to facilitate resolution while preserving the dignity of all parties and protecting business and personal relationships.</p>
-            </section>
-          </div>
-        }
-      />
-      <Footer />
-    </>
+    <ExperiencePage
+      cfg={cfg}
+      intro={cfg.intro || page.excerpt || page.description}
+      blocks={page.blocks}
+    />
   );
 }

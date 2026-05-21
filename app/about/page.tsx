@@ -1,25 +1,12 @@
 import type { Metadata } from "next";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { AboutPageClient } from "@/components/pages/AboutPageClient";
+import AboutPageClient from "./AboutPageClient";
 
 export const metadata: Metadata = {
-  title: "About Us | PDR Court — Our Story, Mission & Team",
+  title: "About Us | PDR COURT",
   description:
-    "Learn about PDR Court — India's most advanced Online Dispute Resolution platform. Our mission, values, leadership team, and journey to democratize access to justice.",
-  openGraph: {
-    title: "About PDR Court | Our Mission to Democratize Justice",
-    description: "Meet the team behind India's most advanced ODR platform. Our story, values, and commitment to accessible justice.",
-    url: "https://www.pdrcourt.in/about",
-  },
+    "PDR COURT is a premier ADR platform using advanced technology to foster effective, impartial dispute resolution — building a place of trust, established in truth.",
 };
 
 export default function AboutPage() {
-  return (
-    <>
-      <Navbar />
-      <AboutPageClient />
-      <Footer />
-    </>
-  );
+  return <AboutPageClient />;
 }

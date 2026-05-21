@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Legal Groundbreaker: Supreme Court's Verdict on Unstamped Arbitration Agreements Imminent">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,317.9 -20,308.4 10,298.3 40,287.9 70,277.4 100,267.1 130,257.1 160,247.7 190,239.2 220,231.7 250,225.3 280,220.2 310,216.6 340,214.5 370,214.0 400,215.0 430,217.5 460,221.6 490,227.1 520,233.8 550,241.7 580,250.5 610,260.0 640,270.1 670,280.5 700,291.0 730,301.4 760,311.3 790,320.6 820,329.1 850,336.6 880,342.9 910,347.8 940,351.4 970,353.4 1000,353.9 1030,352.8 1060,350.1 1090,346.0 1120,340.4 1150,333.6 1180,325.7 1210,316.8 1240,307.2 1250,725 -50,725" fill="#bd6b20" opacity="0.08"/><polygon points="-50,302.3 -20,304.6 10,308.0 40,312.4 70,317.6 100,323.6 130,330.1 160,337.2 190,344.6 220,352.1 250,359.6 280,366.9 310,373.8 340,380.3 370,386.0 400,391.0 430,395.1 460,398.2 490,400.3 520,401.2 550,401.0 580,399.7 610,397.3 640,393.9 670,389.5 700,384.2 730,378.2 760,371.6 790,364.5 820,357.1 850,349.6 880,342.1 910,334.8 940,327.9 970,321.5 1000,315.8 1030,310.8 1060,306.8 1090,303.7 1120,301.8 1150,300.9 1180,301.1 1210,302.5 1240,305.0 1250,725 -50,725" fill="#bd6b20" opacity="0.13"/><polygon points="-50,455.9 -20,464.7 10,472.3 40,478.7 70,483.6 100,487.0 130,488.9 160,489.1 190,487.7 220,484.6 250,480.0 280,474.0 310,466.7 340,458.2 370,448.8 400,438.6 430,428.0 460,417.1 490,406.1 520,395.4 550,385.1 580,375.5 610,366.9 640,359.3 670,353.0 700,348.1 730,344.8 760,343.0 790,342.9 820,344.5 850,347.6 880,352.3 910,358.4 940,365.8 970,374.3 1000,383.7 1030,393.9 1060,404.6 1090,415.5 1120,426.5 1150,437.2 1180,447.4 1210,457.0 1240,465.6 1250,725 -50,725" fill="#bd6b20" opacity="0.18"/><polygon points="-50,503.3 -20,513.4 10,522.9 40,531.6 70,539.3 100,545.7 130,550.9 160,554.7 190,556.9 220,557.5 250,556.5 280,554.0 310,549.9 340,544.5 370,537.7 400,529.8 430,520.9 460,511.3 490,501.1 520,490.5 550,479.9 580,469.5 610,459.4 640,449.9 670,441.3 700,433.7 730,427.2 760,422.2 790,418.5 820,416.4 850,415.9 880,416.9 910,419.5 940,423.7 970,429.2 1000,436.0 1030,444.0 1060,452.9 1090,462.6 1120,472.8 1150,483.4 1180,494.0 1210,504.4 1240,514.5 1250,725 -50,725" fill="#bd6b20" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#bd6b20" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#9a5518" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#bd6b20" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Legal Groundbreaker:</tspan><tspan x="80" dy="56">Supreme Court's Verdict on</tspan><tspan x="80" dy="56">Unstamped Arbitration</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

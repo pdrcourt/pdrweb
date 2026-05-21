@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================================================================
+   PDR COURT — Design System  (renovation v2)
+   Theme: gold #bd6b20 · cream #faf8f5 · espresso #12100e
+   Signature: pill buttons w/ circular arrow badge · serif watermark accents
+   ========================================================================= */
+
 @layer base {
   :root {
     --primary: #bd6b20;
     --primary-dark: #9a5518;
+    --primary-light: #e09440;
     --bg: #faf8f5;
     --text: #1a1a1a;
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   html {
@@ -30,9 +38,8 @@
     box-sizing: border-box;
   }
 
-  /* Custom scrollbar */
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 7px;
   }
   ::-webkit-scrollbar-track {
     @apply bg-cream-200;
@@ -41,7 +48,6 @@
     @apply bg-primary/40 rounded-full hover:bg-primary/60 transition-colors;
   }
 
-  /* Dark mode body */
   .dark body {
     @apply bg-dark text-white/90;
   }
@@ -56,54 +62,204 @@
     @apply py-16 md:py-24 lg:py-32;
   }
 
-  .glass-card {
-    @apply bg-white/40 dark:bg-dark-800/40 backdrop-blur-xl 
-           border border-white/40 dark:border-white/5
-           shadow-glass dark:shadow-glass-dark
-           transition-all duration-300;
+  /* ───────── SIGNATURE BUTTONS — pill + circular arrow badge ───────── */
+  .btn-primary,
+  .btn-outline,
+  .btn-secondary {
+    @apply relative inline-flex items-center font-semibold cursor-pointer select-none
+           transition-all duration-300 ease-out;
+    padding: 0.5rem 0.5rem 0.5rem 1.65rem;
+    border-radius: 9999px;
+    gap: 1rem;
+    line-height: 1.2;
   }
 
+  /* the circular arrow badge */
+  .btn-primary::after,
+  .btn-outline::after,
+  .btn-secondary::after {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 9999px;
+    border: 1.5px solid currentColor;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12h14M13 5l7 7-7 7'/></svg>")
+      center / 1.05rem no-repeat;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12h14M13 5l7 7-7 7'/></svg>")
+      center / 1.05rem no-repeat;
+    transition: transform 0.35s var(--ease-out-expo);
+  }
+  .btn-primary:hover::after,
+  .btn-outline:hover::after,
+  .btn-secondary:hover::after {
+    transform: translateX(3px) rotate(-2deg);
+  }
+
+  .btn-primary {
+    @apply text-white shadow-gold;
+    background-image: linear-gradient(135deg, #bd6b20 0%, #d4862a 55%, #e09440 100%);
+  }
+  .btn-primary:hover {
+    @apply shadow-gold-lg;
+    transform: translateY(-2px);
+  }
+  .btn-primary::after {
+    border-color: rgba(255, 255, 255, 0.55);
+  }
+
+  .btn-outline {
+    @apply text-primary bg-transparent;
+    box-shadow: inset 0 0 0 1.5px rgba(189, 107, 32, 0.5);
+  }
+  .btn-outline:hover {
+    @apply bg-primary/[0.04];
+    box-shadow: inset 0 0 0 1.5px #bd6b20;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    @apply text-dark bg-white;
+    box-shadow: inset 0 0 0 1.5px rgba(18, 16, 14, 0.12), 0 4px 16px rgba(0,0,0,0.04);
+  }
+  .btn-secondary:hover {
+    @apply text-primary;
+    box-shadow: inset 0 0 0 1.5px rgba(189, 107, 32, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .btn-sm {
+    padding: 0.3rem 0.3rem 0.3rem 1.15rem;
+    font-size: 0.875rem;
+    gap: 0.7rem;
+  }
+  .btn-sm::after {
+    width: 1.9rem;
+    height: 1.9rem;
+    -webkit-mask-size: 0.85rem;
+    mask-size: 0.85rem;
+  }
+
+  /* plain pill (no arrow) — for nav CTA etc. */
+  .pill-cta {
+    @apply inline-flex items-center justify-center font-semibold text-white
+           rounded-full px-6 py-2.5 transition-all duration-300;
+    background-image: linear-gradient(135deg, #bd6b20 0%, #d4862a 55%, #e09440 100%);
+  }
+  .pill-cta:hover {
+    @apply shadow-gold-lg -translate-y-0.5;
+  }
+
+  /* ───────── CARDS ───────── */
+  .glass-card {
+    @apply bg-white/50 dark:bg-dark-800/40 backdrop-blur-xl
+           border border-white/50 dark:border-white/5
+           shadow-glass dark:shadow-glass-dark transition-all duration-300;
+  }
+  .surface-card {
+    @apply bg-white rounded-3xl border border-cream-300
+           shadow-[0_2px_20px_rgba(18,16,14,0.04)]
+           transition-all duration-300;
+  }
+  .surface-card:hover {
+    @apply border-primary/30 shadow-gold -translate-y-1;
+  }
+  /* premium SaaS card — navy↔gold gradient hairline border */
+  .gradient-border {
+    @apply relative rounded-3xl bg-white;
+  }
+  .gradient-border::before {
+    content: "";
+    @apply absolute inset-0 rounded-3xl pointer-events-none;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(189, 107, 32, 0.4) 0%, rgba(224, 148, 64, 0.25) 60%, rgba(189, 107, 32, 0.12) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  /* ───────── TEXT TREATMENTS ───────── */
   .gold-text {
     @apply bg-gold-gradient bg-clip-text text-transparent;
   }
-
+  .royal-text {
+    @apply bg-royal-gradient bg-clip-text text-transparent;
+  }
   .gold-border {
     @apply border border-primary/20 hover:border-primary/50 transition-all duration-500;
   }
 
-  .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl 
-           bg-gold-gradient text-white font-semibold shadow-gold 
-           hover:shadow-gold-lg hover:translate-y-[-2px] active:scale-[0.98]
-           transition-all duration-300 ease-out cursor-pointer;
+  /* royal eyebrow variant — premium SaaS sections */
+  .eyebrow-royal {
+    @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase
+           tracking-[0.22em] text-royal;
+  }
+  .eyebrow-royal::before {
+    content: "";
+    @apply inline-block w-7 h-px bg-royal/50;
   }
 
-  .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl 
-           border border-primary/30 text-primary font-semibold
-           hover:bg-primary/5 hover:border-primary
-           transition-all duration-300 cursor-pointer;
+  /* small uppercase eyebrow label */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase
+           tracking-[0.22em] text-primary;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply inline-block w-7 h-px bg-primary/50;
   }
 
   .section-label {
-    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary 
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary
            bg-primary/5 rounded-full px-4 py-1.5 mb-6;
   }
 
+  /* serif italic accent word (used inside headings) */
+  .accent-serif {
+    @apply font-brand italic font-normal text-primary;
+  }
+
   .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-7xl font-display font-bold text-dark dark:text-white leading-[1.1] tracking-tight;
+    @apply text-4xl md:text-5xl lg:text-7xl font-display font-bold text-dark dark:text-white leading-[1.05] tracking-tight;
   }
-
   .heading-lg {
-    @apply text-3xl md:text-5xl font-display font-bold text-dark dark:text-white leading-tight;
+    @apply text-3xl md:text-5xl font-display font-bold text-dark dark:text-white leading-[1.1];
   }
-
   .heading-md {
     @apply text-2xl md:text-3xl font-display font-semibold text-dark dark:text-white leading-tight;
   }
-
   .body-lg {
     @apply text-lg md:text-xl text-dark/60 dark:text-white/60 leading-relaxed;
+  }
+
+  /* ───────── INNER-PAGE CONTEXT BAR ───────── */
+  .context-bar {
+    @apply flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-3
+           border-b border-cream-300 bg-cream/80 backdrop-blur-md;
+  }
+
+  /* ───────── ELEGANT LIST ROW (About / Services style) ───────── */
+  .list-row {
+    @apply flex items-center gap-6 py-6 border-b border-cream-300
+           transition-all duration-300;
+  }
+  .list-row:hover {
+    @apply bg-primary/[0.03] px-4 -mx-4 rounded-2xl border-transparent;
+  }
+  .list-row-label {
+    @apply font-brand text-2xl md:text-3xl text-dark group-hover:text-primary
+           transition-colors duration-300;
+  }
+
+  /* ───────── QUOTE MARK ───────── */
+  .quote-card {
+    @apply relative bg-white rounded-3xl border border-cream-300 p-8 md:p-10;
+  }
+  .quote-card::before {
+    content: "\201C";
+    @apply absolute -top-6 left-7 font-brand text-primary/25 select-none leading-none;
+    font-size: 6rem;
   }
 }
 
@@ -115,13 +271,50 @@
   .bg-gold-gradient {
     background-image: linear-gradient(135deg, #bd6b20 0%, #d4862a 50%, #e09440 100%);
   }
-
   .bg-gold-subtle {
     background-image: linear-gradient(135deg, rgba(189, 107, 32, 0.04) 0%, rgba(212, 134, 42, 0.08) 100%);
+  }
+  .bg-royal-gradient {
+    background-image: linear-gradient(135deg, #bd6b20 0%, #d4862a 55%, #e09440 100%);
+  }
+  .bg-royal-subtle {
+    background-image: linear-gradient(135deg, rgba(189, 107, 32, 0.05) 0%, rgba(212, 134, 42, 0.09) 100%);
+  }
+  .bg-royal-mesh {
+    background-color: #12100e;
+    background-image: radial-gradient(at 18% 22%, rgba(189, 107, 32, 0.42) 0px, transparent 55%),
+      radial-gradient(at 82% 12%, rgba(224, 148, 64, 0.20) 0px, transparent 50%),
+      radial-gradient(at 70% 88%, rgba(157, 85, 24, 0.40) 0px, transparent 55%);
   }
 
   .smooth-transition {
     @apply transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)];
+  }
+
+  /* huge faint serif watermark word */
+  .watermark {
+    @apply font-brand select-none pointer-events-none text-primary/[0.06]
+           leading-none whitespace-nowrap;
+    font-size: clamp(4rem, 14vw, 13rem);
+  }
+  .watermark-sm {
+    @apply font-brand select-none pointer-events-none text-primary/[0.07] leading-none;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+  }
+
+  /* heavily-rounded "oval" image frame */
+  .oval-frame {
+    border-radius: 48% 48% 48% 48% / 60% 60% 40% 40%;
+    overflow: hidden;
+  }
+  .oval-soft {
+    border-radius: 5rem;
+    overflow: hidden;
+  }
+
+  /* vertical hairline connector */
+  .connector {
+    @apply w-px bg-gradient-to-b from-transparent via-primary/25 to-transparent;
   }
 
   .no-scrollbar::-webkit-scrollbar {
@@ -130,5 +323,26 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  /* fine grain hairline */
+  .hairline {
+    @apply border-cream-300;
+  }
+}
+
+/* ───────── inline anchors inside migrated content ───────── */
+@layer components {
+  .prose-anchor a,
+  .prose-anchor-host a {
+    @apply text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary transition-colors;
+  }
+  .prose-anchor strong,
+  .prose-anchor-host strong {
+    @apply text-dark font-semibold;
+  }
+  .prose-anchor em,
+  .prose-anchor-host em {
+    @apply italic;
   }
 }

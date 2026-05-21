@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Resolving a Kolkata Financial Dispute: A Case Study in Alternative Dispute Resolution">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,358.7 -20,363.1 10,366.0 40,367.4 70,367.1 100,365.3 130,361.9 160,357.0 190,350.7 220,343.3 250,334.7 280,325.3 310,315.3 340,304.8 370,294.1 400,283.5 430,273.1 460,263.3 490,254.2 520,246.1 550,239.0 580,233.3 610,229.0 640,226.1 670,224.9 700,225.2 730,227.2 760,230.7 790,235.6 820,242.0 850,249.5 880,258.1 910,267.5 940,277.6 970,288.1 1000,298.8 1030,309.4 1060,319.7 1090,329.5 1120,338.6 1150,346.7 1180,353.6 1210,359.3 1240,363.5 1250,725 -50,725" fill="#ecb478" opacity="0.08"/><polygon points="-50,256.5 -20,257.5 10,260.3 40,264.7 70,270.7 100,278.2 130,286.9 160,296.8 190,307.5 220,318.8 250,330.5 280,342.3 310,353.9 340,365.1 370,375.7 400,385.3 430,393.8 460,401.0 490,406.7 520,410.9 550,413.3 580,413.9 610,412.8 640,410.0 670,405.4 700,399.3 730,391.8 760,383.0 790,373.1 820,362.3 850,351.0 880,339.3 910,327.5 940,315.9 970,304.7 1000,294.2 1030,284.6 1060,276.2 1090,269.1 1120,263.4 1150,259.4 1180,257.1 1210,256.5 1240,257.7 1250,725 -50,725" fill="#ecb478" opacity="0.13"/><polygon points="-50,419.2 -20,408.6 10,398.1 40,387.8 70,378.0 100,368.8 130,360.5 160,353.3 190,347.3 220,342.7 250,339.6 280,338.0 310,338.0 340,339.5 370,342.6 400,347.2 430,353.1 460,360.3 490,368.6 520,377.7 550,387.5 580,397.8 610,408.4 640,418.9 670,429.2 700,439.0 730,448.1 760,456.3 790,463.5 820,469.4 850,473.9 880,477.0 910,478.5 940,478.4 970,476.8 1000,473.6 1030,468.9 1060,462.9 1090,455.7 1120,447.4 1150,438.2 1180,428.3 1210,418.0 1240,407.5 1250,725 -50,725" fill="#ecb478" opacity="0.18"/><polygon points="-50,463.4 -20,469.1 10,474.9 40,480.5 70,486.0 100,491.0 130,495.7 160,499.7 190,503.1 220,505.8 250,507.7 280,508.8 310,508.9 340,508.3 370,506.8 400,504.4 430,501.3 460,497.6 490,493.2 520,488.3 550,483.0 580,477.4 610,471.7 640,465.9 670,460.3 700,454.8 730,449.8 760,445.2 790,441.1 820,437.8 850,435.1 880,433.3 910,432.3 940,432.2 970,432.9 1000,434.4 1030,436.8 1060,439.9 1090,443.8 1120,448.2 1150,453.1 1180,458.4 1210,464.0 1240,469.7 1250,725 -50,725" fill="#ecb478" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#ecb478" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#faebd6" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Resolving a Kolkata</tspan><tspan x="80" dy="56">Financial Dispute: A Case</tspan><tspan x="80" dy="56">Study in Alternative</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

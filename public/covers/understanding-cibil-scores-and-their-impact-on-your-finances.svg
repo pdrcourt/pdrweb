@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Understanding CIBIL scores and their impact on your finances">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#532d15"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e09440"/>
+      <stop offset="100%" stop-color="#fdf6ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e09440" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#e09440" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,360.6 -20,362.9 10,363.3 40,361.9 70,358.6 100,353.6 130,347.0 160,338.8 190,329.4 220,318.9 250,307.5 280,295.6 310,283.3 340,270.9 370,258.8 400,247.1 430,236.3 460,226.4 490,217.7 520,210.5 550,204.8 580,200.9 610,198.7 640,198.4 670,200.0 700,203.3 730,208.4 760,215.2 790,223.4 820,232.8 850,243.4 880,254.8 910,266.8 940,279.1 970,291.5 1000,303.6 1030,315.2 1060,326.0 1090,335.8 1120,344.4 1150,351.6 1180,357.1 1210,361.0 1240,363.0 1250,725 -50,725" fill="#e09440" opacity="0.08"/><polygon points="-50,350.6 -20,342.7 10,334.9 40,327.5 70,320.5 100,314.2 130,308.7 160,304.2 190,300.6 220,298.1 250,296.8 280,296.7 310,297.8 340,300.1 370,303.4 400,307.8 430,313.1 460,319.3 490,326.1 520,333.5 550,341.2 580,349.1 610,357.0 640,364.8 670,372.2 700,379.1 730,385.4 760,390.8 790,395.3 820,398.8 850,401.2 880,402.5 910,402.5 940,401.4 970,399.1 1000,395.6 1030,391.2 1060,385.8 1090,379.6 1120,372.8 1150,365.4 1180,357.6 1210,349.7 1240,341.8 1250,725 -50,725" fill="#e09440" opacity="0.13"/><polygon points="-50,357.9 -20,360.1 10,363.4 40,367.8 70,373.0 100,379.1 130,385.8 160,393.0 190,400.6 220,408.4 250,416.2 280,423.8 310,431.1 340,437.9 370,444.1 400,449.4 430,453.9 460,457.3 490,459.7 520,460.9 550,460.9 580,459.8 610,457.5 640,454.1 670,449.8 700,444.5 730,438.4 760,431.6 790,424.3 820,416.7 850,408.9 880,401.1 910,393.5 940,386.2 970,379.5 1000,373.4 1030,368.1 1060,363.7 1090,360.3 1120,358.0 1150,356.9 1180,356.9 1210,358.1 1240,360.4 1250,725 -50,725" fill="#e09440" opacity="0.18"/><polygon points="-50,414.1 -20,412.9 10,412.9 40,414.1 70,416.6 100,420.2 130,424.9 160,430.6 190,437.1 220,444.3 250,452.1 280,460.2 310,468.5 340,476.9 370,485.0 400,492.7 430,499.9 460,506.4 490,512.0 520,516.7 550,520.3 580,522.7 610,523.8 640,523.8 670,522.5 700,519.9 730,516.3 760,511.5 790,505.8 820,499.2 850,491.9 880,484.1 910,476.0 940,467.7 970,459.4 1000,451.3 1030,443.5 1060,436.4 1090,429.9 1120,424.4 1150,419.8 1180,416.3 1210,413.9 1240,412.8 1250,725 -50,725" fill="#e09440" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#e09440" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#fdf6ee" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#e09440" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#e09440" opacity="0.18" stroke="#e09440" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#e09440" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Understanding CIBIL scores</tspan><tspan x="80" dy="56">and their impact on your</tspan><tspan x="80" dy="56">finances</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

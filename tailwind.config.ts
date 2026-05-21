@@ -23,6 +23,22 @@ const config: Config = {
           800: "#643516",
           900: "#532d15",
         },
+        // royal — recoloured to the gold theme (kept as an alias so page
+        // components compile unchanged; visually identical to `primary`).
+        royal: {
+          DEFAULT: "#bd6b20",
+          50: "#fdf6ee",
+          100: "#faebd6",
+          200: "#f4d2ac",
+          300: "#ecb478",
+          400: "#e29043",
+          500: "#bd6b20",
+          600: "#9a5518",
+          700: "#7d4315",
+          800: "#643516",
+          900: "#532d15",
+          950: "#0c0a09",
+        },
         cream: {
           DEFAULT: "#faf8f5",
           50: "#ffffff",
@@ -54,6 +70,8 @@ const config: Config = {
       boxShadow: {
         gold: "0 4px 24px rgba(189, 107, 32, 0.15)",
         "gold-lg": "0 8px 40px rgba(189, 107, 32, 0.25)",
+        royal: "0 4px 24px rgba(189, 107, 32, 0.15)",
+        "royal-lg": "0 10px 44px rgba(189, 107, 32, 0.28)",
         glass: "0 8px 32px rgba(0, 0, 0, 0.04)",
         "glass-dark": "0 8px 32px rgba(0, 0, 0, 0.3)",
       },
@@ -63,6 +81,8 @@ const config: Config = {
         "cream-gradient": "linear-gradient(135deg, #faf8f5 0%, #f4efe8 100%)",
         "hero-gradient": "linear-gradient(135deg, #faf8f5 0%, #fdf6ee 50%, #faf8f5 100%)",
         "dark-gradient": "linear-gradient(135deg, #12100e 0%, #1c1917 100%)",
+        "royal-gradient": "linear-gradient(135deg, #bd6b20 0%, #d4862a 55%, #e09440 100%)",
+        "navy-gradient": "linear-gradient(140deg, #12100e 0%, #1c1917 60%, #292524 100%)",
       },
       animation: {
         "fade-up": "fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",

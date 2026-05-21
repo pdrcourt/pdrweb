@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Resolving Disagreement: Case Study of Chemical Manufacturer vs. Distributor in Rajasthan">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#291813"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4862a"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4862a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d4862a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><polygon points="102.6,311.7 117.1,340.6 88.2,340.6" fill="#f4d2ac" opacity="0.22"/><polygon points="870.2,382.0 893.8,429.1 846.7,429.1" fill="#f4d2ac" opacity="0.28"/><circle cx="1192.8" cy="120.8" r="19.9" fill="#bd6b20" opacity="0.28"/><rect x="541.3" y="281.3" width="38.8" height="38.8" rx="4" transform="rotate(50.5 560.8 300.7)" fill="#d4862a" opacity="0.23"/><circle cx="556.6" cy="471.4" r="27.3" fill="#bd6b20" opacity="0.14"/><circle cx="1193.9" cy="212.5" r="8.7" fill="#bd6b20" opacity="0.15"/><polygon points="1134.0,376.7 1161.4,431.6 1106.5,431.6" fill="#f4d2ac" opacity="0.23"/><circle cx="7.6" cy="85.1" r="18.0" fill="#bd6b20" opacity="0.29"/><polygon points="584.6,79.2 597.9,105.9 571.2,105.9" fill="#f4d2ac" opacity="0.14"/><circle cx="41.9" cy="423.6" r="29.3" fill="#bd6b20" opacity="0.25"/><circle cx="48.8" cy="174.9" r="8.0" fill="#bd6b20" opacity="0.12"/><polygon points="757.4,383.5 768.9,406.5 745.8,406.5" fill="#f4d2ac" opacity="0.32"/><rect x="719.7" y="548.1" width="50.2" height="50.2" rx="4" transform="rotate(220.5 744.8 573.2)" fill="#d4862a" opacity="0.20"/><rect x="250.4" y="23.6" width="32.2" height="32.2" rx="4" transform="rotate(6.2 266.5 39.7)" fill="#d4862a" opacity="0.34"/><rect x="676.1" y="137.8" width="31.4" height="31.4" rx="4" transform="rotate(314.1 691.8 153.5)" fill="#d4862a" opacity="0.19"/><rect x="-7.0" y="182.9" width="34.2" height="34.2" rx="4" transform="rotate(344.9 10.1 200.0)" fill="#d4862a" opacity="0.30"/><circle cx="167.8" cy="114.6" r="26.7" fill="#bd6b20" opacity="0.17"/><polygon points="285.2,135.8 306.8,179.0 263.7,179.0" fill="#f4d2ac" opacity="0.34"/><polygon points="624.9,233.0 634.9,253.0 614.9,253.0" fill="#f4d2ac" opacity="0.11"/><rect x="1076.9" y="195.4" width="55.0" height="55.0" rx="4" transform="rotate(318.7 1104.4 222.9)" fill="#d4862a" opacity="0.13"/><circle cx="333.6" cy="339.3" r="22.7" fill="#bd6b20" opacity="0.12"/><circle cx="527.2" cy="345.7" r="19.3" fill="#bd6b20" opacity="0.25"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#d4862a" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#bd6b20" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#d4862a" opacity="0.18" stroke="#d4862a" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#d4862a" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Resolving Disagreement:</tspan><tspan x="80" dy="56">Case Study of Chemical</tspan><tspan x="80" dy="56">Manufacturer vs.</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

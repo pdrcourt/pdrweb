@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { navContent } from "@/data/content";
-import { Button } from "@/components/ui/Button";
 import { ChevronDown, Menu, X } from "lucide-react";
 
 export function Navbar() {
@@ -20,7 +19,10 @@ export function Navbar() {
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
         setActiveDropdown(null);
       }
     };
@@ -40,7 +42,10 @@ export function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between" ref={dropdownRef}>
+        <nav
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between"
+          ref={dropdownRef}
+        >
           {/* Logo */}
           <motion.a
             href="/"
@@ -49,10 +54,10 @@ export function Navbar() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <img 
-              src="/images/PDR-Court_logo_without_text-removebg-preview.png" 
-              alt="PDR Court" 
-              className="h-9 w-auto drop-shadow-sm transition-transform duration-500"
+            <img
+              src="/images/PDR-Court_logo_without_text-removebg-preview.png"
+              alt="PDR Court"
+              className="h-9 w-auto drop-shadow-sm group-hover:rotate-6 transition-transform duration-500"
             />
             <span className="font-brand font-bold text-lg md:text-xl tracking-wider bg-gold-gradient bg-clip-text text-transparent drop-shadow-sm">
               PDR COURT
@@ -67,7 +72,9 @@ export function Navbar() {
                   <button
                     className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium text-dark/70 dark:text-white/70 hover:text-primary hover:bg-primary/5 transition-all duration-200"
                     onClick={() =>
-                      setActiveDropdown(activeDropdown === link.label ? null : link.label)
+                      setActiveDropdown(
+                        activeDropdown === link.label ? null : link.label,
+                      )
                     }
                   >
                     {link.label}
@@ -108,21 +115,21 @@ export function Navbar() {
                 >
                   {link.label}
                 </a>
-              )
+              ),
             )}
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-4">
             <a
-              href="/#contact"
-              className="text-sm font-medium text-dark/60 dark:text-white/60 hover:text-primary transition-colors"
+              href="/contact"
+              className="text-sm font-semibold text-dark/70 dark:text-white/70 hover:text-primary transition-colors"
             >
               Log In
             </a>
-            <Button href={navContent.cta.href} size="sm" variant="primary">
+            <a href={navContent.cta.href} className="pill-cta text-sm shadow-gold">
               {navContent.cta.label}
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Hamburger */}
@@ -147,7 +154,10 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div className="absolute inset-0 bg-dark/20 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
+            <div
+              className="absolute inset-0 bg-dark/20 backdrop-blur-sm"
+              onClick={() => setMobileOpen(false)}
+            />
             <motion.div
               className="absolute top-16 left-0 right-0 bg-white dark:bg-dark-800 shadow-glass border-b border-cream-200 dark:border-white/10 p-6 max-h-[80vh] overflow-y-auto"
               initial={{ y: -20, opacity: 0 }}
@@ -182,12 +192,24 @@ export function Navbar() {
                     >
                       {link.label}
                     </a>
-                  )
+                  ),
                 )}
               </div>
               <div className="flex flex-col gap-3">
-                <Button href="/#contact" variant="outline" className="w-full justify-center">Log In</Button>
-                <Button href={navContent.cta.href} variant="primary" className="w-full justify-center">{navContent.cta.label}</Button>
+                <a
+                  href="/contact"
+                  onClick={() => setMobileOpen(false)}
+                  className="w-full text-center py-3 rounded-full font-semibold text-primary border border-primary/40 hover:bg-primary/5 transition-colors"
+                >
+                  Log In
+                </a>
+                <a
+                  href={navContent.cta.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="pill-cta w-full justify-center py-3"
+                >
+                  {navContent.cta.label}
+                </a>
               </div>
             </motion.div>
           </motion.div>

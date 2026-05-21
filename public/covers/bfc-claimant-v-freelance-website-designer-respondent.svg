@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Arbitration Case Study: NBFC vs. Freelance Website Designer in Mumbai-Pune Dispute">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="216" cy="236.24999999999997" r="323.75924355350435" fill="url(#glow)" opacity="0.8"/><circle cx="717.9" cy="288.5" r="123.5" fill="#bd6b20" opacity="0.13"/><circle cx="124.3" cy="436.8" r="78.4" fill="#bd6b20" opacity="0.18"/><circle cx="801.5" cy="47.6" r="268.6" fill="#bd6b20" opacity="0.16"/><circle cx="600.3" cy="334.8" r="161.0" fill="#bd6b20" opacity="0.15"/><circle cx="739.1" cy="124.7" r="168.8" fill="#bd6b20" opacity="0.18"/><circle cx="984.0" cy="168.8" r="220" fill="none" stroke="#9a5518" stroke-width="1.5" opacity="0.4"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#bd6b20" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#9a5518" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Arbitration Case Study:</tspan><tspan x="80" dy="56">NBFC vs. Freelance Website</tspan><tspan x="80" dy="56">Designer in Mumbai-Pune</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

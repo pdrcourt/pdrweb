@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Dispute Resolution Centre | Debt Recovery through Arbitration | Employee Mediation">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><circle cx="1140.6" cy="114.0" r="29.6" fill="#9a5518" opacity="0.10"/><rect x="378.7" y="193.3" width="14.1" height="14.1" rx="4" transform="rotate(87.9 385.8 200.4)" fill="#bd6b20" opacity="0.24"/><rect x="904.4" y="193.5" width="56.4" height="56.4" rx="4" transform="rotate(256.0 932.6 221.7)" fill="#bd6b20" opacity="0.31"/><polygon points="873.0,-9.7 896.0,36.4 849.9,36.4" fill="#ecb478" opacity="0.11"/><rect x="811.8" y="479.5" width="33.4" height="33.4" rx="4" transform="rotate(97.5 828.5 496.2)" fill="#bd6b20" opacity="0.19"/><rect x="508.1" y="107.6" width="20.0" height="20.0" rx="4" transform="rotate(100.7 518.1 117.6)" fill="#bd6b20" opacity="0.23"/><polygon points="994.8,174.0 1015.5,215.5 974.0,215.5" fill="#ecb478" opacity="0.25"/><circle cx="681.9" cy="86.7" r="24.3" fill="#9a5518" opacity="0.29"/><rect x="100.6" y="121.3" width="59.0" height="59.0" rx="4" transform="rotate(28.6 130.1 150.8)" fill="#bd6b20" opacity="0.18"/><rect x="73.4" y="295.2" width="19.6" height="19.6" rx="4" transform="rotate(261.1 83.2 305.0)" fill="#bd6b20" opacity="0.16"/><rect x="674.6" y="261.7" width="26.8" height="26.8" rx="4" transform="rotate(350.9 688.0 275.1)" fill="#bd6b20" opacity="0.28"/><polygon points="332.3,447.3 356.1,494.8 308.6,494.8" fill="#ecb478" opacity="0.11"/><rect x="816.0" y="175.9" width="23.7" height="23.7" rx="4" transform="rotate(220.6 827.9 187.8)" fill="#bd6b20" opacity="0.21"/><rect x="834.4" y="419.0" width="39.5" height="39.5" rx="4" transform="rotate(323.7 854.1 438.8)" fill="#bd6b20" opacity="0.33"/><polygon points="352.4,202.7 382.4,262.8 322.4,262.8" fill="#ecb478" opacity="0.30"/><circle cx="697.9" cy="530.2" r="29.1" fill="#9a5518" opacity="0.16"/><polygon points="193.8,-11.9 213.7,27.8 174.0,27.8" fill="#ecb478" opacity="0.17"/><rect x="850.2" y="107.0" width="47.3" height="47.3" rx="4" transform="rotate(229.9 873.8 130.7)" fill="#bd6b20" opacity="0.24"/><circle cx="101.3" cy="504.0" r="7.8" fill="#9a5518" opacity="0.12"/><rect x="1011.9" y="289.7" width="34.9" height="34.9" rx="4" transform="rotate(196.7 1029.3 307.2)" fill="#bd6b20" opacity="0.29"/><polygon points="245.6,430.1 276.9,492.7 214.3,492.7" fill="#ecb478" opacity="0.19"/><polygon points="863.1,531.6 876.8,559.0 849.4,559.0" fill="#ecb478" opacity="0.26"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <polygon points="0,-50 43,25 -43,25" fill="none" stroke="#bd6b20" stroke-width="2"/>
+        <polygon points="0,-30 26,15 -26,15" fill="#9a5518" opacity="0.4"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="145" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="72.5" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">INFORMATION</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Dispute Resolution Centre</tspan><tspan x="80" dy="56">| Debt Recovery through</tspan><tspan x="80" dy="56">Arbitration | Employee</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Delhi High Court's Verdict: SpiceJet to Pay ₹579 Crore to Marans as Arbitration Award Stands">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,311.8 -20,313.8 10,315.0 40,315.5 70,315.2 100,314.1 130,312.3 160,309.8 190,306.6 220,302.8 250,298.6 280,294.0 310,289.0 340,283.9 370,278.7 400,273.6 430,268.6 460,263.9 490,259.6 520,255.8 550,252.5 580,249.9 610,247.9 640,246.7 670,246.3 700,246.7 730,247.8 760,249.6 790,252.2 820,255.4 850,259.2 880,263.5 910,268.1 940,273.1 970,278.2 1000,283.4 1030,288.5 1060,293.5 1090,298.1 1120,302.4 1150,306.2 1180,309.5 1210,312.1 1240,314.0 1250,725 -50,725" fill="#bd6b20" opacity="0.08"/><polygon points="-50,328.5 -20,332.4 10,336.8 40,341.4 70,346.1 100,350.9 130,355.7 160,360.3 190,364.6 220,368.6 250,372.1 280,375.1 310,377.5 340,379.2 370,380.3 400,380.6 430,380.2 460,379.1 490,377.4 520,374.9 550,371.9 580,368.4 610,364.4 640,360.0 670,355.4 700,350.7 730,345.8 760,341.1 790,336.5 820,332.2 850,328.2 880,324.8 910,321.8 940,319.4 970,317.7 1000,316.7 1030,316.4 1060,316.9 1090,318.0 1120,319.8 1150,322.3 1180,325.3 1210,328.9 1240,332.9 1250,725 -50,725" fill="#bd6b20" opacity="0.13"/><polygon points="-50,409.4 -20,422.3 10,435.1 40,447.5 70,459.2 100,470.0 130,479.6 160,487.9 190,494.5 220,499.5 250,502.6 280,503.8 310,503.0 340,500.4 370,495.9 400,489.6 430,481.7 460,472.4 490,461.8 520,450.3 550,438.0 580,425.3 610,412.4 640,399.6 670,387.3 700,375.6 730,364.8 760,355.3 790,347.1 820,340.5 850,335.7 880,332.7 910,331.6 940,332.5 970,335.2 1000,339.9 1030,346.2 1060,354.2 1090,363.6 1120,374.2 1150,385.8 1180,398.1 1210,410.8 1240,423.7 1250,725 -50,725" fill="#bd6b20" opacity="0.18"/><polygon points="-50,531.4 -20,533.0 10,533.2 40,531.9 70,529.1 100,525.0 130,519.5 160,513.0 190,505.4 220,496.9 250,487.8 280,478.3 310,468.5 340,458.7 370,449.1 400,439.9 430,431.4 460,423.6 490,416.9 520,411.3 550,407.0 580,404.0 610,402.5 640,402.4 670,403.8 700,406.7 730,410.9 760,416.4 790,423.0 820,430.6 850,439.1 880,448.3 910,457.8 940,467.6 970,477.4 1000,487.0 1030,496.1 1060,504.6 1090,512.3 1120,519.0 1150,524.5 1180,528.8 1210,531.7 1240,533.1 1250,725 -50,725" fill="#bd6b20" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#bd6b20" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#9a5518" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#bd6b20" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Delhi High Court's</tspan><tspan x="80" dy="56">Verdict: SpiceJet to Pay</tspan><tspan x="80" dy="56">₹579 Crore to Marans as</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Furniture Dispute Resolution: PDR COURT's Role in Settling a Mumbai Showroom Owner's Payment Dispute">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#291813"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4862a"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4862a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d4862a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,272.8 -20,281.0 10,289.0 40,296.7 70,303.8 100,310.2 130,315.8 160,320.4 190,323.9 220,326.3 250,327.4 280,327.3 310,326.0 340,323.5 370,319.9 400,315.1 430,309.5 460,302.9 490,295.7 520,288.0 550,280.0 580,271.7 610,263.5 640,255.5 670,247.8 700,240.8 730,234.4 760,228.9 790,224.3 820,220.9 850,218.6 880,217.5 910,217.7 940,219.0 970,221.6 1000,225.3 1030,230.1 1060,235.9 1090,242.4 1120,249.6 1150,257.4 1180,265.5 1210,273.7 1240,281.9 1250,725 -50,725" fill="#d4862a" opacity="0.08"/><polygon points="-50,379.1 -20,386.3 10,392.8 40,398.6 70,403.4 100,407.2 130,409.8 160,411.3 190,411.6 220,410.7 250,408.5 280,405.3 310,400.9 340,395.6 370,389.4 400,382.5 430,375.0 460,367.2 490,359.1 520,351.0 550,343.0 580,335.4 610,328.2 640,321.7 670,316.0 700,311.3 730,307.5 760,304.9 790,303.5 820,303.3 850,304.3 880,306.5 910,309.8 940,314.2 970,319.6 1000,325.8 1030,332.8 1060,340.3 1090,348.1 1120,356.2 1150,364.3 1180,372.3 1210,379.9 1240,387.0 1250,725 -50,725" fill="#d4862a" opacity="0.13"/><polygon points="-50,439.4 -20,444.3 10,448.8 40,452.6 70,455.7 100,458.0 130,459.6 160,460.3 190,460.2 220,459.2 250,457.3 280,454.7 310,451.3 340,447.3 370,442.7 400,437.7 430,432.3 460,426.6 490,420.9 520,415.2 550,409.6 580,404.3 610,399.4 640,395.1 670,391.3 700,388.2 730,385.9 760,384.4 790,383.7 820,383.9 850,385.0 880,386.8 910,389.5 940,392.9 970,397.0 1000,401.6 1030,406.7 1060,412.1 1090,417.8 1120,423.5 1150,429.2 1180,434.7 1210,440.0 1240,444.9 1250,725 -50,725" fill="#d4862a" opacity="0.18"/><polygon points="-50,463.1 -20,468.4 10,474.2 40,480.3 70,486.6 100,492.9 130,499.0 160,505.0 190,510.5 220,515.5 250,519.8 280,523.5 310,526.3 340,528.3 370,529.4 400,529.5 430,528.7 460,526.9 490,524.3 520,520.8 550,516.6 580,511.8 610,506.4 640,500.5 670,494.4 700,488.2 730,481.9 760,475.7 790,469.8 820,464.3 850,459.4 880,455.0 910,451.4 940,448.6 970,446.7 1000,445.7 1030,445.7 1060,446.5 1090,448.3 1120,451.0 1150,454.5 1180,458.8 1210,463.6 1240,469.1 1250,725 -50,725" fill="#d4862a" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#d4862a" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#bd6b20" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#d4862a" opacity="0.18" stroke="#d4862a" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#d4862a" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Furniture Dispute</tspan><tspan x="80" dy="56">Resolution: PDR COURT's</tspan><tspan x="80" dy="56">Role in Settling a Mumbai</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

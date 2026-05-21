@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="What Steps Should an Arbitrator Take to Address Limitation Disputes?">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#532d15"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e09440"/>
+      <stop offset="100%" stop-color="#fdf6ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e09440" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#e09440" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,250.5 -20,254.4 10,258.8 40,263.4 70,268.3 100,273.2 130,278.2 160,283.0 190,287.6 220,291.9 250,295.8 280,299.1 310,301.8 340,303.9 370,305.4 400,306.0 430,306.0 460,305.1 490,303.6 520,301.4 550,298.5 580,295.1 610,291.1 640,286.8 670,282.1 700,277.3 730,272.3 760,267.4 790,262.5 820,257.9 850,253.7 880,249.8 910,246.5 940,243.8 970,241.8 1000,240.4 1030,239.8 1060,239.9 1090,240.7 1120,242.3 1150,244.6 1180,247.5 1210,250.9 1240,254.9 1250,725 -50,725" fill="#e09440" opacity="0.08"/><polygon points="-50,435.4 -20,429.3 10,421.6 40,412.7 70,402.7 100,391.8 130,380.3 160,368.4 190,356.4 220,344.6 250,333.1 280,322.4 310,312.6 340,304.0 370,296.6 400,290.8 430,286.7 460,284.2 490,283.6 520,284.7 550,287.6 580,292.2 610,298.5 640,306.1 670,315.1 700,325.2 730,336.1 760,347.7 790,359.6 820,371.6 850,383.4 880,394.8 910,405.5 940,415.2 970,423.8 1000,431.0 1030,436.8 1060,440.8 1090,443.2 1120,443.7 1150,442.5 1180,439.5 1210,434.8 1240,428.5 1250,725 -50,725" fill="#e09440" opacity="0.13"/><polygon points="-50,399.5 -20,391.4 10,383.9 40,377.1 70,371.2 100,366.3 130,362.5 160,359.9 190,358.6 220,358.5 250,359.8 280,362.3 310,366.0 340,370.9 370,376.7 400,383.5 430,390.9 460,399.0 490,407.4 520,416.0 550,424.7 580,433.1 610,441.1 640,448.6 670,455.4 700,461.2 730,466.1 760,469.8 790,472.4 820,473.6 850,473.6 880,472.3 910,469.7 940,465.9 970,461.0 1000,455.1 1030,448.3 1060,440.8 1090,432.7 1120,424.3 1150,415.6 1180,407.0 1210,398.6 1240,390.6 1250,725 -50,725" fill="#e09440" opacity="0.18"/><polygon points="-50,496.3 -20,498.8 10,500.7 40,501.9 70,502.4 100,502.2 130,501.4 160,499.8 190,497.6 220,494.8 250,491.5 280,487.7 310,483.6 340,479.2 370,474.6 400,469.9 430,465.3 460,460.7 490,456.5 520,452.5 550,449.0 580,446.0 610,443.5 640,441.7 670,440.5 700,440.0 730,440.2 760,441.1 790,442.7 820,444.9 850,447.8 880,451.1 910,454.9 940,459.1 970,463.5 1000,468.1 1030,472.8 1060,477.4 1090,481.9 1120,486.2 1150,490.1 1180,493.6 1210,496.6 1240,499.0 1250,725 -50,725" fill="#e09440" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#e09440" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#fdf6ee" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#e09440" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#e09440" opacity="0.18" stroke="#e09440" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#e09440" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">What Steps Should an</tspan><tspan x="80" dy="56">Arbitrator Take to Address</tspan><tspan x="80" dy="56">Limitation Disputes?</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

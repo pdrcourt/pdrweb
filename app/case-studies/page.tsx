@@ -1,37 +1,32 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { LegalPageClient } from "@/components/pages/LegalPageClient";
+import React from "react";
+import { Metadata } from "next";
+import CaseStudiesClientPage, { CaseStudyItem } from "./CaseStudiesClientPage";
+import { getAllByCategory } from "@/lib/migrated-content";
+
+export const metadata: Metadata = {
+  title: "Case Studies | PDR COURT",
+  description:
+    "Gain a comprehensive perspective of PDR COURT as an ADR platform. Review, read, and analyze our real-life case studies.",
+};
+
+function categorize(title: string, slug: string): string {
+  const s = (title + " " + slug).toLowerCase();
+  if (/nbfc/.test(s)) return "NBFCs";
+  if (/bank|finance-company|finance-firm|finance-ministry/.test(s)) return "Banks";
+  if (/msme|small-business|trader|wholesal|distribut|manufactur/.test(s)) return "Institutions";
+  if (/freelance|designer|individual|professional/.test(s)) return "Freelancers";
+  if (/construction|contractor|engineering|infra/.test(s)) return "Contractors";
+  if (/dealer|retail|shop|owner/.test(s)) return "Professionals";
+  return "Institutions";
+}
 
 export default function CaseStudiesPage() {
-  return (
-    <>
-      <Navbar />
-      <LegalPageClient
-        title="Case Studies"
-        subtitle="Real-world examples of successful dispute resolution on PDR Court."
-        lastUpdated="May 13, 2026"
-        content={
-          <div className="space-y-12">
-            <article className="p-8 rounded-3xl bg-white dark:bg-dark-800 border border-cream-200 dark:border-white/10">
-              <h3 className="text-xl font-bold mb-4">Resolving a Multi-Crore Commercial Default in 14 Days</h3>
-              <p className="text-dark/60 dark:text-white/60 mb-6">A leading manufacturing firm used PDR Court to resolve a long-standing payment dispute with a vendor. Through structured mediation, both parties reached a settlement agreement that preserved their 10-year partnership.</p>
-              <div className="flex gap-4 text-xs font-bold text-primary uppercase">
-                <span>Sector: Manufacturing</span>
-                <span>Mechanism: Mediation</span>
-              </div>
-            </article>
-            <article className="p-8 rounded-3xl bg-white dark:bg-dark-800 border border-cream-200 dark:border-white/10">
-              <h3 className="text-xl font-bold mb-4">Streamlining Retail Loan Recovery for a Tier-1 Bank</h3>
-              <p className="text-dark/60 dark:text-white/60 mb-6">By integrating PDR Court with their existing recovery systems, a major private bank was able to resolve over 5,000 small-ticket loan disputes in a single quarter, significantly reducing their NPA levels.</p>
-              <div className="flex gap-4 text-xs font-bold text-primary uppercase">
-                <span>Sector: Banking</span>
-                <span>Mechanism: Arbitration</span>
-              </div>
-            </article>
-          </div>
-        }
-      />
-      <Footer />
-    </>
-  );
+  const caseStudies: CaseStudyItem[] = getAllByCategory("case-studies").map((c) => ({
+    title: c.title,
+    description: c.excerpt,
+    href: `/case-studies/${c.slug}`,
+    category: categorize(c.title, c.slug),
+  }));
+
+  return <CaseStudiesClientPage caseStudies={caseStudies} />;
 }

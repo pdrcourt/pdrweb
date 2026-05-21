@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { heroContent } from "@/data/content";
 import { Button } from "@/components/ui/Button";
-import { Zap, Lock, Play, ArrowRight } from "lucide-react";
+import { Zap, Lock } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -63,14 +63,10 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              <Button href={heroContent.primaryCta.href} size="lg" variant="primary">
+              <Button href={heroContent.primaryCta.href} variant="primary">
                 {heroContent.primaryCta.label}
-                <ArrowRight size={18} className="ml-1" />
               </Button>
-              <Button href={heroContent.secondaryCta.href} size="lg" variant="outline">
-                <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary transition-transform group-hover:scale-110">
-                  <Play size={10} fill="currentColor" />
-                </span>
+              <Button href={heroContent.secondaryCta.href} variant="outline">
                 {heroContent.secondaryCta.label}
               </Button>
             </motion.div>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Calcutta HC Provides Clarity on Arbitrator's Mandate Termination under Section 29A of the Arbitration Act">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,251.9 -20,246.7 10,242.0 40,238.0 70,234.9 100,232.6 130,231.3 160,230.9 190,231.5 220,233.0 250,235.5 280,238.9 310,243.0 340,247.8 370,253.2 400,259.1 430,265.4 460,271.8 490,278.2 520,284.6 550,290.8 580,296.5 610,301.8 640,306.4 670,310.3 700,313.4 730,315.7 760,316.9 790,317.3 820,316.6 850,315.0 880,312.5 910,309.1 940,304.9 970,300.1 1000,294.6 1030,288.7 1060,282.5 1090,276.0 1120,269.6 1150,263.2 1180,257.1 1210,251.3 1240,246.1 1250,725 -50,725" fill="#ecb478" opacity="0.08"/><polygon points="-50,322.6 -20,328.7 10,335.4 40,342.5 70,349.9 100,357.4 130,364.7 160,371.9 190,378.6 220,384.8 250,390.3 280,394.9 310,398.7 340,401.4 370,403.1 400,403.6 430,403.1 460,401.4 490,398.7 520,395.0 550,390.3 580,384.9 610,378.7 640,372.0 670,364.8 700,357.5 730,350.0 760,342.6 790,335.5 820,328.8 850,322.7 880,317.2 910,312.6 940,308.9 970,306.3 1000,304.6 1030,304.1 1060,304.8 1090,306.5 1120,309.3 1150,313.0 1180,317.7 1210,323.3 1240,329.5 1250,725 -50,725" fill="#ecb478" opacity="0.13"/><polygon points="-50,456.9 -20,464.2 10,470.4 40,475.5 70,479.4 100,481.8 130,482.8 160,482.4 190,480.6 220,477.4 250,472.8 280,467.0 310,460.2 340,452.4 370,443.9 400,434.7 430,425.3 460,415.7 490,406.1 520,396.8 550,388.0 580,380.0 610,372.7 640,366.5 670,361.5 700,357.8 730,355.4 760,354.5 790,354.9 820,356.9 850,360.2 880,364.8 910,370.6 940,377.5 970,385.4 1000,393.9 1030,403.1 1060,412.6 1090,422.2 1120,431.7 1150,441.0 1180,449.7 1210,457.8 1240,464.9 1250,725 -50,725" fill="#ecb478" opacity="0.18"/><polygon points="-50,481.4 -20,476.5 10,471.9 40,467.6 70,463.7 100,460.3 130,457.6 160,455.5 190,454.1 220,453.4 250,453.5 280,454.3 310,455.9 340,458.2 370,461.1 400,464.5 430,468.5 460,472.9 490,477.6 520,482.5 550,487.5 580,492.5 610,497.4 640,502.0 670,506.3 700,510.1 730,513.4 760,516.1 790,518.2 820,519.6 850,520.2 880,520.1 910,519.2 940,517.6 970,515.3 1000,512.3 1030,508.8 1060,504.8 1090,500.4 1120,495.7 1150,490.8 1180,485.8 1210,480.8 1240,476.0 1250,725 -50,725" fill="#ecb478" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#ecb478" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#faebd6" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#ecb478" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Calcutta HC Provides</tspan><tspan x="80" dy="56">Clarity on Arbitrator's</tspan><tspan x="80" dy="56">Mandate Termination under</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

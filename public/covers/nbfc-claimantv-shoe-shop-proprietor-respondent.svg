@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Shoe Store Loan Dispute Resolution: A Case Study in Alternate Dispute Resolution and Mediation">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><polygon points="68.2,351.4 97.7,410.3 38.7,410.3" fill="#f4d2ac" opacity="0.23"/><rect x="-2.3" y="57.1" width="59.5" height="59.5" rx="4" transform="rotate(28.0 27.5 86.8)" fill="#ecb478" opacity="0.32"/><circle cx="484.3" cy="14.3" r="16.2" fill="#faebd6" opacity="0.27"/><rect x="1169.8" y="529.1" width="47.5" height="47.5" rx="4" transform="rotate(109.4 1193.5 552.9)" fill="#ecb478" opacity="0.23"/><polygon points="1125.7,109.0 1148.1,153.9 1103.3,153.9" fill="#f4d2ac" opacity="0.20"/><circle cx="472.9" cy="207.7" r="16.7" fill="#faebd6" opacity="0.13"/><circle cx="1097.4" cy="139.0" r="26.7" fill="#faebd6" opacity="0.13"/><polygon points="977.0,392.2 991.2,420.6 962.9,420.6" fill="#f4d2ac" opacity="0.26"/><rect x="442.6" y="328.2" width="39.4" height="39.4" rx="4" transform="rotate(265.0 462.3 347.9)" fill="#ecb478" opacity="0.13"/><rect x="916.7" y="230.2" width="48.0" height="48.0" rx="4" transform="rotate(266.9 940.7 254.2)" fill="#ecb478" opacity="0.13"/><circle cx="1087.0" cy="419.8" r="19.4" fill="#faebd6" opacity="0.19"/><circle cx="656.6" cy="533.8" r="11.9" fill="#faebd6" opacity="0.27"/><polygon points="853.2,190.2 874.2,232.2 832.2,232.2" fill="#f4d2ac" opacity="0.32"/><rect x="358.5" y="214.0" width="45.1" height="45.1" rx="4" transform="rotate(313.6 381.1 236.6)" fill="#ecb478" opacity="0.17"/><rect x="8.2" y="551.3" width="17.5" height="17.5" rx="4" transform="rotate(339.5 16.9 560.0)" fill="#ecb478" opacity="0.19"/><polygon points="298.9,46.9 312.9,74.9 285.0,74.9" fill="#f4d2ac" opacity="0.13"/><circle cx="718.4" cy="498.6" r="19.6" fill="#faebd6" opacity="0.31"/><circle cx="749.5" cy="406.6" r="7.4" fill="#faebd6" opacity="0.13"/><circle cx="925.5" cy="290.1" r="25.7" fill="#faebd6" opacity="0.28"/><rect x="310.2" y="540.9" width="37.0" height="37.0" rx="4" transform="rotate(333.7 328.7 559.4)" fill="#ecb478" opacity="0.20"/><circle cx="45.8" cy="451.4" r="23.2" fill="#faebd6" opacity="0.18"/><circle cx="134.1" cy="2.3" r="18.7" fill="#faebd6" opacity="0.34"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <rect x="-46" y="-60" width="92" height="115" fill="#ecb478" opacity="0.18" rx="6"/>
+        <path d="M -28 -36 L 28 -36 M -28 -12 L 28 -12 M -28 12 L 18 12 M -28 36 L 28 36" stroke="#faebd6" stroke-width="3" stroke-linecap="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="101" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="50.5" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">ARTICLE</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Shoe Store Loan Dispute</tspan><tspan x="80" dy="56">Resolution: A Case Study</tspan><tspan x="80" dy="56">in Alternate Dispute</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

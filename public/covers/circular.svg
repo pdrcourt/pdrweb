@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Circular">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="913.6,571.4 821.9,534.8 828.5,436.2 924.2,412.0 976.8,495.5" fill="#9a5518" opacity="0.18"/><polygon points="560.0,289.4 421.1,469.1 335.0,258.9" fill="#9a5518" opacity="0.12"/><polygon points="525.6,206.2 312.5,167.4 452.7,2.2" fill="#9a5518" opacity="0.17"/><polygon points="346.4,266.9 293.0,447.7 163.0,311.1" fill="#9a5518" opacity="0.14"/><polygon points="618.6,99.8 488.4,155.7 432.5,25.6 562.6,-30.4" fill="#9a5518" opacity="0.18"/><polygon points="332.3,491.6 292.7,366.0 421.3,394.5" fill="#9a5518" opacity="0.09"/><polygon points="285.1,229.3 316.6,365.9 196.4,438.0 90.7,346.0 145.5,217.0" fill="#9a5518" opacity="0.05"/><polygon points="343.9,547.4 416.2,403.3 575.6,427.5 601.9,586.7 458.6,660.8" fill="#9a5518" opacity="0.17"/><polygon points="973.4,-36.6 1120.3,-63.7 1147.4,83.2 1000.5,110.3" fill="#9a5518" opacity="0.13"/><polygon points="1187.9,9.9 1197.9,83.5 1124.3,93.6 1114.2,20.0" fill="#9a5518" opacity="0.13"/><polygon points="1215.3,513.9 1059.6,523.2 1002.6,377.9 1123.2,278.8 1254.7,362.9" fill="#9a5518" opacity="0.16"/><polygon points="1013.2,667.1 1018.2,594.0 1078.9,634.8" fill="#9a5518" opacity="0.09"/><polygon points="336.3,279.6 488.2,416.2 351.6,568.0 199.7,431.4" fill="#9a5518" opacity="0.10"/><polygon points="1114.5,667.3 1089.3,585.7 1170.8,560.5 1196.1,642.0" fill="#9a5518" opacity="0.09"/><circle cx="936.0" cy="202.5" r="180" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <polygon points="0,-50 43,25 -43,25" fill="none" stroke="#bd6b20" stroke-width="2"/>
+        <polygon points="0,-30 26,15 -26,15" fill="#9a5518" opacity="0.4"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="145" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="72.5" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">INFORMATION</text>
+  </g>
+  <text x="80" y="565" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Circular</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

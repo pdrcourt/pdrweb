@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Trading Platform Dispute Resolution: A Case Study of Successful Settlement">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#643516"/>
+      <stop offset="100%" stop-color="#7d4315"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecb478"/>
+      <stop offset="100%" stop-color="#faebd6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecb478" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ecb478" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><polygon points="1189.4,330.3 1210.8,373.2 1168.0,373.2" fill="#f4d2ac" opacity="0.28"/><rect x="1049.9" y="125.3" width="34.6" height="34.6" rx="4" transform="rotate(246.1 1067.2 142.6)" fill="#ecb478" opacity="0.28"/><rect x="492.5" y="480.2" width="36.0" height="36.0" rx="4" transform="rotate(333.2 510.5 498.2)" fill="#ecb478" opacity="0.27"/><circle cx="741.5" cy="157.2" r="27.8" fill="#faebd6" opacity="0.34"/><rect x="181.1" y="315.7" width="25.7" height="25.7" rx="4" transform="rotate(9.4 193.9 328.5)" fill="#ecb478" opacity="0.30"/><rect x="169.0" y="341.2" width="15.6" height="15.6" rx="4" transform="rotate(264.4 176.8 349.0)" fill="#ecb478" opacity="0.27"/><polygon points="628.1,256.9 656.5,313.8 599.6,313.8" fill="#f4d2ac" opacity="0.18"/><polygon points="340.2,370.7 350.9,392.2 329.4,392.2" fill="#f4d2ac" opacity="0.11"/><circle cx="333.3" cy="570.9" r="27.9" fill="#faebd6" opacity="0.24"/><polygon points="31.5,345.5 49.5,381.5 13.4,381.5" fill="#f4d2ac" opacity="0.16"/><rect x="162.3" y="20.1" width="15.8" height="15.8" rx="4" transform="rotate(211.3 170.2 28.0)" fill="#ecb478" opacity="0.23"/><polygon points="852.3,536.3 859.7,551.2 844.8,551.2" fill="#f4d2ac" opacity="0.28"/><rect x="635.1" y="538.6" width="33.1" height="33.1" rx="4" transform="rotate(111.7 651.6 555.2)" fill="#ecb478" opacity="0.25"/><circle cx="414.4" cy="497.3" r="24.7" fill="#faebd6" opacity="0.19"/><circle cx="577.4" cy="310.2" r="14.8" fill="#faebd6" opacity="0.27"/><rect x="405.1" y="537.6" width="15.4" height="15.4" rx="4" transform="rotate(338.8 412.8 545.3)" fill="#ecb478" opacity="0.19"/><rect x="109.2" y="384.9" width="26.7" height="26.7" rx="4" transform="rotate(210.7 122.5 398.2)" fill="#ecb478" opacity="0.26"/><circle cx="424.7" cy="72.1" r="30.1" fill="#faebd6" opacity="0.29"/><circle cx="1128.4" cy="300.6" r="21.0" fill="#faebd6" opacity="0.10"/><rect x="1178.0" y="446.7" width="20.0" height="20.0" rx="4" transform="rotate(55.5 1188.0 456.7)" fill="#ecb478" opacity="0.15"/><polygon points="923.5,-10.5 941.3,25.0 905.8,25.0" fill="#f4d2ac" opacity="0.31"/><circle cx="1170.3" cy="522.8" r="12.8" fill="#faebd6" opacity="0.35"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#ecb478" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#faebd6" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#ecb478" opacity="0.18" stroke="#ecb478" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#ecb478" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Trading Platform Dispute</tspan><tspan x="80" dy="56">Resolution: A Case Study</tspan><tspan x="80" dy="56">of Successful Settlement</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

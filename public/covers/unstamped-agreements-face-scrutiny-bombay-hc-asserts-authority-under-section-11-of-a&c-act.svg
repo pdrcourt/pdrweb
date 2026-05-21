@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Unstamped Agreements Face Scrutiny: Bombay HC Asserts Authority under Section 11 of A&amp;C Act">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#532d15"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e09440"/>
+      <stop offset="100%" stop-color="#fdf6ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e09440" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#e09440" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="-715.4" y="-80" width="61.6" height="875" transform="rotate(18 -715.4 337.5)" fill="#e09440" opacity="0.09"/><rect x="-488.3" y="-80" width="73.5" height="875" transform="rotate(18 -488.3 337.5)" fill="#e09440" opacity="0.10"/><rect x="-310.0" y="-80" width="114.8" height="875" transform="rotate(18 -310.0 337.5)" fill="#e09440" opacity="0.19"/><rect x="-125.0" y="-80" width="87.7" height="875" transform="rotate(18 -125.0 337.5)" fill="#e09440" opacity="0.08"/><rect x="3.3" y="-80" width="79.1" height="875" transform="rotate(18 3.3 337.5)" fill="#e09440" opacity="0.17"/><rect x="202.4" y="-80" width="104.5" height="875" transform="rotate(18 202.4 337.5)" fill="#e09440" opacity="0.07"/><rect x="438.5" y="-80" width="124.3" height="875" transform="rotate(18 438.5 337.5)" fill="#e09440" opacity="0.15"/><rect x="615.5" y="-80" width="77.0" height="875" transform="rotate(18 615.5 337.5)" fill="#e09440" opacity="0.13"/><rect x="724.7" y="-80" width="123.3" height="875" transform="rotate(18 724.7 337.5)" fill="#e09440" opacity="0.19"/><rect x="910.4" y="-80" width="69.1" height="875" transform="rotate(18 910.4 337.5)" fill="#e09440" opacity="0.17"/><rect x="1142.7" y="-80" width="92.1" height="875" transform="rotate(18 1142.7 337.5)" fill="#e09440" opacity="0.16"/><rect x="1276.0" y="-80" width="73.0" height="875" transform="rotate(18 1276.0 337.5)" fill="#e09440" opacity="0.05"/><rect x="1456.6" y="-80" width="115.9" height="875" transform="rotate(18 1456.6 337.5)" fill="#e09440" opacity="0.20"/><rect x="1658.1" y="-80" width="125.3" height="875" transform="rotate(18 1658.1 337.5)" fill="#e09440" opacity="0.07"/><rect x="0" y="0" width="1200" height="675" fill="url(#glow)" opacity="0.6"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#e09440" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#fdf6ee" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#e09440" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#e09440" opacity="0.18" stroke="#e09440" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#e09440" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Unstamped Agreements Face</tspan><tspan x="80" dy="56">Scrutiny: Bombay HC</tspan><tspan x="80" dy="56">Asserts Authority under</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

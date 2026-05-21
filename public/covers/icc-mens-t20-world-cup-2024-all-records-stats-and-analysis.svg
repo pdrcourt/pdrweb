@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Top 10 Records from ICC Men's T20 WC 2024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#291813"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4862a"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4862a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d4862a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="216" cy="236.24999999999997" r="349.1770171979442" fill="url(#glow)" opacity="0.8"/><circle cx="926.5" cy="211.2" r="140.1" fill="#d4862a" opacity="0.09"/><circle cx="781.3" cy="8.6" r="249.3" fill="#d4862a" opacity="0.19"/><circle cx="719.9" cy="38.6" r="180.2" fill="#d4862a" opacity="0.08"/><circle cx="502.0" cy="404.7" r="216.9" fill="#d4862a" opacity="0.14"/><circle cx="384.6" cy="347.7" r="114.3" fill="#d4862a" opacity="0.18"/><circle cx="984.0" cy="168.8" r="220" fill="none" stroke="#bd6b20" stroke-width="1.5" opacity="0.4"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <rect x="-46" y="-60" width="92" height="115" fill="#d4862a" opacity="0.18" rx="6"/>
+        <path d="M -28 -36 L 28 -36 M -28 -12 L 28 -12 M -28 12 L 18 12 M -28 36 L 28 36" stroke="#bd6b20" stroke-width="3" stroke-linecap="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="101" height="38" fill="#d4862a" opacity="0.18" stroke="#d4862a" stroke-width="1.5"/>
+    <text x="50.5" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#d4862a" text-anchor="middle">ARTICLE</text>
+  </g>
+  <text x="80" y="515" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Top 10 Records from ICC</tspan><tspan x="80" dy="56">Men's T20 WC 2024</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

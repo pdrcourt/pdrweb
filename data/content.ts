@@ -86,19 +86,39 @@ export const navContent = {
       label: "Solutions",
       href: "#",
       children: [
+        { label: "Services Overview", href: "/services" },
         { label: "Online Arbitration", href: "/solutions/arbitration" },
         { label: "Online Conciliation", href: "/solutions/conciliation" },
         { label: "Digital Mediation", href: "/solutions/mediation" },
         { label: "Structured Negotiation", href: "/solutions/negotiation" },
       ],
     },
-    { label: "How It Works", href: "/#process" },
-    { label: "Features", href: "/#features" },
-    { label: "Testimonials", href: "/#testimonials" },
+    {
+      label: "Explore",
+      href: "#",
+      children: [
+        { label: "Knowledge Center", href: "/knowledge-center" },
+        { label: "Information", href: "/information" },
+        { label: "Media Center", href: "/media-center" },
+        { label: "Resources & Legal", href: "/resources-legal" },
+      ],
+    },
+    {
+      label: "Connect",
+      href: "#",
+      children: [
+        { label: "Buy Agreement", href: "/buy" },
+        { label: "Lodge a Dispute", href: "/lodge-dispute" },
+        { label: "Book Appointment", href: "/appointment" },
+        { label: "Talk to an Expert", href: "/talk-to-us" },
+        { label: "Contact us", href: "/contact" },
+      ],
+    },
+    { label: "How It Works", href: "/how-it-works" },
+    { label: "Join Us", href: "/join-us" },
     { label: "About", href: "/about" },
-    { label: "FAQ", href: "/#faq" },
   ],
-  cta: { label: "Start a Case", href: "/#contact" },
+  cta: { label: "Start a Case", href: "/lodge-dispute" },
 };
 
 // ─────────────────────────────────────────────────────────────
@@ -634,49 +654,94 @@ export const footerContent = {
     description:
       "India's most advanced Online Dispute Resolution platform — fast, secure, and legally compliant.",
   },
+  // Request-callback + newsletter top bar (pvtweb pattern)
+  topBar: {
+    callback: {
+      titlePrefix: "Request a",
+      titleAccent: "Callback",
+      placeholder: "Your Tel / Mobile",
+      buttonLabel: "Call me",
+      action: "/contact",
+    },
+    newsletter: {
+      titlePrefix: "Subscribe to our",
+      titleAccent: "Newsletter",
+      placeholder: "Your Email",
+      buttonLabel: "Subscribe",
+      action: "/contact",
+    },
+  },
+  // 8 link columns rendered in a 2×4 grid — order mirrors pvtweb footer
   columns: [
     {
       title: "About",
+      titleHref: "/about",
       links: [
-        { label: "Company", href: "/about" },
+        { label: "Company", href: "/company" },
         { label: "Investors", href: "/investors" },
         { label: "Offices", href: "/offices" },
-        { label: "Neutrals", href: "/#experts" },
-        { label: "Partners", href: "/#partners" },
+        { label: "Neutrals", href: "/neutrals" },
+        { label: "Partners", href: "/partners" },
       ],
     },
+    // {
+    //   title: "Information",
+    //   titleHref: "/information",
+    //   links: [
+    //     { label: "How it works", href: "/how-it-works" },
+    //     { label: "Beginner's Guide", href: "/beginner-guide" },
+    //     { label: "Our Ethos", href: "/ethos" },
+    //     { label: "Case Studies", href: "/case-studies" },
+    //     { label: "Member Stories", href: "/member-stories" },
+    //   ],
+    // },
+    // {
+    //   title: "Developer",
+    //   titleHref: "/developer",
+    //   links: [
+    //     { label: "Account", href: "/developer" },
+    //     { label: "Developer Guide", href: "/developer" },
+    //     { label: "Releases", href: "/developer" },
+    //     { label: "Training", href: "/developer" },
+    //     { label: "Report Bugs", href: "/developer" },
+    //   ],
+    // }
     {
-      title: "Information",
+      title: "Connect",
+      titleHref: "/contact",
       links: [
-        { label: "How it works", href: "/how-it-works" },
-        { label: "Beginner's Guide", href: "/beginner-guide" },
-        { label: "Our Ethos", href: "/ethos" },
-        { label: "Case Studies", href: "/case-studies" },
-        { label: "Member Stories", href: "/member-stories" },
+        { label: "Buy Agreement", href: "/buy" },
+        { label: "Lodge a Dispute", href: "/lodge-dispute" },
+        { label: "Appointment", href: "/appointment" },
+        { label: "Talk to an Expert", href: "/talk-to-us" },
+        { label: "Contact us", href: "/contact" },
       ],
     },
-    {
-      title: "Media Centre",
-      links: [
-        { label: "Newsroom", href: "/newsroom" },
-        { label: "Articles", href: "/articles" },
-        { label: "Media Kit", href: "/media-kit" },
-        { label: "Press Release", href: "/press-release" },
-        { label: "FAQs", href: "/faq" },
-      ],
-    },
-    {
-      title: "Services",
-      links: [
-        { label: "Individuals", href: "/solutions/individuals" },
-        { label: "MSMEs", href: "/solutions/msmes" },
-        { label: "Financial Institutions", href: "/solutions/financial-institutions" },
-        { label: "Enterprise", href: "/solutions/enterprise" },
-        { label: "Pricing", href: "/pricing" },
-      ],
-    },
+    // {
+    //   title: "Media Centre",
+    //   titleHref: "/media-center",
+    //   links: [
+    //     { label: "Newsroom", href: "/newsroom" },
+    //     { label: "Articles", href: "/articles" },
+    //     { label: "Media Kit", href: "/media-kit" },
+    //     { label: "Press Release", href: "/press-release" },
+    //     { label: "FAQs", href: "/faqs" },
+    //   ],
+    // },
+    // {
+    //   title: "Services",
+    //   titleHref: "/services",
+    //   links: [
+    //     { label: "Individuals", href: "/individuals" },
+    //     { label: "MSMEs", href: "/msmes" },
+    //     { label: "Financial Institutions", href: "/financial-institutions" },
+    //     { label: "Enterprise", href: "/enterprise" },
+    //     { label: "Pricing", href: "/pricing" },
+    //   ],
+    // }
     {
       title: "Join us",
+      titleHref: "/join-us",
       links: [
         { label: "Arbitrator", href: "/careers/arbitrator" },
         { label: "Conciliator", href: "/careers/conciliator" },
@@ -686,13 +751,14 @@ export const footerContent = {
       ],
     },
     {
-      title: "Resources & Legal",
+      title: "Resources",
+      titleHref: "/resources",
       links: [
         { label: "Rules", href: "/rules" },
-        { label: "Terms & Conditions", href: "/terms" },
-        { label: "Privacy Policy", href: "/privacy" },
+        { label: "Terms & Conditions", href: "/terms-conditions" },
+        { label: "Privacy Policy", href: "/privacy-policy" },
         { label: "Disclaimer", href: "/disclaimer" },
-        { label: "Cookie Policy", href: "/cookies" },
+        { label: "Cookie Policy", href: "/cookie-policy" },
       ],
     },
   ],
@@ -716,17 +782,31 @@ export const footerContent = {
       address: "Bengaluru, Chennai, Hyderabad, Pune, Kolkata, Ahmedabad, Amritsar, Bhopal, Bhubaneswar, Chandigarh, Faridabad, Ghaziabad, Jamshedpur, Jaipur, Kochi, Lucknow, Nagpur, Patna, Raipur, Surat, Visakhapatnam, Agra, Ajmer, Kanpur and Mysuru"
     }
   ],
+  trademarkNote:
+    "The trademark \"PDR Court\" is solely owned by PDR Organization Private Limited. All other trademarks are registered under the ownership of PDR Court.",
   social: [
-    { name: "LinkedIn", href: "#" },
-    { name: "Twitter", href: "#" },
-    { name: "YouTube", href: "#" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/company/40853909" },
+    { name: "Twitter", href: "https://x.com/pdr_court" },
+    { name: "Facebook", href: "https://www.facebook.com/pdrcourt" },
+    { name: "Telegram", href: "https://t.me/joinchat/OFJ-qxrN-7EC9yjS9BwM5g" },
+    { name: "WhatsApp", href: "https://chat.whatsapp.com/LNLIJO6Z2pE0gYhbBIzRcj" },
+    { name: "YouTube", href: "https://www.youtube.com/@pdrcourt" },
+    { name: "Pinterest", href: "https://pin.it/VwZ3VUfWR" },
   ],
   copyright: "Copyright ©PDR ORGANIZATION PRIVATE LIMITED. All rights reserved",
   legalSection: {
-    disclaimer: "Please note that PDR ORGANIZATION PRIVATE LIMITED is not a legal practice and does not provide legal services or recruit lawyers. Instead, our platform functions as a sophisticated technology-backed system that enables Dispute Resolution services. It does not provide legal services that are, by virtue of regulation, statute or act solely within the domain of practicing attorney. Parties are free to appoint an Arbitrator or Mediator from the Panel of PDR ORGANIZATION PRIVATE LIMITED who are Independent and Impartial and have no relation whatsoever with PDR ORGANIZATION PRIVATE LIMITED. PDR ORGANIZATION PRIVATE LIMITED is a private entity specializing in dispute resolution facilitation through a technologically advanced platform that enables parties to efficiently conduct the dispute resolution process. The name “PDR Court”, its logo and software are registered trademarks of PDR Organization Private Limited. Our platform is a neutral space facilitating alternative dispute resolution (ADR) through arbitration and conciliation. It is not an arbitral institution, tribunal, or adjudicatory authority and does not exercise any judicial or quasi-judicial functions. We provide access to a panel of independent arbitrators and conciliators, allowing parties to select professionals for their disputes. While we maintain both physical and digital support for the ADR process, our role is strictly administrative and facilitative, with no influence over outcomes.",
-    nonDiscrimination: "PDR ORGANIZATION PRIVATE LIMITED will not adversely discriminate, and prohibits other adverse discrimination at the workplace, on the basis of religion, race, caste, sex, place of birth, descent, sexual orientation, gender identity, disability, age, or any of them (\"Discrimination Characteristics\"). PDR ORGANIZATION PRIVATE LIMITED will not condone any adverse discrimination against any person on its premises, whether that person is in its employment or otherwise. Any person who believes himself or herself to have been subjected to adverse discrimination on the basis of the Discrimination Characteristics is encouraged to bring the matter to the attention of Management at the earliest practical opportunity. No person will be punished, retaliated against, or limited in employment or other opportunities for exercising anything set out in this Policy, or for filing a complaint, furnishing information for, or participating in an investigation, or any other activity related to the administration of this Policy. Any adverse discrimination or other action or behaviour that constitutes a violation of the law will be reported to the police.",
-    dataProtection: "PDR Court is 100% compliant with the Digital Personal Data Protection Act, 2023. To learn more about how we collect, keep, and process your private information in compliance with the Digital Personal Data Protection Act, 2023 please view our website. This policy was last updated on 20-02-2024."
-  }
+    disclaimer: [
+      "Please note that PDR ORGANIZATION PRIVATE LIMITED, referred to as PDR Court, is not a legal practice and does not provide legal services or recruit lawyers. Instead, PDR Court functions as a sophisticated technology-backed platform that enables Dispute Resolution services. It does not provide legal services that are, by virtue of regulation, statute or act solely within the domain of practicing attorney. Parties are free to appoint an Arbitrator or Mediator from the Panel of PDR ORGANIZATION PRIVATE LIMITED who are Independent and Impartial and have no relation whatsoever with PDR ORGANIZATION PRIVATE LIMITED.",
+      "PDR Court is a private entity specializing in dispute resolution facilitation through a technologically advanced platform that enables parties to efficiently conduct the dispute resolution process. The name \"PDR Court\", its logo and software are registered trademarks of PDR Organization Private Limited. PDR Court is a neutral platform facilitating alternative dispute resolution (ADR) through arbitration and conciliation. It is not an arbitral institution, tribunal, or adjudicatory authority and does not exercise any judicial or quasi-judicial functions.",
+      "PDR Court provides access to a panel of independent arbitrators and conciliators, allowing parties to select professionals for their disputes. While it maintains both physical and digital support for the ADR process, its role is strictly administrative and facilitative, with no influence over outcomes.",
+    ],
+    nonDiscrimination: [
+      "PDR Court will not adversely discriminate, and prohibits other adverse discrimination at the workplace, on the basis of religion, race, caste, sex, place of birth, descent, sexual orientation, gender identity, disability, age, or any of them (\"Discrimination Characteristics\"). PDR Court will not condone any adverse discrimination against any person on its premises, whether that person is in its employment or otherwise.",
+      "Any person who believes himself or herself to have been subjected to adverse discrimination on the basis of the Discrimination Characteristics is encouraged to bring the matter to the attention of PDR Court Management at the earliest practical opportunity. No person will be punished, retaliated against, or limited in employment or other opportunities for exercising anything set out in this Policy, or for filing a complaint, furnishing information for, or participating in an investigation, or any other activity related to the administration of this Policy.",
+      "Any adverse discrimination or other action or behaviour that constitutes a violation of the law will be reported to the police.",
+    ],
+    dataProtection: "PDR Court is 100% compliant with the Digital Personal Data Protection Act, 2023. To learn more about how we collect, keep, and process your private information in compliance with the Digital Personal Data Protection Act, 2023 please view our website. This policy was last updated on 20-02-2024.",
+  },
 };
 
 // ─────────────────────────────────────────────────────────────

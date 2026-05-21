@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Delhi High Court: Claims Must Comply with Notification Requirement for Arbitration">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="445.9,584.9 278.9,462.5 468.5,379.1" fill="#9a5518" opacity="0.11"/><polygon points="428.2,127.4 446.5,25.9 548.7,11.9 593.6,104.8 519.1,176.2" fill="#9a5518" opacity="0.14"/><polygon points="862.3,170.1 896.0,-15.5 1082.9,-40.8 1164.7,129.1 1028.4,259.4" fill="#9a5518" opacity="0.08"/><polygon points="949.8,198.9 860.6,106.2 985.4,75.3" fill="#9a5518" opacity="0.15"/><polygon points="1117.2,234.1 981.3,201.6 1013.8,65.6 1149.7,98.2" fill="#9a5518" opacity="0.16"/><polygon points="752.0,53.1 888.2,20.5 961.3,140.0 870.3,246.4 740.9,192.8" fill="#9a5518" opacity="0.18"/><polygon points="117.2,357.5 288.2,498.0 147.7,668.9 -23.2,528.5" fill="#9a5518" opacity="0.18"/><polygon points="995.6,387.7 945.3,410.5 908.1,369.7 935.3,321.7 989.4,332.8" fill="#9a5518" opacity="0.10"/><polygon points="678.5,6.4 757.1,89.4 674.2,168.0 595.6,85.1" fill="#9a5518" opacity="0.12"/><polygon points="303.6,-78.9 401.3,21.2 301.3,118.9 203.5,18.9" fill="#9a5518" opacity="0.16"/><polygon points="487.1,291.0 571.0,466.3 430.3,600.2 259.4,507.7 294.5,316.7" fill="#9a5518" opacity="0.07"/><polygon points="289.3,615.8 127.6,754.7 88.1,545.3" fill="#9a5518" opacity="0.08"/><polygon points="69.6,125.5 21.5,205.5 -23.8,123.8" fill="#9a5518" opacity="0.18"/><polygon points="1173.4,245.2 1102.6,360.5 970.9,328.8 960.5,193.8 1085.6,142.1" fill="#9a5518" opacity="0.09"/><circle cx="936.0" cy="202.5" r="180" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#bd6b20" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#9a5518" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#bd6b20" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Delhi High Court: Claims</tspan><tspan x="80" dy="56">Must Comply with</tspan><tspan x="80" dy="56">Notification Requirement</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Dispute Resolution Case Study: Pvt. Ltd Company vs. Distributor in Gujarat">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#532d15"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e09440"/>
+      <stop offset="100%" stop-color="#fdf6ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e09440" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#e09440" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><rect x="202.6" y="350.0" width="15.8" height="15.8" rx="4" transform="rotate(88.7 210.5 357.9)" fill="#e09440" opacity="0.16"/><circle cx="766.7" cy="526.7" r="25.9" fill="#fdf6ee" opacity="0.26"/><polygon points="409.9,26.5 419.9,46.3 400.0,46.3" fill="#f4d2ac" opacity="0.22"/><rect x="678.3" y="447.7" width="40.8" height="40.8" rx="4" transform="rotate(127.2 698.7 468.0)" fill="#e09440" opacity="0.15"/><circle cx="726.1" cy="499.0" r="8.0" fill="#fdf6ee" opacity="0.33"/><rect x="3.1" y="461.1" width="46.1" height="46.1" rx="4" transform="rotate(103.5 26.2 484.1)" fill="#e09440" opacity="0.34"/><rect x="895.8" y="90.8" width="35.6" height="35.6" rx="4" transform="rotate(279.8 913.6 108.6)" fill="#e09440" opacity="0.19"/><polygon points="950.9,462.7 969.5,499.8 932.4,499.8" fill="#f4d2ac" opacity="0.29"/><rect x="953.8" y="482.6" width="41.6" height="41.6" rx="4" transform="rotate(319.2 974.6 503.4)" fill="#e09440" opacity="0.17"/><rect x="686.5" y="-4.5" width="31.5" height="31.5" rx="4" transform="rotate(140.2 702.2 11.2)" fill="#e09440" opacity="0.12"/><circle cx="1072.0" cy="291.6" r="20.8" fill="#fdf6ee" opacity="0.22"/><circle cx="1090.1" cy="186.6" r="30.8" fill="#fdf6ee" opacity="0.13"/><circle cx="20.7" cy="69.0" r="28.6" fill="#fdf6ee" opacity="0.17"/><circle cx="35.1" cy="324.7" r="12.0" fill="#fdf6ee" opacity="0.25"/><polygon points="529.4,287.4 552.3,333.2 506.5,333.2" fill="#f4d2ac" opacity="0.34"/><rect x="14.0" y="352.6" width="24.8" height="24.8" rx="4" transform="rotate(129.8 26.3 365.0)" fill="#e09440" opacity="0.30"/><polygon points="960.2,64.7 968.6,81.5 951.8,81.5" fill="#f4d2ac" opacity="0.29"/><rect x="965.5" y="482.3" width="20.0" height="20.0" rx="4" transform="rotate(232.5 975.5 492.3)" fill="#e09440" opacity="0.32"/><circle cx="117.6" cy="392.5" r="21.0" fill="#fdf6ee" opacity="0.32"/><rect x="370.1" y="68.8" width="24.4" height="24.4" rx="4" transform="rotate(266.6 382.3 81.1)" fill="#e09440" opacity="0.24"/><polygon points="1087.5,397.7 1102.6,427.8 1072.5,427.8" fill="#f4d2ac" opacity="0.29"/><polygon points="149.8,132.5 166.1,165.0 133.6,165.0" fill="#f4d2ac" opacity="0.26"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#e09440" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#fdf6ee" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#e09440" opacity="0.18" stroke="#e09440" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#e09440" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Dispute Resolution Case</tspan><tspan x="80" dy="56">Study: Pvt. Ltd Company</tspan><tspan x="80" dy="56">vs. Distributor in Gujarat</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

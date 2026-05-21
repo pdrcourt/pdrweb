@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Rs. 2.77L Loan Default Resolved via Digital ADR Process">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#291813"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4862a"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4862a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d4862a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="95.1,467.7 138.3,375.2 239.6,387.7 259.0,487.9 169.7,537.3" fill="#bd6b20" opacity="0.09"/><polygon points="-9.7,484.4 -15.2,255.6 213.6,250.2 219.1,479.0" fill="#bd6b20" opacity="0.17"/><polygon points="1063.0,457.3 1168.1,361.2 1264.2,466.4 1159.1,562.5" fill="#bd6b20" opacity="0.19"/><polygon points="684.4,562.6 788.2,614.7 770.7,729.5 656.1,748.4 602.8,645.2" fill="#bd6b20" opacity="0.17"/><polygon points="1044.8,661.8 1037.5,558.0 1141.4,550.7 1148.6,654.5" fill="#bd6b20" opacity="0.14"/><polygon points="-22.1,290.1 200.7,135.4 223.2,405.6" fill="#bd6b20" opacity="0.17"/><polygon points="1113.2,109.1 1192.7,157.4 1111.1,202.1" fill="#bd6b20" opacity="0.09"/><polygon points="1211.4,214.3 1219.7,348.1 1086.0,356.4 1077.7,222.7" fill="#bd6b20" opacity="0.07"/><polygon points="1112.3,245.4 1044.3,298.0 1032.7,212.8" fill="#bd6b20" opacity="0.09"/><polygon points="751.0,190.5 856.4,166.4 824.5,269.7" fill="#bd6b20" opacity="0.13"/><polygon points="558.6,330.5 591.0,469.9 451.7,502.3 419.3,362.9" fill="#bd6b20" opacity="0.06"/><polygon points="1210.3,241.5 1017.9,246.1 1013.3,53.7 1205.7,49.1" fill="#bd6b20" opacity="0.09"/><polygon points="429.9,14.6 584.8,-80.8 589.9,101.0" fill="#bd6b20" opacity="0.07"/><polygon points="936.4,75.3 1072.4,186.6 908.0,248.7" fill="#bd6b20" opacity="0.11"/><circle cx="936.0" cy="202.5" r="180" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="60" fill="#d4862a" opacity="0.18"/>
+        <path d="M -34 6 Q -10 -22 14 6 Q 34 24 14 26 L -22 26 Q -38 24 -34 6 Z" fill="none" stroke="#bd6b20" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="134" height="38" fill="#d4862a" opacity="0.18" stroke="#d4862a" stroke-width="1.5"/>
+    <text x="67" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#d4862a" text-anchor="middle">CASE STUDY</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Rs. 2.77L Loan Default</tspan><tspan x="80" dy="56">Resolved via Digital ADR</tspan><tspan x="80" dy="56">Process</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

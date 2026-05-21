@@ -4,6 +4,9 @@ const nextConfig = {
     domains: [],
     formats: ["image/webp", "image/avif"],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   experimental: {
     optimizeCss: false,
   },

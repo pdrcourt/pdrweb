@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Madras High Court Clarifies IBC Moratorium on Arbitrator Fees">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="100%" stop-color="#f4efe8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd6b20"/>
+      <stop offset="100%" stop-color="#9a5518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bd6b20" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#bd6b20" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <polygon points="-50,313.0 -20,302.2 10,290.9 40,279.2 70,267.6 100,256.3 130,245.4 160,235.3 190,226.2 220,218.3 250,211.8 280,206.7 310,203.3 340,201.6 370,201.6 400,203.4 430,206.9 460,212.0 490,218.6 520,226.6 550,235.7 580,245.8 610,256.7 640,268.1 670,279.7 700,291.3 730,302.7 760,313.5 790,323.5 820,332.6 850,340.4 880,346.9 910,351.8 940,355.1 970,356.7 1000,356.6 1030,354.7 1060,351.2 1090,346.0 1120,339.3 1150,331.2 1180,322.0 1210,311.9 1240,301.0 1250,725 -50,725" fill="#bd6b20" opacity="0.08"/><polygon points="-50,308.4 -20,315.1 10,322.7 40,330.9 70,339.5 100,348.3 130,357.2 160,365.9 190,374.3 220,382.1 250,389.2 280,395.5 310,400.7 340,404.7 370,407.6 400,409.2 430,409.4 460,408.3 490,405.9 520,402.2 550,397.4 580,391.5 610,384.7 640,377.1 670,368.9 700,360.3 730,351.4 760,342.6 790,333.9 820,325.5 850,317.7 880,310.7 910,304.5 940,299.3 970,295.3 1000,292.5 1030,291.0 1060,290.9 1090,292.1 1120,294.5 1150,298.3 1180,303.1 1210,309.1 1240,315.9 1250,725 -50,725" fill="#bd6b20" opacity="0.13"/><polygon points="-50,438.9 -20,447.2 10,454.9 40,461.8 70,467.7 100,472.5 130,476.1 160,478.5 190,479.5 220,479.2 250,477.5 280,474.5 310,470.3 340,464.9 370,458.5 400,451.2 430,443.2 460,434.7 490,425.8 520,416.8 550,407.8 580,399.1 610,390.8 640,383.2 670,376.4 700,370.5 730,365.8 760,362.2 790,359.9 820,359.0 850,359.4 880,361.1 910,364.2 940,368.5 970,373.9 1000,380.4 1030,387.7 1060,395.7 1090,404.3 1120,413.2 1150,422.2 1180,431.2 1210,439.9 1240,448.1 1250,725 -50,725" fill="#bd6b20" opacity="0.18"/><polygon points="-50,430.3 -20,435.2 10,441.3 40,448.3 70,456.2 100,464.7 130,473.6 160,482.9 190,492.1 220,501.2 250,509.9 280,518.1 310,525.5 340,532.0 370,537.5 400,541.7 430,544.7 460,546.4 490,546.6 520,545.5 550,543.0 580,539.2 610,534.2 640,528.1 670,521.0 700,513.1 730,504.6 760,495.6 790,486.4 820,477.2 850,468.1 880,459.4 910,451.3 940,443.9 970,437.4 1000,432.0 1030,427.8 1060,424.9 1090,423.4 1120,423.2 1150,424.4 1180,426.9 1210,430.8 1240,435.9 1250,725 -50,725" fill="#bd6b20" opacity="0.23"/><circle cx="300.0" cy="189.0" r="160" fill="url(#glow)"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <circle r="68" fill="none" stroke="#bd6b20" stroke-width="2" opacity="0.35"/>
+        <path d="M -38 12 L 38 12 M -32 -8 L 32 -8 M -45 -28 L 45 -28" stroke="#9a5518" stroke-width="3" stroke-linecap="round"/>
+        <rect x="-50" y="-44" width="100" height="80" fill="none" stroke="#bd6b20" stroke-width="2"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="112" height="38" fill="#bd6b20" opacity="0.18" stroke="#bd6b20" stroke-width="1.5"/>
+    <text x="56" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#bd6b20" text-anchor="middle">NEWSROOM</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#12100e" opacity="0.98"><tspan x="80" dy="0">Madras High Court</tspan><tspan x="80" dy="56">Clarifies IBC Moratorium</tspan><tspan x="80" dy="56">on Arbitrator Fees</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>

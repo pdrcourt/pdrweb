@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Why Dispute Boards Are a Must in Big Infrastructure Projects">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#291813"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4862a"/>
+      <stop offset="100%" stop-color="#bd6b20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4862a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#d4862a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="840.0" cy="135.0" r="240" fill="url(#glow)" opacity="0.8"/><polygon points="1107.3,163.3 1124.2,197.0 1090.5,197.0" fill="#f4d2ac" opacity="0.17"/><polygon points="33.1,549.8 42.0,567.6 24.2,567.6" fill="#f4d2ac" opacity="0.18"/><rect x="657.5" y="533.5" width="46.6" height="46.6" rx="4" transform="rotate(125.7 680.8 556.8)" fill="#d4862a" opacity="0.15"/><circle cx="530.7" cy="224.0" r="7.4" fill="#bd6b20" opacity="0.13"/><rect x="627.3" y="554.2" width="29.0" height="29.0" rx="4" transform="rotate(13.6 641.8 568.7)" fill="#d4862a" opacity="0.35"/><rect x="192.0" y="-0.5" width="16.0" height="16.0" rx="4" transform="rotate(54.6 200.0 7.5)" fill="#d4862a" opacity="0.34"/><rect x="609.9" y="298.2" width="45.2" height="45.2" rx="4" transform="rotate(221.7 632.5 320.8)" fill="#d4862a" opacity="0.16"/><rect x="134.3" y="390.0" width="33.3" height="33.3" rx="4" transform="rotate(229.9 151.0 406.6)" fill="#d4862a" opacity="0.22"/><rect x="386.5" y="191.4" width="22.8" height="22.8" rx="4" transform="rotate(196.5 397.9 202.8)" fill="#d4862a" opacity="0.11"/><circle cx="540.8" cy="211.6" r="21.6" fill="#bd6b20" opacity="0.14"/><polygon points="654.0,143.3 669.1,173.5 638.9,173.5" fill="#f4d2ac" opacity="0.24"/><polygon points="338.1,396.0 352.8,425.4 323.4,425.4" fill="#f4d2ac" opacity="0.26"/><circle cx="509.9" cy="54.8" r="12.7" fill="#bd6b20" opacity="0.21"/><rect x="866.6" y="307.1" width="44.3" height="44.3" rx="4" transform="rotate(359.6 888.7 329.3)" fill="#d4862a" opacity="0.27"/><circle cx="113.0" cy="250.9" r="17.2" fill="#bd6b20" opacity="0.27"/><rect x="661.1" y="10.0" width="17.1" height="17.1" rx="4" transform="rotate(193.5 669.7 18.5)" fill="#d4862a" opacity="0.22"/><circle cx="276.9" cy="426.3" r="26.9" fill="#bd6b20" opacity="0.14"/><rect x="441.3" y="465.5" width="25.8" height="25.8" rx="4" transform="rotate(249.1 454.2 478.4)" fill="#d4862a" opacity="0.21"/><circle cx="957.2" cy="260.3" r="8.8" fill="#bd6b20" opacity="0.14"/><polygon points="727.8,231.9 753.9,284.2 701.6,284.2" fill="#f4d2ac" opacity="0.33"/><rect x="1178.7" y="205.5" width="22.2" height="22.2" rx="4" transform="rotate(104.0 1189.8 216.6)" fill="#d4862a" opacity="0.34"/><circle cx="185.4" cy="176.6" r="28.0" fill="#bd6b20" opacity="0.30"/>
+  <g opacity="0.85" transform="translate(1020, 495)">
+        <rect x="-46" y="-60" width="92" height="115" fill="#d4862a" opacity="0.18" rx="6"/>
+        <path d="M -28 -36 L 28 -36 M -28 -12 L 28 -12 M -28 12 L 18 12 M -28 36 L 28 36" stroke="#bd6b20" stroke-width="3" stroke-linecap="round"/>
+      </g>
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" rx="20" ry="20" width="101" height="38" fill="#d4862a" opacity="0.18" stroke="#d4862a" stroke-width="1.5"/>
+    <text x="50.5" y="25" font-family="ui-sans-serif, Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="2.5" fill="#d4862a" text-anchor="middle">ARTICLE</text>
+  </g>
+  <text x="80" y="465" font-family="ui-sans-serif, -apple-system, Segoe UI, Inter, sans-serif" font-weight="800" font-size="44" fill="#faf8f5" opacity="0.98"><tspan x="80" dy="0">Why Dispute Boards Are a</tspan><tspan x="80" dy="56">Must in Big Infrastructure</tspan><tspan x="80" dy="56">Projects</tspan></text>
+  <rect x="0" y="669" width="1200" height="6" fill="url(#gold)"/>
+</svg>
