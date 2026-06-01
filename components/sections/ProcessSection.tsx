@@ -5,7 +5,6 @@ import { processContent } from "@/data/content";
 import { SectionWrapper, itemVariants } from "@/components/ui/SectionWrapper";
 import { SectionBadge } from "@/components/ui/Badge";
 import { LucideIcon } from "@/components/ui/LucideIcon";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function ProcessSection() {
@@ -75,7 +74,6 @@ export function ProcessSection() {
               className="flex items-center justify-center gap-2 btn-primary text-base px-8 py-4 w-full shadow-gold-lg"
             >
               Start Your Case Today
-              <ArrowRight size={18} />
             </a>
           </motion.div>
         </div>

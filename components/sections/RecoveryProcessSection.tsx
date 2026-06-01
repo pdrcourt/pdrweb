@@ -37,10 +37,10 @@ export default function RecoveryProcessSection({
   return (
     <section className="py-20 lg:py-28 bg-dark text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-10" style={{
-        backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(189,107,32,0.4), transparent 50%), radial-gradient(circle at 80% 70%, rgba(189,107,32,0.3), transparent 40%)',
+        backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(131,64,9,0.4), transparent 50%), radial-gradient(circle at 80% 70%, rgba(131,64,9,0.3), transparent 40%)',
       }} />
       <div className="absolute inset-0 opacity-[0.04]" style={{
-        backgroundImage: 'linear-gradient(rgba(189,107,32,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(189,107,32,0.5) 1px, transparent 1px)',
+        backgroundImage: 'linear-gradient(rgba(131,64,9,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(131,64,9,0.5) 1px, transparent 1px)',
         backgroundSize: '60px 60px',
       }} />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

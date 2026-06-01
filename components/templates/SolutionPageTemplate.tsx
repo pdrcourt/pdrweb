@@ -67,7 +67,7 @@ export function SolutionPageTemplate({
             className="absolute inset-0 opacity-[0.03]"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(189,107,32,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(189,107,32,0.5) 1px, transparent 1px)",
+                "linear-gradient(rgba(131,64,9,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(131,64,9,0.5) 1px, transparent 1px)",
               backgroundSize: "60px 60px",
             }}
           />

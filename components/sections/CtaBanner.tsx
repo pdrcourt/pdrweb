@@ -36,7 +36,7 @@ export default function CtaBanner({
       )}
       {variant === 'dark' && (
         <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: 'linear-gradient(rgba(189,107,32,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(189,107,32,0.3) 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(rgba(131,64,9,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(131,64,9,0.3) 1px, transparent 1px)',
           backgroundSize: '80px 80px',
         }} />
       )}

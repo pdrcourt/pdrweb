@@ -43,15 +43,15 @@ function rng(seed) {
 // ───── Palettes ─────
 const PALETTES = [
   // Gold dominant
-  { name: "gold", bg1: "#12100e", bg2: "#1c1917", primary: "#bd6b20", accent: "#e09440", soft: "#faebd6", ink: "#faf8f5" },
+  { name: "gold", bg1: "#12100e", bg2: "#1c1917", primary: "#834009", accent: "#c66e1c", soft: "#f5dabf", ink: "#faf8f5" },
   // Cream light
-  { name: "cream", bg1: "#faf8f5", bg2: "#f4efe8", primary: "#bd6b20", accent: "#9a5518", soft: "#ecb478", ink: "#12100e" },
+  { name: "cream", bg1: "#faf8f5", bg2: "#f4efe8", primary: "#834009", accent: "#6e3608", soft: "#db8a2f", ink: "#12100e" },
   // Dark with gold
-  { name: "dusk",  bg1: "#0c0a09", bg2: "#291813", primary: "#d4862a", accent: "#bd6b20", soft: "#f4d2ac", ink: "#faf8f5" },
+  { name: "dusk",  bg1: "#0c0a09", bg2: "#291813", primary: "#a85220", accent: "#834009", soft: "#eab476", ink: "#faf8f5" },
   // Sunset
-  { name: "sunset", bg1: "#532d15", bg2: "#bd6b20", primary: "#e09440", accent: "#fdf6ee", soft: "#f4d2ac", ink: "#faf8f5" },
+  { name: "sunset", bg1: "#2c1603", bg2: "#834009", primary: "#c66e1c", accent: "#fbf1e3", soft: "#eab476", ink: "#faf8f5" },
   // Espresso & cream
-  { name: "espresso", bg1: "#643516", bg2: "#7d4315", primary: "#ecb478", accent: "#faebd6", soft: "#f4d2ac", ink: "#faf8f5" },
+  { name: "espresso", bg1: "#422105", bg2: "#582b06", primary: "#db8a2f", accent: "#f5dabf", soft: "#eab476", ink: "#faf8f5" },
 ];
 
 // ───── Helpers ─────

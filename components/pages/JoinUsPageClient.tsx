@@ -57,7 +57,7 @@ export default function JoinUsPageClient() {
 
         {/* Culture Values */}
         <section className="py-20 lg:py-28 bg-dark text-white relative overflow-hidden">
-          <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(rgba(189,107,32,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(189,107,32,0.5) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
+          <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'linear-gradient(rgba(131,64,9,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(131,64,9,0.5) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 rounded-full px-4 py-1.5 mb-6">Our Values</span>

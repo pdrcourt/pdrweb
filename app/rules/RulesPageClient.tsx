@@ -47,7 +47,7 @@ export default function RulesPageClient() {
             className="pointer-events-none absolute inset-0 opacity-[0.05]"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(189,107,32,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(189,107,32,.6) 1px,transparent 1px)",
+                "linear-gradient(rgba(131,64,9,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.6) 1px,transparent 1px)",
               backgroundSize: "80px 80px",
             }}
           />

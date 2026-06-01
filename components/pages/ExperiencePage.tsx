@@ -123,7 +123,7 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
             style={{
               opacity: dark ? 0.05 : 0.04,
               backgroundImage:
-                "linear-gradient(rgba(189,107,32,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(189,107,32,.6) 1px,transparent 1px)",
+                "linear-gradient(rgba(131,64,9,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.6) 1px,transparent 1px)",
               backgroundSize: "78px 78px",
             }}
           />

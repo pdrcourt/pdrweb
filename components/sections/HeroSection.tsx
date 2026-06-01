@@ -19,7 +19,7 @@ export function HeroSection() {
           className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(189,107,32,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(189,107,32,0.4) 1px, transparent 1px)",
+              "linear-gradient(rgba(131,64,9,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(131,64,9,0.4) 1px, transparent 1px)",
             backgroundSize: "80px 80px",
           }}
         />

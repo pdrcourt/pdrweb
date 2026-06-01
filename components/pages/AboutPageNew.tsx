@@ -103,7 +103,7 @@ export default function AboutPageClient() {
 
         {/* Why PDR COURT */}
         <section className="py-20 lg:py-28 bg-dark text-white relative overflow-hidden">
-          <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle, rgba(189,107,32,0.5) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+          <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle, rgba(131,64,9,0.5) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
           <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">Why PDR COURT?</h2>

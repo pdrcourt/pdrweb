@@ -30,7 +30,7 @@ export function CtaSection() {
           className="absolute inset-0 opacity-5"
           style={{
             backgroundImage:
-              "radial-gradient(circle, rgba(189,107,32,0.8) 1px, transparent 1px)",
+              "radial-gradient(circle, rgba(131,64,9,0.8) 1px, transparent 1px)",
             backgroundSize: "40px 40px",
           }}
         />
