@@ -55,7 +55,7 @@ export function Navbar() {
             whileTap={{ scale: 0.98 }}
           >
             <img
-              src="/images/PDR-Court_logo_without_text-removebg-preview.png"
+              src="/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png"
               alt="PDR Court"
               className="h-9 w-auto drop-shadow-sm group-hover:rotate-6 transition-transform duration-500"
             />

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Terms & Conditions | PDR COURT",
   description:
     "PDR COURT defines the terms & conditions by which users may access, browse, and use our website — as a guest or an account holder.",
+  alternates: { canonical: "/terms-conditions" },
 };
 
 export default function TermsPage() {

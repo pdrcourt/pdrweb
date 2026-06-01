@@ -224,8 +224,39 @@ export default function MigratedDetailTemplate({
     (b) => b.type === "paragraph" && b.text.length >= 120,
   );
 
+  // Structured data — Article / NewsArticle for rich search results.
+  const SITE_URL = "https://www.pdrcourt.in";
+  const pageUrl = `${SITE_URL}${indexHref}/${page.slug}`;
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": page.category === "news" ? "NewsArticle" : "Article",
+    headline: page.title,
+    description: page.description || page.excerpt,
+    image: heroImage.startsWith("http")
+      ? heroImage
+      : `${SITE_URL}${heroImage}`,
+    url: pageUrl,
+    mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+    inLanguage: "en-IN",
+    author: { "@type": "Organization", name: "PDR Court", url: SITE_URL },
+    publisher: {
+      "@type": "Organization",
+      name: "PDR Court",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png`,
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Navbar />
       <main className="bg-cream">
         {/* CONTEXT BAR */}

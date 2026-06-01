@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Cookie Policy | PDR COURT",
   description:
     "PDR COURT's cookie policy — what data we collect, how it's used, and how you can give consent or opt out before using our site.",
+  alternates: { canonical: "/cookie-policy" },
 };
 
 export default function CookiesPage() {

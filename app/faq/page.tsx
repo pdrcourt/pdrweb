@@ -11,6 +11,7 @@ export function generateMetadata(): Metadata {
     title: p ? `${p.title} | PDR COURT` : "PDR COURT",
     description: p?.description || undefined,
     keywords: p?.keywords || undefined,
+    alternates: { canonical: "/faqs" },
   };
 }
 

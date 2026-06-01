@@ -129,7 +129,7 @@ export function Footer() {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="/images/PDR_logo_final.png"
+                  src="/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png"
                   alt={footerContent.brand.name}
                   className="w-48 h-auto"
                 />

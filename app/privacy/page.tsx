@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | PDR COURT",
   description:
     "PDR COURT respects your privacy. Read, understand, and agree to the terms of this Privacy Policy — what data we collect and how we use it.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPage() {

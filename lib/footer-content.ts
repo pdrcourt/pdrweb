@@ -172,7 +172,7 @@ const sections: SectionDefinition[] = [
     children: [
       { key: "faqs", title: "FAQ", route: "/faq", image: "/images/offer_mediation.png", icon: "MessageSquare" },
       { key: "press-release", title: "Press Release", route: "/press-release", image: "/images/hero_slide_1.png", icon: "Share2" },
-      { key: "mediakit", title: "Media Kit", route: "/media-kit", image: "/images/PDR_logo_final.png", icon: "FolderOpen" },
+      { key: "mediakit", title: "Media Kit", route: "/media-kit", image: "/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png", icon: "FolderOpen" },
       { key: "articles", title: "Articles", route: "/articles", image: "/images/hero_slide_2.png", icon: "FileText" },
       { key: "news", title: "Newsroom", route: "/newsroom", image: "/images/hero_slide_3.png", icon: "Globe" },
     ],
