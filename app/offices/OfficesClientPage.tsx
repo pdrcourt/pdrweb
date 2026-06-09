@@ -57,7 +57,7 @@ export default function OfficesClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 National <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Presence.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 Sure we are online, but you could meet us at our physical offices in major business hubs across India.
               </p>
               
@@ -80,10 +80,10 @@ export default function OfficesClientPage() {
               <h2 className="text-3xl md:text-4xl font-display font-bold text-dark mt-4 mb-6">
                 Widening Our ADR Platform Reach
               </h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-6">
+              <p className="text-lg text-ink-70 leading-relaxed mb-6">
                 We are broadening our reach by enhancing our infrastructure and fostering stronger business connections. With cutting-edge software solutions and exceptional responsiveness, we aim to be accessible in every business hub.
               </p>
-              <p className="text-lg text-dark/70 leading-relaxed">
+              <p className="text-lg text-ink-70 leading-relaxed">
                 Our plans include expanding both domestically and globally in the coming months, ensuring robust physical presence coupled with advanced digital dispute resolution capabilities.
               </p>
             </motion.div>
@@ -93,15 +93,15 @@ export default function OfficesClientPage() {
               <div className="space-y-8 mt-8">
                 <div className="flex flex-col border-l-2 border-primary pl-6">
                   <span className="text-4xl font-display font-bold text-primary mb-2">7</span>
-                  <span className="text-dark/80 font-medium">Regional Offices</span>
+                  <span className="text-ink-80 font-medium">Regional Offices</span>
                 </div>
                 <div className="flex flex-col border-l-2 border-primary pl-6">
                   <span className="text-4xl font-display font-bold text-primary mb-2">2</span>
-                  <span className="text-dark/80 font-medium">Conciliation Centres</span>
+                  <span className="text-ink-80 font-medium">Conciliation Centres</span>
                 </div>
                 <div className="flex flex-col border-l-2 border-primary pl-6">
                   <span className="text-4xl font-display font-bold text-primary mb-2">100+</span>
-                  <span className="text-dark/80 font-medium">City Coverage</span>
+                  <span className="text-ink-80 font-medium">City Coverage</span>
                 </div>
               </div>
             </motion.div>
@@ -122,13 +122,13 @@ export default function OfficesClientPage() {
               <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (idx % 3) * 0.1 }}
                 className={`bg-white border p-8 rounded-3xl transition-shadow ${office.type === 'Corporate Office' ? 'border-primary shadow-lg shadow-primary/10' : 'border-cream-300 hover:shadow-xl'}`}>
                 <div className="flex items-center justify-between mb-6">
-                  <div className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${office.type === 'Corporate Office' ? 'bg-primary text-white' : 'bg-cream-300 text-dark/70'}`}>
+                  <div className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${office.type === 'Corporate Office' ? 'bg-primary text-white' : 'bg-cream-300 text-ink-70'}`}>
                     {office.type}
                   </div>
-                  <Navigation className={`w-5 h-5 ${office.type === 'Corporate Office' ? 'text-primary' : 'text-dark/40'}`} />
+                  <Navigation className={`w-5 h-5 ${office.type === 'Corporate Office' ? 'text-primary' : 'text-ink-40'}`} />
                 </div>
                 <h3 className="text-2xl font-bold text-dark mb-4">{office.city}</h3>
-                <p className="text-dark/70 leading-relaxed font-medium">
+                <p className="text-ink-70 leading-relaxed font-medium">
                   {office.address}
                 </p>
               </motion.div>
@@ -143,7 +143,7 @@ export default function OfficesClientPage() {
               </div>
               <div>
                 <h4 className="text-2xl font-bold text-white mb-2">Committed to Protect your Interests</h4>
-                <p className="text-white/70 max-w-2xl">Everyone here is aligned and under oath to fulfill our vision of providing services par excellence with Integrity, Honesty, and Agility.</p>
+                <p className="text-paper-70 max-w-2xl">Everyone here is aligned and under oath to fulfill our vision of providing services par excellence with Integrity, Honesty, and Agility.</p>
               </div>
             </div>
             <div className="relative z-10 shrink-0">

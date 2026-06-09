@@ -60,22 +60,22 @@ export default function PartnersClientPage() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-dark mb-8 leading-[1.1]">
                 Partner in Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-500">Growth Story.</span>
               </h1>
-              <p className="text-xl text-dark/60 font-light leading-relaxed mb-10 max-w-lg">
+              <p className="text-xl text-ink-60 font-light leading-relaxed mb-10 max-w-lg">
                 Partner with us to transform dispute resolution. Harness advanced ADR technology and innovative solutions to reshape conflict management for sustainable success.
               </p>
               
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-cream-300">
                 <div>
                   <h3 className="text-3xl font-display font-bold text-primary mb-1">60%</h3>
-                  <p className="text-xs uppercase tracking-wider text-dark/40 font-bold">Growth Y21-22</p>
+                  <p className="text-xs uppercase tracking-wider text-ink-40 font-bold">Growth Y21-22</p>
                 </div>
                 <div>
                   <h3 className="text-3xl font-display font-bold text-primary mb-1">3 Lac</h3>
-                  <p className="text-xs uppercase tracking-wider text-dark/40 font-bold">Existing Users</p>
+                  <p className="text-xs uppercase tracking-wider text-ink-40 font-bold">Existing Users</p>
                 </div>
                 <div>
                   <h3 className="text-3xl font-display font-bold text-primary mb-1">25+</h3>
-                  <p className="text-xs uppercase tracking-wider text-dark/40 font-bold">Enterprise Clients</p>
+                  <p className="text-xs uppercase tracking-wider text-ink-40 font-bold">Enterprise Clients</p>
                 </div>
               </div>
             </motion.div>
@@ -106,7 +106,7 @@ export default function PartnersClientPage() {
                   <item.icon className="w-7 h-7 text-primary-300" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-                <p className="text-white/60 leading-relaxed text-sm">{item.desc}</p>
+                <p className="text-paper-60 leading-relaxed text-sm">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -126,7 +126,7 @@ export default function PartnersClientPage() {
               </div>
             </div>
             <div className="md:w-2/3">
-              <p className="text-lg text-dark/70 leading-relaxed border-l-4 border-primary pl-6">
+              <p className="text-lg text-ink-70 leading-relaxed border-l-4 border-primary pl-6">
                 PDR COURT has carved a unique place in the space of Dispute Resolution via Trust & Sincerity. Aligned with technological advancement, we are a forerunner in the digital space.
               </p>
             </div>
@@ -137,11 +137,11 @@ export default function PartnersClientPage() {
               <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }}
                 className="group p-8 rounded-3xl bg-cream border border-cream-300 hover:border-primary/50 transition-colors">
                 <div className="flex items-center justify-between mb-6">
-                  <span className="text-4xl font-display font-black text-dark/10 group-hover:text-primary/20 transition-colors">0{idx + 1}</span>
+                  <span className="text-4xl font-display font-black text-ink-10 group-hover:text-primary/20 transition-colors">0{idx + 1}</span>
                   <pillar.icon className="w-8 h-8 text-primary opacity-50 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <h3 className="text-xl font-bold text-dark mb-4">{pillar.title}</h3>
-                <p className="text-dark/60 text-sm leading-relaxed">{pillar.desc}</p>
+                <p className="text-ink-60 text-sm leading-relaxed">{pillar.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -157,7 +157,7 @@ export default function PartnersClientPage() {
               <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-6">
                 Interested <br/> Businesses
               </h2>
-              <p className="text-lg text-dark/60 leading-relaxed mb-10">
+              <p className="text-lg text-ink-60 leading-relaxed mb-10">
                 Join our network to leverage cutting edge ADR tools. Please provide your details and partnership interests below.
               </p>
               <div className="aspect-[4/3] rounded-3xl overflow-hidden border border-cream-300 hidden lg:block">
@@ -186,7 +186,7 @@ export default function PartnersClientPage() {
                     {["Individual", "Business", "Financial Institution"].map((type, i) => (
                       <label key={i} className="flex items-center gap-3 cursor-pointer group">
                         <input type="radio" name="entityType" value={type} className="w-5 h-5 text-primary border-cream-300 focus:ring-primary focus:ring-offset-white" required />
-                        <span className="text-dark/80 font-medium group-hover:text-dark transition-colors">{type}</span>
+                        <span className="text-ink-80 font-medium group-hover:text-dark transition-colors">{type}</span>
                       </label>
                     ))}
                   </div>
@@ -203,7 +203,7 @@ export default function PartnersClientPage() {
                     ].map((interest, i) => (
                       <label key={i} className="flex items-start gap-3 cursor-pointer group bg-cream/50 p-4 rounded-xl border border-transparent hover:border-primary/20 transition-all">
                         <input type="checkbox" value={interest} className="w-5 h-5 mt-0.5 rounded border-cream-300 text-primary focus:ring-primary focus:ring-offset-white" />
-                        <span className="text-dark/80 text-sm font-medium group-hover:text-dark transition-colors leading-relaxed">{interest}</span>
+                        <span className="text-ink-80 text-sm font-medium group-hover:text-dark transition-colors leading-relaxed">{interest}</span>
                       </label>
                     ))}
                   </div>
@@ -219,7 +219,7 @@ export default function PartnersClientPage() {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pt-6 border-t border-cream-300">
                   <label className="flex items-start gap-3 cursor-pointer group max-w-sm">
                     <input type="checkbox" required className="w-5 h-5 mt-0.5 shrink-0 rounded border-cream-300 text-primary focus:ring-primary focus:ring-offset-white" />
-                    <span className="text-dark/60 text-xs leading-relaxed group-hover:text-dark transition-colors">I provide my consent to PDR COURT to contact me through email or telephone.</span>
+                    <span className="text-ink-60 text-xs leading-relaxed group-hover:text-dark transition-colors">I provide my consent to PDR COURT to contact me through email or telephone.</span>
                   </label>
                   <button type="submit" className="btn-primary shrink-0 w-full sm:w-auto">
                     Submit Application

@@ -67,11 +67,11 @@ export default function InformationClientPage() {
               </h1>
               <div className="p-6 bg-cream border border-cream-300 rounded-2xl mb-8 relative">
                 <div className="absolute top-0 left-0 w-1 h-full bg-primary rounded-l-2xl" />
-                <p className="text-dark/80 font-medium leading-relaxed">
+                <p className="text-ink-80 font-medium leading-relaxed">
                   For any inquiries, guidance, or to schedule a personalized demo of our ADR process, feel free to contact our support and sales team.
                 </p>
               </div>
-              <p className="text-lg text-dark/60 font-light leading-relaxed mb-10">
+              <p className="text-lg text-ink-60 font-light leading-relaxed mb-10">
                 Our dedicated team of professionals will respond to your requests within two working days, ensuring you receive the highest level of support tailored to your needs.
               </p>
               <div className="flex flex-wrap items-center gap-4">
@@ -116,7 +116,7 @@ export default function InformationClientPage() {
                     <h3 className="text-2xl lg:text-3xl font-display font-bold text-dark mb-4 group-hover:text-primary transition-colors">
                       {section.title}
                     </h3>
-                    <p className="text-dark/70 leading-relaxed flex-1 mb-8">
+                    <p className="text-ink-70 leading-relaxed flex-1 mb-8">
                       {section.description}
                     </p>
                     <div className="inline-flex items-center gap-2 text-sm font-bold text-dark uppercase tracking-widest group-hover:text-primary transition-colors mt-auto">
@@ -136,8 +136,8 @@ export default function InformationClientPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
             <div>
-              <h2 className="text-4xl font-display font-light italic text-white/90 mb-6">Ask us</h2>
-              <p className="text-white/60 leading-relaxed mb-8">
+              <h2 className="text-4xl font-display font-light italic text-paper-90 mb-6">Ask us</h2>
+              <p className="text-paper-60 leading-relaxed mb-8">
                 Do you have any vital information that you may like to ask us? <br/><br/>
                 Write to us at legal@pdrcourt.com; or, use the form to send us a quick inquiry.
               </p>
@@ -180,7 +180,7 @@ export default function InformationClientPage() {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pt-6 border-t border-white/10">
                   <label className="flex items-start gap-3 cursor-pointer group">
                     <input type="checkbox" required className="w-5 h-5 mt-0.5 rounded border-white/20 bg-white/5 text-primary focus:ring-primary focus:ring-offset-dark" />
-                    <span className="text-white/60 group-hover:text-white transition-colors text-sm">I provide my consent to PDR COURT to contact me.</span>
+                    <span className="text-paper-60 group-hover:text-white transition-colors text-sm">I provide my consent to PDR COURT to contact me.</span>
                   </label>
                   <button type="submit" className="btn-primary shrink-0 w-full sm:w-auto">
                     Submit Query
@@ -208,7 +208,7 @@ export default function InformationClientPage() {
                   <pillar.icon className="w-10 h-10 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-dark mb-4">{pillar.title}</h3>
-                <p className="text-dark/60 text-sm leading-relaxed">{pillar.desc}</p>
+                <p className="text-ink-60 text-sm leading-relaxed">{pillar.desc}</p>
               </motion.div>
             ))}
           </div>

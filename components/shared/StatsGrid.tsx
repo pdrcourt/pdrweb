@@ -49,11 +49,11 @@ export default function StatsGrid({ stats, columns = 4, variant = 'default' }: S
               {stat.value}
             </span>
           </div>
-          <h3 className="text-lg font-semibold text-dark/80 dark:text-white/80 mb-2">
+          <h3 className="text-lg font-semibold text-ink-80 dark:text-paper-80 mb-2">
             {stat.label}
           </h3>
           {stat.description && (
-            <p className="text-sm text-dark/60 dark:text-white/60">
+            <p className="text-sm text-ink-60 dark:text-paper-60">
               {stat.description}
             </p>
           )}

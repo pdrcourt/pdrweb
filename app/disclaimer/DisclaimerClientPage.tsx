@@ -24,12 +24,12 @@ export default function DisclaimerClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Important <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Disclaimer.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 PDR COURT wants to help protect your business against legal claims. We want users to be informed about our limitations of liability.
               </p>
               
               <div className="flex gap-4">
-                <a href="mailto:legal@pdrcourt.com" className="group flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                <a href="mailto:legal@pdrcourt.com" className="group flex items-center gap-2 text-paper-70 hover:text-white transition-colors">
                   <span className="font-bold">Got Questions?</span>
                   <span className="text-primary-300 underline underline-offset-4 group-hover:text-primary-200">legal@pdrcourt.com</span>
                 </a>
@@ -42,7 +42,7 @@ export default function DisclaimerClientPage() {
       {/* Content Section */}
       <section className="py-20 lg:py-32 bg-white relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg prose-primary max-w-none text-dark/80">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg prose-primary max-w-none text-ink-80">
             
             <div className="bg-cream border border-cream-300 p-8 rounded-3xl mb-12">
               <h3 className="text-2xl font-bold text-dark mb-4 flex items-center gap-3">

@@ -50,7 +50,7 @@ export default function RecoveryProcessSection({
             {subtitle}
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">{title}</h2>
-          <p className="text-lg text-white/60 max-w-3xl mx-auto leading-relaxed">{description}</p>
+          <p className="text-lg text-paper-60 max-w-3xl mx-auto leading-relaxed">{description}</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -74,7 +74,7 @@ export default function RecoveryProcessSection({
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{step.title}</h3>
-                <p className="text-sm text-white/55 leading-relaxed">{step.description}</p>
+                <p className="text-sm text-paper-55 leading-relaxed">{step.description}</p>
               </motion.div>
             );
           })}
@@ -92,7 +92,7 @@ export default function RecoveryProcessSection({
             { text: 'Leveraging advanced technology, our platform provides seamless support and transparency at every stage.' },
           ].map((item, i) => (
             <div key={i} className="rounded-xl bg-primary/10 border border-primary/20 p-5">
-              <p className="text-sm text-white/70 leading-relaxed">{item.text}</p>
+              <p className="text-sm text-paper-70 leading-relaxed">{item.text}</p>
             </div>
           ))}
         </motion.div>

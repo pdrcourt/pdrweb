@@ -31,7 +31,7 @@ export default function PillarsSection({ bgColor = 'white' }: { bgColor?: 'white
                   <span className="text-3xl font-display font-bold text-primary/15">{String(p.number).padStart(2, '0')}</span>
                 </div>
                 <h3 className="text-lg font-bold text-dark mb-3">{p.title}</h3>
-                <p className="text-sm text-dark/55 leading-relaxed">{p.description}</p>
+                <p className="text-sm text-ink-55 leading-relaxed">{p.description}</p>
               </motion.div>
             );
           })}

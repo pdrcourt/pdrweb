@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Newspaper, Calendar, ArrowUpRight, Search, Tag } from 'lucide-react';
 import SiblingLinksSection from '@/components/sections/SiblingLinksSection';
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 
 export interface NewsItem {
   title: string;
@@ -42,33 +43,24 @@ export default function NewsroomClientPage({ newsItems }: Props) {
   return (
     <div className="bg-cream min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark text-white overflow-hidden border-b-8 border-primary">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark/95 to-primary-950/40 z-10" />
-          <img
-            src="/images/happy-professionals-shaking-hands.jpg"
-            alt="Newsroom Hero"
-            className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-            }}
-          />
-        </div>
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-cream overflow-hidden border-b border-cream-300">
+        <EditorialHeroDecor />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none" />
 
         <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-[1.5fr_1fr] gap-12 lg:gap-20 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary-300 text-sm font-medium mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-md border border-primary/20 text-primary text-sm font-medium mb-8">
                 <Newspaper className="w-4 h-4" />
                 <span>Headlines & Press Updates</span>
               </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
+              <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                 PDR News
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">
+                <span className="gold-text">
                   room.
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-ink-60 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 Stay updated with alternative dispute resolution news, supreme court rulings, domestic policies, and company breakthroughs.
               </p>
             </motion.div>
@@ -89,7 +81,7 @@ export default function NewsroomClientPage({ newsItems }: Props) {
                   className={`px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 ${
                     activeCategory === cat
                       ? 'bg-primary text-white shadow-lg shadow-primary/20'
-                      : 'bg-cream text-dark/70 hover:bg-cream-300'
+                      : 'bg-cream text-ink-70 hover:bg-cream-300'
                   }`}
                 >
                   {cat}
@@ -98,7 +90,7 @@ export default function NewsroomClientPage({ newsItems }: Props) {
             </div>
 
             <div className="relative w-full lg:w-96">
-              <Search className="absolute left-4 top-3.5 w-5 h-5 text-dark/40" />
+              <Search className="absolute left-4 top-3.5 w-5 h-5 text-ink-40" />
               <input
                 type="text"
                 placeholder="Search articles..."
@@ -110,7 +102,7 @@ export default function NewsroomClientPage({ newsItems }: Props) {
           </div>
 
           {/* Result count */}
-          <div className="text-sm text-dark/50 mb-6">
+          <div className="text-sm text-ink-50 mb-6">
             Showing {filteredNews.length} of {newsItems.length} updates
           </div>
 
@@ -133,7 +125,7 @@ export default function NewsroomClientPage({ newsItems }: Props) {
                       {item.category}
                     </span>
                     {item.date && (
-                      <span className="flex items-center gap-1.5 text-xs text-dark/50 font-medium">
+                      <span className="flex items-center gap-1.5 text-xs text-ink-50 font-medium">
                         <Calendar className="w-3.5 h-3.5" />
                         {item.date}
                       </span>
@@ -145,7 +137,7 @@ export default function NewsroomClientPage({ newsItems }: Props) {
                       <h3 className="text-xl font-display font-bold text-dark mb-4 group-hover:text-primary transition-colors line-clamp-2">
                         {item.title}
                       </h3>
-                      <p className="text-dark/70 text-sm leading-relaxed mb-6 font-medium line-clamp-3">
+                      <p className="text-ink-70 text-sm leading-relaxed mb-6 font-medium line-clamp-3">
                         {item.excerpt}
                       </p>
                     </div>
@@ -169,9 +161,9 @@ export default function NewsroomClientPage({ newsItems }: Props) {
 
           {filteredNews.length === 0 && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-20 bg-cream rounded-[3rem] border border-cream-300">
-              <Newspaper className="w-16 h-16 text-dark/30 mx-auto mb-4" />
+              <Newspaper className="w-16 h-16 text-ink-30 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-dark mb-2">No Articles Found</h3>
-              <p className="text-dark/60">Try refining your search terms or choosing a different filter category.</p>
+              <p className="text-ink-60">Try refining your search terms or choosing a different filter category.</p>
             </motion.div>
           )}
         </div>

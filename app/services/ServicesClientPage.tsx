@@ -61,7 +61,7 @@ export default function ServicesClientPage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">ADR Platform</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-lg">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-lg">
                 We drive success by addressing your Alternative Dispute Resolution needs through our cutting-edge, technology-powered ecosystem.
               </p>
               
@@ -89,7 +89,7 @@ export default function ServicesClientPage() {
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="p-4 rounded-xl bg-white/10 backdrop-blur-md border border-white/20">
                     <h4 className="text-white font-bold mb-1">Explainer Video</h4>
-                    <p className="text-sm text-white/70">{"See how PDR COURT's ADR platform transforms dispute resolution."}</p>
+                    <p className="text-sm text-paper-70">{"See how PDR COURT's ADR platform transforms dispute resolution."}</p>
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function ServicesClientPage() {
           <div className="text-center max-w-3xl mx-auto mb-20">
             <span className="section-label">Tailored Solutions</span>
             <h2 className="heading-lg text-dark mt-4">Dispute Resolution for Everyone</h2>
-            <p className="body-lg text-dark/60 mt-4">
+            <p className="body-lg text-ink-60 mt-4">
               From individual independent contractors to large-scale enterprises and financial institutions, our platform is engineered to scale with your specific recovery needs.
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function ServicesClientPage() {
                     {service.title}
                   </h3>
                   
-                  <p className="text-dark/70 leading-relaxed mb-8 flex-1">
+                  <p className="text-ink-70 leading-relaxed mb-8 flex-1">
                     {service.description}
                   </p>
                   
@@ -144,7 +144,7 @@ export default function ServicesClientPage() {
             <div className="relative z-10 max-w-2xl">
               <span className="text-primary-300 font-bold uppercase tracking-wider text-sm mb-2 block">Transparent Pricing</span>
               <h3 className="text-3xl font-display font-bold text-white mb-4">Top-Tier Services at Competitive Prices</h3>
-              <p className="text-white/70 leading-relaxed">By harnessing cutting-edge software and a streamlined platform, we deliver optimal value without compromising quality.</p>
+              <p className="text-paper-70 leading-relaxed">By harnessing cutting-edge software and a streamlined platform, we deliver optimal value without compromising quality.</p>
             </div>
             <Link href="/pricing" className="relative z-10 btn-primary flex-shrink-0 whitespace-nowrap">
               View Pricing Structure
@@ -160,7 +160,7 @@ export default function ServicesClientPage() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Mobile Experience</span>
               <h2 className="heading-lg text-dark mt-4 mb-6">Take the Courtroom With You</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-8">
+              <p className="text-lg text-ink-70 leading-relaxed mb-8">
                 {"Manage cases, upload evidence, and attend hearings directly from your smartphone. Our secure mobile application ensures you're never out of touch with your dispute resolution process."}
               </p>
               
@@ -168,14 +168,14 @@ export default function ServicesClientPage() {
                 <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors">
                   <Download className="w-8 h-8" />
                   <div className="flex flex-col">
-                    <span className="text-xs text-white/70">Download on the</span>
+                    <span className="text-xs text-paper-70">Download on the</span>
                     <span className="text-lg font-bold leading-none">App Store</span>
                   </div>
                 </a>
                 <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors">
                   <Download className="w-8 h-8" />
                   <div className="flex flex-col">
-                    <span className="text-xs text-white/70">GET IT ON</span>
+                    <span className="text-xs text-paper-70">GET IT ON</span>
                     <span className="text-lg font-bold leading-none">Google Play</span>
                   </div>
                 </a>

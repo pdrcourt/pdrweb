@@ -43,7 +43,7 @@ export default function CtaBanner({
       <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           {subtitle && (
-            <p className={`text-sm font-bold uppercase tracking-[0.24em] mb-4 ${variant === 'light' ? 'text-primary' : 'text-white/65'}`}>
+            <p className={`text-sm font-bold uppercase tracking-[0.24em] mb-4 ${variant === 'light' ? 'text-primary' : 'text-paper-65'}`}>
               {subtitle}
             </p>
           )}
@@ -51,7 +51,7 @@ export default function CtaBanner({
             {title}
           </h2>
           {description && (
-            <p className={`text-lg mb-10 max-w-2xl mx-auto ${variant === 'light' ? 'text-dark/60' : 'text-white/80'}`}>
+            <p className={`text-lg mb-10 max-w-2xl mx-auto ${variant === 'light' ? 'text-ink-60' : 'text-paper-80'}`}>
               {description}
             </p>
           )}

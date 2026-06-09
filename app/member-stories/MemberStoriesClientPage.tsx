@@ -111,7 +111,7 @@ export default function MemberStoriesClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Our Members <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Matter.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 {"The invaluable experience we've gained through our ADR platform has strengthened our connections and credibility with users. Explore what our esteemed members have to say about us."}
               </p>
               
@@ -126,10 +126,10 @@ export default function MemberStoriesClientPage() {
                <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10 shadow-2xl">
                  <h3 className="text-2xl font-display font-bold mb-8 text-primary-300">Trusted By Diverse Sectors</h3>
                  <div className="grid grid-cols-2 gap-6">
-                   <div className="flex items-center gap-3 text-white/80"><Building className="w-5 h-5 text-primary" /> Banks & NBFCs</div>
-                   <div className="flex items-center gap-3 text-white/80"><Briefcase className="w-5 h-5 text-primary" /> Professionals</div>
-                   <div className="flex items-center gap-3 text-white/80"><Users className="w-5 h-5 text-primary" /> Institutions</div>
-                   <div className="flex items-center gap-3 text-white/80"><HandshakeIcon className="w-5 h-5 text-primary" /> Freelancers</div>
+                   <div className="flex items-center gap-3 text-paper-80"><Building className="w-5 h-5 text-primary" /> Banks & NBFCs</div>
+                   <div className="flex items-center gap-3 text-paper-80"><Briefcase className="w-5 h-5 text-primary" /> Professionals</div>
+                   <div className="flex items-center gap-3 text-paper-80"><Users className="w-5 h-5 text-primary" /> Institutions</div>
+                   <div className="flex items-center gap-3 text-paper-80"><HandshakeIcon className="w-5 h-5 text-primary" /> Freelancers</div>
                  </div>
                </div>
             </motion.div>
@@ -143,7 +143,7 @@ export default function MemberStoriesClientPage() {
           <h2 className="text-3xl md:text-4xl font-display font-light text-dark leading-relaxed">
             By choosing PDR COURT for Alternate Dispute Resolution, you gain access to <span className="font-bold text-primary">affordable and efficient solutions.</span> Our technology simplifies the dispute process, ensuring timely and fair resolutions.
           </h2>
-          <p className="text-lg text-dark/60 mt-8 max-w-3xl mx-auto">
+          <p className="text-lg text-ink-60 mt-8 max-w-3xl mx-auto">
             You will experience how our process-oriented platform effectively streamlines the dispute resolution process. Everyone has a successful story to tell.
           </p>
         </div>
@@ -168,13 +168,13 @@ export default function MemberStoriesClientPage() {
                     ))}
                   </div>
                   
-                  <blockquote className="text-xl text-dark/80 leading-relaxed font-light italic mb-8 flex-1">
+                  <blockquote className="text-xl text-ink-80 leading-relaxed font-light italic mb-8 flex-1">
                     &ldquo;{test.quote}&rdquo;
                   </blockquote>
                   
                   <div className="border-t border-cream-300 pt-6 mt-auto">
                     <h4 className="text-lg font-bold text-dark group-hover:text-primary transition-colors">{test.title}</h4>
-                    <p className="text-dark/60 text-sm uppercase tracking-wider font-bold mt-1">{test.role}</p>
+                    <p className="text-ink-60 text-sm uppercase tracking-wider font-bold mt-1">{test.role}</p>
                   </div>
                 </div>
               </motion.div>
@@ -197,7 +197,7 @@ export default function MemberStoriesClientPage() {
             <div>
               <span className="section-label">Mobile Experience</span>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-6">The App</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-10">
+              <p className="text-lg text-ink-70 leading-relaxed mb-10">
                 As an arbitrator, you will be reviewing testimony and evidence presented by the disputed parties at a hearing and resolves the dispute by issuing a decision right from the app.
               </p>
               
@@ -207,14 +207,14 @@ export default function MemberStoriesClientPage() {
                   <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors shadow-lg shadow-dark/20 hover:shadow-xl hover:shadow-dark/30">
                     <Download className="w-8 h-8" />
                     <div className="flex flex-col">
-                      <span className="text-xs text-white/70">Download on the</span>
+                      <span className="text-xs text-paper-70">Download on the</span>
                       <span className="text-lg font-bold leading-none">App Store</span>
                     </div>
                   </a>
                   <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors shadow-lg shadow-dark/20 hover:shadow-xl hover:shadow-dark/30">
                     <Download className="w-8 h-8" />
                     <div className="flex flex-col">
-                      <span className="text-xs text-white/70">GET IT ON</span>
+                      <span className="text-xs text-paper-70">GET IT ON</span>
                       <span className="text-lg font-bold leading-none">Google Play</span>
                     </div>
                   </a>

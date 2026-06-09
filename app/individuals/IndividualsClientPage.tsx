@@ -131,7 +131,7 @@ export default function IndividualsClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 For <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Individuals.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
                 We specialize in Alternate Dispute Resolution tailored for individuals, providing a seamless experience for sole proprietors and independent contractors to navigate business challenges.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -162,7 +162,7 @@ export default function IndividualsClientPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-display font-bold text-dark leading-tight">Safeguard Your Business from Future Conflicts</h3>
-                <p className="text-dark/60 font-semibold text-sm mt-1">Get custom corporate legal setups tailored specifically for independent consultants.</p>
+                <p className="text-ink-60 font-semibold text-sm mt-1">Get custom corporate legal setups tailored specifically for independent consultants.</p>
               </div>
             </div>
             <a href="#sales" className="btn-primary py-3.5 px-8 text-sm whitespace-nowrap">Contact Sales Team</a>
@@ -179,7 +179,7 @@ export default function IndividualsClientPage() {
               <h2 className="text-3xl lg:text-4xl font-display font-bold text-dark leading-tight">
                 Designed for Freelancers, Consultants, & Landlords
               </h2>
-              <div className="space-y-6 text-dark/70 font-medium leading-relaxed">
+              <div className="space-y-6 text-ink-70 font-medium leading-relaxed">
                 <p>
                   You may be successfully freelancing for international clients, managing real estate transactions, or providing consultancy. Yet, when transactional disputes or payment defaults arise, finding fair representation can become overwhelming.
                 </p>
@@ -207,7 +207,7 @@ export default function IndividualsClientPage() {
                 <span className="text-6xl lg:text-8xl font-display font-extrabold text-primary/30 leading-none">5</span>
                 <div>
                   <h3 className="text-2xl font-display font-bold text-dark">Simple Steps</h3>
-                  <p className="text-dark/60 font-bold text-sm">towards rapid ODR resolution</p>
+                  <p className="text-ink-60 font-bold text-sm">towards rapid ODR resolution</p>
                 </div>
               </div>
             </div>
@@ -220,7 +220,7 @@ export default function IndividualsClientPage() {
                       {idx + 1}
                     </div>
                     <h4 className="text-lg font-bold text-dark mb-1">{st.title}</h4>
-                    <p className="text-sm text-dark/70 font-semibold leading-relaxed">{st.desc}</p>
+                    <p className="text-sm text-ink-70 font-semibold leading-relaxed">{st.desc}</p>
                   </motion.div>
                 ))}
               </div>
@@ -235,7 +235,7 @@ export default function IndividualsClientPage() {
           <div className="text-center mb-16">
             <span className="section-label mx-auto">Value Proposition</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-dark mt-4">Dispute Paper Perks</h2>
-            <p className="text-dark/60 max-w-2xl mx-auto mt-4 font-semibold">What are the perks of PDR COURT&apos;s Dispute Resolution Paper?</p>
+            <p className="text-ink-60 max-w-2xl mx-auto mt-4 font-semibold">What are the perks of PDR COURT&apos;s Dispute Resolution Paper?</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -253,7 +253,7 @@ export default function IndividualsClientPage() {
                     0{idx + 1}
                   </div>
                   <h3 className="text-lg font-bold text-dark mb-3">{pk.title}</h3>
-                  <p className="text-sm text-dark/70 font-semibold leading-relaxed">{pk.desc}</p>
+                  <p className="text-sm text-ink-70 font-semibold leading-relaxed">{pk.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -270,10 +270,10 @@ export default function IndividualsClientPage() {
               <h2 className="text-3xl lg:text-4xl font-display font-bold text-dark leading-tight">
                 At PDR COURT, securing your rights is our prime concern.
               </h2>
-              <p className="text-dark/70 font-medium leading-relaxed">
+              <p className="text-ink-70 font-medium leading-relaxed">
                 We understand, in this scenario, &apos;Securing and Safeguarding&apos; your rights is not only important but an absolute necessity. PDR COURT brings together legal professionals, industry experts, and technology specialists to deliver a neutral and unbiased platform.
               </p>
-              <p className="text-xs text-dark/60 font-bold">
+              <p className="text-xs text-ink-60 font-bold">
                 Experience the peace of mind that comes with our cutting-edge technology, designed to streamline your dispute resolution process while you focus on your key objectives.
               </p>
             </div>
@@ -284,14 +284,14 @@ export default function IndividualsClientPage() {
               <div className="py-6 border-t border-b border-cream-300 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                   <span className="text-5xl font-display font-extrabold text-primary">₹500</span>
-                  <span className="text-xs text-dark/60 font-bold block mt-1">per agreement / invoice / PO / contract</span>
+                  <span className="text-xs text-ink-60 font-bold block mt-1">per agreement / invoice / PO / contract</span>
                 </div>
                 <div className="text-center md:text-right">
                   <span className="text-base font-bold text-dark block">For contracts worth up to</span>
                   <span className="text-xl font-bold text-primary block">₹5,00,000</span>
                 </div>
               </div>
-              <p className="text-xs text-dark/60 font-semibold leading-relaxed">
+              <p className="text-xs text-ink-60 font-semibold leading-relaxed">
                 Start with our dispute resolution paper which begins as low as Rs. 500 per agreement/invoice/purchase order/work order/contract.
               </p>
             </div>
@@ -327,7 +327,7 @@ export default function IndividualsClientPage() {
                 <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-xs font-bold flex-shrink-0 mt-0.5">
                   {idx + 1}
                 </div>
-                <p className="text-sm text-dark/80 font-bold leading-relaxed">{rs}</p>
+                <p className="text-sm text-ink-80 font-bold leading-relaxed">{rs}</p>
               </motion.div>
             ))}
           </div>
@@ -343,7 +343,7 @@ export default function IndividualsClientPage() {
               <h3 className="text-2xl font-display font-bold text-dark mt-2">Nyaya Panchayats Proposal</h3>
             </div>
             <div className="md:w-2/3">
-              <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+              <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                 PDR COURT utilizes advanced technology and cloud infrastructure to reinforce the historical community value of Nyaya Panchayats, delivering accessible, grass-roots justice and efficient dispute resolution directly via our state-of-the-art digital platform.
               </p>
             </div>
@@ -358,12 +358,12 @@ export default function IndividualsClientPage() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Consulting Desk</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-6">Talk to our Experts</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-8">
+              <p className="text-lg text-ink-70 leading-relaxed mb-8">
                 Have specific invoicing parameters or high-volume international contract structures? Reach our institutional team for customized setups.
               </p>
               
               <div className="bg-cream rounded-[2.5rem] border border-cream-300 p-8 space-y-6 shadow-sm">
-                <div className="space-y-4 text-sm font-semibold text-dark/70">
+                <div className="space-y-4 text-sm font-semibold text-ink-70">
                   <p className="flex items-center gap-2 text-dark font-bold"><Phone className="w-4 h-4 text-primary" /> +91 8976955540</p>
                   <p className="flex items-center gap-2 text-primary font-bold"><Mail className="w-4 h-4 text-primary" /> legal@pdrcourt.com</p>
                 </div>
@@ -380,19 +380,19 @@ export default function IndividualsClientPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">First Name</label>
                     <input type="text" name="SingleLine" value={formData.SingleLine} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Last Name</label>
                     <input type="text" name="SingleLine1" value={formData.SingleLine1} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Email Address</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Email Address</label>
                     <input type="email" name="Email" value={formData.Email} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Tel / Mobile</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Tel / Mobile</label>
                     <input type="tel" name="PhoneNumber_countrycode" value={formData.PhoneNumber_countrycode} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                 </div>
@@ -401,26 +401,26 @@ export default function IndividualsClientPage() {
                   <h5 className="text-sm font-bold text-dark uppercase tracking-wider mb-4">Business Details</h5>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Name of Business</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Name of Business</label>
                       <input type="text" name="SingleLine2" value={formData.SingleLine2} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Your Position</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Your Position</label>
                       <input type="text" name="SingleLine3" value={formData.SingleLine3} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Type of Industry</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Type of Industry</label>
                       <input type="text" name="SingleLine4" value={formData.SingleLine4} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Serving Customer Size</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Serving Customer Size</label>
                       <input type="text" name="SingleLine5" value={formData.SingleLine5} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                   </div>
                 </div>
 
                 <div className="border-t border-cream-300 pt-6">
-                  <label className="block text-sm font-medium text-dark/70 mb-2">How much Average Contracts done Monthly</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">How much Average Contracts done Monthly</label>
                   <select name="Dropdown" value={formData.Dropdown} onChange={handleInputChange} className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium">
                     <option value="-Select-">Select your Contracts size</option>
                     <option value="Less than 5,000 per month">Less than 5,000 per month</option>
@@ -433,7 +433,7 @@ export default function IndividualsClientPage() {
                 <div className="border-t border-cream-300 pt-6">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="DecisionBox" checked={formData.DecisionBox} onChange={handleInputChange} className="w-5 h-5 mt-0.5 text-primary focus:ring-primary border-cream-300 rounded" />
-                    <span className="text-xs text-dark/70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
+                    <span className="text-xs text-ink-70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
                   </label>
                 </div>
 

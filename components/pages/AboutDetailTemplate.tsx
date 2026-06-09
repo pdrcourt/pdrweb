@@ -50,7 +50,7 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
               {page.title}
             </motion.h1>
             
-            <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-xl md:text-2xl text-dark/60 leading-relaxed font-light max-w-2xl">
+            <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-xl md:text-2xl text-ink-60 leading-relaxed font-light max-w-2xl">
               {isCompany ? "Building India's leading online dispute resolution infrastructure on modern software, robust processes, and deep ethics." : page.description}
             </motion.p>
           </div>
@@ -69,15 +69,15 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-20">
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-cream rounded-3xl p-8 border border-cream-300 hover:shadow-gold hover:-translate-y-1 transition-all text-center">
-                <span className="text-xs font-bold uppercase tracking-wider text-dark/50">Cases Reported in 2024</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-ink-50">Cases Reported in 2024</span>
                 <div className="text-5xl font-display font-bold mt-4 text-primary">12.7 Lac</div>
               </motion.div>
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-cream rounded-3xl p-8 border border-cream-300 hover:shadow-gold hover:-translate-y-1 transition-all text-center">
-                <span className="text-xs font-bold uppercase tracking-wider text-dark/50">Settled Cases in 2024</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-ink-50">Settled Cases in 2024</span>
                 <div className="text-5xl font-display font-bold mt-4 text-primary">8.6 Lac</div>
               </motion.div>
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-cream rounded-3xl p-8 border border-cream-300 hover:shadow-gold hover:-translate-y-1 transition-all text-center">
-                <span className="text-xs font-bold uppercase tracking-wider text-dark/50">Success Record</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-ink-50">Success Record</span>
                 <div className="text-5xl font-display font-bold mt-4 text-primary">67%</div>
               </motion.div>
             </div>
@@ -94,12 +94,12 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
                 <br />
                 {"न हि तीव्रतरं किञ्चिद् नृतादिह विद्यते।।\""}
               </blockquote>
-              <p className="text-xs font-semibold text-dark/45 uppercase tracking-wider mb-6">Nāsti Satyasamo Dharmo Na Satyādvidyate Paraṁ. Na hi Tīvrataraṁ Kiñchid Nr̥tādih Vidyate.</p>
+              <p className="text-xs font-semibold text-ink-45 uppercase tracking-wider mb-6">Nāsti Satyasamo Dharmo Na Satyādvidyate Paraṁ. Na hi Tīvrataraṁ Kiñchid Nr̥tādih Vidyate.</p>
               <div className="h-px w-20 bg-primary/20 mx-auto mb-6" />
-              <p className="text-base md:text-lg text-dark/70 leading-relaxed max-w-2xl mx-auto italic">
+              <p className="text-base md:text-lg text-ink-70 leading-relaxed max-w-2xl mx-auto italic">
                 {"\"There is no other religion like truth. nothing but the truth. Nothing is more intense than a lie.\""}
               </p>
-              <p className="text-xs text-dark/40 mt-3 font-semibold">सत्य जैसा अन्य धर्म नहीं। सत्य से पर कुछ नहीं। असत्य से ज्यादा तीव्रतर कुछ नहीं।</p>
+              <p className="text-xs text-ink-40 mt-3 font-semibold">सत्य जैसा अन्य धर्म नहीं। सत्य से पर कुछ नहीं। असत्य से ज्यादा तीव्रतर कुछ नहीं।</p>
             </motion.div>
 
             {/* Timeline Growth Story */}
@@ -112,7 +112,7 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
               <div className="text-center mb-12">
                 <span className="section-label">Our Leadership</span>
                 <h2 className="heading-lg text-dark mt-2">Executive Management</h2>
-                <p className="body-lg text-dark/60 max-w-xl mx-auto mt-3">Empowering businesses with modern legal-tech and strategic operational agility.</p>
+                <p className="body-lg text-ink-60 max-w-xl mx-auto mt-3">Empowering businesses with modern legal-tech and strategic operational agility.</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
@@ -125,10 +125,10 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
                     </div>
                     <h3 className="text-2xl font-display font-bold text-dark mb-1">the team</h3>
                     <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-6">CEO / Founder / Promoter</span>
-                    <p className="text-sm text-dark/70 leading-relaxed mb-4">
+                    <p className="text-sm text-ink-70 leading-relaxed mb-4">
                       {"Meet the team, the dynamic CEO at the helm of PDR COURT, India's pioneering online dispute resolution platform. Ankit's strategic vision, fortified by an MBA in Business Management and a Computer Science Engineering degree, positions him as a quintessential leader blending visionary acumen with technical prowess."}
                     </p>
-                    <p className="text-sm text-dark/70 leading-relaxed">
+                    <p className="text-sm text-ink-70 leading-relaxed">
                       {"With over a decade in Legal-Tech product development, including roles at the United Nations and global legal publishers, Ankit excels in shaping PDR COURT's trajectory."}
                     </p>
                   </div>
@@ -143,10 +143,10 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
                     </div>
                     <h3 className="text-2xl font-display font-bold text-dark mb-1">Mahadev Gitte</h3>
                     <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-6">Chief Operating Officer (COO)</span>
-                    <p className="text-sm text-dark/70 leading-relaxed mb-4">
+                    <p className="text-sm text-ink-70 leading-relaxed mb-4">
                       Mr. Mahadev Gitte is an accomplished professional serving as the Chief Operating Officer (COO) at PDR COURT. With a proven track record in operational leadership, he meticulously oversees day-to-day activities, ensuring seamless processes and optimal efficiency.
                     </p>
-                    <p className="text-sm text-dark/70 leading-relaxed">
+                    <p className="text-sm text-ink-70 leading-relaxed">
                       A seasoned team manager, he fosters a positive and collaborative work culture, building and leading high-performing teams with a keen eye for financial management and quality assurance.
                     </p>
                   </div>
@@ -187,7 +187,7 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
                         )}
                         <div className="space-y-4">
                           {section.content.map((p, pIdx) => (
-                            <p key={pIdx} className={`text-dark/70 leading-relaxed ${isFeatured ? 'text-lg' : 'text-base'}`}>
+                            <p key={pIdx} className={`text-ink-70 leading-relaxed ${isFeatured ? 'text-lg' : 'text-base'}`}>
                               {p}
                             </p>
                           ))}
@@ -196,11 +196,11 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
                           <div className="mt-10 pt-10 border-t border-cream-300 grid grid-cols-2 gap-8">
                             <div>
                               <div className="text-3xl font-display font-bold text-primary mb-1">100+</div>
-                              <div className="text-sm font-semibold text-dark/50 uppercase tracking-wider">Global Partners</div>
+                              <div className="text-sm font-semibold text-ink-50 uppercase tracking-wider">Global Partners</div>
                             </div>
                             <div>
                               <div className="text-3xl font-display font-bold text-primary mb-1">24/7</div>
-                              <div className="text-sm font-semibold text-dark/50 uppercase tracking-wider">Support Available</div>
+                              <div className="text-sm font-semibold text-ink-50 uppercase tracking-wider">Support Available</div>
                             </div>
                           </div>
                         )}
@@ -211,7 +211,7 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
                   <div className="bg-cream rounded-[2rem] border border-cream-300 p-8 lg:p-12 flex-1">
                     <div className="space-y-6">
                       {page.paragraphs.map((p, idx) => (
-                        <p key={idx} className="text-lg text-dark/70 leading-relaxed">{p}</p>
+                        <p key={idx} className="text-lg text-ink-70 leading-relaxed">{p}</p>
                       ))}
                     </div>
                   </div>

@@ -19,7 +19,7 @@ function StatCard({ value, label, iconName }: { value: string; label: string; ic
         <LucideIcon name={iconName} size={22} className="text-white" strokeWidth={1.75} />
       </div>
       <div className="font-display font-bold text-3xl text-white mb-1">{value}</div>
-      <div className="text-sm text-white/60 text-center">{label}</div>
+      <div className="text-sm text-paper-60 text-center">{label}</div>
     </motion.div>
   );
 }
@@ -65,7 +65,7 @@ export function AboutPageClient() {
               </motion.h1>
 
               <motion.p
-                className="text-lg text-dark/60 dark:text-white/60 leading-relaxed max-w-xl mb-10"
+                className="text-lg text-ink-60 dark:text-paper-60 leading-relaxed max-w-xl mb-10"
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.6 }}
               >
                 {aboutContent.hero.subheading}
@@ -138,7 +138,7 @@ export function AboutPageClient() {
             <motion.div variants={itemVariants} className="order-1 lg:order-2">
               <SectionBadge>{aboutContent.mission.badge}</SectionBadge>
               <h2 className="heading-lg mb-6">{aboutContent.mission.headline}</h2>
-              <p className="text-dark/60 dark:text-white/60 leading-relaxed text-lg mb-10">{aboutContent.mission.body}</p>
+              <p className="text-ink-60 dark:text-paper-60 leading-relaxed text-lg mb-10">{aboutContent.mission.body}</p>
 
               <div className="grid grid-cols-2 gap-4">
                 {aboutContent.mission.values.map((value) => (
@@ -147,7 +147,7 @@ export function AboutPageClient() {
                       <LucideIcon name={value.iconName} size={20} className="text-primary" strokeWidth={1.75} />
                     </div>
                     <h4 className="font-semibold text-sm text-dark dark:text-white mb-1 group-hover:text-primary transition-colors">{value.title}</h4>
-                    <p className="text-xs text-dark/50 dark:text-white/50 leading-relaxed">{value.description}</p>
+                    <p className="text-xs text-ink-50 dark:text-paper-50 leading-relaxed">{value.description}</p>
                   </div>
                 ))}
               </div>
@@ -167,7 +167,7 @@ export function AboutPageClient() {
             <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-6">
               Join the Justice Revolution
             </h2>
-            <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">
+            <p className="text-paper-80 text-lg mb-10 max-w-xl mx-auto">
               Thousands of enterprises trust PDR Court to resolve disputes faster, cheaper, and smarter.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">

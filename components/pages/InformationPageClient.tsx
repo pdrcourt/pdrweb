@@ -59,7 +59,7 @@ export default function InformationPageClient() {
                       <Icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
                     <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">{link.title}</h3>
-                    <p className="text-sm text-dark/60 leading-relaxed mb-4">{link.desc}</p>
+                    <p className="text-sm text-ink-60 leading-relaxed mb-4">{link.desc}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">Learn More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" /></span>
                   </motion.a>
                 );
@@ -76,7 +76,7 @@ export default function InformationPageClient() {
               <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <span className="section-label">Our Platform</span>
                 <h2 className="heading-lg mb-6">PDR COURT: Trust & Sincerity</h2>
-                <p className="text-dark/60 leading-relaxed mb-6">PDR COURT has carved a unique place in the space of Dispute Resolution and arrived at a clear positioning of the digital platform.</p>
+                <p className="text-ink-60 leading-relaxed mb-6">PDR COURT has carved a unique place in the space of Dispute Resolution and arrived at a clear positioning of the digital platform.</p>
                 <div className="grid grid-cols-2 gap-4">
                   {features.map((f, i) => {
                     const Icon = f.icon;
@@ -85,7 +85,7 @@ export default function InformationPageClient() {
                         className="rounded-xl bg-white border border-cream-300 p-4 hover:shadow-gold transition-all">
                         <Icon className="w-5 h-5 text-primary mb-2" />
                         <h4 className="font-semibold text-sm text-dark mb-1">{f.title}</h4>
-                        <p className="text-xs text-dark/55">{f.text}</p>
+                        <p className="text-xs text-ink-55">{f.text}</p>
                       </motion.div>
                     );
                   })}
@@ -105,7 +105,7 @@ export default function InformationPageClient() {
                           </div>
                           <div>
                             <h4 className="font-semibold text-white text-sm">{c.title}</h4>
-                            <p className="text-xs text-white/50">{c.desc}</p>
+                            <p className="text-xs text-paper-50">{c.desc}</p>
                           </div>
                         </div>
                       );

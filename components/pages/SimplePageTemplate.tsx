@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { LucideIcon } from "@/components/ui/LucideIcon";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 
 interface FeatureBlock {
   title: string;
@@ -31,25 +32,23 @@ export default function SimplePageTemplate(props: SimplePageProps) {
       <Navbar />
       <main className="bg-cream min-h-screen overflow-hidden">
         {/* Hero */}
-        <section className="relative pt-32 pb-16 lg:pt-44 lg:pb-24 bg-dark text-white overflow-hidden">
-          <div className="absolute inset-0 opacity-40 mix-blend-overlay">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900/40 via-dark to-dark" />
-            <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[120px] animate-pulse" />
-          </div>
+        <section className="relative pt-32 pb-16 lg:pt-44 lg:pb-24 bg-cream text-dark overflow-hidden">
+          <div className="pointer-events-none absolute -top-24 right-0 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[130px]" />
+          <EditorialHeroDecor />
           <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary-300 text-xs font-bold uppercase tracking-widest mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
                 {props.iconName && <LucideIcon name={props.iconName} className="w-4 h-4" />}
                 <span>{props.eyebrow}</span>
               </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-[1.05] tracking-tight">
+              <h1 className="font-editorial font-medium text-[clamp(2.6rem,7vw,5.5rem)] text-ink-85 mb-6 leading-[1.0] tracking-tight">
                 {props.heading}
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-ink-60 leading-relaxed max-w-3xl mx-auto">
                 {props.intro}
               </p>
               {props.ctaLabel && props.ctaHref && (
@@ -86,7 +85,7 @@ export default function SimplePageTemplate(props: SimplePageProps) {
                     <h3 className="text-xl font-display font-bold text-dark mb-3">
                       {h.title}
                     </h3>
-                    <p className="text-dark/70 leading-relaxed">{h.description}</p>
+                    <p className="text-ink-70 leading-relaxed">{h.description}</p>
                   </motion.div>
                 ))}
               </div>
@@ -107,7 +106,7 @@ export default function SimplePageTemplate(props: SimplePageProps) {
                     {s.paragraphs.map((p, pi) => (
                       <p
                         key={pi}
-                        className="text-base md:text-lg text-dark/80 leading-relaxed"
+                        className="text-base md:text-lg text-ink-80 leading-relaxed"
                       >
                         {p}
                       </p>

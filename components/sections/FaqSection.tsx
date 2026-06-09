@@ -31,7 +31,7 @@ export function FaqSection() {
             <h3 className="font-display font-semibold text-dark dark:text-white mb-2">
               Still have questions?
             </h3>
-            <p className="text-sm text-dark/55 dark:text-white/55 mb-4">
+            <p className="text-sm text-ink-55 dark:text-paper-55 mb-4">
               Our legal experts are available 24/7 to guide you through the process.
             </p>
             <a
@@ -52,7 +52,7 @@ export function FaqSection() {
                 { label: "Expert legal advisors", value: "200+" },
               ].map((s) => (
                 <div key={s.label} className="flex items-center justify-between">
-                  <span className="text-xs text-dark/50 dark:text-white/50">{s.label}</span>
+                  <span className="text-xs text-ink-50 dark:text-paper-50">{s.label}</span>
                   <span className="text-xs font-bold text-primary">{s.value}</span>
                 </div>
               ))}

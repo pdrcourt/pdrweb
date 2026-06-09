@@ -15,7 +15,7 @@ export function FeaturesSection() {
         <motion.div className="text-left" variants={itemVariants}>
           <SectionBadge align="start">{featuresContent.badge}</SectionBadge>
           <h2 className="heading-lg mb-6 leading-tight text-left">{featuresContent.headline}</h2>
-          <p className="body-lg text-dark/60 dark:text-white/60 mb-8 max-w-xl text-left">
+          <p className="body-lg text-ink-60 dark:text-paper-60 mb-8 max-w-xl text-left">
             {featuresContent.subheading}
           </p>
           
@@ -72,7 +72,7 @@ export function FeaturesSection() {
                   <span className="font-display font-bold text-2xl text-primary/70 group-hover:text-primary transition-colors">
                     {feature.metric}
                   </span>
-                  <span className="text-[10px] text-dark/40 dark:text-white/40 font-bold uppercase tracking-widest">
+                  <span className="text-[10px] text-ink-40 dark:text-paper-40 font-bold uppercase tracking-widest">
                     {feature.metricLabel}
                   </span>
                 </div>
@@ -86,7 +86,7 @@ export function FeaturesSection() {
               <h3 className="font-display font-bold text-xl text-dark dark:text-white mb-3 group-hover:text-primary transition-colors duration-200">
                 {feature.title}
               </h3>
-              <p className="text-sm text-dark/55 dark:text-white/55 leading-relaxed">
+              <p className="text-sm text-ink-55 dark:text-paper-55 leading-relaxed">
                 {feature.description}
               </p>
             </div>

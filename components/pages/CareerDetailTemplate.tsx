@@ -22,7 +22,7 @@ export default function CareerDetailTemplate({ page }: { page: FooterExperienceP
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
             <div className="flex items-center gap-2 mb-6">
-              <span className="px-3 py-1 bg-white/10 text-white/80 rounded-full text-xs font-semibold tracking-wider uppercase">Open Role</span>
+              <span className="px-3 py-1 bg-white/10 text-paper-80 rounded-full text-xs font-semibold tracking-wider uppercase">Open Role</span>
               <span className="w-1.5 h-1.5 rounded-full bg-primary-400" />
               <span className="text-primary-300 text-sm font-medium">{page.eyebrow}</span>
             </div>
@@ -30,7 +30,7 @@ export default function CareerDetailTemplate({ page }: { page: FooterExperienceP
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 tracking-tight">
               {page.title}
             </h1>
-            <p className="text-lg md:text-xl text-white/60 leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-paper-60 leading-relaxed mb-8">
               {page.description}
             </p>
             
@@ -39,7 +39,7 @@ export default function CareerDetailTemplate({ page }: { page: FooterExperienceP
                 Apply for this role
                 <ArrowRight className="w-4 h-4 ml-2" />
               </a>
-              <div className="flex items-center gap-2 text-sm text-white/50">
+              <div className="flex items-center gap-2 text-sm text-paper-50">
                 <Briefcase className="w-4 h-4" /> Full Time / Contract
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function CareerDetailTemplate({ page }: { page: FooterExperienceP
                         {section.heading}
                       </h2>
                     )}
-                    <div className="space-y-4 prose prose-lg prose-p:text-dark/70 prose-li:text-dark/70 max-w-none">
+                    <div className="space-y-4 prose prose-lg prose-p:text-ink-70 prose-li:text-ink-70 max-w-none">
                       {section.content.map((p, pIdx) => {
                         // If line is short and looks like a list item, render it nicely
                         if (p.length < 120 && !p.endsWith('.')) {
@@ -82,7 +82,7 @@ export default function CareerDetailTemplate({ page }: { page: FooterExperienceP
               ) : (
                 <div className="space-y-6">
                   {page.paragraphs.map((p, idx) => (
-                    <p key={idx} className="text-lg text-dark/70 leading-relaxed">{p}</p>
+                    <p key={idx} className="text-lg text-ink-70 leading-relaxed">{p}</p>
                   ))}
                 </div>
               )}
@@ -93,7 +93,7 @@ export default function CareerDetailTemplate({ page }: { page: FooterExperienceP
               <div className="bg-cream rounded-3xl p-6 border border-cream-300 shadow-sm">
                 <div className="mb-6 border-b border-cream-300 pb-6">
                   <h3 className="text-xl font-bold text-dark mb-2">Submit Application</h3>
-                  <p className="text-sm text-dark/60">Join the {page.title} team at PDR COURT.</p>
+                  <p className="text-sm text-ink-60">Join the {page.title} team at PDR COURT.</p>
                 </div>
                 
                 {/* Embedded simplified form or use the full component */}

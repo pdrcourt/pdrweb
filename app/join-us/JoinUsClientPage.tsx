@@ -67,7 +67,7 @@ export default function JoinUsClientPage() {
                 Shape the Future of <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Dispute Resolution</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-lg">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-lg">
                 We hire professionals who believe in the purpose of delivering independent thinking and talent development. If you think like us, then come join us.
               </p>
               
@@ -80,7 +80,7 @@ export default function JoinUsClientPage() {
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl relative overflow-hidden">
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/30 rounded-full blur-3xl" />
                 <h3 className="text-2xl font-display font-bold text-white mb-4 relative z-10">Got any Questions?</h3>
-                <p className="text-white/60 mb-6 relative z-10">Reach out to our recruitment and legal teams directly.</p>
+                <p className="text-paper-60 mb-6 relative z-10">Reach out to our recruitment and legal teams directly.</p>
                 <a href="mailto:careers@pdrcourt.com" className="inline-flex items-center gap-2 text-primary-300 hover:text-white transition-colors relative z-10 font-bold tracking-widest uppercase text-sm border-b border-primary-300/30 pb-1">
                   careers@pdrcourt.com <ArrowRight className="w-4 h-4" />
                 </a>
@@ -110,7 +110,7 @@ export default function JoinUsClientPage() {
                     {role.title}
                   </h3>
                   
-                  <p className="text-dark/60 leading-relaxed flex-1 mb-8">
+                  <p className="text-ink-60 leading-relaxed flex-1 mb-8">
                     {role.description}
                   </p>
                   
@@ -118,7 +118,7 @@ export default function JoinUsClientPage() {
                     <span className="text-sm font-bold text-dark uppercase tracking-widest group-hover:text-primary transition-colors">
                       View Role
                     </span>
-                    <div className="w-10 h-10 rounded-full border border-cream-300 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-white text-dark/30 transition-all duration-300">
+                    <div className="w-10 h-10 rounded-full border border-cream-300 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-white text-ink-30 transition-all duration-300">
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
@@ -152,7 +152,7 @@ export default function JoinUsClientPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-dark mb-2">{val.title}</h3>
-                    <p className="text-dark/70 leading-relaxed">{val.desc}</p>
+                    <p className="text-ink-70 leading-relaxed">{val.desc}</p>
                   </div>
                 </motion.div>
               ))}

@@ -109,7 +109,7 @@ function Block({
     return (
       <h4
         id={id}
-        className="scroll-mt-28 mt-8 mb-2 text-lg font-display font-semibold text-dark/90"
+        className="scroll-mt-28 mt-8 mb-2 text-lg font-display font-semibold text-ink-90"
       >
         {block.text}
       </h4>
@@ -123,7 +123,7 @@ function Block({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.4, ease }}
-        className={`my-5 text-[1.06rem] leading-[1.85] text-dark/80 prose-anchor ${
+        className={`my-5 text-[1.06rem] leading-[1.85] text-ink-80 prose-anchor ${
           isFirstParagraph
             ? "first-letter:float-left first-letter:font-display first-letter:font-bold first-letter:text-primary first-letter:text-[3.6rem] first-letter:leading-[0.8] first-letter:mr-3 first-letter:mt-1"
             : ""
@@ -149,7 +149,7 @@ function Block({
                 {i + 1}
               </span>
               <span
-                className="flex-1 text-[1.04rem] leading-[1.8] text-dark/80 prose-anchor"
+                className="flex-1 text-[1.04rem] leading-[1.8] text-ink-80 prose-anchor"
                 dangerouslySetInnerHTML={{ __html: it.html }}
               />
             </li>
@@ -169,7 +169,7 @@ function Block({
           <li key={i} className="flex gap-4">
             <span className="flex-shrink-0 w-2 h-2 rounded-full bg-gold-gradient mt-3" />
             <span
-              className="flex-1 text-[1.04rem] leading-[1.8] text-dark/80 prose-anchor"
+              className="flex-1 text-[1.04rem] leading-[1.8] text-ink-80 prose-anchor"
               dangerouslySetInnerHTML={{ __html: it.html }}
             />
           </li>
@@ -191,7 +191,7 @@ function Block({
         &ldquo;
       </span>
       <div
-        className="text-lg md:text-xl text-dark/80 italic leading-relaxed prose-anchor"
+        className="text-lg md:text-xl text-ink-80 italic leading-relaxed prose-anchor"
         dangerouslySetInnerHTML={{ __html: block.html }}
       />
     </motion.blockquote>
@@ -265,7 +265,7 @@ export default function MigratedDetailTemplate({
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4 overflow-hidden">
               <span className="eyebrow flex-shrink-0">{meta.context}</span>
               <nav
-                className="hidden sm:flex items-center gap-2 text-[11px] uppercase tracking-widest text-dark/40"
+                className="hidden sm:flex items-center gap-2 text-[11px] uppercase tracking-widest text-ink-40"
                 aria-label="Breadcrumb"
               >
                 <Link href="/" className="hover:text-primary transition-colors">Home</Link>
@@ -297,15 +297,15 @@ export default function MigratedDetailTemplate({
                 <Icon className="w-3.5 h-3.5" />
                 {meta.eyebrow}
               </div>
-              <h1 className="text-4xl md:text-[3.4rem] font-display font-bold text-dark leading-[1.07] tracking-tight max-w-4xl text-balance">
+              <h1 className="font-editorial font-medium text-[clamp(2.4rem,6vw,3.6rem)] text-dark leading-[1.05] tracking-tight max-w-4xl text-balance">
                 {page.title}
               </h1>
               {page.excerpt && (
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-2xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-2xl">
                   {page.excerpt}
                 </p>
               )}
-              <div className="mt-7 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-dark/45">
+              <div className="mt-7 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-ink-45">
                 <span className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-primary" />
                   {minutes} min read
@@ -345,7 +345,7 @@ export default function MigratedDetailTemplate({
               {/* article */}
               <article className="max-w-[44rem] mx-auto lg:mx-0 w-full">
                 {page.blocks.length === 0 && (
-                  <p className="text-lg text-dark/70">{page.description}</p>
+                  <p className="text-lg text-ink-70">{page.description}</p>
                 )}
                 {page.blocks.map((block, idx) => (
                   <Block
@@ -386,7 +386,7 @@ export default function MigratedDetailTemplate({
                           <li key={i}>
                             <a
                               href={`#${slugify(h.text)}`}
-                              className={`block text-sm leading-snug text-dark/55 hover:text-primary transition-colors ${
+                              className={`block text-sm leading-snug text-ink-55 hover:text-primary transition-colors ${
                                 h.level === 3 ? "pl-3" : ""
                               }`}
                             >
@@ -398,7 +398,7 @@ export default function MigratedDetailTemplate({
                     </div>
                     <div className="rounded-2xl bg-dark text-white p-6">
                       <h4 className="font-display font-bold mb-2">Have a dispute?</h4>
-                      <p className="text-sm text-white/55 leading-relaxed mb-4">
+                      <p className="text-sm text-paper-55 leading-relaxed mb-4">
                         Resolve it online in 60 days — first consultation is free.
                       </p>
                       <Link
@@ -479,7 +479,7 @@ export default function MigratedDetailTemplate({
                         <h3 className="text-base font-display font-bold text-dark leading-snug mb-2.5 group-hover:text-primary transition-colors line-clamp-2">
                           {r.title}
                         </h3>
-                        <p className="text-sm text-dark/55 leading-relaxed line-clamp-3 flex-1">
+                        <p className="text-sm text-ink-55 leading-relaxed line-clamp-3 flex-1">
                           {r.excerpt}
                         </p>
                         <div className="mt-4 pt-4 border-t border-cream-300 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary">

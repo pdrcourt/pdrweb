@@ -55,7 +55,7 @@ export function Accordion({ items }: AccordionProps) {
               >
                 <div className="px-5 md:px-6 pb-5 md:pb-6">
                   <div className="h-px bg-cream-300 dark:bg-white/10 mb-4" />
-                  <p className="text-dark/60 dark:text-white/60 leading-relaxed">
+                  <p className="text-ink-60 dark:text-paper-60 leading-relaxed">
                     {item.answer}
                   </p>
                 </div>

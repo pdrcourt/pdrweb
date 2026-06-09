@@ -113,7 +113,7 @@ export default function FinancialInstitutionsClientPage() {
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Fin. <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Institutions.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
                 Efficient Debt Resolution/Settlement via Our Software-Driven Conciliation & Arbitration Solutions at Competitive Prices.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -144,7 +144,7 @@ export default function FinancialInstitutionsClientPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-display font-bold text-dark leading-tight">Stay one step ahead in the business landscape</h3>
-                <p className="text-dark/60 font-semibold text-sm mt-1">Gain an edge in the business landscape with our ADR platform, reinforcing your enterprise against future challenges.</p>
+                <p className="text-ink-60 font-semibold text-sm mt-1">Gain an edge in the business landscape with our ADR platform, reinforcing your enterprise against future challenges.</p>
               </div>
             </div>
             <a href="#sales" className="btn-primary py-3.5 px-8 text-sm whitespace-nowrap">Contact Sales Team</a>
@@ -161,7 +161,7 @@ export default function FinancialInstitutionsClientPage() {
               <h2 className="text-3xl lg:text-4xl font-display font-bold text-dark leading-tight">
                 Enhancing Access to Consumer & Commercial Credit
               </h2>
-              <div className="space-y-6 text-dark/70 font-medium leading-relaxed">
+              <div className="space-y-6 text-ink-70 font-medium leading-relaxed">
                 <p>
                   In the modern world, access to credit has become critical to the development of any society. May it be consumer credit, mortgage loans or commercial loans and credit lines, desired growth is impossible without the financial framework provided by financial institutions like Banks & Non-Banking Financial Companies (NBFCs).
                 </p>
@@ -191,7 +191,7 @@ export default function FinancialInstitutionsClientPage() {
                 <span className="text-6xl lg:text-8xl font-display font-extrabold text-primary/30 leading-none">5</span>
                 <div>
                   <h3 className="text-2xl font-display font-bold text-dark">Simple Steps</h3>
-                  <p className="text-dark/60 font-bold text-sm">towards rapid dispute resolution</p>
+                  <p className="text-ink-60 font-bold text-sm">towards rapid dispute resolution</p>
                 </div>
               </div>
               
@@ -202,7 +202,7 @@ export default function FinancialInstitutionsClientPage() {
                       {idx + 1}
                     </div>
                     <h4 className="text-sm font-bold text-dark">{st.title}</h4>
-                    <p className="text-xs text-dark/60 leading-relaxed font-semibold">{st.desc}</p>
+                    <p className="text-xs text-ink-60 leading-relaxed font-semibold">{st.desc}</p>
                   </div>
                 ))}
               </div>
@@ -213,7 +213,7 @@ export default function FinancialInstitutionsClientPage() {
               <div className="bg-cream p-8 rounded-[2rem] border border-cream-300">
                 <span className="section-label">Institutional Recovery</span>
                 <h3 className="text-2xl font-bold text-dark mt-4 mb-4">Dedicated Negotiation Assistance</h3>
-                <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                   Our dedicated team provides assistance in negotiations with customers who have defaulted on payments, ensuring institutional integrity and legal standards.
                 </p>
               </div>
@@ -232,7 +232,7 @@ export default function FinancialInstitutionsClientPage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-dark mb-1">{item.title}</h4>
-                      <p className="text-xs text-dark/70 font-semibold leading-relaxed">{item.desc}</p>
+                      <p className="text-xs text-ink-70 font-semibold leading-relaxed">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -255,7 +255,7 @@ export default function FinancialInstitutionsClientPage() {
               <div className="border-l-4 border-red-500 pl-6 py-2">
                 <h4 className="text-lg font-bold text-dark">Unresponsive Borrowers, Lengthy Collection Processes, and High Costs of Collections</h4>
               </div>
-              <p className="text-sm text-dark/70 leading-relaxed font-semibold">
+              <p className="text-sm text-ink-70 leading-relaxed font-semibold">
                 Traditional legal methods generate massive overheads and prolonged lead times that hurt working capital cycles.
               </p>
             </div>
@@ -268,7 +268,7 @@ export default function FinancialInstitutionsClientPage() {
                 <div className="border-l-4 border-primary pl-6 py-2">
                   <h4 className="text-lg font-bold text-dark">Debt Recovery via Conciliation & Arbitration at a minimal cost.</h4>
                 </div>
-                <p className="text-sm text-dark/70 leading-relaxed font-semibold mt-4">
+                <p className="text-sm text-ink-70 leading-relaxed font-semibold mt-4">
                   Experience Debt Recovery with Affordable Solutions through Our Innovative Conciliation & Arbitration Platform.
                 </p>
               </div>
@@ -296,7 +296,7 @@ export default function FinancialInstitutionsClientPage() {
                   </div>
                   <div>
                     <h4 className="text-base font-bold text-dark mb-1">RBI Quantitative Fact</h4>
-                    <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                    <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                       Banks have written off double the amount recovered in the last 5 years, according to verified RBI quantitative reports.
                     </p>
                   </div>
@@ -307,7 +307,7 @@ export default function FinancialInstitutionsClientPage() {
                   </div>
                   <div>
                     <h4 className="text-base font-bold text-dark mb-1">NBFC Recovery Bottlenecks</h4>
-                    <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                    <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                       The most challenging operational phase for any NBFC represents the timely recovery of Loans along with interest.
                     </p>
                   </div>
@@ -318,7 +318,7 @@ export default function FinancialInstitutionsClientPage() {
                   </div>
                   <div>
                     <h4 className="text-base font-bold text-dark mb-1">CRISIL Rating Debt Reset Analysis</h4>
-                    <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                    <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                       A CRISIL rating analysis of NBFCs shows <span className="text-primary font-bold">₹15 Lakh Crore of debt</span> (65% of outstanding debt as of March 31st, 2022) is due for pre-pricing this fiscal owing to interest resets or maturity.
                     </p>
                   </div>
@@ -340,7 +340,7 @@ export default function FinancialInstitutionsClientPage() {
           <span className="section-label mx-auto">Our Belief</span>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-dark mt-4">We believe in the Sanctity of Law, Trust and Honesty</h2>
           
-          <div className="pt-8 border-t border-cream-300 text-sm text-dark/70 font-semibold leading-relaxed space-y-6 max-w-2xl mx-auto">
+          <div className="pt-8 border-t border-cream-300 text-sm text-ink-70 font-semibold leading-relaxed space-y-6 max-w-2xl mx-auto">
             <p>
               We at PDR COURT believe that our team can add value and deliver much better results in settling customer disputes and debt collection woes. We have set best practices with regard to dispute resolution to nurture customer confidence and long-term relationships. We practice standards of fairness, transparency in documentation and communication, and impartial evaluation.
             </p>
@@ -361,13 +361,13 @@ export default function FinancialInstitutionsClientPage() {
             <div className="space-y-6">
               <span className="section-label">Empathetic Resolution</span>
               <h3 className="text-3xl font-display font-bold text-dark">Our 360-Degree Resolution/Settlement Process</h3>
-              <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+              <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                 We understand that resolving disputes involves complex, multifaceted strategies that prioritize human needs. After thorough research, the PDR COURT team has developed a unique, step-by-step recovery process designed for quick and effective settlements.
               </p>
-              <p className="text-xs text-dark/60 leading-relaxed font-bold">
+              <p className="text-xs text-ink-60 leading-relaxed font-bold">
                 Our solution-based methodology consists of three to five stages, tailored to each dispute&apos;s specifics. With intensive training, our team cultivates empathetic insights to address complex scenarios, enabling us to identify core issues from various perspectives for efficient resolution.
               </p>
-              <p className="text-xs text-dark/60 leading-relaxed font-bold">
+              <p className="text-xs text-ink-60 leading-relaxed font-bold">
                 Leveraging advanced technology and software solutions, our platform enhances the recovery process, providing seamless support and transparency at every stage. With PDR COURT, you experience a modern, efficient approach to dispute resolution, all in a digital format.
               </p>
             </div>
@@ -387,13 +387,13 @@ export default function FinancialInstitutionsClientPage() {
               <h3 className="text-2xl font-display font-bold text-dark mt-2">PDR COURT Insights</h3>
             </div>
             <div className="md:w-2/3 space-y-4">
-              <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+              <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                 While the competitive landscape offers great opportunities, it also poses challenges, particularly in acquiring customers responsibly. As demand grows, companies often resort to outdated methods for collections and recovery, such as lengthy arbitration and court battles.
               </p>
-              <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+              <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                 Current recovery tools are either expensive or ineffective, resulting in long turnaround times that hinder the dispute resolution process. The industry must embrace tech-savvy alternatives that prioritize efficiency and speed.
               </p>
-              <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+              <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                 Furthermore, it is essential to consider human factors, supporting customers facing tough times. PDR COURT aims to partner with financial institutions to address these issues effectively. As a leading ADR platform, PDR COURT is committed to revolutionizing dispute resolution through innovative technology.
               </p>
             </div>
@@ -429,7 +429,7 @@ export default function FinancialInstitutionsClientPage() {
                 <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-xs font-bold flex-shrink-0 mt-0.5">
                   {idx + 1}
                 </div>
-                <p className="text-sm text-dark/80 font-bold leading-relaxed">{rs}</p>
+                <p className="text-sm text-ink-80 font-bold leading-relaxed">{rs}</p>
               </motion.div>
             ))}
           </div>
@@ -443,12 +443,12 @@ export default function FinancialInstitutionsClientPage() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Consulting Desk</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-6">Talk to our Experts</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-8">
+              <p className="text-lg text-ink-70 leading-relaxed mb-8">
                 Connect with our institutional panel to structure robust conciliation frameworks or customize API integrations.
               </p>
               
               <div className="bg-cream rounded-[2.5rem] border border-cream-300 p-8 space-y-6 shadow-sm">
-                <div className="space-y-4 text-sm font-semibold text-dark/70">
+                <div className="space-y-4 text-sm font-semibold text-ink-70">
                   <p className="flex items-center gap-2 text-dark font-bold"><Phone className="w-4 h-4 text-primary" /> +91 8976955540</p>
                   <p className="flex items-center gap-2 text-primary font-bold"><Mail className="w-4 h-4 text-primary" /> legal@pdrcourt.com</p>
                 </div>
@@ -465,19 +465,19 @@ export default function FinancialInstitutionsClientPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">First Name</label>
                     <input type="text" name="SingleLine" value={formData.SingleLine} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Last Name</label>
                     <input type="text" name="SingleLine1" value={formData.SingleLine1} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Email Address</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Email Address</label>
                     <input type="email" name="Email" value={formData.Email} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Tel / Mobile</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Tel / Mobile</label>
                     <input type="tel" name="PhoneNumber_countrycode" value={formData.PhoneNumber_countrycode} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                 </div>
@@ -486,26 +486,26 @@ export default function FinancialInstitutionsClientPage() {
                   <h5 className="text-sm font-bold text-dark uppercase tracking-wider mb-4">Business Details</h5>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Name of Business</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Name of Business</label>
                       <input type="text" name="SingleLine2" value={formData.SingleLine2} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Your Position</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Your Position</label>
                       <input type="text" name="SingleLine3" value={formData.SingleLine3} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Type of Industry</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Type of Industry</label>
                       <input type="text" name="SingleLine4" value={formData.SingleLine4} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Serving Customer Size</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Serving Customer Size</label>
                       <input type="text" name="SingleLine5" value={formData.SingleLine5} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                   </div>
                 </div>
 
                 <div className="border-t border-cream-300 pt-6">
-                  <label className="block text-sm font-medium text-dark/70 mb-2">How much Average Contracts done Monthly</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">How much Average Contracts done Monthly</label>
                   <select name="Dropdown" value={formData.Dropdown} onChange={handleInputChange} className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium">
                     <option value="-Select-">Select your Contracts size</option>
                     <option value="Less than 5,000 per month">Less than 5,000 per month</option>
@@ -518,7 +518,7 @@ export default function FinancialInstitutionsClientPage() {
                 <div className="border-t border-cream-300 pt-6">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="DecisionBox" checked={formData.DecisionBox} onChange={handleInputChange} className="w-5 h-5 mt-0.5 text-primary focus:ring-primary border-cream-300 rounded" />
-                    <span className="text-xs text-dark/70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
+                    <span className="text-xs text-ink-70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
                   </label>
                 </div>
 

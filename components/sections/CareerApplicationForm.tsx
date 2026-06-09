@@ -141,7 +141,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
             <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-6 leading-tight">
               Join PDR COURT <br /> as <span className="text-primary italic font-light">{role}</span>
             </h2>
-            <p className="text-lg text-dark/70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
+            <p className="text-lg text-ink-70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
               {description}
             </p>
 
@@ -162,14 +162,14 @@ export default function CareerApplicationForm({ role, description, responsibilit
                       <div className="flex-shrink-0 w-6 h-6 rounded-full bg-cream border border-cream-300 flex items-center justify-center mt-1">
                         <span className="text-xs font-bold text-primary">{i + 1}</span>
                       </div>
-                      <p className="text-dark/75 leading-relaxed font-medium flex-1">{r}</p>
+                      <p className="text-ink-75 leading-relaxed font-medium flex-1">{r}</p>
                     </motion.li>
                   ))}
                 </ul>
               </div>
             )}
 
-            <div className="flex flex-wrap gap-6 text-sm text-dark/60">
+            <div className="flex flex-wrap gap-6 text-sm text-ink-60">
               <a href="mailto:careers@pdrcourt.com" className="flex items-center gap-3 hover:text-primary transition-colors font-bold uppercase tracking-wider">
                 <div className="w-10 h-10 rounded-full bg-white border border-cream-300 flex items-center justify-center shadow-sm">
                   <Mail className="w-4 h-4 text-primary" />
@@ -196,7 +196,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                   className={`flex-1 py-3 rounded-xl text-sm font-bold uppercase tracking-wider transition-all duration-300 ${
                     activeTab === tab
                       ? 'bg-primary text-white shadow-lg shadow-primary/20'
-                      : 'text-dark/60 hover:text-dark'
+                      : 'text-ink-60 hover:text-dark'
                   }`}>
                   {tab === 'quick' ? 'Quick Apply' : 'Full Application'}
                 </button>
@@ -209,7 +209,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                   <CheckCircle2 className="w-10 h-10" />
                 </div>
                 <h3 className="text-3xl font-display font-bold text-dark mb-4">Application Submitted!</h3>
-                <p className="text-dark/60 max-w-md mx-auto leading-relaxed font-light mb-8">
+                <p className="text-ink-60 max-w-md mx-auto leading-relaxed font-light mb-8">
                   Thank you for your interest in joining PDR COURT. Our recruitment and talent acquisition team will review your credentials and get back to you shortly.
                 </p>
                 <button onClick={() => setStatus('idle')} type="button" className="btn-primary">
@@ -221,7 +221,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                 {activeTab === 'quick' ? (
                   <>
                     <div>
-                      <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Full Name</label>
+                      <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Full Name</label>
                       <input
                         type="text"
                         className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -232,7 +232,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Email Address</label>
+                      <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Email Address</label>
                       <input
                         type="email"
                         className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -243,7 +243,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Skillset / Qualifications</label>
+                      <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Skillset / Qualifications</label>
                       <textarea
                         rows={4}
                         className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold resize-none"
@@ -258,7 +258,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                   <>
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">First Name</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">First Name</label>
                         <input
                           type="text"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -268,7 +268,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Last Name</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Last Name</label>
                         <input
                           type="text"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -281,7 +281,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Age (in years)</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Age (in years)</label>
                         <input
                           type="number"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -291,7 +291,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Gender</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Gender</label>
                         <select
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
                           value={fullForm.gender}
@@ -306,7 +306,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Email Address</label>
+                      <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Email Address</label>
                       <input
                         type="email"
                         className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -318,7 +318,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Academic Qualifications</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Academic Qualifications</label>
                         <input
                           type="text"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -329,7 +329,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Extra Qualifications</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Extra Qualifications</label>
                         <input
                           type="text"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -341,7 +341,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Current Employer</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Current Employer</label>
                         <input
                           type="text"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -350,7 +350,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Current Position</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Current Position</label>
                         <input
                           type="text"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -362,7 +362,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Years of Experience</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Years of Experience</label>
                         <input
                           type="number"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -371,7 +371,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Employment Location</label>
+                        <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Employment Location</label>
                         <input
                           type="text"
                           className="w-full px-5 py-4 rounded-2xl border border-cream-300 bg-cream/30 focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all font-semibold"
@@ -382,7 +382,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-dark/50 uppercase tracking-widest mb-3">Paste Link to your C.V.</label>
+                      <label className="block text-xs font-bold text-ink-50 uppercase tracking-widest mb-3">Paste Link to your C.V.</label>
                       <div className="relative">
                         <input
                           type="url"
@@ -393,7 +393,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                           required
                         />
                       </div>
-                      <p className="text-xs text-dark/45 mt-2 ml-1 leading-relaxed">
+                      <p className="text-xs text-ink-45 mt-2 ml-1 leading-relaxed">
                         Please upload your CV to Google Drive/Dropbox and paste the shareable link here. Make sure permissions allow public viewing.
                       </p>
                     </div>
@@ -415,7 +415,7 @@ export default function CareerApplicationForm({ role, description, responsibilit
                     }}
                     required
                   />
-                  <label htmlFor="career-consent" className="text-sm text-dark/60 font-medium leading-relaxed">
+                  <label htmlFor="career-consent" className="text-sm text-ink-60 font-medium leading-relaxed">
                     I provide my consent to PDR COURT to contact me through email or Telephone.
                   </label>
                 </div>

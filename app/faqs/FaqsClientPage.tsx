@@ -135,7 +135,7 @@ export default function FaqsClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Questions.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 Gain comprehensive insights on PDR COURT online mechanisms, pricing schedules, legal enforceability, and arbitrator rosters.
               </p>
             </fm.div>
@@ -166,7 +166,7 @@ export default function FaqsClientPage() {
                 {quickQuestions.map((q, idx) => (
                   <div key={idx} className={idx > 0 ? "pt-6" : ""}>
                     <h4 className="text-base font-bold text-primary mb-2">{q.q}</h4>
-                    <p className="text-dark/70 text-sm leading-relaxed font-medium">{q.a}</p>
+                    <p className="text-ink-70 text-sm leading-relaxed font-medium">{q.a}</p>
                   </div>
                 ))}
               </div>
@@ -191,7 +191,7 @@ export default function FaqsClientPage() {
                       <fm.div layout animate={{ height: isExpanded ? 'auto' : 0 }} transition={{ duration: 0.3 }} className="overflow-hidden">
                         <div className="px-8 pb-8 space-y-4 border-t border-cream-300/50 pt-6">
                           {faq.answer.map((para, pIdx) => (
-                            <p key={pIdx} className="text-dark/70 text-sm leading-relaxed font-medium">
+                            <p key={pIdx} className="text-ink-70 text-sm leading-relaxed font-medium">
                               {para}
                             </p>
                           ))}
@@ -214,13 +214,13 @@ export default function FaqsClientPage() {
             <fm.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Assistance Request</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-6">Write to us</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-8">
+              <p className="text-lg text-ink-70 leading-relaxed mb-8">
                 If you have other questions about our custom agreements or integrations, fill out the form or dial our legal hotline.
               </p>
 
               <div className="bg-white rounded-[2.5rem] border border-cream-300 p-8 space-y-6 shadow-sm">
                 <h4 className="text-lg font-bold text-dark flex items-center gap-2"><Clock className="w-5 h-5 text-primary" /> Support Helpline</h4>
-                <div className="space-y-4 text-sm font-medium text-dark/70">
+                <div className="space-y-4 text-sm font-medium text-ink-70">
                   <p>Our team is available Monday through Friday from 10 AM to 5 PM IST (Excluding Public Holidays).</p>
                   <div className="pt-4 border-t border-cream-300 space-y-2">
                     <p className="flex items-center gap-2 text-dark font-bold"><Phone className="w-4 h-4 text-primary" /> +91 89769 55540</p>
@@ -236,19 +236,19 @@ export default function FaqsClientPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">First Name</label>
                     <input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Last Name</label>
                     <input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Email Address</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Email Address</label>
                     <input type="email" name="email" value={formData.email} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Tel / Mobile</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Tel / Mobile</label>
                     <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                 </div>
@@ -257,26 +257,26 @@ export default function FaqsClientPage() {
                   <h5 className="text-sm font-bold text-dark uppercase tracking-wider mb-4">Organization Details</h5>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Name of Business</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Name of Business</label>
                       <input type="text" name="businessName" value={formData.businessName} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Your Position</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Your Position</label>
                       <input type="text" name="position" value={formData.position} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Type of Industry</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Type of Industry</label>
                       <input type="text" name="industry" value={formData.industry} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Serving Customer Size</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Serving Customer Size</label>
                       <input type="text" name="customerSize" value={formData.customerSize} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                   </div>
                 </div>
 
                 <div className="border-t border-cream-300 pt-6">
-                  <label className="block text-sm font-medium text-dark/70 mb-2">What kind of Information you have or looking for</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">What kind of Information you have or looking for</label>
                   <select name="reason" value={formData.reason} onChange={handleInputChange} className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium">
                     <option value="-Select-">Select your Reason</option>
                     <option value="Access to Media & Promotion Materials">Access to Media & Promotion Materials</option>
@@ -289,14 +289,14 @@ export default function FaqsClientPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-dark/70 mb-2">Detail your Purpose / Reason here</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">Detail your Purpose / Reason here</label>
                   <textarea name="purpose" value={formData.purpose} onChange={handleInputChange} rows={4} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none text-dark font-medium" />
                 </div>
 
                 <div className="border-t border-cream-300 pt-6">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="consent" checked={formData.consent} onChange={handleInputChange} className="w-5 h-5 mt-0.5 text-primary focus:ring-primary border-cream-300 rounded" />
-                    <span className="text-xs text-dark/70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
+                    <span className="text-xs text-ink-70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
                   </label>
                 </div>
 

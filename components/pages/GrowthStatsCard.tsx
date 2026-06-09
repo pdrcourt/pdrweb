@@ -44,7 +44,7 @@ export default function GrowthStatsCard() {
                 Trusted at scale, growing every year
               </h3>
             </div>
-            <span className="inline-flex items-center self-start sm:self-auto rounded-full bg-white/10 border border-white/15 px-4 py-1.5 text-xs font-semibold text-white/70">
+            <span className="inline-flex items-center self-start sm:self-auto rounded-full bg-white/10 border border-white/15 px-4 py-1.5 text-xs font-semibold text-paper-70">
               {NOTE}
             </span>
           </div>
@@ -63,7 +63,7 @@ export default function GrowthStatsCard() {
                 <div className="font-display font-bold leading-none text-5xl md:text-6xl bg-gold-gradient bg-clip-text text-transparent">
                   {s.value}
                 </div>
-                <div className="mt-3 text-sm font-medium uppercase tracking-wider text-white/55">
+                <div className="mt-3 text-sm font-medium uppercase tracking-wider text-paper-55">
                   {s.label}
                 </div>
               </motion.div>

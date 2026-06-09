@@ -75,7 +75,7 @@ export function StatsSection() {
                   <AnimatedNumber value={stat.value} />
                 </span>
               </h3>
-              <p className="text-sm md:text-base text-white/70 font-medium uppercase tracking-wide">
+              <p className="text-sm md:text-base text-paper-70 font-medium uppercase tracking-wide">
                 {stat.label}
               </p>
             </motion.div>

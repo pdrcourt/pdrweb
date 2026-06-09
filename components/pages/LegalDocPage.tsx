@@ -119,7 +119,7 @@ export default function LegalDocPage({
       return (
         <p
           key={key}
-          className="my-4 text-[15px] md:text-base text-dark/70 leading-relaxed prose-anchor"
+          className="my-4 text-[15px] md:text-base text-ink-70 leading-relaxed prose-anchor"
           dangerouslySetInnerHTML={{ __html: fixPlaceholders(b.html, b.text) }}
         />
       );
@@ -131,7 +131,7 @@ export default function LegalDocPage({
             <li key={i} className="flex items-start gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0" />
               <span
-                className="flex-1 text-[15px] text-dark/70 leading-relaxed prose-anchor"
+                className="flex-1 text-[15px] text-ink-70 leading-relaxed prose-anchor"
                 dangerouslySetInnerHTML={{ __html: it.html }}
               />
             </li>
@@ -143,7 +143,7 @@ export default function LegalDocPage({
       return (
         <blockquote
           key={key}
-          className="my-4 border-l-4 border-primary pl-5 italic text-dark/65"
+          className="my-4 border-l-4 border-primary pl-5 italic text-ink-65"
           dangerouslySetInnerHTML={{ __html: b.html }}
         />
       );
@@ -155,52 +155,52 @@ export default function LegalDocPage({
     <>
       <Navbar />
       <main className="bg-cream">
-        {/* ════════ HERO — dark, rules-style ════════ */}
-        <section className="relative overflow-hidden bg-dark text-white pt-32 md:pt-40 pb-24 md:pb-32">
-          <div className="pointer-events-none absolute inset-0 opacity-60 mix-blend-overlay">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-900/50 via-dark to-dark" />
-          </div>
-          <div className="pointer-events-none absolute -top-24 right-[-10%] w-[640px] h-[640px] rounded-full bg-primary/15 blur-[150px]" />
-          <div className="pointer-events-none absolute bottom-[-20%] left-[-10%] w-[460px] h-[460px] rounded-full bg-amber-500/10 blur-[130px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.05]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.6) 1px,transparent 1px)",
-              backgroundSize: "80px 80px",
-            }}
-          />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gold-gradient opacity-50" />
+        {/* ════════ HERO — light editorial ════════ */}
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-24 md:pb-32">
+          {/* faint construction line-art */}
+          <svg
+            className="pointer-events-none absolute inset-0 w-full h-full"
+            viewBox="0 0 1440 820"
+            preserveAspectRatio="xMidYMid slice"
+            aria-hidden
+          >
+            <g fill="none" stroke="#834009" strokeWidth="1" opacity="0.09">
+              <path d="M-50 250 C 420 90, 900 430, 1490 180" />
+              <path d="M-50 540 C 460 620, 980 360, 1490 600" />
+              <path d="M300 -50 C 380 360, 240 640, 560 980" />
+              <ellipse cx="720" cy="410" rx="680" ry="300" />
+            </g>
+          </svg>
+          <span className="absolute top-28 right-8 md:right-14 w-3 h-3 rounded-full bg-dark/70" />
 
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
+            <div className="max-w-3xl">
               {/* left */}
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease }}
               >
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-primary-300">
+                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
                   <span className="inline-block w-7 h-px bg-primary/60" />
-                  <ScrollText className="w-3.5 h-3.5" />
                   {eyebrow}
                 </span>
-                <h1 className="mt-6 text-4xl md:text-6xl font-display font-bold leading-[1.05] tracking-tight">
+                <h1 className="mt-6 font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   {title}
                   {title && " "}
-                  <span className="gold-text">{titleAccent}</span>
+                  <span className="italic text-ink-55">{titleAccent}</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-white/65 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   {intro}
                 </p>
-                <div className="mt-7 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-white/55">
+                <div className="mt-7 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-ink-50">
                   <span className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-primary-300" />
+                    <ShieldCheck className="w-4 h-4 text-primary" />
                     Governed by the laws of India
                   </span>
                   {sections.length > 0 && (
                     <span className="flex items-center gap-2">
-                      <ListOrdered className="w-4 h-4 text-primary-300" />
+                      <ListOrdered className="w-4 h-4 text-primary" />
                       {sections.length} sections
                     </span>
                   )}
@@ -209,48 +209,20 @@ export default function LegalDocPage({
                   <a href="#sections" className="btn-primary">
                     Read the document
                   </a>
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center rounded-full border border-white/30 text-white hover:bg-white/10 font-semibold transition-all duration-200 px-7 py-3.5"
-                  >
+                  <Link href="/contact" className="btn-outline">
                     Got any questions?
                   </Link>
                 </div>
               </motion.div>
+            </div>
+          </div>
 
-              {/* right — related legal documents */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-white/[0.04] border border-white/10 backdrop-blur-sm p-7 md:p-8 overflow-hidden"
-              >
-                <div className="pointer-events-none absolute -top-20 -right-16 w-72 h-72 rounded-full bg-primary/20 blur-[90px]" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-primary-300">
-                  {isRules ? <BookText className="w-4 h-4" /> : <Shield className="w-4 h-4" />}
-                  {panelTitle}
-                </span>
-                <p className="mt-4 text-lg font-display font-semibold leading-snug">
-                  {panelLead}
-                </p>
-                <div className="mt-6 space-y-2.5">
-                  {docs.map((d) => (
-                    <Link
-                      key={d.label}
-                      href={d.href}
-                      className="group flex items-center gap-4 rounded-xl bg-white/[0.05] border border-white/10 px-4 py-3.5 hover:border-primary/40 hover:bg-white/[0.08] transition-all"
-                    >
-                      <span className="w-9 h-9 flex-shrink-0 rounded-lg bg-primary/15 text-primary-300 flex items-center justify-center">
-                        <d.icon className="w-4 h-4" />
-                      </span>
-                      <span className="flex-1 text-sm font-semibold text-white">
-                        {d.label}
-                      </span>
-                      <ArrowRight className="w-4 h-4 text-white/40 group-hover:text-primary-300 group-hover:translate-x-1 transition-all" />
-                    </Link>
-                  ))}
-                </div>
-              </motion.div>
+          {/* giant clipped brand word */}
+          <div className="pointer-events-none absolute -bottom-[3vw] left-0 right-0 overflow-hidden">
+            <div className={SECTION}>
+              <span className="block font-editorial font-semibold text-dark/[0.05] leading-none whitespace-nowrap text-[clamp(3.5rem,16vw,16rem)]">
+                PDR COURT
+              </span>
             </div>
           </div>
         </section>
@@ -275,9 +247,9 @@ export default function LegalDocPage({
                           <li key={i}>
                             <a
                               href={`#${slugify(s.title)}`}
-                              className="flex gap-2.5 text-sm text-dark/55 hover:text-primary transition-colors leading-snug"
+                              className="flex gap-2.5 text-sm text-ink-55 hover:text-primary transition-colors leading-snug"
                             >
-                              <span className="text-primary/50 font-semibold tabular-nums">
+                              <span className="font-editorial italic text-primary/50 tabular-nums">
                                 {String(i + 1).padStart(2, "0")}
                               </span>
                               <span>{s.title}</span>
@@ -308,11 +280,11 @@ export default function LegalDocPage({
                       transition={{ duration: 0.4, ease }}
                       className="scroll-mt-28"
                     >
-                      <div className="flex items-baseline gap-3 mb-3">
-                        <span className="text-sm font-display font-bold text-primary tabular-nums">
+                      <div className="flex items-baseline gap-3.5 mb-3">
+                        <span className="font-editorial italic text-lg text-primary/50 tabular-nums">
                           {String(i + 1).padStart(2, "0")}
                         </span>
-                        <h2 className="text-xl md:text-2xl font-display font-bold text-dark leading-snug">
+                        <h2 className="font-editorial font-medium text-2xl md:text-[1.9rem] text-dark leading-snug">
                           {s.title}
                         </h2>
                       </div>
@@ -328,8 +300,8 @@ export default function LegalDocPage({
         </section>
 
         {/* ════════ SANCTUM (reusable) ════════ */}
-        <div className="bg-white border-t border-cream-300">
-          <SanctumSection />
+        <div className="border-t border-cream-300">
+          <SanctumSection variant="editorial" />
         </div>
       </main>
       <Footer />

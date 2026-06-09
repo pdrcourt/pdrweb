@@ -54,7 +54,7 @@ export default function QuestPillars() {
               <h3 className="text-lg font-display font-bold text-dark mb-2.5">
                 {p.title}
               </h3>
-              <p className="text-sm text-dark/60 leading-relaxed">{p.text}</p>
+              <p className="text-sm text-ink-60 leading-relaxed">{p.text}</p>
             </motion.div>
           ))}
         </div>

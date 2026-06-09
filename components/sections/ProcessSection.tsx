@@ -29,7 +29,7 @@ export function ProcessSection() {
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/20" />
                 <div className="w-2.5 h-2.5 rounded-full bg-green-400/20" />
              </div>
-             <span className="text-[10px] font-bold text-dark/20 dark:text-white/20 uppercase tracking-widest">Digital Flow Engine</span>
+             <span className="text-[10px] font-bold text-ink-20 dark:text-paper-20 uppercase tracking-widest">Digital Flow Engine</span>
           </div>
           <Image 
             src="/images/process.png" 
@@ -59,7 +59,7 @@ export function ProcessSection() {
                     {step.title}
                   </h3>
                 </div>
-                <p className="text-sm text-dark/55 dark:text-white/55 leading-relaxed">
+                <p className="text-sm text-ink-55 dark:text-paper-55 leading-relaxed">
                   {step.description}
                 </p>
               </div>

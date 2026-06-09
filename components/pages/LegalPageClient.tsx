@@ -29,10 +29,10 @@ export function LegalPageClient({
           >
             <SectionBadge>Legal Information</SectionBadge>
             <h1 className="heading-xl mb-6">{title}</h1>
-            <p className="body-lg text-dark/60 dark:text-white/60 mb-8">
+            <p className="body-lg text-ink-60 dark:text-paper-60 mb-8">
               {subtitle}
             </p>
-            <div className="flex items-center gap-6 text-sm text-dark/40 dark:text-white/40">
+            <div className="flex items-center gap-6 text-sm text-ink-40 dark:text-paper-40">
               <div className="flex items-center gap-2">
                 <Clock size={16} />
                 <span>Last updated: {lastUpdated}</span>
@@ -72,7 +72,7 @@ export function LegalPageClient({
                       className={`block px-4 py-2 rounded-lg text-sm transition-all ${
                         title.toLowerCase().includes(link.toLowerCase().substring(0, 5))
                         ? "bg-primary/10 text-primary font-bold border border-primary/20"
-                        : "text-dark/50 dark:text-white/50 hover:bg-cream-100 dark:hover:bg-dark-700"
+                        : "text-ink-50 dark:text-paper-50 hover:bg-cream-100 dark:hover:bg-dark-700"
                       }`}
                     >
                       {link}
@@ -83,7 +83,7 @@ export function LegalPageClient({
 
               <div className="p-6 rounded-2xl bg-gold-gradient text-white shadow-gold">
                 <h4 className="font-bold mb-2">Need legal help?</h4>
-                <p className="text-xs text-white/80 mb-4 leading-relaxed">
+                <p className="text-xs text-paper-80 mb-4 leading-relaxed">
                   Our compliance team is available to answer any questions regarding our terms.
                 </p>
                 <a href="/#contact" className="inline-flex items-center gap-2 text-xs font-bold hover:gap-3 transition-all">
@@ -98,7 +98,7 @@ export function LegalPageClient({
             <div className="bg-white dark:bg-dark-800 rounded-[2.5rem] p-8 md:p-16 border border-cream-300 dark:border-white/10 shadow-glass min-h-[600px]">
               {content}
               
-              <div className="mt-16 pt-8 border-t border-cream-200 dark:border-white/5 text-sm text-dark/40 dark:text-white/40">
+              <div className="mt-16 pt-8 border-t border-cream-200 dark:border-white/5 text-sm text-ink-40 dark:text-paper-40">
                 <p>If you have any questions about this document, please contact us at <a href="mailto:legal@pdrcourt.com" className="text-primary font-semibold">legal@pdrcourt.com</a>.</p>
               </div>
             </div>

@@ -70,7 +70,7 @@ export function SliderSection() {
                     {slide.headlineAccent}
                   </span>
                 </h3>
-                <p className="text-base md:text-lg text-dark/70 dark:text-white/70 leading-relaxed">
+                <p className="text-base md:text-lg text-ink-70 dark:text-paper-70 leading-relaxed">
                   {slide.subheading}
                 </p>
               </div>

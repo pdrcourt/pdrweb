@@ -39,7 +39,7 @@ export default function HowItWorksClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Quick & <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Easy.</span>
               </h1>
-              <p className="text-xl text-white/70 font-light leading-relaxed mb-10 border-l-4 border-primary pl-6 py-2">
+              <p className="text-xl text-paper-70 font-light leading-relaxed mb-10 border-l-4 border-primary pl-6 py-2">
                 Every process from Buying an Agreement to Filing a Dispute to Proceedings, all done seamlessly within the app.
               </p>
               <div className="flex gap-4">
@@ -80,7 +80,7 @@ export default function HowItWorksClientPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-dark mb-2">{feature.title}</h3>
-                    <p className="text-dark/60 leading-relaxed text-sm">{feature.desc}</p>
+                    <p className="text-ink-60 leading-relaxed text-sm">{feature.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -129,7 +129,7 @@ export default function HowItWorksClientPage() {
                     
                     <div className="relative z-10">
                       <h3 className="text-2xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">{step.title}</h3>
-                      <p className="text-dark/60 leading-relaxed text-lg">{step.desc}</p>
+                      <p className="text-ink-60 leading-relaxed text-lg">{step.desc}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -170,7 +170,7 @@ export default function HowItWorksClientPage() {
             <div>
               <span className="section-label">Mobile Experience</span>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-6">The App</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-10">
+              <p className="text-lg text-ink-70 leading-relaxed mb-10">
                 With PDR COURT as their ADR platform, arbitrators can efficiently review testimony and evidence presented by the parties in dispute, whether during in-person hearings or through our advanced digital tools, ensuring effective resolution of the matter.
               </p>
               
@@ -180,14 +180,14 @@ export default function HowItWorksClientPage() {
                   <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors">
                     <Download className="w-8 h-8" />
                     <div className="flex flex-col">
-                      <span className="text-xs text-white/70">Download on the</span>
+                      <span className="text-xs text-paper-70">Download on the</span>
                       <span className="text-lg font-bold leading-none">App Store</span>
                     </div>
                   </a>
                   <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors">
                     <Download className="w-8 h-8" />
                     <div className="flex flex-col">
-                      <span className="text-xs text-white/70">GET IT ON</span>
+                      <span className="text-xs text-paper-70">GET IT ON</span>
                       <span className="text-lg font-bold leading-none">Google Play</span>
                     </div>
                   </a>

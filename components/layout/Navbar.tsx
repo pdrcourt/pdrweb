@@ -55,7 +55,7 @@ export function Navbar() {
               link.children ? (
                 <div key={link.label} className="relative">
                   <button
-                    className="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium text-dark/70 dark:text-white/70 hover:text-primary hover:bg-primary/5 transition-all duration-200"
+                    className="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium text-ink-70 dark:text-paper-70 hover:text-primary hover:bg-primary/5 transition-all duration-200"
                     onClick={() =>
                       setActiveDropdown(
                         activeDropdown === link.label ? null : link.label,
@@ -81,7 +81,7 @@ export function Navbar() {
                           <a
                             key={child.label}
                             href={child.href}
-                            className="flex items-center gap-2 px-4 py-2.5 text-sm text-dark/70 dark:text-white/70 hover:text-primary hover:bg-primary/5 transition-all"
+                            className="flex items-center gap-2 px-4 py-2.5 text-sm text-ink-70 dark:text-paper-70 hover:text-primary hover:bg-primary/5 transition-all"
                             onClick={() => setActiveDropdown(null)}
                           >
                             <span className="w-1.5 h-1.5 rounded-full bg-primary/40 flex-shrink-0" />
@@ -96,7 +96,7 @@ export function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="px-3 py-2 rounded-lg text-sm font-medium text-dark/70 dark:text-white/70 hover:text-primary hover:bg-primary/5 transition-all duration-200"
+                  className="px-3 py-2 rounded-lg text-sm font-medium text-ink-70 dark:text-paper-70 hover:text-primary hover:bg-primary/5 transition-all duration-200"
                 >
                   {link.label}
                 </a>
@@ -125,7 +125,7 @@ export function Navbar() {
                   <a
                     key={link.label}
                     href={link.href}
-                    className="px-3 py-2 rounded-lg text-sm font-medium text-dark/70 dark:text-white/70 hover:text-primary hover:bg-primary/5 transition-all duration-200"
+                    className="px-3 py-2 rounded-lg text-sm font-medium text-ink-70 dark:text-paper-70 hover:text-primary hover:bg-primary/5 transition-all duration-200"
                   >
                     {link.label}
                   </a>
@@ -133,7 +133,7 @@ export function Navbar() {
             </div>
             <a
               href="/contact"
-              className="hidden md:inline text-sm font-semibold text-dark/70 dark:text-white/70 hover:text-primary transition-colors"
+              className="hidden md:inline text-sm font-semibold text-ink-70 dark:text-paper-70 hover:text-primary transition-colors"
             >
               Log In
             </a>
@@ -217,7 +217,7 @@ export function Navbar() {
                 {navContent.links.map((link) =>
                   link.children ? (
                     <div key={link.label}>
-                      <div className="px-4 py-2 text-xs font-bold uppercase tracking-widest text-dark/30 dark:text-white/30">
+                      <div className="px-4 py-2 text-xs font-bold uppercase tracking-widest text-ink-30 dark:text-paper-30">
                         {link.label}
                       </div>
                       {link.children.map((child) => (
@@ -225,7 +225,7 @@ export function Navbar() {
                           key={child.label}
                           href={child.href}
                           onClick={() => setMobileOpen(false)}
-                          className="block pl-8 pr-4 py-2.5 rounded-xl text-sm text-dark/70 dark:text-white/70 hover:text-primary hover:bg-primary/5 transition-all"
+                          className="block pl-8 pr-4 py-2.5 rounded-xl text-sm text-ink-70 dark:text-paper-70 hover:text-primary hover:bg-primary/5 transition-all"
                         >
                           {child.label}
                         </a>

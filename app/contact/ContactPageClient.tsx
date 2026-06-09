@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import ContactForm from "@/components/shared/ContactForm";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -75,20 +76,12 @@ export default function ContactPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
-              {/* left */}
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -98,10 +91,10 @@ export default function ContactPageClient() {
                   <Mail className="w-3.5 h-3.5" />
                   Contact Us
                 </span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   We&apos;re here <span className="gold-text">for you</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   PDR COURT&apos;s Customer Service team is dedicated to giving
                   you the information you need — quickly, clearly, and with care.
                   Below are multiple ways to connect with us.
@@ -112,52 +105,6 @@ export default function ContactPageClient() {
                   </a>
                   <a href="tel:8976955540" className="btn-outline">
                     Call +91 8976955540
-                  </a>
-                </div>
-              </motion.div>
-
-              {/* right — support snapshot */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-dark text-white p-8 md:p-10 shadow-gold-lg overflow-hidden"
-              >
-                <div className="pointer-events-none absolute -top-20 -right-16 w-72 h-72 rounded-full bg-primary/25 blur-[90px]" />
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-primary-300">
-                  <Headphones className="w-4 h-4" />
-                  Support at a Glance
-                </span>
-                <div className="mt-6 space-y-3">
-                  <div className="flex items-start gap-3.5 rounded-xl bg-white/[0.06] border border-white/10 p-4">
-                    <Clock className="w-5 h-5 text-primary-300 flex-shrink-0 mt-0.5" />
-                    <div>
-                      <div className="text-sm font-semibold text-white">
-                        Monday – Friday · 10 am – 5 pm
-                      </div>
-                      <div className="text-xs text-white/50 mt-0.5">
-                        We are closed on public holidays.
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="tel:8976955540"
-                    className="flex items-center gap-3.5 rounded-xl bg-white/[0.06] border border-white/10 p-4 hover:border-primary/40 transition-colors"
-                  >
-                    <Phone className="w-5 h-5 text-primary-300 flex-shrink-0" />
-                    <span className="text-sm font-semibold text-white">
-                      +91 8976955540
-                    </span>
-                  </a>
-                  <a
-                    href="mailto:legal@pdrcourt.com"
-                    className="flex items-center gap-3.5 rounded-xl bg-white/[0.06] border border-white/10 p-4 hover:border-primary/40 transition-colors"
-                  >
-                    <Mail className="w-5 h-5 text-primary-300 flex-shrink-0" />
-                    <span className="text-sm font-semibold text-white">
-                      legal@pdrcourt.com
-                    </span>
                   </a>
                 </div>
               </motion.div>
@@ -173,7 +120,7 @@ export default function ContactPageClient() {
               <h2 className="heading-lg mt-3">
                 Multiple ways to <span className="accent-serif">connect</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Check our important contact information and pick whatever works
                 best for you.
               </p>
@@ -200,7 +147,7 @@ export default function ContactPageClient() {
                 <h3 className="text-xl font-display font-bold text-white mb-2">
                   Ticket Support
                 </h3>
-                <p className="text-sm text-white/60 leading-relaxed flex-1">
+                <p className="text-sm text-paper-60 leading-relaxed flex-1">
                   For a quick and thorough response, raise a request through our
                   advanced Ticketing Support System.
                 </p>
@@ -224,7 +171,7 @@ export default function ContactPageClient() {
                 <h3 className="text-lg font-display font-bold text-dark mb-2">
                   Support Helpline
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Our support is open{" "}
                   <span className="font-semibold text-dark">
                     Monday – Friday, 10 am – 5 pm
@@ -248,7 +195,7 @@ export default function ContactPageClient() {
                 <h3 className="text-lg font-display font-bold text-dark mb-2">
                   Call Us
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Speak directly with our team.
                 </p>
                 <span className="mt-4 font-semibold text-primary group-hover:underline">
@@ -271,7 +218,7 @@ export default function ContactPageClient() {
                 <h3 className="text-lg font-display font-bold text-dark mb-2">
                   Email Us
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Write to us and we&apos;ll respond within a business day.
                 </p>
                 <span className="mt-4 font-semibold text-primary group-hover:underline break-all">
@@ -290,7 +237,7 @@ export default function ContactPageClient() {
               <h2 className="heading-lg mt-3">
                 Our <span className="accent-serif">offices</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Sure, we&apos;re online — but you can also meet us in person
                 across India.
               </p>
@@ -328,7 +275,7 @@ export default function ContactPageClient() {
                       </span>
                     </div>
                   </div>
-                  <p className="mt-4 text-sm text-dark/60 leading-relaxed">
+                  <p className="mt-4 text-sm text-ink-60 leading-relaxed">
                     {o.address}
                   </p>
                 </motion.div>
@@ -358,7 +305,7 @@ export default function ContactPageClient() {
                     New to PDR COURT?{" "}
                     <span className="accent-serif">We&apos;ll guide you.</span>
                   </h2>
-                  <p className="mt-4 text-dark/70 leading-relaxed max-w-xl">
+                  <p className="mt-4 text-ink-70 leading-relaxed max-w-xl">
                     Are you an individual new to PDR COURT and need to know more
                     about Arbitration and its benefits? Don&apos;t worry — our
                     team of experts will guide you every step of the way.
@@ -367,7 +314,7 @@ export default function ContactPageClient() {
                 </div>
                 <div className="lg:text-right">
                   <div className="inline-flex flex-col items-start lg:items-end gap-4">
-                    <span className="inline-flex items-center gap-2 text-sm text-dark/55">
+                    <span className="inline-flex items-center gap-2 text-sm text-ink-55">
                       <CalendarClock className="w-4 h-4 text-primary" />
                       Free expert consultation
                     </span>
@@ -404,9 +351,9 @@ export default function ContactPageClient() {
                       <h3 className="font-display font-bold text-dark group-hover:text-primary transition-colors">
                         {s.title}
                       </h3>
-                      <p className="text-xs text-dark/55 mt-0.5">{s.text}</p>
+                      <p className="text-xs text-ink-55 mt-0.5">{s.text}</p>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-dark/30 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 text-ink-30 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                   </Link>
                 </motion.div>
               ))}
@@ -420,7 +367,7 @@ export default function ContactPageClient() {
             <div className="text-center mb-10">
               <span className="eyebrow justify-center">Write to Us</span>
               <h2 className="heading-md mt-3">Send us a message</h2>
-              <p className="mt-3 text-dark/55">
+              <p className="mt-3 text-ink-55">
                 Tell us what you need — we&apos;ll get back to you within one
                 business day.
               </p>

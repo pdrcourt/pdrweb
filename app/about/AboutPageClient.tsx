@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
@@ -72,19 +73,12 @@ export default function AboutPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-royal/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -94,11 +88,11 @@ export default function AboutPageClient() {
                   <Compass className="w-3.5 h-3.5" />
                   About PDR COURT
                 </span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   A place of trust, built on{" "}
                   <span className="gold-text">truth</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   PDR COURT is a premier ADR platform — leading the way with
                   advanced technology to foster effective, impartial dispute
                   resolution in every interaction.
@@ -110,44 +104,6 @@ export default function AboutPageClient() {
                   <Link href="/contact" className="btn-outline">
                     Ask us anything
                   </Link>
-                </div>
-              </motion.div>
-
-              {/* navy mission panel */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-royal-mesh text-white p-8 md:p-10 shadow-royal-lg overflow-hidden"
-              >
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">
-                  <Compass className="w-4 h-4" />
-                  Our Mission
-                </span>
-                <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                  To carry the pursuit of{" "}
-                  <span className="font-brand italic">Nyaya</span> onto the
-                  world stage.
-                </p>
-                <p className="mt-3 text-sm text-white/55 leading-relaxed">
-                  A robust framework for seeking justice — matching words with
-                  actions, with care and responsibility.
-                </p>
-                <div className="mt-7 grid grid-cols-3 gap-px rounded-2xl overflow-hidden bg-white/10">
-                  {FACTS.map((f) => (
-                    <div
-                      key={f.l}
-                      className="bg-royal-950/40 px-3 py-5 text-center"
-                    >
-                      <div className="text-2xl font-display font-bold gold-text">
-                        {f.v}
-                      </div>
-                      <div className="text-[10px] uppercase tracking-wider text-white/45 mt-1">
-                        {f.l}
-                      </div>
-                    </div>
-                  ))}
                 </div>
               </motion.div>
             </div>
@@ -163,7 +119,7 @@ export default function AboutPageClient() {
                 Building a place of{" "}
                 <span className="accent-serif">trust</span>
               </h2>
-              <p className="mt-5 text-lg text-dark/60 leading-relaxed">
+              <p className="mt-5 text-lg text-ink-60 leading-relaxed">
                 PDR COURT is building a place of trust that ensures everything
                 is established in truth — India&apos;s first &ldquo;Indic PDR
                 COURT&rdquo;, working on a robust digital system and
@@ -181,7 +137,7 @@ export default function AboutPageClient() {
                   transition={{ duration: 0.5, ease, delay: i * 0.12 }}
                   className="quote-card"
                 >
-                  <p className="text-dark/70 leading-relaxed">{p}</p>
+                  <p className="text-ink-70 leading-relaxed">{p}</p>
                 </motion.div>
               ))}
             </div>
@@ -199,7 +155,7 @@ export default function AboutPageClient() {
                 Principles that guide{" "}
                 <span className="accent-serif">every case</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 The commitments that shape how we protect, resolve and serve.
               </p>
             </div>
@@ -220,7 +176,7 @@ export default function AboutPageClient() {
                   <h3 className="text-lg font-display font-bold text-dark mb-2">
                     {p.title}
                   </h3>
-                  <p className="text-sm text-dark/60 leading-relaxed">
+                  <p className="text-sm text-ink-60 leading-relaxed">
                     {p.text}
                   </p>
                 </motion.div>
@@ -237,7 +193,7 @@ export default function AboutPageClient() {
               <h2 className="heading-lg mt-3">
                 Get to know <span className="accent-serif">PDR COURT</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Our company, our people, and the network that makes resolution
                 possible.
               </p>
@@ -257,7 +213,7 @@ export default function AboutPageClient() {
                 <h3 className="text-2xl font-display font-bold text-white mb-2">
                   Company
                 </h3>
-                <p className="text-sm text-white/65 leading-relaxed flex-1 max-w-md">
+                <p className="text-sm text-paper-65 leading-relaxed flex-1 max-w-md">
                   India&apos;s first &ldquo;Indic PDR COURT&rdquo; — building a
                   place of trust on a robust digital system and infrastructure.
                 </p>
@@ -278,7 +234,7 @@ export default function AboutPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   Investors
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Experience, business management and growth that set a record
                   of high performance. Investing in PDR COURT is investing in
                   success.
@@ -300,7 +256,7 @@ export default function AboutPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   Offices
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Present in every city of business — expanding domestically
                   and globally.
                 </p>
@@ -321,7 +277,7 @@ export default function AboutPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   Neutrals
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   A skilled, diligent panel of professionals with deep
                   experience in law and business.
                 </p>
@@ -342,7 +298,7 @@ export default function AboutPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   Partners
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Join the new dispute-resolution avenue set to disrupt how the
                   world does business.
                 </p>
@@ -377,7 +333,7 @@ export default function AboutPageClient() {
                   Nyaya
                 </span>
               </h2>
-              <p className="relative mt-6 text-lg text-white/60 leading-relaxed max-w-2xl mx-auto">
+              <p className="relative mt-6 text-lg text-paper-60 leading-relaxed max-w-2xl mx-auto">
                 PDR COURT is driving toward justice on the world stage with a
                 robust framework for seeking it — pitching words to actions,
                 with proper care and responsibility for every member we serve.
@@ -395,7 +351,7 @@ export default function AboutPageClient() {
                   <Mail className="w-7 h-7 text-primary" />
                   Have something to ask us?
                 </h3>
-                <p className="text-dark/55 mt-2">
+                <p className="text-ink-55 mt-2">
                   Any vital information you&apos;d like to know? Write to us at{" "}
                   <a
                     href="mailto:legal@pdrcourt.com"

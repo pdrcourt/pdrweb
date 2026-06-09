@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { itemVariants, containerVariants } from "@/components/ui/SectionWrapper";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import type { SolutionBenefit, FAQ } from "@/data/content";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 
 interface ProcessStep {
   step: number;
@@ -58,23 +59,16 @@ export function SolutionPageTemplate({
   return (
     <main className="bg-cream dark:bg-dark">
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-hero-gradient dark:bg-dark">
+      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-cream dark:bg-dark">
         {/* Decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/8 rounded-full blur-2xl" />
-          <div
-            className="absolute inset-0 opacity-[0.03]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(131,64,9,0.5) 1px, transparent 1px)",
-              backgroundSize: "60px 60px",
-            }}
-          />
+          <EditorialHeroDecor />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-3xl">
             {/* Text */}
             <div>
               <motion.div
@@ -88,7 +82,7 @@ export function SolutionPageTemplate({
               </motion.div>
 
               <motion.h1
-                className="font-display font-bold text-5xl md:text-6xl text-dark dark:text-white leading-tight mb-6"
+                className="font-editorial font-medium text-[clamp(2.6rem,7vw,5rem)] text-dark dark:text-white leading-[1.0] tracking-tight mb-6"
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
@@ -101,7 +95,7 @@ export function SolutionPageTemplate({
               </motion.h1>
 
               <motion.p
-                className="text-lg text-dark/60 dark:text-white/60 leading-relaxed max-w-xl mb-10"
+                className="text-lg text-ink-60 dark:text-paper-60 leading-relaxed max-w-xl mb-10"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
@@ -133,31 +127,14 @@ export function SolutionPageTemplate({
                 {hero.stats.map((stat, i) => (
                   <div
                     key={i}
-                    className="p-4 rounded-2xl bg-white/80 dark:bg-dark-800/80 border border-cream-300 dark:border-white/10 shadow-glass backdrop-blur-sm"
+                    className="p-4 rounded-2xl bg-white/80 dark:bg-dark-800/80 border border-cream-300 dark:border-white/10 shadow-gold backdrop-blur-sm"
                   >
                     <div className="font-display font-bold text-xl text-primary mb-0.5">{stat.value}</div>
-                    <div className="text-xs text-dark/50 dark:text-white/50">{stat.label}</div>
+                    <div className="text-xs text-ink-50 dark:text-paper-50">{stat.label}</div>
                   </div>
                 ))}
               </motion.div>
             </div>
-
-            {/* Image */}
-            <motion.div
-              className="hidden lg:block"
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
-            >
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-                className="rounded-3xl overflow-hidden shadow-gold-lg border border-cream-200"
-              >
-                <Image src={hero.image} alt={hero.badge} width={640} height={420} className="w-full h-auto object-cover" priority />
-              </motion.div>
-              <div className="absolute inset-0 -z-10 bg-primary/10 rounded-3xl blur-3xl scale-110 pointer-events-none" />
-            </motion.div>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-cream dark:from-dark to-transparent pointer-events-none" />
@@ -175,12 +152,12 @@ export function SolutionPageTemplate({
           >
             <motion.div variants={itemVariants}>
               <h2 className="heading-lg mb-6">{whatIs.headline}</h2>
-              <p className="text-dark/60 dark:text-white/60 leading-relaxed text-lg mb-8">{whatIs.body}</p>
+              <p className="text-ink-60 dark:text-paper-60 leading-relaxed text-lg mb-8">{whatIs.body}</p>
               <ul className="space-y-3">
                 {whatIs.points.map((point) => (
                   <li key={point} className="flex items-start gap-3">
                     <CheckCircle size={18} className="text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-dark/70 dark:text-white/70 text-sm leading-relaxed">{point}</span>
+                    <span className="text-ink-70 dark:text-paper-70 text-sm leading-relaxed">{point}</span>
                   </li>
                 ))}
               </ul>
@@ -237,7 +214,7 @@ export function SolutionPageTemplate({
                 <h3 className="font-display font-semibold text-dark dark:text-white mb-2 group-hover:text-primary transition-colors">
                   {benefit.title}
                 </h3>
-                <p className="text-sm text-dark/55 dark:text-white/55 leading-relaxed">{benefit.description}</p>
+                <p className="text-sm text-ink-55 dark:text-paper-55 leading-relaxed">{benefit.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -276,7 +253,7 @@ export function SolutionPageTemplate({
                   </span>
                 </div>
                 <h4 className="font-semibold text-sm text-dark dark:text-white mb-1">{step.title}</h4>
-                <p className="text-xs text-dark/50 dark:text-white/50 leading-relaxed">{step.description}</p>
+                <p className="text-xs text-ink-50 dark:text-paper-50 leading-relaxed">{step.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -317,7 +294,7 @@ export function SolutionPageTemplate({
                   <LucideIcon name={uc.iconName} size={26} className="text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="font-semibold text-dark dark:text-white mb-2 group-hover:text-primary transition-colors">{uc.title}</h3>
-                <p className="text-sm text-dark/50 dark:text-white/50">{uc.description}</p>
+                <p className="text-sm text-ink-50 dark:text-paper-50">{uc.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -393,7 +370,7 @@ export function SolutionPageTemplate({
             <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-6 leading-tight">
               Ready to Get Started?
             </h2>
-            <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">
+            <p className="text-paper-80 text-lg mb-10 max-w-xl mx-auto">
               File your first case today and experience the future of dispute resolution — fast, secure, and legally binding.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">

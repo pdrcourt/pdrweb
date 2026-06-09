@@ -43,7 +43,7 @@ export default function ResourcesLegalPageClient() {
                       <Icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
                     <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">{r.title}</h3>
-                    <p className="text-sm text-dark/60 leading-relaxed mb-4">{r.desc}</p>
+                    <p className="text-sm text-ink-60 leading-relaxed mb-4">{r.desc}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
                       Read More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -62,14 +62,14 @@ export default function ResourcesLegalPageClient() {
               <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 rounded-full px-4 py-1.5 mb-6">Compliance</span>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-6">100% Compliant with Digital Personal Data Protection Act, 2023</h2>
-                <p className="text-white/60 leading-relaxed">PDR COURT is a neutral platform facilitating alternative dispute resolution through arbitration and conciliation. It is not an arbitral institution, tribunal, or adjudicatory authority.</p>
+                <p className="text-paper-60 leading-relaxed">PDR COURT is a neutral platform facilitating alternative dispute resolution through arbitration and conciliation. It is not an arbitral institution, tribunal, or adjudicatory authority.</p>
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
                 className="grid grid-cols-2 gap-4">
                 {[{ v: 'DPDPA', l: 'Compliant' }, { v: 'ADR/ODR', l: 'Focused' }, { v: '18+', l: 'Min Age' }, { v: '256-bit', l: 'SSL Encrypted' }].map((s, i) => (
                   <div key={i} className="rounded-2xl bg-white/5 border border-white/10 p-5 text-center">
                     <div className="text-xl font-display font-bold text-primary">{s.v}</div>
-                    <div className="text-xs text-white/50 mt-1">{s.l}</div>
+                    <div className="text-xs text-paper-50 mt-1">{s.l}</div>
                   </div>
                 ))}
               </motion.div>

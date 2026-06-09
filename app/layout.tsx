@@ -1,23 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Poppins, Cinzel } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+// Fraunces — the single editorial serif used across the entire site:
+// headings, body, navigation — everything shares this one family.
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-poppins",
-  display: "swap",
-});
-
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  variable: "--font-cinzel",
+  weight: ["400", "500", "600", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -137,6 +128,12 @@ const jsonLd = {
         postalCode: "421501",
         addressCountry: "IN",
       },
+      sameAs: [
+        "https://www.facebook.com/pdrcourt",
+        "https://www.instagram.com/pdrcourt/",
+        "https://www.linkedin.com/company/pdrcourt",
+        "https://x.com/pdrcourt",
+      ],
     },
     {
       "@type": "WebSite",
@@ -158,7 +155,7 @@ export default function RootLayout({
   return (
     <html lang="en-IN" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${poppins.variable} ${cinzel.variable} font-sans`}
+        className={`${fraunces.variable} font-sans`}
       >
         <script
           type="application/ld+json"

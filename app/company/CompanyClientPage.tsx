@@ -36,7 +36,7 @@ export default function CompanyClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Company <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Overview.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 {"PDR COURT is cultivating a trustworthy platform that ensures clarity and efficiency. As India's first \"Indic Digital Court,\" we harness cutting-edge software solutions."}
               </p>
               
@@ -64,7 +64,7 @@ export default function CompanyClientPage() {
                 <Scale className="w-8 h-8" />
               </div>
               <h3 className="text-4xl lg:text-5xl font-display font-bold text-primary mb-2">12.7 Lac</h3>
-              <p className="text-dark/70 font-medium">Cases Reported in 2024</p>
+              <p className="text-ink-70 font-medium">Cases Reported in 2024</p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-cream p-10 rounded-[2.5rem] border border-cream-300 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -72,7 +72,7 @@ export default function CompanyClientPage() {
                 <ShieldCheck className="w-8 h-8" />
               </div>
               <h3 className="text-4xl lg:text-5xl font-display font-bold text-primary mb-2">8.6 Lac</h3>
-              <p className="text-dark/70 font-medium">Settled Cases in 2024</p>
+              <p className="text-ink-70 font-medium">Settled Cases in 2024</p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-dark p-10 rounded-[2.5rem] text-center text-white relative overflow-hidden shadow-xl hover:-translate-y-1 transition-transform duration-300">
@@ -82,7 +82,7 @@ export default function CompanyClientPage() {
                   <Award className="w-8 h-8" />
                 </div>
                 <h3 className="text-4xl lg:text-5xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200 mb-2">67%</h3>
-                <p className="text-white/80 font-medium">Success Record</p>
+                <p className="text-paper-80 font-medium">Success Record</p>
               </div>
             </motion.div>
           </div>
@@ -95,7 +95,7 @@ export default function CompanyClientPage() {
           <div className="grid lg:grid-cols-[1fr_2fr] gap-16 lg:gap-24">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:sticky top-32 h-max">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-6 leading-tight">Our growth over the last 5 years</h2>
-              <p className="text-lg text-dark/70 leading-relaxed">
+              <p className="text-lg text-ink-70 leading-relaxed">
                 We created a one-of-a-kind tech platform with Dispute Resolution at its core. Empaneled a plethora of experts and legal professionals to help our members find quick and effective resolutions. We have now evolved as a company that caters to multiple verticals with an unbiased and honest approach.
               </p>
             </motion.div>
@@ -115,7 +115,7 @@ export default function CompanyClientPage() {
                         <span className="text-sm font-bold text-primary tracking-widest uppercase">{event.date.split(' ')[0]}</span>
                         <span className="text-2xl font-display font-bold text-dark">{event.date.split(' ')[1]}</span>
                       </div>
-                      <p className="text-dark/80 leading-relaxed">
+                      <p className="text-ink-80 leading-relaxed">
                         {event.description}
                       </p>
                     </div>

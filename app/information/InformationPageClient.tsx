@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
@@ -65,19 +66,12 @@ export default function InformationPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
-          <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-royal/10 blur-[130px]" />
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
+          <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -87,11 +81,11 @@ export default function InformationPageClient() {
                   <Info className="w-3.5 h-3.5" />
                   Information
                 </span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   Know all about our{" "}
                   <span className="gold-text">ADR service</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   For any inquiry, guidance, or a personalised demo of our ADR
                   process, our support and sales team is here — tailored
                   support, whenever you need it.
@@ -103,38 +97,6 @@ export default function InformationPageClient() {
                   <Link href="/contact" className="btn-outline">
                     Contact our team
                   </Link>
-                </div>
-              </motion.div>
-
-              {/* navy support panel */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-royal-mesh text-white p-8 md:p-10 shadow-royal-lg overflow-hidden"
-              >
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">
-                  <Headphones className="w-4 h-4" />
-                  Support & Sales
-                </span>
-                <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                  Guidance, answers and a demo — whenever you need it.
-                </p>
-                <div className="mt-7 space-y-2.5">
-                  {SUPPORT.map((s) => (
-                    <div
-                      key={s.text}
-                      className="flex items-center gap-3.5 rounded-xl bg-white/[0.06] border border-white/10 p-3.5"
-                    >
-                      <span className="flex-shrink-0 w-9 h-9 rounded-lg bg-gold-gradient text-white flex items-center justify-center">
-                        <s.icon className="w-4 h-4" />
-                      </span>
-                      <span className="text-sm font-semibold text-white/90">
-                        {s.text}
-                      </span>
-                    </div>
-                  ))}
                 </div>
               </motion.div>
             </div>
@@ -149,7 +111,7 @@ export default function InformationPageClient() {
               <h2 className="heading-lg mt-3">
                 Everything, <span className="accent-serif">clearly organised</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Browse our information hub — guidance, ethos, and proof of how
                 we work.
               </p>
@@ -178,11 +140,11 @@ export default function InformationPageClient() {
                       <h3 className="text-lg md:text-xl font-display font-bold text-dark group-hover:text-royal transition-colors">
                         {d.title}
                       </h3>
-                      <p className="mt-1 text-sm text-dark/55 leading-relaxed">
+                      <p className="mt-1 text-sm text-ink-55 leading-relaxed">
                         {d.text}
                       </p>
                     </div>
-                    <ArrowRight className="flex-shrink-0 w-5 h-5 text-dark/25 group-hover:text-royal group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="flex-shrink-0 w-5 h-5 text-ink-25 group-hover:text-royal group-hover:translate-x-1 transition-all" />
                   </Link>
                 </motion.div>
               ))}
@@ -211,7 +173,7 @@ export default function InformationPageClient() {
                   <h2 className="mt-4 text-3xl md:text-4xl font-display font-bold leading-tight">
                     Schedule a personalised demo
                   </h2>
-                  <p className="mt-4 text-white/60 leading-relaxed max-w-lg">
+                  <p className="mt-4 text-paper-60 leading-relaxed max-w-lg">
                     Want to see how our platform facilitates online and offline
                     dispute resolution? Our team will walk you through it.
                   </p>

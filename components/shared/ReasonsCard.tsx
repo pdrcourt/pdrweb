@@ -64,7 +64,7 @@ export default function ReasonsCard({ reasons, columns = 3, variant = 'default' 
                   <Icon className="w-4 h-4 text-primary" />
                 </div>
               )}
-              <p className="text-sm md:text-base text-dark/80 dark:text-white/80 leading-relaxed">
+              <p className="text-sm md:text-base text-ink-80 dark:text-paper-80 leading-relaxed">
                 {reason}
               </p>
             </div>

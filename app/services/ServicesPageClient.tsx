@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
@@ -83,19 +84,12 @@ export default function ServicesPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
-          <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-royal/10 blur-[130px]" />
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
+          <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -105,11 +99,11 @@ export default function ServicesPageClient() {
                   <Sparkles className="w-3.5 h-3.5" />
                   Our Services
                 </span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   ADR solutions for{" "}
                   <span className="gold-text">every kind of dispute</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   We drive success by addressing your ADR needs through a
                   cutting-edge, technology-powered platform — from our first
                   handshake to the final outcome, we stand by you.
@@ -121,38 +115,6 @@ export default function ServicesPageClient() {
                   <Link href="/talk-to-us" className="btn-outline">
                     Talk to our team
                   </Link>
-                </div>
-              </motion.div>
-
-              {/* navy signal panel */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-royal-mesh text-white p-8 md:p-10 shadow-royal-lg overflow-hidden"
-              >
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">
-                  <ShieldCheck className="w-4 h-4" />
-                  The Platform
-                </span>
-                <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                  Technology and expertise, working as one.
-                </p>
-                <div className="mt-7 space-y-2.5">
-                  {SIGNALS.map((s) => (
-                    <div
-                      key={s.text}
-                      className="flex items-center gap-3.5 rounded-xl bg-white/[0.06] border border-white/10 p-3.5"
-                    >
-                      <span className="flex-shrink-0 w-9 h-9 rounded-lg bg-gold-gradient text-white flex items-center justify-center">
-                        <s.icon className="w-4 h-4" />
-                      </span>
-                      <span className="text-sm font-semibold text-white/90">
-                        {s.text}
-                      </span>
-                    </div>
-                  ))}
                 </div>
               </motion.div>
             </div>
@@ -168,7 +130,7 @@ export default function ServicesPageClient() {
                 Built for every kind of{" "}
                 <span className="accent-serif">business</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Whatever your scale, our platform adapts to the way you resolve
                 disputes.
               </p>
@@ -186,7 +148,7 @@ export default function ServicesPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   Individuals
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Dispute resolution tailored for individuals — a seamless
                   experience for sole proprietors and independent contractors
                   navigating business challenges.
@@ -208,7 +170,7 @@ export default function ServicesPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   MSMEs
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Software-driven dispute resolution that empowers MSMEs and
                   lifts productivity — built around the sector&apos;s vast
                   contribution to the economy.
@@ -230,7 +192,7 @@ export default function ServicesPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   Financial Institutions
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Banks and NBFCs resolve disputes quickly and efficiently,
                   supporting the financial framework that growth depends on.
                 </p>
@@ -256,7 +218,7 @@ export default function ServicesPageClient() {
                 <h3 className="text-2xl font-display font-bold text-white mb-2">
                   Enterprises
                 </h3>
-                <p className="text-sm text-white/65 leading-relaxed flex-1 max-w-md">
+                <p className="text-sm text-paper-65 leading-relaxed flex-1 max-w-md">
                   An ADR platform that lets enterprises collaborate seamlessly —
                   extending market presence while safeguarding brand identity
                   and business relationships.
@@ -279,7 +241,7 @@ export default function ServicesPageClient() {
                 A disciplined, <span className="accent-serif">tech-driven</span>{" "}
                 method
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 PDR COURT combines technology and expertise to analyse your
                 requirements and deliver the best possible results.
               </p>
@@ -301,7 +263,7 @@ export default function ServicesPageClient() {
                   <h3 className="text-lg font-display font-bold text-dark mb-2">
                     {a.title}
                   </h3>
-                  <p className="text-sm text-dark/60 leading-relaxed">
+                  <p className="text-sm text-ink-60 leading-relaxed">
                     {a.text}
                   </p>
                 </motion.div>
@@ -340,7 +302,7 @@ export default function ServicesPageClient() {
                     <div className="text-3xl md:text-4xl font-display font-bold gold-text">
                       {m.v}
                     </div>
-                    <div className="text-[11px] uppercase tracking-wider text-white/45 mt-1.5">
+                    <div className="text-[11px] uppercase tracking-wider text-paper-45 mt-1.5">
                       {m.l}
                     </div>
                   </div>
@@ -359,7 +321,7 @@ export default function ServicesPageClient() {
                 15 reasons to <span className="accent-serif">resolve</span> with
                 us
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 A disciplined, tech-driven platform that has set industry
                 benchmarks since inception.
               </p>
@@ -378,7 +340,7 @@ export default function ServicesPageClient() {
                   <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-royal/10 text-royal flex items-center justify-center font-display font-bold text-sm group-hover:bg-royal-gradient group-hover:text-white transition-colors">
                     {i + 1}
                   </span>
-                  <p className="text-sm text-dark/70 leading-relaxed">{r}</p>
+                  <p className="text-sm text-ink-70 leading-relaxed">{r}</p>
                 </motion.div>
               ))}
             </div>
@@ -406,7 +368,7 @@ export default function ServicesPageClient() {
                   <h2 className="mt-4 text-3xl md:text-4xl font-display font-bold leading-tight">
                     Dispute resolution, in your pocket
                   </h2>
-                  <p className="mt-4 text-white/60 leading-relaxed max-w-lg">
+                  <p className="mt-4 text-paper-60 leading-relaxed max-w-lg">
                     Buy an agreement, file a dispute, attend proceedings and
                     track your award — every step, in one app, powered by
                     advanced digital tooling.
@@ -419,7 +381,7 @@ export default function ServicesPageClient() {
                   >
                     <Apple className="w-7 h-7 text-white flex-shrink-0" />
                     <span>
-                      <span className="block text-[10px] uppercase tracking-wider text-white/45">
+                      <span className="block text-[10px] uppercase tracking-wider text-paper-45">
                         Download on the
                       </span>
                       <span className="block text-sm font-semibold text-white">
@@ -433,7 +395,7 @@ export default function ServicesPageClient() {
                   >
                     <Play className="w-7 h-7 text-white flex-shrink-0" />
                     <span>
-                      <span className="block text-[10px] uppercase tracking-wider text-white/45">
+                      <span className="block text-[10px] uppercase tracking-wider text-paper-45">
                         Get it on
                       </span>
                       <span className="block text-sm font-semibold text-white">
@@ -456,7 +418,7 @@ export default function ServicesPageClient() {
                   <Check className="w-7 h-7 text-primary" />
                   Not sure which service fits?
                 </h3>
-                <p className="text-dark/55 mt-2">
+                <p className="text-ink-55 mt-2">
                   Our team will help you find the right path — and the right
                   price — for your dispute.
                 </p>

@@ -58,7 +58,7 @@ export default function ServicesPageClient() {
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
                     <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">{s.title}</h3>
-                    <p className="text-sm text-dark/60 leading-relaxed mb-4">{s.desc}</p>
+                    <p className="text-sm text-ink-60 leading-relaxed mb-4">{s.desc}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
                       Learn More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -77,8 +77,8 @@ export default function ServicesPageClient() {
               <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <span className="section-label">Why Choose Us</span>
                 <h2 className="heading-lg mb-6">From our first handshake to the final outcome, we stand by you!</h2>
-                <p className="text-dark/60 leading-relaxed mb-6">PDR COURT combines technology and expertise to analyze your requirements for the best results. Our disciplined and tech-driven approach leads us to the truth.</p>
-                <p className="text-dark/60 leading-relaxed">Since our inception, we have set industry benchmarks, driven by our vision of inspiring future generations with hope and truth.</p>
+                <p className="text-ink-60 leading-relaxed mb-6">PDR COURT combines technology and expertise to analyze your requirements for the best results. Our disciplined and tech-driven approach leads us to the truth.</p>
+                <p className="text-ink-60 leading-relaxed">Since our inception, we have set industry benchmarks, driven by our vision of inspiring future generations with hope and truth.</p>
               </motion.div>
               <div className="grid sm:grid-cols-2 gap-5">
                 {features.map((f, i) => {
@@ -90,7 +90,7 @@ export default function ServicesPageClient() {
                         <Icon className="w-5 h-5 text-primary" />
                       </div>
                       <h4 className="font-semibold text-dark mb-1 text-sm">{f.title}</h4>
-                      <p className="text-xs text-dark/55 leading-relaxed">{f.text}</p>
+                      <p className="text-xs text-ink-55 leading-relaxed">{f.text}</p>
                     </motion.div>
                   );
                 })}

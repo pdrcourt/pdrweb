@@ -41,7 +41,7 @@ export default function ItDevelopersClientPage() {
                 IT & Software <br/> at <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">PDR COURT</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-lg">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-lg">
                 PDR COURT believes in keeping abreast of technological advancement to deliver top-tier ADR services. Join us as an independent developer and build the future of justice.
               </p>
               
@@ -54,7 +54,7 @@ export default function ItDevelopersClientPage() {
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-3xl relative overflow-hidden">
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/30 rounded-full blur-3xl" />
                 <h3 className="text-2xl font-display font-bold text-white mb-4 relative z-10">Innovate & Scale</h3>
-                <p className="text-white/60 mb-6 relative z-10 leading-relaxed">
+                <p className="text-paper-60 mb-6 relative z-10 leading-relaxed">
                   Design complex React portals, optimize MongoDB databases, deploy AI extraction engines, and write clean, structured Next.js/TypeScript code to automate legal operations.
                 </p>
                 <a href="#apply-section" className="inline-flex items-center gap-2 text-primary-300 hover:text-white transition-colors relative z-10 font-bold tracking-widest uppercase text-sm border-b border-primary-300/30 pb-1">
@@ -74,7 +74,7 @@ export default function ItDevelopersClientPage() {
             {/* Column 1 */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col">
               <h3 className="text-2xl font-display font-bold text-primary mb-6">Career Opportunities</h3>
-              <p className="text-dark/70 leading-relaxed font-light mb-6 flex-1">
+              <p className="text-ink-70 leading-relaxed font-light mb-6 flex-1">
                 At PDR COURT, we cultivate an inclusive culture powered by our innovative solutions, fostering a genuine and impactful work environment. We celebrate diversity, ensuring everyone is respected and inspired to excel.
               </p>
               <span className="text-sm font-bold text-primary uppercase tracking-widest border-l-2 border-primary pl-4">
@@ -85,7 +85,7 @@ export default function ItDevelopersClientPage() {
             {/* Column 2 */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="flex flex-col border-y lg:border-y-0 lg:border-x border-cream-300 py-10 lg:py-0 lg:px-8">
               <h3 className="text-2xl font-display font-bold text-primary mb-6">We are growing</h3>
-              <p className="text-dark/70 leading-relaxed font-light mb-6 flex-1">
+              <p className="text-ink-70 leading-relaxed font-light mb-6 flex-1">
                 Join us at PDR COURT, where career opportunities align with your development, allowing you to thrive in a tech-driven environment. We view our experts as invaluable assets, offering growth alongside our collective success.
               </p>
               <span className="text-sm font-bold text-primary uppercase tracking-widest border-l-2 border-primary pl-4">
@@ -96,7 +96,7 @@ export default function ItDevelopersClientPage() {
             {/* Column 3 */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="flex flex-col">
               <h3 className="text-2xl font-display font-bold text-primary mb-6">The Place of Nyaya</h3>
-              <p className="text-dark/70 leading-relaxed font-light mb-6 flex-1">
+              <p className="text-ink-70 leading-relaxed font-light mb-6 flex-1">
                 We are on a journey to the realm of Nyaya, where truth is the foundation, enhanced by our ADR platform. If you share our vision of delivering reliable, accessible, and fast dispute resolution, join us!
               </p>
               <span className="text-sm font-bold text-primary uppercase tracking-widest border-l-2 border-primary pl-4">
@@ -123,7 +123,7 @@ export default function ItDevelopersClientPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="section-label">Work Culture</span>
             <h2 className="heading-lg text-dark mt-4">Built on Core Value Pillars</h2>
-            <p className="text-dark/60 mt-4 leading-relaxed font-light">
+            <p className="text-ink-60 mt-4 leading-relaxed font-light">
               At PDR COURT, our work culture thrives on collaboration, innovation, and inclusivity, driven by our commitment to technology and software-based solutions.
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function ItDevelopersClientPage() {
                 <Award className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-dark mb-4">Highest Quality Standards</h3>
-              <p className="text-dark/70 leading-relaxed font-light">
+              <p className="text-ink-70 leading-relaxed font-light">
                 PDR COURT strives to establish the highest standard of quality in everything we do. We constantly challenge ourselves to improve and break new ground.
               </p>
             </div>
@@ -144,7 +144,7 @@ export default function ItDevelopersClientPage() {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-dark mb-4">Pillars of Trust</h3>
-              <p className="text-dark/70 leading-relaxed font-light">
+              <p className="text-ink-70 leading-relaxed font-light">
                 We believe in making lasting connections built on the pillars of Trust, Honesty, Integrity, Transparency, and Empathy.
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function ItDevelopersClientPage() {
                 <Heart className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-dark mb-4">Upholding Justice &amp; Learning</h3>
-              <p className="text-dark/70 leading-relaxed font-light">
+              <p className="text-ink-70 leading-relaxed font-light">
                 Our dedication to justice drives us to attempt ingenious and unconventional methods. An honest failure is viewed as a learning opportunity.
               </p>
             </div>

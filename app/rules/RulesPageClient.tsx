@@ -5,158 +5,229 @@ import { Footer } from "@/components/layout/Footer";
 import SanctumSection from "@/components/pages/SanctumSection";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Scale, Handshake, Gavel, ArrowRight, BookText } from "lucide-react";
+import { Asterisk, ArrowUpRight } from "lucide-react";
 
 const ease = [0.16, 1, 0.3, 1] as const;
-const SECTION = "mx-auto max-w-6xl px-4 sm:px-6 lg:px-8";
+const SECTION = "mx-auto max-w-7xl px-4 sm:px-6 lg:px-10";
+
+// Media frames — numbered, mixed circle/pill, linking to the rulebooks.
+type Frame = {
+  no: string;
+  label: string;
+  shape: "circle" | "pill";
+  img: string;
+  href: string;
+};
+
+const GROUP_A: Frame[] = [
+  { no: "01", label: "Arbitration", shape: "circle", img: "/images/pdr-court-arbitrator.jpg", href: "/arbitration-rules" },
+  { no: "02", label: "Mediation", shape: "circle", img: "/images/business-people-converstation.jpg", href: "/mediation-rules" },
+];
+
+const GROUP_B: Frame[] = [
+  { no: "01", label: "Proceedings", shape: "pill", img: "/images/business-board-meeting.jpg", href: "/proceeding-rules" },
+  { no: "02", label: "Conciliation", shape: "circle", img: "/images/happy-professionals-shaking-hands.jpg", href: "/arbitration-rules" },
+];
 
 const RULEBOOKS = [
   {
-    icon: Scale,
+    no: "01",
     title: "Arbitration Rules",
-    text: "PDR COURT is building a place of trust that ensures everything is established in truth. India's first 'Indic PDR Court' — built on a robust digital system and infrastructure for effective dispute resolution and efficient enforcement.",
+    text: "The procedure that governs every arbitration conducted on the PDR COURT platform — appointment, conduct, and the enforceable award.",
     href: "/arbitration-rules",
   },
   {
-    icon: Handshake,
+    no: "02",
     title: "Mediation Rules",
-    text: "Our experience, business management plans, and growth have set a record of high performance. Investing in PDR COURT is investing in success, bottom line & profit.",
+    text: "How mediations are structured, conducted, and brought to a fair, mutually agreeable settlement.",
     href: "/mediation-rules",
   },
   {
-    icon: Gavel,
+    no: "03",
     title: "Rules of ODR Proceedings",
-    text: "We aim to be present in every city of business. In keeping with this approach, we plan to expand our presence domestically and globally over the coming months.",
+    text: "The rules that frame each online proceeding from filing through to the final, binding outcome.",
     href: "/proceeding-rules",
   },
 ];
+
+function MediaFrame({ f }: { f: Frame }) {
+  const isPill = f.shape === "pill";
+  return (
+    <Link href={f.href} className="group flex flex-col items-center">
+      <span className="font-editorial italic text-sm text-ink-45 mb-3 tracking-wide">
+        {f.no}
+      </span>
+      <span
+        className={`relative overflow-hidden bg-cream-200 ring-1 ring-dark/[0.06] transition-all duration-500 group-hover:ring-primary/40 group-hover:-translate-y-1 ${
+          isPill
+            ? "rounded-full w-56 sm:w-72 lg:w-80 h-28 sm:h-32 lg:h-36"
+            : "rounded-full w-28 sm:w-32 lg:w-40 h-28 sm:h-32 lg:h-40"
+        }`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={f.img}
+          alt={`${f.label} — PDR COURT`}
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover grayscale-[.35] sepia-[.18] contrast-[1.03] transition-all duration-700 group-hover:grayscale-0 group-hover:sepia-0 group-hover:scale-105"
+        />
+        {/* warm editorial duotone tint + hover lift */}
+        <span className="absolute inset-0 bg-gradient-to-t from-primary/25 via-transparent to-transparent mix-blend-multiply" />
+        <span className="absolute inset-0 bg-dark/0 group-hover:bg-dark/10 transition-colors duration-500" />
+        <ArrowUpRight className="absolute top-3 right-3 w-4 h-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow z-10" />
+      </span>
+      <span className="mt-3 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-55 group-hover:text-primary transition-colors">
+        {f.label}
+      </span>
+    </Link>
+  );
+}
 
 export default function RulesPageClient() {
   return (
     <>
       <Navbar />
-      <main className="bg-cream">
-        {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-dark text-white pt-32 md:pt-40 pb-24 md:pb-32">
-          <div className="pointer-events-none absolute inset-0 opacity-60 mix-blend-overlay">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-900/50 via-dark to-dark" />
-          </div>
-          <div className="pointer-events-none absolute -top-24 right-[-10%] w-[640px] h-[640px] rounded-full bg-primary/15 blur-[150px]" />
-          <div className="pointer-events-none absolute bottom-[-20%] left-[-10%] w-[460px] h-[460px] rounded-full bg-amber-500/10 blur-[130px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.05]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.6) 1px,transparent 1px)",
-              backgroundSize: "80px 80px",
-            }}
-          />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gold-gradient opacity-50" />
+      <main className="bg-cream text-dark">
+        {/* ════════════════ EDITORIAL POSTER ════════════════ */}
+        <section className="relative overflow-hidden min-h-screen pt-24 md:pt-28 pb-[18vw] md:pb-[14vw]">
+          {/* faint construction line-art */}
+          <svg
+            className="pointer-events-none absolute inset-0 w-full h-full"
+            viewBox="0 0 1440 900"
+            preserveAspectRatio="xMidYMid slice"
+            aria-hidden
+          >
+            <g fill="none" stroke="#834009" strokeWidth="1" opacity="0.1">
+              <path d="M-50 250 C 360 120, 760 380, 1490 160" />
+              <path d="M-50 470 C 380 560, 820 360, 1490 600" />
+              <path d="M250 -50 C 360 360, 240 620, 520 950" />
+              <path d="M980 -50 C 880 320, 1140 560, 980 950" />
+              <ellipse cx="720" cy="450" rx="640" ry="300" />
+            </g>
+          </svg>
+          {/* top-right dot accent */}
+          <span className="absolute top-24 right-8 md:right-14 w-3.5 h-3.5 rounded-full bg-dark/70" />
 
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
-              <motion.div
-                initial={{ opacity: 0, y: 26 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease }}
-              >
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-primary-300">
-                  <span className="inline-block w-7 h-px bg-primary/60" />
-                  Rules &amp; Guidelines
-                </span>
-                <h1 className="mt-6 text-4xl md:text-6xl font-display font-bold leading-[1.05] tracking-tight">
-                  The framework behind{" "}
-                  <span className="gold-text">every fair resolution</span>
-                </h1>
-                <p className="mt-6 text-lg md:text-xl text-white/65 leading-relaxed max-w-xl">
-                  PDR COURT&apos;s rules and guidelines inform every party of the
-                  procedure set for Arbitration, Mediation, and Online Dispute
-                  Resolution — clear, consistent, and built on trust.
-                </p>
-                <div className="mt-9 flex flex-wrap gap-4">
-                  <a href="#rulebooks" className="btn-primary">
-                    Explore the rulebooks
-                  </a>
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center rounded-full border border-white/30 text-white hover:bg-white/10 font-semibold transition-all duration-200 px-7 py-3.5"
-                  >
-                    Got any questions?
-                  </Link>
-                </div>
-              </motion.div>
+            {/* ── TOP HEADLINE ── */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease }}
+              className="relative"
+            >
+              <h1 className="font-editorial font-medium text-ink-75 leading-[0.9] tracking-tight text-[clamp(2.9rem,10vw,10rem)]">
+                The Art of Resolution
+              </h1>
+              <span className="font-editorial italic text-ink-45 text-[clamp(1rem,2.4vw,2.2rem)] block text-right -mt-2 md:-mt-4 pr-1">
+                procedure
+              </span>
+            </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-white/[0.04] border border-white/10 backdrop-blur-sm p-7 md:p-8"
-              >
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-primary-300">
-                  <BookText className="w-4 h-4" />
-                  Three Rulebooks
-                </span>
-                <div className="mt-5 space-y-2.5">
-                  {RULEBOOKS.map((r) => (
-                    <Link
-                      key={r.title}
-                      href={r.href}
-                      className="group flex items-center gap-4 rounded-xl bg-white/[0.05] border border-white/10 px-4 py-3.5 hover:border-primary/40 hover:bg-white/[0.08] transition-all"
-                    >
-                      <span className="w-9 h-9 flex-shrink-0 rounded-lg bg-primary/15 text-primary-300 flex items-center justify-center">
-                        <r.icon className="w-4 h-4" />
-                      </span>
-                      <span className="flex-1 text-sm font-semibold text-white">
-                        {r.title}
-                      </span>
-                      <ArrowRight className="w-4 h-4 text-white/40 group-hover:text-primary-300 group-hover:translate-x-1 transition-all" />
-                    </Link>
-                  ))}
-                </div>
-              </motion.div>
+            {/* ── NUMBERED MEDIA ROW ── */}
+            <motion.div
+              initial={{ opacity: 0, y: 26 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease, delay: 0.15 }}
+              className="mt-10 md:mt-14 flex flex-wrap items-center justify-center gap-x-7 gap-y-10 sm:gap-x-10 lg:gap-x-12"
+            >
+              {GROUP_A.map((f) => (
+                <MediaFrame key={f.label} f={f} />
+              ))}
+
+              {/* asterisk divider */}
+              <span className="hidden sm:flex flex-col items-center text-primary/70 self-center mt-6">
+                <Asterisk className="w-5 h-5" />
+              </span>
+
+              {GROUP_B.map((f) => (
+                <MediaFrame key={f.label} f={f} />
+              ))}
+            </motion.div>
+
+            {/* ── CAPTION / TAGLINE ── */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, ease, delay: 0.4 }}
+              className="mt-10 md:mt-12 max-w-4xl"
+            >
+              <p className="text-[11px] sm:text-xs font-medium uppercase tracking-[0.18em] text-ink-45 leading-relaxed">
+                Under the Arbitration &amp; Conciliation Act, 1996 · Code of Civil
+                Procedure, 1908
+              </p>
+              <p className="mt-2 text-[11px] sm:text-xs italic font-semibold uppercase tracking-[0.14em] text-ink-55 leading-relaxed">
+                How clear, consistent rules free every party from uncertainty —
+                and deliver a fair, enforceable outcome.
+              </p>
+            </motion.div>
+
+            {/* ── ITALIC DATE-STYLE ACCENT ── */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease, delay: 0.5 }}
+              className="mt-12 md:mt-16 flex justify-end"
+            >
+              <span className="font-editorial italic text-ink-55 text-[clamp(1.4rem,3.4vw,2.6rem)]">
+                Three Rulebooks, One Standard
+              </span>
+            </motion.div>
+          </div>
+
+          {/* ── GIANT CLIPPED BRAND NAME ── */}
+          <div className="pointer-events-none absolute -bottom-[2.5vw] left-0 right-0 overflow-hidden">
+            <div className={SECTION}>
+              <span className="block font-editorial font-semibold text-dark/[0.08] leading-none whitespace-nowrap text-[clamp(4rem,19vw,19rem)]">
+                PDR COURT
+              </span>
             </div>
           </div>
         </section>
 
-        {/* ════════ RULEBOOK CARDS ════════ */}
-        <section id="rulebooks" className="py-20 lg:py-28 scroll-mt-20">
+        {/* ════════════════ EDITORIAL RULEBOOK INDEX ════════════════ */}
+        <section className="relative py-20 lg:py-28 bg-white border-y border-cream-300">
           <div className={SECTION}>
-            <div className="text-center max-w-2xl mx-auto mb-14">
-              <span className="eyebrow justify-center">The Rulebooks</span>
-              <h2 className="heading-lg mt-3">
-                Choose a <span className="accent-serif">rulebook</span>
-              </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+            <div className="flex flex-wrap items-end justify-between gap-6 mb-12 md:mb-16">
+              <div>
+                <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
+                  The Rulebooks
+                </span>
+                <h2 className="mt-4 font-editorial font-medium text-dark text-[clamp(2rem,5vw,3.6rem)] leading-[1.05]">
+                  Choose a rulebook
+                </h2>
+              </div>
+              <p className="max-w-sm text-sm text-ink-55 leading-relaxed">
                 Each set of rules governs a distinct resolution pathway. Select
-                one to read the full guidelines.
+                one to read its full guidelines.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-7">
+            {/* index rows */}
+            <div className="border-t border-cream-300">
               {RULEBOOKS.map((r, i) => (
                 <motion.div
                   key={r.title}
-                  initial={{ opacity: 0, y: 26 }}
+                  initial={{ opacity: 0, y: 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.5, ease, delay: i * 0.1 }}
+                  transition={{ duration: 0.5, ease, delay: i * 0.08 }}
                 >
                   <Link
                     href={r.href}
-                    className="surface-card group flex flex-col h-full p-8"
+                    className="group grid grid-cols-[auto_1fr_auto] md:grid-cols-[5rem_1fr_1.4fr_auto] items-center gap-5 md:gap-8 py-7 md:py-9 border-b border-cream-300 hover:border-primary/40 transition-colors"
                   >
-                    <span className="inline-flex w-14 h-14 rounded-2xl bg-gold-gradient text-white items-center justify-center mb-6">
-                      <r.icon className="w-7 h-7" />
+                    <span className="font-editorial italic text-2xl md:text-3xl text-ink-35 group-hover:text-primary transition-colors">
+                      {r.no}
                     </span>
-                    <h3 className="text-xl font-display font-bold text-dark mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="font-editorial font-medium text-2xl md:text-4xl text-dark leading-tight group-hover:translate-x-1 transition-transform duration-300">
                       {r.title}
                     </h3>
-                    <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                    <p className="hidden md:block text-sm text-ink-55 leading-relaxed">
                       {r.text}
                     </p>
-                    <span className="mt-6 pt-5 border-t border-cream-300 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary">
-                      View rules
-                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    <span className="flex-shrink-0 w-11 h-11 rounded-full border border-dark/15 flex items-center justify-center text-ink-50 group-hover:bg-gold-gradient group-hover:text-white group-hover:border-transparent transition-all duration-300">
+                      <ArrowUpRight className="w-5 h-5" />
                     </span>
                   </Link>
                 </motion.div>
@@ -165,10 +236,8 @@ export default function RulesPageClient() {
           </div>
         </section>
 
-        {/* ════════ SANCTUM (reusable) ════════ */}
-        <div className="bg-white border-y border-cream-300">
-          <SanctumSection />
-        </div>
+        {/* ════════════════ SANCTUM (reusable) ════════════════ */}
+        <SanctumSection variant="editorial" />
       </main>
       <Footer />
     </>

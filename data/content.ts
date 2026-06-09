@@ -785,9 +785,10 @@ export const footerContent = {
   trademarkNote:
     "The trademark \"PDR Court\" is solely owned by PDR Organization Private Limited. All other trademarks are registered under the ownership of PDR Court.",
   social: [
-    { name: "LinkedIn", href: "https://www.linkedin.com/company/40853909" },
-    { name: "Twitter", href: "https://x.com/pdr_court" },
     { name: "Facebook", href: "https://www.facebook.com/pdrcourt" },
+    { name: "Instagram", href: "https://www.instagram.com/pdrcourt/" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/company/pdrcourt" },
+    { name: "Twitter", href: "https://x.com/pdrcourt" },
     { name: "Telegram", href: "https://t.me/joinchat/OFJ-qxrN-7EC9yjS9BwM5g" },
     { name: "WhatsApp", href: "https://chat.whatsapp.com/LNLIJO6Z2pE0gYhbBIzRcj" },
     { name: "YouTube", href: "https://www.youtube.com/@pdrcourt" },

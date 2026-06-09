@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Briefcase, ChevronRight, FileText, Building2, Landmark, Users, Building, PenTool, Search } from 'lucide-react';
 import Link from 'next/link';
 import SiblingLinksSection from '@/components/sections/SiblingLinksSection';
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 
 export interface CaseStudyItem {
   title: string;
@@ -102,23 +103,20 @@ export default function CaseStudiesClientPage({ caseStudies: caseStudiesProp }: 
   return (
     <div className="bg-cream min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark text-white overflow-hidden border-b border-cream-300">
-        <div className="absolute inset-0">
-          <img src="/images/bold-young-businessman.jpg" alt="Businessman" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/90 to-transparent" />
-        </div>
-        
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-cream overflow-hidden border-b border-cream-300">
+        <EditorialHeroDecor />
+
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary-300 text-sm font-medium mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-md border border-primary/20 text-primary text-sm font-medium mb-8">
                 <Briefcase className="w-4 h-4" />
                 <span>Our Portfolio</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
-                Evaluating <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Real Outcomes.</span>
+              <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
+                Evaluating <br/> <span className="gold-text">Real Outcomes.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-lg border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-ink-60 leading-relaxed font-light mb-10 max-w-lg border-l-4 border-primary pl-6 py-2">
                 Gain a comprehensive perspective of PDR COURT. Our team efficiently manages real-life cases delivering precise, measurable results that reflect our commitment to innovation.
               </p>
               
@@ -130,11 +128,11 @@ export default function CaseStudiesClientPage({ caseStudies: caseStudiesProp }: 
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="hidden lg:block relative z-10">
-              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden max-w-md mx-auto">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-3xl rounded-full" />
+              <div className="bg-white/70 backdrop-blur-xl border border-cream-300 rounded-3xl p-8 shadow-2xl relative overflow-hidden max-w-md mx-auto">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl rounded-full" />
                 <img src="/images/pdr-court-app.png" alt="Mobile Application" className="w-48 mx-auto mb-6 hover:-translate-y-2 transition-transform duration-500 drop-shadow-2xl" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-                <h3 className="text-2xl font-bold text-white mb-2 text-center">Get all your Deals Secured!</h3>
-                <p className="text-white/60 mb-8 text-center">Sign up today and experience secure agreements.</p>
+                <h3 className="text-2xl font-bold text-dark mb-2 text-center">Get all your Deals Secured!</h3>
+                <p className="text-ink-60 mb-8 text-center">Sign up today and experience secure agreements.</p>
                 <Link href="/register" className="btn-primary w-full flex items-center justify-center gap-2">
                   Sign up Today <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -157,7 +155,7 @@ export default function CaseStudiesClientPage({ caseStudies: caseStudiesProp }: 
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Target Demographics</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-8">Serving Diverse Sectors</h2>
-              <p className="text-dark/70 text-lg mb-10 leading-relaxed">
+              <p className="text-ink-70 text-lg mb-10 leading-relaxed">
                 We provide dispute resolution services tailored to a wide array of professional domains.
               </p>
               
@@ -182,11 +180,11 @@ export default function CaseStudiesClientPage({ caseStudies: caseStudiesProp }: 
             <div>
               <span className="section-label">Case Archives</span>
               <h2 className="heading-lg text-dark mt-4">Review, Read & Analyse</h2>
-              <p className="text-lg text-dark/60 mt-4 max-w-2xl">Dive deep into our extensive portfolio of resolutions across various industries and scenarios.</p>
+              <p className="text-lg text-ink-60 mt-4 max-w-2xl">Dive deep into our extensive portfolio of resolutions across various industries and scenarios.</p>
             </div>
             <div className="relative">
                <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-                 <Search className="h-5 w-5 text-dark/40" />
+                 <Search className="h-5 w-5 text-ink-40" />
                </div>
                <input type="text" placeholder="Search case studies..." className="bg-white border border-cream-300 rounded-full py-3 pl-12 pr-6 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary w-full md:w-64 transition-all" />
             </div>
@@ -209,7 +207,7 @@ export default function CaseStudiesClientPage({ caseStudies: caseStudiesProp }: 
                     {study.title}
                   </h4>
                   
-                  <p className="text-dark/60 leading-relaxed text-sm mb-8 flex-1 line-clamp-3">
+                  <p className="text-ink-60 leading-relaxed text-sm mb-8 flex-1 line-clamp-3">
                     {study.description}
                   </p>
                   

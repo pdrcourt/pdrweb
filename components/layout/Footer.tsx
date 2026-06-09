@@ -50,6 +50,12 @@ function SocialIcon({ name }: { name: string }) {
           <path d="M12.017 0c-6.624 0-11.99 5.367-11.99 12.017 0 5.079 3.158 9.417 7.618 11.171-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12.017 24c6.624 0 11.99-5.367 11.99-12.017C24.007 5.367 18.641.001 12.017.001z" />
         </svg>
       );
+    case "Instagram":
+      return (
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      );
     default:
       return <span>{name[0]}</span>;
   }
@@ -73,7 +79,7 @@ function TopBarForm({
     <div className="flex flex-col md:flex-row items-stretch md:items-center gap-4 md:gap-6 p-6 md:p-8">
       <div className="md:w-2/5">
         <h3 className="text-2xl md:text-3xl font-display leading-tight text-white">
-          <span className="italic text-white/70">{titlePrefix}</span>
+          <span className="italic text-paper-70">{titlePrefix}</span>
           <br />
           <span className="font-bold bg-gold-gradient bg-clip-text text-transparent">
             {titleAccent}
@@ -89,7 +95,7 @@ function TopBarForm({
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder={placeholder}
-          className="flex-1 min-w-0 bg-transparent px-5 py-4 text-sm text-white placeholder:text-white/40 focus:outline-none"
+          className="flex-1 min-w-0 bg-transparent px-5 py-4 text-sm text-white placeholder:text-paper-40 focus:outline-none"
         />
         <button
           type="submit"
@@ -138,19 +144,23 @@ export function Footer() {
             <p className="text-sm font-semibold text-primary mb-2">
               {footerContent.brand.tagline}
             </p>
-            <p className="text-sm text-white/50 leading-relaxed max-w-xs mb-7">
+            <p className="text-sm text-paper-50 leading-relaxed max-w-xs mb-7">
               {footerContent.brand.description}
             </p>
             {/* Social icons row */}
             <div className="flex flex-wrap items-center gap-2.5">
               {footerContent.social.map((s) => (
-                <span
+                <a
                   key={s.name}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={s.name}
-                  className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center"
+                  title={s.name}
+                  className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-paper-80 hover:bg-primary hover:text-white transition-colors duration-200"
                 >
                   <SocialIcon name={s.name} />
-                </span>
+                </a>
               ))}
             </div>
           </div>
@@ -170,7 +180,7 @@ export function Footer() {
                       <li key={link.label}>
                         <a
                           href={link.href}
-                          className="text-[13px] text-white/55 hover:text-primary transition-colors duration-200"
+                          className="text-[13px] text-paper-55 hover:text-primary transition-colors duration-200"
                         >
                           {link.label}
                         </a>
@@ -191,7 +201,7 @@ export function Footer() {
               <p className="text-xs font-semibold text-primary">
                 {footerContent.copyright}
               </p>
-              <p className="text-[10px] text-white/35 leading-relaxed mt-2">
+              <p className="text-[10px] text-paper-35 leading-relaxed mt-2">
                 {footerContent.trademarkNote}
               </p>
             </div>
@@ -206,7 +216,7 @@ export function Footer() {
                         {office.zone}
                       </h5>
                     </div>
-                    <p className="text-[10px] text-white/45 leading-relaxed">
+                    <p className="text-[10px] text-paper-45 leading-relaxed">
                       {office.address}
                     </p>
                     {office.landmark && (
@@ -220,7 +230,7 @@ export function Footer() {
             )}
 
             {/* Quick contact */}
-            <div className="pt-4 border-t border-white/5 text-[11px] text-white/40 space-y-1">
+            <div className="pt-4 border-t border-white/5 text-[11px] text-paper-40 space-y-1">
               <a
                 href={`mailto:${footerContent.contact.email}`}
                 className="block hover:text-primary transition-colors"
@@ -246,7 +256,7 @@ export function Footer() {
                 {footerContent.legalSection.disclaimer.map((p, i) => (
                   <li
                     key={i}
-                    className="text-[10px] leading-relaxed text-white/30 text-justify"
+                    className="text-[10px] leading-relaxed text-paper-30 text-justify"
                   >
                     {p}
                   </li>
@@ -262,7 +272,7 @@ export function Footer() {
                 {footerContent.legalSection.nonDiscrimination.map((p, i) => (
                   <li
                     key={i}
-                    className="text-[10px] leading-relaxed text-white/30 text-justify"
+                    className="text-[10px] leading-relaxed text-paper-30 text-justify"
                   >
                     {p}
                   </li>
@@ -274,7 +284,7 @@ export function Footer() {
               <h5 className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-2">
                 Digital Personal Data Protection
               </h5>
-              <p className="text-[10px] leading-relaxed text-white/40">
+              <p className="text-[10px] leading-relaxed text-paper-40">
                 {footerContent.legalSection.dataProtection}
               </p>
             </div>
@@ -282,7 +292,7 @@ export function Footer() {
         </div>
 
         {/* ───── BASE bar ───── */}
-        <div className="mt-10 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-white/35">
+        <div className="mt-10 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-paper-35">
           <span>{footerContent.copyright}</span>
           <div className="flex items-center gap-5">
             <a href="/privacy-policy" className="hover:text-primary transition-colors">

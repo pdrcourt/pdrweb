@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import QuestPillars from "@/components/pages/QuestPillars";
 import GrowthStatsCard from "@/components/pages/GrowthStatsCard";
 import { motion } from "framer-motion";
@@ -30,29 +31,22 @@ export default function PartnersPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* HERO */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease }}
               >
                 <span className="eyebrow mb-6">Partnerships</span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   Partner in our <span className="gold-text">growth story</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   Partner with us to transform dispute resolution. Harness
                   advanced ADR technology and innovative solutions to reshape
                   conflict management for sustainable success.
@@ -65,34 +59,6 @@ export default function PartnersPageClient() {
                     About PDR COURT
                   </Link>
                 </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-dark text-white p-8 md:p-10 shadow-gold-lg overflow-hidden"
-              >
-                <div className="pointer-events-none absolute -top-20 -right-16 w-72 h-72 rounded-full bg-primary/25 blur-[90px]" />
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-primary-300">
-                  <Handshake className="w-4 h-4" />
-                  Why Partner
-                </span>
-                <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                  A future-proof platform built for growth.
-                </p>
-                <p className="mt-4 text-sm text-white/55 leading-relaxed">
-                  Co-partnering with PDR COURT unlocks new business avenues,
-                  expertise, and resources — broadening your reach and upskilling
-                  your service offering.
-                </p>
-                <Link
-                  href="/contact"
-                  className="mt-6 inline-flex items-center gap-2 text-primary-300 font-semibold text-sm hover:gap-3 transition-all"
-                >
-                  Start the conversation <ArrowRight className="w-4 h-4" />
-                </Link>
               </motion.div>
             </div>
           </div>
@@ -111,7 +77,7 @@ export default function PartnersPageClient() {
               <h2 className="heading-lg mt-3">
                 Two ways to <span className="accent-serif">partner</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Whatever your scale, there&apos;s a model designed to grow your
                 reach alongside ours.
               </p>
@@ -132,7 +98,7 @@ export default function PartnersPageClient() {
                   <h3 className="text-2xl font-display font-bold text-dark mb-3">
                     {m.title}
                   </h3>
-                  <p className="text-dark/65 leading-relaxed">{m.text}</p>
+                  <p className="text-ink-65 leading-relaxed">{m.text}</p>
                 </motion.div>
               ))}
             </div>
@@ -155,7 +121,7 @@ export default function PartnersPageClient() {
                 <h2 className="mt-3 max-w-2xl mx-auto text-2xl md:text-4xl font-display font-bold text-white leading-tight">
                   Let&apos;s build the future of dispute resolution together
                 </h2>
-                <p className="text-white/60 mt-4 max-w-xl mx-auto leading-relaxed">
+                <p className="text-paper-60 mt-4 max-w-xl mx-auto leading-relaxed">
                   Reach out to explore brand partnerships, sponsorships, and
                   tech-driven collaboration opportunities.
                 </p>

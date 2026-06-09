@@ -22,7 +22,7 @@ export default function CookiePolicyClientPage() {
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Cookie <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Policy.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
                 PDR COURT website is strictly compliant; we forthrightly announce to the website users our cookie policy, what data we collect, and how that data is used.
               </p>
             </motion.div>
@@ -33,11 +33,11 @@ export default function CookiePolicyClientPage() {
                   <ShieldCheck className="w-8 h-8 text-primary-300" />
                 </div>
                 <h3 className="text-xl font-bold text-white">Got any Questions?</h3>
-                <p className="text-sm text-white/70 font-semibold leading-relaxed">
+                <p className="text-sm text-paper-70 font-semibold leading-relaxed">
                   Our legal desk is here to clarify details about our terms and policies.
                 </p>
                 <div className="pt-4 border-t border-white/10">
-                  <span className="text-xs text-white/60 font-bold block mb-1">Write to us</span>
+                  <span className="text-xs text-paper-60 font-bold block mb-1">Write to us</span>
                   <a href="mailto:legal@pdrcourt.com" className="text-lg font-bold text-primary hover:underline block">legal@pdrcourt.com</a>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export default function CookiePolicyClientPage() {
       {/* Main Content Sections */}
       <section className="py-20 lg:py-32 bg-white relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg prose-primary max-w-none text-dark/80">
+          <div className="prose prose-lg prose-primary max-w-none text-ink-80">
             
             {/* Header Callout */}
             <div className="bg-cream border border-cream-300 p-8 rounded-3xl mb-12 shadow-sm">
@@ -61,7 +61,7 @@ export default function CookiePolicyClientPage() {
                 <Info className="w-6 h-6 text-primary" />
                 Transparency & User Consent
               </h3>
-              <p className="font-semibold text-dark/70 text-sm leading-relaxed m-0">
+              <p className="font-semibold text-ink-70 text-sm leading-relaxed m-0">
                 PDR COURT website is strictly compliant; we forth-rightly announce to the website users our cookie policy, what data we collect, and how that data is used for users to give consent or opt-out of cookies before using them.
               </p>
             </div>
@@ -69,21 +69,21 @@ export default function CookiePolicyClientPage() {
             <div className="space-y-12">
               <div>
                 <h3 className="text-2xl font-display font-bold text-dark mb-4">What are Cookies?</h3>
-                <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                   Cookies are small files that a site or its service provider transfers to your computer&apos;s hard drive through your Web browser (if you allow) that enable the sites or service provider systems to recognize your browser and capture and remember certain information.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-2xl font-display font-bold text-dark mb-4">How We Use Cookies</h3>
-                <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                   We use cookies to help us remember and process the dispute resolution services.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-2xl font-display font-bold text-dark mb-4">Google Cookies</h3>
-                <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                   Google, as a third-party vendor, uses cookies to serve ads on websites. Users may opt-out of the use of the DART cookie by visiting the Google ad and content network privacy policy.
                 </p>
               </div>

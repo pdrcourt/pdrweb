@@ -118,7 +118,7 @@ export default function PressReleaseClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Press <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Releases.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 Discover our corporate declarations, international alliances, book launches, key hires, and ADR policy statements.
               </p>
             </motion.div>
@@ -143,7 +143,7 @@ export default function PressReleaseClientPage() {
                     <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
                       {item.category}
                     </span>
-                    <span className="inline-flex items-center gap-1 text-xs text-dark/50 font-semibold">
+                    <span className="inline-flex items-center gap-1 text-xs text-ink-50 font-semibold">
                       <Calendar className="w-3.5 h-3.5" />
                       {item.date}
                     </span>
@@ -151,7 +151,7 @@ export default function PressReleaseClientPage() {
                   <h3 className="text-2xl font-bold text-dark mb-4 group-hover:text-primary transition-colors leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-dark/70 text-sm leading-relaxed mb-6 font-medium">
+                  <p className="text-ink-70 text-sm leading-relaxed mb-6 font-medium">
                     {item.excerpt}
                   </p>
                 </div>
@@ -175,13 +175,13 @@ export default function PressReleaseClientPage() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Media Intake</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-6">Connect With Us</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-8">
+              <p className="text-lg text-ink-70 leading-relaxed mb-8">
                 If you wish to obtain official commentary, propose webinar partnerships, or submit news tips, write to us directly or fill out the request details.
               </p>
 
               <div className="bg-white rounded-[2.5rem] border border-cream-300 p-8 space-y-6 shadow-sm">
                 <h4 className="text-lg font-bold text-dark flex items-center gap-2"><Clock className="w-5 h-5 text-primary" /> Support Desk</h4>
-                <div className="space-y-4 text-sm font-medium text-dark/70">
+                <div className="space-y-4 text-sm font-medium text-ink-70">
                   <p>Operating Monday through Friday from 10 AM to 5 PM IST (Excluding Public Holidays).</p>
                   <div className="pt-4 border-t border-cream-300 space-y-2">
                     <p className="flex items-center gap-2 text-dark font-bold"><Phone className="w-4 h-4 text-primary" /> +91 89769 55540</p>
@@ -197,19 +197,19 @@ export default function PressReleaseClientPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">First Name</label>
                     <input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Last Name</label>
                     <input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Email Address</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Email Address</label>
                     <input type="email" name="email" value={formData.email} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Tel / Mobile</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Tel / Mobile</label>
                     <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                 </div>
@@ -218,26 +218,26 @@ export default function PressReleaseClientPage() {
                   <h5 className="text-sm font-bold text-dark uppercase tracking-wider mb-4">Organization & Industry</h5>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Name of Business</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Name of Business</label>
                       <input type="text" name="businessName" value={formData.businessName} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Your Position</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Your Position</label>
                       <input type="text" name="position" value={formData.position} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Type of Industry</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Type of Industry</label>
                       <input type="text" name="industry" value={formData.industry} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Serving Customer Size</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Serving Customer Size</label>
                       <input type="text" name="customerSize" value={formData.customerSize} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                   </div>
                 </div>
 
                 <div className="border-t border-cream-300 pt-6">
-                  <label className="block text-sm font-medium text-dark/70 mb-2">What kind of Information you have or looking for</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">What kind of Information you have or looking for</label>
                   <select name="reason" value={formData.reason} onChange={handleInputChange} className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium">
                     <option value="-Select-">Select your Reason</option>
                     <option value="Access to Media & Promotion Materials">Access to Media & Promotion Materials</option>
@@ -250,14 +250,14 @@ export default function PressReleaseClientPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-dark/70 mb-2">Write your Purpose Here</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">Write your Purpose Here</label>
                   <textarea name="purpose" value={formData.purpose} onChange={handleInputChange} rows={4} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none text-dark font-medium" />
                 </div>
 
                 <div className="border-t border-cream-300 pt-6">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="consent" checked={formData.consent} onChange={handleInputChange} className="w-5 h-5 mt-0.5 text-primary focus:ring-primary border-cream-300 rounded" />
-                    <span className="text-xs text-dark/70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
+                    <span className="text-xs text-ink-70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
                   </label>
                 </div>
 

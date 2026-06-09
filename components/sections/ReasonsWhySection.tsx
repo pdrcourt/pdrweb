@@ -76,7 +76,7 @@ export default function ReasonsWhySection({ variant = 'grid', columns = 3, showT
                       <Icon className="w-4 h-4 text-primary" />
                     </div>
                   )}
-                  <p className="text-sm text-dark/75 leading-relaxed">{reason.text}</p>
+                  <p className="text-sm text-ink-75 leading-relaxed">{reason.text}</p>
                 </div>
               </motion.div>
             );

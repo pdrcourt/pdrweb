@@ -57,7 +57,7 @@ export default function InvestorsClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Investing in <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Success.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 Tap into this investment opportunity by trusting our technological expertise to expand your business horizons.
               </p>
               
@@ -79,10 +79,10 @@ export default function InvestorsClientPage() {
               <h2 className="text-3xl md:text-4xl font-display font-bold text-dark mb-6">
                 Investing in PDR COURT is Investing in Success, Bottom Line & Profit
               </h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-6">
+              <p className="text-lg text-ink-70 leading-relaxed mb-6">
                 With a proven track record of high performance, PDR COURT stands at the forefront of technology in the ADR space. Furthermore, our state-of-the-art software, designed for user-friendliness, enhances the Online Dispute Resolution experience and positions us as industry leaders.
               </p>
-              <p className="text-lg text-dark/70 leading-relaxed">
+              <p className="text-lg text-ink-70 leading-relaxed">
                 Investors benefit from our commitment to transparency, with access to comprehensive financial reports, business plans, and P&L sheets that outline our trajectory. By investing in PDR COURT, you align with a forward-thinking platform dedicated to efficient dispute resolution.
               </p>
             </motion.div>
@@ -93,15 +93,15 @@ export default function InvestorsClientPage() {
               <div className="space-y-8 mt-8">
                 <div className="flex flex-col border-l-2 border-primary pl-6">
                   <span className="text-4xl font-display font-bold text-primary-300 mb-2">75%</span>
-                  <span className="text-white/80">{"Growth in Y22-23 "}<br/>{"Tied up with > 33 NBFCs & > 1000+ MSMEs"}</span>
+                  <span className="text-paper-80">{"Growth in Y22-23 "}<br/>{"Tied up with > 33 NBFCs & > 1000+ MSMEs"}</span>
                 </div>
                 <div className="flex flex-col border-l-2 border-primary pl-6">
                   <span className="text-4xl font-display font-bold text-primary-300 mb-2">5 Lac+</span>
-                  <span className="text-white/80">Disputes successfully resolved</span>
+                  <span className="text-paper-80">Disputes successfully resolved</span>
                 </div>
                 <div className="flex flex-col border-l-2 border-primary pl-6">
                   <span className="text-4xl font-display font-bold text-primary-300 mb-2">1000+</span>
-                  <span className="text-white/80">Active enterprise customers</span>
+                  <span className="text-paper-80">Active enterprise customers</span>
                 </div>
               </div>
             </motion.div>
@@ -137,7 +137,7 @@ export default function InvestorsClientPage() {
                   </div>
                   <h3 className="text-xl font-bold text-dark">{event.date}</h3>
                 </div>
-                <p className="text-dark/70 leading-relaxed">
+                <p className="text-ink-70 leading-relaxed">
                   {event.description}
                 </p>
               </motion.div>
@@ -155,7 +155,7 @@ export default function InvestorsClientPage() {
                   </div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20">
-                  <span className="block text-sm text-white/70 uppercase tracking-widest font-bold mb-1">Upcoming Book</span>
+                  <span className="block text-sm text-paper-70 uppercase tracking-widest font-bold mb-1">Upcoming Book</span>
                   <span className="block text-lg font-bold">"How to Reduce Loan Write Off"</span>
                 </div>
               </div>
@@ -171,7 +171,7 @@ export default function InvestorsClientPage() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Interested?</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-6">Invest in the Future</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-10">
+              <p className="text-lg text-ink-70 leading-relaxed mb-10">
                 Join us in our journey to make justice accessible, transparent, and efficient globally. Fill out the form to request our investor pitch deck or financial details.
               </p>
               <div className="aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl">
@@ -185,19 +185,19 @@ export default function InvestorsClientPage() {
                   <h4 className="text-xl font-bold text-dark mb-6 flex items-center gap-2"><Eye className="w-5 h-5 text-primary" /> Personal Details</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">First Name</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">First Name</label>
                       <input type="text" name="firstName" required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Last Name</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Last Name</label>
                       <input type="text" name="lastName" required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Email Address</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Email Address</label>
                       <input type="email" name="email" required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Phone Number</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Phone Number</label>
                       <input type="tel" name="phone" required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" />
                     </div>
                   </div>
@@ -209,7 +209,7 @@ export default function InvestorsClientPage() {
                     {['Individual', 'Business', 'Venture Capitalist'].map((type) => (
                       <label key={type} className="flex items-center gap-3 cursor-pointer group">
                         <input type="radio" name="investorType" value={type} className="w-5 h-5 text-primary focus:ring-primary border-cream-300" required />
-                        <span className="text-dark/80 group-hover:text-primary transition-colors">{type}</span>
+                        <span className="text-ink-80 group-hover:text-primary transition-colors">{type}</span>
                       </label>
                     ))}
                   </div>
@@ -225,7 +225,7 @@ export default function InvestorsClientPage() {
                     ].map((info) => (
                       <label key={info} className="flex items-start gap-3 cursor-pointer group">
                         <input type="checkbox" name="requestedInfo" value={info} className="w-5 h-5 mt-0.5 text-primary focus:ring-primary border-cream-300 rounded" />
-                        <span className="text-dark/80 group-hover:text-primary transition-colors">{info}</span>
+                        <span className="text-ink-80 group-hover:text-primary transition-colors">{info}</span>
                       </label>
                     ))}
                   </div>
@@ -239,7 +239,7 @@ export default function InvestorsClientPage() {
                   
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="consent" required defaultChecked className="w-5 h-5 mt-0.5 text-primary focus:ring-primary border-cream-300 rounded" />
-                    <span className="text-sm text-dark/70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
+                    <span className="text-sm text-ink-70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
                   </label>
                 </div>
 

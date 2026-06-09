@@ -46,7 +46,7 @@ export default function RulesClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Rules & <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Guidelines.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 PDR COURT Rules and Guidelines are formed to inform those involved about the procedure set by PDR COURT for Arbitration, Conciliation & Mediation using the platform.
               </p>
               
@@ -85,7 +85,7 @@ export default function RulesClientPage() {
                       {category.title}
                     </h3>
                     
-                    <p className="text-dark/70 leading-relaxed mb-8 flex-1">
+                    <p className="text-ink-70 leading-relaxed mb-8 flex-1">
                       {category.description}
                     </p>
                     

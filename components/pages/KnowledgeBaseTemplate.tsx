@@ -28,13 +28,13 @@ export default function KnowledgeBaseTemplate({ page }: { page: FooterExperience
               {page.title}
             </h1>
             
-            <p className="text-xl text-white/70 leading-relaxed mb-10 max-w-2xl mx-auto">
+            <p className="text-xl text-paper-70 leading-relaxed mb-10 max-w-2xl mx-auto">
               {page.description}
             </p>
             
             {/* Fake Search Bar for Aesthetic */}
             <div className="w-full max-w-xl relative mx-auto">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-paper-40" />
               <input type="text" placeholder={`Search ${page.title.toLowerCase()}...`} readOnly
                 className="w-full bg-white/10 border border-white/20 rounded-full py-4 pl-12 pr-4 text-white placeholder-white/40 focus:outline-none backdrop-blur-md cursor-default" />
               <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-full font-semibold transition-colors">
@@ -67,7 +67,7 @@ export default function KnowledgeBaseTemplate({ page }: { page: FooterExperience
                         </h2>
                       )}
                       
-                      <div className="space-y-4 prose prose-p:text-dark/70 max-w-none">
+                      <div className="space-y-4 prose prose-p:text-ink-70 max-w-none">
                         {section.content.map((p, pIdx) => (
                           <p key={pIdx} className="leading-relaxed">{p}</p>
                         ))}
@@ -85,7 +85,7 @@ export default function KnowledgeBaseTemplate({ page }: { page: FooterExperience
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                     <BookOpen className="w-6 h-6 text-primary" />
                   </div>
-                  <p className="text-dark/70 leading-relaxed mb-6 flex-1">{p}</p>
+                  <p className="text-ink-70 leading-relaxed mb-6 flex-1">{p}</p>
                   <Link href="#" className="text-primary font-semibold flex items-center group mt-auto">
                     Read More
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

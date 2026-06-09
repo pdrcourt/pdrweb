@@ -32,7 +32,7 @@ export function ServicesSection() {
                 key={service.id}
                 onClick={() => setActiveIndex(index)}
                 className={`relative pb-2 text-lg md:text-xl font-display font-semibold whitespace-nowrap transition-colors duration-300 ${
-                  isActive ? "text-primary" : "text-dark/50 dark:text-white/50 hover:text-dark dark:hover:text-white"
+                  isActive ? "text-primary" : "text-ink-50 dark:text-paper-50 hover:text-dark dark:hover:text-white"
                 }`}
               >
                 {service.title}
@@ -65,13 +65,13 @@ export function ServicesSection() {
               <h3 className="text-3xl md:text-4xl font-display font-semibold text-dark dark:text-white mb-6">
                 {activeService.title}
               </h3>
-              <p className="text-lg text-dark/70 dark:text-white/70 leading-relaxed mb-8">
+              <p className="text-lg text-ink-70 dark:text-paper-70 leading-relaxed mb-8">
                 {activeService.description}
               </p>
               
               <ul className="space-y-4 mb-10 w-full">
                 {activeService.features.map((feat) => (
-                  <li key={feat} className="flex items-center gap-3 text-dark/80 dark:text-white/80 text-base md:text-lg">
+                  <li key={feat} className="flex items-center gap-3 text-ink-80 dark:text-paper-80 text-base md:text-lg">
                     <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
                     {feat}
                   </li>

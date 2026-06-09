@@ -29,7 +29,7 @@ export default function TestimonialCard({ quote, author, role, company, rating =
         ))}
       </div>
       
-      <p className="text-dark/80 dark:text-white/80 leading-relaxed mb-6 italic">
+      <p className="text-ink-80 dark:text-paper-80 leading-relaxed mb-6 italic">
         &ldquo;{quote}&rdquo;
       </p>
       
@@ -44,7 +44,7 @@ export default function TestimonialCard({ quote, author, role, company, rating =
           <h4 className="font-semibold text-dark dark:text-white">
             {author}
           </h4>
-          <p className="text-sm text-dark/60 dark:text-white/60">
+          <p className="text-sm text-ink-60 dark:text-paper-60">
             {role}
           </p>
           {company && (

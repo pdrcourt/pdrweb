@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import QuestPillars from "@/components/pages/QuestPillars";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -22,29 +23,22 @@ export default function NeutralsPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* HERO */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease }}
               >
                 <span className="eyebrow mb-6">Our Neutrals</span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   Our team, <span className="gold-text">our pride</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   Become a Neutral at PDR COURT and contribute to effective
                   dispute resolution. Join an expert panel that facilitates fair,
                   unbiased outcomes across India.
@@ -56,36 +50,6 @@ export default function NeutralsPageClient() {
                   <Link href="/contact" className="btn-outline">
                     Talk to our team
                   </Link>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-dark text-white p-8 md:p-10 shadow-gold-lg overflow-hidden"
-              >
-                <div className="pointer-events-none absolute -top-20 -right-16 w-72 h-72 rounded-full bg-primary/25 blur-[90px]" />
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-primary-300">
-                  <Users className="w-4 h-4" />
-                  Our Team
-                </span>
-                <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                  An integrous, diligent panel — skilled across law and business.
-                </p>
-                <div className="mt-7 grid grid-cols-3 gap-px rounded-2xl overflow-hidden bg-white/10">
-                  {TEAM.map((t) => (
-                    <div key={t.label} className="bg-dark px-3 py-5 text-center">
-                      <t.icon className="w-5 h-5 text-primary mx-auto mb-2" />
-                      <div className="text-3xl font-display font-bold gold-text">
-                        {t.value}
-                      </div>
-                      <div className="text-[10px] uppercase tracking-wider text-white/45 mt-1">
-                        {t.label}
-                      </div>
-                    </div>
-                  ))}
                 </div>
               </motion.div>
             </div>
@@ -114,7 +78,7 @@ export default function NeutralsPageClient() {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, ease, delay: 0.1 }}
               >
-                <p className="text-lg text-dark/75 leading-relaxed">
+                <p className="text-lg text-ink-75 leading-relaxed">
                   Our panel of Neutrals comprises highly skilled professionals
                   with years of experience in law and business — domestic and
                   international — working alongside experts across industries.
@@ -142,7 +106,7 @@ export default function NeutralsPageClient() {
                 <h2 className="mt-3 max-w-2xl mx-auto text-2xl md:text-4xl font-display font-bold text-white leading-tight">
                   Become a Neutral with PDR COURT
                 </h2>
-                <p className="text-white/60 mt-4 max-w-xl mx-auto leading-relaxed">
+                <p className="text-paper-60 mt-4 max-w-xl mx-auto leading-relaxed">
                   Lend your expertise to a platform redefining dispute
                   resolution for all of India.
                 </p>

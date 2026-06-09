@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Book, Scale, ShieldCheck, FileText, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 import SiblingLinksSection from '@/components/sections/SiblingLinksSection';
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 
 export default function ResourcesClientPage() {
   const documents = [
@@ -42,32 +43,30 @@ export default function ResourcesClientPage() {
   return (
     <div className="bg-cream min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-dark text-white border-b-8 border-primary">
-        <div className="absolute inset-0 opacity-30 mix-blend-overlay">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/40 via-dark to-dark" />
-        </div>
-        
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-cream border-b border-cream-300">
+        <EditorialHeroDecor />
+
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-[1fr_300px] gap-12 lg:gap-20 items-center">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary-300 text-sm font-medium mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-md border border-primary/20 text-primary text-sm font-medium mb-8">
                 <Scale className="w-4 h-4" />
                 <span>Legal & Resources</span>
               </div>
-              
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
+
+              <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)] mb-6">
                 Resources
               </h1>
-              
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl">
+
+              <p className="text-lg md:text-xl text-ink-60 leading-relaxed font-light mb-10 max-w-2xl">
                 PDR COURT believes that everyone must get the best judgement and follow a just system for society & businesses to remain dispute-free.
               </p>
             </motion.div>
             
-            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="hidden lg:block border-l border-white/20 pl-10">
-              <h3 className="text-2xl font-bold mb-4 text-primary-300">Got any<br/><span className="font-light italic text-white">Questions?</span></h3>
-              <p className="text-white/60 mb-2 text-sm uppercase tracking-widest">Write to us</p>
-              <a href="mailto:legal@pdrcourt.com" className="text-lg text-white hover:text-primary transition-colors border-b border-white/20 hover:border-primary pb-1">
+            <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="hidden lg:block border-l border-cream-300 pl-10">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Got any<br/><span className="font-light italic text-dark">Questions?</span></h3>
+              <p className="text-ink-60 mb-2 text-sm uppercase tracking-widest">Write to us</p>
+              <a href="mailto:legal@pdrcourt.com" className="text-lg text-dark hover:text-primary transition-colors border-b border-cream-300 hover:border-primary pb-1">
                 legal@pdrcourt.com
               </a>
             </motion.div>
@@ -95,12 +94,12 @@ export default function ResourcesClientPage() {
                       <h3 className="text-2xl font-display font-bold text-dark mb-3 group-hover:text-primary transition-colors">
                         {doc.title}
                       </h3>
-                      <p className="text-dark/60 leading-relaxed">
+                      <p className="text-ink-60 leading-relaxed">
                         {doc.description}
                       </p>
                     </div>
                     <div className="shrink-0 mt-4 md:mt-0">
-                      <div className="w-12 h-12 rounded-full border border-cream-300 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-white text-dark/30 transition-all duration-300">
+                      <div className="w-12 h-12 rounded-full border border-cream-300 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-white text-ink-30 transition-all duration-300">
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
@@ -118,8 +117,8 @@ export default function ResourcesClientPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
             <div>
-              <h2 className="text-4xl font-display font-light italic text-white/90 mb-6">Ask us</h2>
-              <p className="text-white/60 leading-relaxed mb-8">
+              <h2 className="text-4xl font-display font-light italic text-paper-90 mb-6">Ask us</h2>
+              <p className="text-paper-60 leading-relaxed mb-8">
                 Do you have any vital information that you may like to ask us?<br/><br/>
                 Write to us at legal@pdrcourt.com; or, use the form to send us a quick inquiry.
               </p>
@@ -163,7 +162,7 @@ export default function ResourcesClientPage() {
                         <input type="checkbox" required className="w-5 h-5 rounded border-white/20 bg-white/5 text-primary focus:ring-primary focus:ring-offset-dark" />
                       </div>
                       <div className="ml-3 text-sm">
-                        <span className="text-white/60 group-hover:text-white transition-colors">I provide my consent to PDR COURT to contact me.</span>
+                        <span className="text-paper-60 group-hover:text-white transition-colors">I provide my consent to PDR COURT to contact me.</span>
                       </div>
                     </div>
                   </label>

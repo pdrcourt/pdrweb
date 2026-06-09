@@ -47,7 +47,7 @@ export default function NeutralsClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Our Team, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Our Pride.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 Our panel of Neutrals is comprised of highly skilled professionals with years of experience in law and business, both domestic and international.
               </p>
               
@@ -67,7 +67,7 @@ export default function NeutralsClientPage() {
           <div className="text-center mb-16">
             <span className="section-label mx-auto">Team Composition</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-dark mt-4">Capable & Integrous</h2>
-            <p className="mt-6 text-lg text-dark/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="mt-6 text-lg text-ink-70 max-w-3xl mx-auto leading-relaxed">
               Working alongside experts catering to various industries, our team is highly capable of managing the varied and multi-faceted needs of our members to facilitate fair outcomes for all parties.
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function NeutralsClientPage() {
                 <Gavel className="w-8 h-8" />
               </div>
               <h3 className="text-4xl lg:text-5xl font-display font-bold text-primary mb-2">25</h3>
-              <p className="text-dark/70 font-bold uppercase tracking-wider text-sm mt-4">Arbitrators</p>
+              <p className="text-ink-70 font-bold uppercase tracking-wider text-sm mt-4">Arbitrators</p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-cream p-10 rounded-[2.5rem] border border-cream-300 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -86,7 +86,7 @@ export default function NeutralsClientPage() {
                 <HandshakeIcon className="w-8 h-8" />
               </div>
               <h3 className="text-4xl lg:text-5xl font-display font-bold text-primary mb-2">24</h3>
-              <p className="text-dark/70 font-bold uppercase tracking-wider text-sm mt-4">Conciliators</p>
+              <p className="text-ink-70 font-bold uppercase tracking-wider text-sm mt-4">Conciliators</p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-dark p-10 rounded-[2.5rem] text-center text-white relative overflow-hidden shadow-xl hover:-translate-y-1 transition-transform duration-300">
@@ -96,7 +96,7 @@ export default function NeutralsClientPage() {
                   <Scale className="w-8 h-8" />
                 </div>
                 <h3 className="text-4xl lg:text-5xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200 mb-2">64</h3>
-                <p className="text-white/80 font-bold uppercase tracking-wider text-sm mt-4">Case Managers</p>
+                <p className="text-paper-80 font-bold uppercase tracking-wider text-sm mt-4">Case Managers</p>
               </div>
             </motion.div>
           </div>
@@ -126,7 +126,7 @@ export default function NeutralsClientPage() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-display font-bold text-dark mb-4">{pillar.title}</h3>
-                    <p className="text-dark/70 leading-relaxed font-medium">
+                    <p className="text-ink-70 leading-relaxed font-medium">
                       {pillar.description}
                     </p>
                   </div>

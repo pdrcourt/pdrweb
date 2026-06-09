@@ -25,7 +25,7 @@ export default function MediaDetailTemplate({ page }: { page: FooterExperiencePa
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-dark leading-tight">
               {page.title}
             </h1>
-            <p className="text-xl md:text-2xl text-dark/60 font-light max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-ink-60 font-light max-w-3xl mx-auto leading-relaxed">
               {page.description}
             </p>
           </motion.div>
@@ -53,7 +53,7 @@ export default function MediaDetailTemplate({ page }: { page: FooterExperiencePa
                       <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} className="bg-white/50 px-6 pb-6 pt-2 border-x border-b border-cream-300 rounded-b-2xl -mt-2">
                         <div className="space-y-4 pt-4 border-t border-cream-300">
                           {section.content.map((p, pIdx) => (
-                            <p key={pIdx} className="text-dark/70 leading-relaxed">{p}</p>
+                            <p key={pIdx} className="text-ink-70 leading-relaxed">{p}</p>
                           ))}
                         </div>
                       </motion.div>
@@ -64,7 +64,7 @@ export default function MediaDetailTemplate({ page }: { page: FooterExperiencePa
                 <div className="bg-white p-8 rounded-3xl shadow-sm border border-cream-300">
                   <div className="space-y-6">
                     {page.paragraphs.map((p, idx) => (
-                      <p key={idx} className="text-lg text-dark/70 leading-relaxed">{p}</p>
+                      <p key={idx} className="text-lg text-ink-70 leading-relaxed">{p}</p>
                     ))}
                   </div>
                 </div>
@@ -90,10 +90,10 @@ export default function MediaDetailTemplate({ page }: { page: FooterExperiencePa
                         </div>
                         <div>
                           <h4 className="font-bold text-dark">{asset.title}</h4>
-                          <span className="text-sm text-dark/50">{asset.type}</span>
+                          <span className="text-sm text-ink-50">{asset.type}</span>
                         </div>
                       </div>
-                      <Download className="w-5 h-5 text-dark/20 group-hover:text-primary transition-colors" />
+                      <Download className="w-5 h-5 text-ink-20 group-hover:text-primary transition-colors" />
                     </div>
                   ))}
                 </div>
@@ -106,7 +106,7 @@ export default function MediaDetailTemplate({ page }: { page: FooterExperiencePa
                       {section.heading && <h2 className="text-2xl font-display font-bold text-dark mb-4">{section.heading}</h2>}
                       <div className="space-y-4">
                         {section.content.map((p, pIdx) => (
-                          <p key={pIdx} className="text-dark/70 leading-relaxed">{p}</p>
+                          <p key={pIdx} className="text-ink-70 leading-relaxed">{p}</p>
                         ))}
                       </div>
                     </div>
@@ -125,12 +125,12 @@ export default function MediaDetailTemplate({ page }: { page: FooterExperiencePa
                         {section.heading}
                       </h2>
                     )}
-                    <div className="flex items-center gap-4 text-sm text-dark/40 mb-6">
+                    <div className="flex items-center gap-4 text-sm text-ink-40 mb-6">
                       <span>Press Release</span>
                       <span>•</span>
                       <span>{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
                     </div>
-                    <div className="space-y-4 prose prose-p:text-dark/70 max-w-none mb-8">
+                    <div className="space-y-4 prose prose-p:text-ink-70 max-w-none mb-8">
                       {section.content.slice(0, 3).map((p, pIdx) => (
                         <p key={pIdx} className="leading-relaxed">{p}</p>
                       ))}
@@ -143,7 +143,7 @@ export default function MediaDetailTemplate({ page }: { page: FooterExperiencePa
               ) : (
                 <div className="prose prose-lg max-w-none">
                   {page.paragraphs.map((p, idx) => (
-                    <p key={idx} className="text-dark/70 leading-relaxed">{p}</p>
+                    <p key={idx} className="text-ink-70 leading-relaxed">{p}</p>
                   ))}
                 </div>
               )}

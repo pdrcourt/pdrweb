@@ -56,7 +56,7 @@ export function CtaSection() {
           </h2>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-lg md:text-xl text-paper-70 leading-relaxed max-w-2xl mx-auto mb-10">
             {ctaContent.subheading}
           </p>
 
@@ -83,7 +83,7 @@ export function CtaSection() {
             ].map((badge) => (
               <div
                 key={badge.text}
-                className="flex items-center gap-2 text-sm text-white/60"
+                className="flex items-center gap-2 text-sm text-paper-60"
               >
                 <span>{badge.icon}</span>
                 <span>{badge.text}</span>

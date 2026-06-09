@@ -70,7 +70,7 @@ export default function ProcessSteps({ steps, layout = 'horizontal', variant = '
               <h3 className="text-lg font-semibold text-dark dark:text-white mb-2">
                 {step.title}
               </h3>
-              <p className="text-sm text-dark/60 dark:text-white/60 leading-relaxed">
+              <p className="text-sm text-ink-60 dark:text-paper-60 leading-relaxed">
                 {step.description}
               </p>
             </div>

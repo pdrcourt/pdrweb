@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
@@ -59,19 +60,12 @@ export default function JoinUsPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-royal/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -81,11 +75,11 @@ export default function JoinUsPageClient() {
                   <Compass className="w-3.5 h-3.5" />
                   Join Us
                 </span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   Build the future of{" "}
                   <span className="gold-text">dispute resolution</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   We are on a journey toward the realm of{" "}
                   <span className="font-brand italic text-royal">Nyaya</span> —
                   powered by advanced technology. We hire professionals who
@@ -101,38 +95,6 @@ export default function JoinUsPageClient() {
                   </Link>
                 </div>
               </motion.div>
-
-              {/* navy culture panel */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-royal-mesh text-white p-8 md:p-10 shadow-royal-lg overflow-hidden"
-              >
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">
-                  <Sparkles className="w-4 h-4" />
-                  Life at PDR COURT
-                </span>
-                <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                  A genuine, unbiased and impactful place to do your best work.
-                </p>
-                <div className="mt-7 space-y-2.5">
-                  {CULTURE_SIGNALS.map((s) => (
-                    <div
-                      key={s.text}
-                      className="flex items-center gap-3.5 rounded-xl bg-white/[0.06] border border-white/10 p-3.5"
-                    >
-                      <span className="flex-shrink-0 w-9 h-9 rounded-lg bg-gold-gradient text-white flex items-center justify-center">
-                        <s.icon className="w-4 h-4" />
-                      </span>
-                      <span className="text-sm font-semibold text-white/90">
-                        {s.text}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
             </div>
           </div>
         </section>
@@ -145,7 +107,7 @@ export default function JoinUsPageClient() {
               <h2 className="heading-lg mt-3">
                 Built on four <span className="accent-serif">pillars</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 We celebrate and embrace our diversity — ensuring everyone is
                 respected and inspired to deliver their best, while
                 continuously challenging ourselves to reach new heights.
@@ -168,7 +130,7 @@ export default function JoinUsPageClient() {
                   <h3 className="text-lg font-display font-bold text-dark mb-2">
                     {v.title}
                   </h3>
-                  <p className="text-sm text-dark/60 leading-relaxed">
+                  <p className="text-sm text-ink-60 leading-relaxed">
                     {v.text}
                   </p>
                 </motion.div>
@@ -188,7 +150,7 @@ export default function JoinUsPageClient() {
               <h2 className="heading-lg mt-3">
                 Find your place on the <span className="accent-serif">team</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Five ways to shape independent, technology-driven dispute
                 resolution.
               </p>
@@ -211,7 +173,7 @@ export default function JoinUsPageClient() {
                 <h3 className="text-2xl font-display font-bold text-white mb-2">
                   Arbitrator
                 </h3>
-                <p className="text-sm text-white/65 leading-relaxed flex-1 max-w-md">
+                <p className="text-sm text-paper-65 leading-relaxed flex-1 max-w-md">
                   Use advanced technology tools to enhance the efficiency of
                   dispute resolution — earning global trust and recognition.
                 </p>
@@ -232,7 +194,7 @@ export default function JoinUsPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   Conciliator
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Leverage your expertise and our innovative software to
                   facilitate settlements — providing valuable insight and
                   guidance to both parties.
@@ -254,7 +216,7 @@ export default function JoinUsPageClient() {
                 <h3 className="text-lg font-display font-bold text-dark mb-2">
                   Case Manager
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Ensure streamlined, effective case management throughout the
                   resolution process.
                 </p>
@@ -275,7 +237,7 @@ export default function JoinUsPageClient() {
                 <h3 className="text-lg font-display font-bold text-dark mb-2">
                   ERP Management
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Optimise resource allocation for efficient, cost-effective
                   service delivery.
                 </p>
@@ -296,7 +258,7 @@ export default function JoinUsPageClient() {
                 <h3 className="text-lg font-display font-bold text-dark mb-2">
                   IT Developer
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   Build innovative software that drives seamless digital
                   transformation.
                 </p>
@@ -328,7 +290,7 @@ export default function JoinUsPageClient() {
               <h2 className="relative mt-4 text-3xl md:text-4xl font-display font-bold leading-tight">
                 If you think like us, write to us
               </h2>
-              <p className="relative mt-4 text-white/60 leading-relaxed max-w-xl mx-auto">
+              <p className="relative mt-4 text-paper-60 leading-relaxed max-w-xl mx-auto">
                 Tell us where you&apos;d fit. Write to us at{" "}
                 <a
                   href="mailto:legal@pdrcourt.com"

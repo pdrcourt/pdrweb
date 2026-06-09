@@ -44,7 +44,7 @@ export default function WorkCultureSection({ variant = 'default' }: WorkCultureS
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-dark mb-2">{val.title}</h3>
-                  <p className="text-xs text-dark/55 leading-relaxed">{val.text}</p>
+                  <p className="text-xs text-ink-55 leading-relaxed">{val.text}</p>
                 </motion.div>
               );
             })}
@@ -65,7 +65,7 @@ export default function WorkCultureSection({ variant = 'default' }: WorkCultureS
                   </div>
                   <div>
                     <h3 className="font-semibold text-dark mb-1">{val.title}</h3>
-                    <p className="text-sm text-dark/60 leading-relaxed">{val.text}</p>
+                    <p className="text-sm text-ink-60 leading-relaxed">{val.text}</p>
                   </div>
                 </motion.div>
               );

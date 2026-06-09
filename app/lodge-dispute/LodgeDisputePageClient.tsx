@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
@@ -114,19 +115,12 @@ export default function LodgeDisputePageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               {/* left */}
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
@@ -137,11 +131,11 @@ export default function LodgeDisputePageClient() {
                   <FileText className="w-3.5 h-3.5" />
                   Lodge a Dispute
                 </span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   Lodge your dispute —{" "}
                   <span className="gold-text">save time and money</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   Easily file your dispute with PDR COURT, where our experts
                   ensure quick resolutions with guaranteed TATs for timely
                   negotiations and settlements. Rely on us for a fair and just
@@ -156,41 +150,6 @@ export default function LodgeDisputePageClient() {
                   </a>
                 </div>
               </motion.div>
-
-              {/* right — guaranteed snapshot */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-dark text-white p-8 md:p-10 shadow-gold-lg overflow-hidden"
-              >
-                <div className="pointer-events-none absolute -top-20 -right-16 w-72 h-72 rounded-full bg-primary/25 blur-[90px]" />
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-primary-300">
-                  <ShieldCheck className="w-4 h-4" />
-                  Why file with us
-                </span>
-                <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                  A fair and just outcome, backed by guaranteed turnaround
-                  times.
-                </p>
-                <div className="mt-7 grid grid-cols-3 gap-px rounded-2xl overflow-hidden bg-white/10">
-                  {[
-                    { v: "60–90", l: "Days to resolve" },
-                    { v: "₹100+", l: "Starting fee" },
-                    { v: "100%", l: "Voluntary" },
-                  ].map((s) => (
-                    <div key={s.l} className="bg-dark px-3 py-5 text-center">
-                      <div className="text-2xl font-display font-bold gold-text">
-                        {s.v}
-                      </div>
-                      <div className="text-[10px] uppercase tracking-wider text-white/45 mt-1">
-                        {s.l}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
             </div>
           </div>
         </section>
@@ -203,7 +162,7 @@ export default function LodgeDisputePageClient() {
               <h2 className="heading-lg mt-3">
                 Two routes, <span className="accent-serif">one resolution</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Download our application for seamless access to conciliation and
                 arbitration services — powered by cutting-edge software for
                 efficient dispute resolution.
@@ -226,7 +185,7 @@ export default function LodgeDisputePageClient() {
                   <h3 className="text-xl font-display font-bold text-dark mb-2">
                     {m.title}
                   </h3>
-                  <p className="text-sm text-dark/60 leading-relaxed">
+                  <p className="text-sm text-ink-60 leading-relaxed">
                     {m.text}
                   </p>
                 </motion.div>
@@ -235,7 +194,7 @@ export default function LodgeDisputePageClient() {
 
             <div className="mt-6 flex items-center gap-3 rounded-2xl bg-dark text-white px-6 py-5">
               <Smartphone className="w-5 h-5 text-primary-300 flex-shrink-0" />
-              <span className="text-sm text-white/70">
+              <span className="text-sm text-paper-70">
                 PDR COURT is driven by advanced technology — committed to being
                 the best ADR platform to enhance your experience.
               </span>
@@ -252,7 +211,7 @@ export default function LodgeDisputePageClient() {
                 Dispute resolution via{" "}
                 <span className="accent-serif">best practices</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 A modern, effective and transparent ADR process — four clear
                 stages from conflict to closure.
               </p>
@@ -277,7 +236,7 @@ export default function LodgeDisputePageClient() {
                   <h3 className="text-lg font-display font-bold text-dark mb-2">
                     {s.title}
                   </h3>
-                  <p className="text-sm text-dark/60 leading-relaxed">
+                  <p className="text-sm text-ink-60 leading-relaxed">
                     {s.text}
                   </p>
                 </motion.div>
@@ -304,7 +263,7 @@ export default function LodgeDisputePageClient() {
                   Before you{" "}
                   <span className="accent-serif">file a dispute</span>
                 </h2>
-                <p className="mt-4 text-dark/55 leading-relaxed">
+                <p className="mt-4 text-ink-55 leading-relaxed">
                   Wait. Prepare. A clear understanding of the dispute resolution
                   process helps you get the most out of it.
                 </p>
@@ -321,7 +280,7 @@ export default function LodgeDisputePageClient() {
                     className="flex items-start gap-4 rounded-2xl border border-cream-300 bg-white p-5"
                   >
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <p className="text-sm text-dark/65 leading-relaxed">{f}</p>
+                    <p className="text-sm text-ink-65 leading-relaxed">{f}</p>
                   </motion.div>
                 ))}
               </div>
@@ -337,7 +296,7 @@ export default function LodgeDisputePageClient() {
               <h2 className="heading-lg mt-3">
                 Answers to your <span className="accent-serif">ADR queries</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Compiled by our expert professionals to enhance your
                 understanding of the dispute resolution process.
               </p>
@@ -378,7 +337,7 @@ export default function LodgeDisputePageClient() {
                         animate={{ opacity: 1, height: "auto" }}
                         transition={{ duration: 0.3, ease }}
                       >
-                        <p className="px-6 pb-5 text-sm text-dark/60 leading-relaxed">
+                        <p className="px-6 pb-5 text-sm text-ink-60 leading-relaxed">
                           {f.a}
                         </p>
                       </motion.div>
@@ -411,7 +370,7 @@ export default function LodgeDisputePageClient() {
                   <h2 className="mt-4 text-3xl md:text-4xl font-display font-bold leading-tight">
                     Decided to file a dispute?
                   </h2>
-                  <p className="mt-4 text-white/60 leading-relaxed max-w-lg">
+                  <p className="mt-4 text-paper-60 leading-relaxed max-w-lg">
                     Our support team is here to guide you through every step.
                     Reach out and we&apos;ll help you get started.
                   </p>
@@ -432,7 +391,7 @@ export default function LodgeDisputePageClient() {
                       <div className="text-sm font-semibold text-white">
                         Monday – Friday · 10 am – 5 pm
                       </div>
-                      <div className="text-xs text-white/50 mt-0.5">
+                      <div className="text-xs text-paper-50 mt-0.5">
                         We are off on public holidays.
                       </div>
                     </div>

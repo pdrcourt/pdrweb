@@ -43,7 +43,7 @@ export default function EthosClientPage() {
               We Carry a <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Promise.</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed font-light">
+            <p className="text-xl md:text-2xl text-paper-70 leading-relaxed font-light">
               Our Constitution lays down how we exercise our power and remain deeply accountable to the people we serve.
             </p>
           </motion.div>
@@ -65,7 +65,7 @@ export default function EthosClientPage() {
               <span className="section-label">Our Core</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-8">Our DNA</h2>
               <div className="space-y-8">
-                <p className="text-xl text-dark/70 leading-relaxed border-l-4 border-primary pl-6 py-2">
+                <p className="text-xl text-ink-70 leading-relaxed border-l-4 border-primary pl-6 py-2">
                   {"The DNA of PDR COURT is instilled around Jan Hus' phrase:"}
                   <span className="font-bold text-dark italic block mt-2">{"\"Seek the truth, hear the truth, learn the truth, love the truth, speak the truth, hold the truth and defend the truth until death.\""}</span>
                 </p>
@@ -103,7 +103,7 @@ export default function EthosClientPage() {
                 
                 <h3 className="text-2xl font-bold text-dark tracking-widest uppercase mb-6 relative z-10">{pledge.title}</h3>
                 
-                <p className="text-dark/70 leading-relaxed relative z-10">
+                <p className="text-ink-70 leading-relaxed relative z-10">
                   {pledge.description}
                 </p>
               </motion.div>
@@ -126,7 +126,7 @@ export default function EthosClientPage() {
             <div>
               <span className="section-label">Mobile Experience</span>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-6">The App</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-10">
+              <p className="text-lg text-ink-70 leading-relaxed mb-10">
                 With PDR COURT as their ADR platform, arbitrators can efficiently review testimony and evidence presented by the parties in dispute, whether during in-person hearings or through our advanced digital tools, ensuring effective resolution of the matter.
               </p>
               
@@ -136,14 +136,14 @@ export default function EthosClientPage() {
                   <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors shadow-lg shadow-dark/20">
                     <Download className="w-8 h-8" />
                     <div className="flex flex-col">
-                      <span className="text-xs text-white/70">Download on the</span>
+                      <span className="text-xs text-paper-70">Download on the</span>
                       <span className="text-lg font-bold leading-none">App Store</span>
                     </div>
                   </a>
                   <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors shadow-lg shadow-dark/20">
                     <Download className="w-8 h-8" />
                     <div className="flex flex-col">
-                      <span className="text-xs text-white/70">GET IT ON</span>
+                      <span className="text-xs text-paper-70">GET IT ON</span>
                       <span className="text-lg font-bold leading-none">Google Play</span>
                     </div>
                   </a>

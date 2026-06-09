@@ -44,7 +44,7 @@ export default function JoinUsPageClient() {
                       <Icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
                     <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">{r.title}</h3>
-                    <p className="text-sm text-dark/60 leading-relaxed mb-4">{r.desc}</p>
+                    <p className="text-sm text-ink-60 leading-relaxed mb-4">{r.desc}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
                       Apply Now <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -62,7 +62,7 @@ export default function JoinUsPageClient() {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 rounded-full px-4 py-1.5 mb-6">Our Values</span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">We Build Connections on Trust</h2>
-              <p className="text-lg text-white/65 max-w-3xl mx-auto leading-relaxed mb-10">
+              <p className="text-lg text-paper-65 max-w-3xl mx-auto leading-relaxed mb-10">
                 By continuously challenging ourselves, we aim to reach new heights. We believe in forging lasting connections built on the pillars of Trust, Honesty, Integrity, Transparency, and Empathy.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4">

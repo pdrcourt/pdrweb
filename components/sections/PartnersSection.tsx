@@ -18,7 +18,7 @@ export function PartnersSection() {
           <SectionBadge>{partnersContent.badge}</SectionBadge>
           <h2 className="heading-md mb-4">{partnersContent.headline}</h2>
           {partnersContent.subheading && (
-            <p className="text-lg text-dark/60 dark:text-white/60 mb-12">
+            <p className="text-lg text-ink-60 dark:text-paper-60 mb-12">
               {partnersContent.subheading}
             </p>
           )}
@@ -46,7 +46,7 @@ export function PartnersSection() {
                           <div className="text-4xl md:text-6xl font-display font-bold gold-text tracking-tight leading-none group-hover:scale-105 transition-transform duration-500">
                             {stat.value}
                           </div>
-                          <div className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-dark/40 dark:text-white/40 pl-2 border-l-2 border-primary/30">
+                          <div className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-ink-40 dark:text-paper-40 pl-2 border-l-2 border-primary/30">
                             {stat.label}
                           </div>
                         </div>
@@ -78,7 +78,7 @@ export function PartnersSection() {
                       <div className="text-3xl font-display font-bold text-dark dark:text-white mb-1">
                         {report.cases}
                       </div>
-                      <div className="text-xs uppercase tracking-wider text-dark/50 dark:text-white/50 font-semibold">
+                      <div className="text-xs uppercase tracking-wider text-ink-50 dark:text-paper-50 font-semibold">
                         Cases Reported
                       </div>
                     </div>
@@ -86,13 +86,13 @@ export function PartnersSection() {
                       <div className="text-3xl font-display font-bold text-dark dark:text-white mb-1">
                         {report.settled}
                       </div>
-                      <div className="text-xs uppercase tracking-wider text-dark/50 dark:text-white/50 font-semibold">
+                      <div className="text-xs uppercase tracking-wider text-ink-50 dark:text-paper-50 font-semibold">
                         Cases Settled
                       </div>
                     </div>
                   </div>
                   <div className="mt-8 pt-6 border-t border-cream-200 dark:border-white/5 flex items-center justify-between">
-                    <span className="text-sm font-medium text-dark/60 dark:text-white/60">Success Record</span>
+                    <span className="text-sm font-medium text-ink-60 dark:text-paper-60">Success Record</span>
                     <span className="text-xl font-bold text-primary">{report.successRate}</span>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export function PartnersSection() {
         {/* Marquee */}
         <div className="relative overflow-hidden pt-8">
           <div className="text-center mb-8">
-            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-dark/30 dark:text-white/30">
+            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-ink-30 dark:text-paper-30">
               Trusted by more than 70+ bank & NBFCs
             </span>
           </div>
@@ -133,7 +133,7 @@ export function PartnersSection() {
                     className="max-h-14 max-w-full object-contain transition-all duration-300 group-hover:scale-105"
                   />
                 ) : (
-                  <span className="text-sm font-semibold text-dark/40 dark:text-white/40 group-hover:text-primary transition-colors duration-300 text-center whitespace-nowrap">
+                  <span className="text-sm font-semibold text-ink-40 dark:text-paper-40 group-hover:text-primary transition-colors duration-300 text-center whitespace-nowrap">
                     {partner.name}
                   </span>
                 )}

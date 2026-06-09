@@ -51,7 +51,7 @@ export default function ContactForm({
       <div className="mb-8">
         <h3 className="heading-lg mb-2">{title}</h3>
         <p className="body-lg text-primary">{subtitle}</p>
-        <div className="mt-4 flex flex-wrap gap-4 text-sm text-dark/60 dark:text-white/60">
+        <div className="mt-4 flex flex-wrap gap-4 text-sm text-ink-60 dark:text-paper-60">
           <a href="mailto:legal@pdrcourt.com" className="flex items-center gap-2 hover:text-primary transition-colors">
             <Mail className="w-4 h-4" />
             legal@pdrcourt.com
@@ -66,7 +66,7 @@ export default function ContactForm({
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+            <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
               First Name
             </label>
             <input
@@ -78,7 +78,7 @@ export default function ContactForm({
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+            <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
               Last Name
             </label>
             <input
@@ -93,7 +93,7 @@ export default function ContactForm({
 
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+            <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
               Your Email
             </label>
             <input
@@ -105,7 +105,7 @@ export default function ContactForm({
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+            <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
               Tel / Mobile
             </label>
             <input
@@ -120,7 +120,7 @@ export default function ContactForm({
         {showOrganization && (
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+              <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
                 Name of Business
               </label>
               <input
@@ -131,7 +131,7 @@ export default function ContactForm({
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+              <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
                 Your Position
               </label>
               <input
@@ -147,7 +147,7 @@ export default function ContactForm({
         {showOrganization && (
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+              <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
                 Type of Industry
               </label>
               <input
@@ -158,7 +158,7 @@ export default function ContactForm({
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+              <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
                 Serving Customer Size
               </label>
               <input
@@ -173,7 +173,7 @@ export default function ContactForm({
 
         {showInformationType && (
           <div>
-            <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+            <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
               What type of Information you seek for
             </label>
             <select
@@ -192,7 +192,7 @@ export default function ContactForm({
         )}
 
         <div>
-          <label className="block text-sm font-medium text-dark/80 dark:text-white/80 mb-2">
+          <label className="block text-sm font-medium text-ink-80 dark:text-paper-80 mb-2">
             Write your Query Here
           </label>
           <textarea
@@ -213,7 +213,7 @@ export default function ContactForm({
             className="mt-1 w-4 h-4 rounded border-primary/20 text-primary focus:ring-primary"
             required
           />
-          <label htmlFor="consent" className="text-sm text-dark/60 dark:text-white/60">
+          <label htmlFor="consent" className="text-sm text-ink-60 dark:text-paper-60">
             I provide my consent to PDR COURT to contact me through email or Telephone.
           </label>
         </div>

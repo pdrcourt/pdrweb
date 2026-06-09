@@ -127,7 +127,7 @@ export default function MediaCenterClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Media <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Centre.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-2xl border-l-4 border-primary pl-6 py-2">
                 Our ADR platform facilitates global connections, paving the way for transparent reporting and resource access for members worldwide.
               </p>
               
@@ -147,7 +147,7 @@ export default function MediaCenterClientPage() {
           <div className="text-center mb-16">
             <span className="section-label mx-auto">Explore Resources</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-dark mt-4">PDR COURT Publications & News</h2>
-            <p className="mt-6 text-lg text-dark/70 max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-6 text-lg text-ink-70 max-w-2xl mx-auto leading-relaxed">
               Study all aspects of our Online Dispute Resolution platform, including the latest legal advancements, announcements, and FAQs.
             </p>
           </div>
@@ -162,7 +162,7 @@ export default function MediaCenterClientPage() {
                   <h3 className="text-2xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">
                     {route.title}
                   </h3>
-                  <p className="text-dark/70 leading-relaxed mb-6 flex-1 text-sm">
+                  <p className="text-ink-70 leading-relaxed mb-6 flex-1 text-sm">
                     {route.description}
                   </p>
                   <div className="flex items-center gap-2 text-xs font-bold text-dark uppercase tracking-widest group-hover:text-primary transition-colors pt-4 border-t border-cream-300">
@@ -182,7 +182,7 @@ export default function MediaCenterClientPage() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Ask Us</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-6">Have Questions?</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-8">
+              <p className="text-lg text-ink-70 leading-relaxed mb-8">
                 Write to us at <a href="mailto:legal@pdrcourt.com" className="text-primary font-bold underline">legal@pdrcourt.com</a> or fill out the query form for immediate support.
               </p>
               <div className="aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl relative">
@@ -196,25 +196,25 @@ export default function MediaCenterClientPage() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">First Name</label>
                     <input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Last Name</label>
                     <input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Email Address</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Email Address</label>
                     <input type="email" name="email" value={formData.email} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Tel / Mobile</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Tel / Mobile</label>
                     <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors" />
                   </div>
                 </div>
 
                 <div className="border-t border-cream-300 pt-6">
-                  <label className="block text-sm font-medium text-dark/70 mb-2">What type of Information do you seek?</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">What type of Information do you seek?</label>
                   <select name="infoSeekType" value={formData.infoSeekType} onChange={handleInputChange} className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors">
                     <option value="-Select-">Pick type of Information</option>
                     <option value="Related to Arbitration">Related to Arbitration</option>
@@ -224,14 +224,14 @@ export default function MediaCenterClientPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-dark/70 mb-2">Write your Query Here</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">Write your Query Here</label>
                   <textarea name="query" value={formData.query} onChange={handleInputChange} rows={4} required placeholder="State your requirements..." className="w-full bg-cream border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none" />
                 </div>
 
                 <div className="border-t border-cream-300 pt-6 space-y-4">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="consent" checked={formData.consent} onChange={handleInputChange} className="w-5 h-5 mt-0.5 text-primary focus:ring-primary border-cream-300 rounded" />
-                    <span className="text-xs text-dark/70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
+                    <span className="text-xs text-ink-70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
                   </label>
                 </div>
 
@@ -260,7 +260,7 @@ export default function MediaCenterClientPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <span className="section-label mx-auto">Video Tour</span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-dark mt-4 mb-6">See PDR COURT in Action</h2>
-          <p className="text-lg text-dark/70 leading-relaxed mb-12 max-w-2xl mx-auto">
+          <p className="text-lg text-ink-70 leading-relaxed mb-12 max-w-2xl mx-auto">
             Experience dispute resolution designed for modern business operations. Watch our brief platform walk-through video.
           </p>
 
@@ -289,7 +289,7 @@ export default function MediaCenterClientPage() {
                 className="bg-white p-8 rounded-3xl border border-cream-300 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
                 <CheckCircle2 className="w-8 h-8 text-primary mb-6" />
                 <h3 className="text-xl font-bold text-dark mb-4">{pt.title}</h3>
-                <p className="text-dark/70 text-sm leading-relaxed">{pt.desc}</p>
+                <p className="text-ink-70 text-sm leading-relaxed">{pt.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -308,7 +308,7 @@ export default function MediaCenterClientPage() {
                   <span>The Mobile App</span>
                 </span>
                 <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Download the PDR COURT App</h2>
-                <p className="text-white/70 leading-relaxed mb-8">
+                <p className="text-paper-70 leading-relaxed mb-8">
                   Get real-time case notifications, upload evidence directly from your device, and review hearing outcomes securely. Designed for both claimants and empaneled neutrals.
                 </p>
                 <div className="flex flex-wrap gap-4">
@@ -333,7 +333,7 @@ export default function MediaCenterClientPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
           <div>
             <h4 className="text-2xl font-display font-bold text-dark mb-2">Access the Newsroom</h4>
-            <p className="text-dark/70">Read major alternate dispute resolution stories globally.</p>
+            <p className="text-ink-70">Read major alternate dispute resolution stories globally.</p>
           </div>
           <Link href="/newsroom" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-dark text-white font-bold hover:bg-primary transition-colors">
             Go to Newsroom <ArrowRight className="w-5 h-5" />

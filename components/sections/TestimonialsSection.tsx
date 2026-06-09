@@ -45,7 +45,7 @@ export function TestimonialsSection() {
             <StarRating rating={t.rating} />
 
             {/* Quote */}
-            <blockquote className="text-sm text-dark/65 dark:text-white/65 leading-relaxed mt-4 mb-6 relative z-10">
+            <blockquote className="text-sm text-ink-65 dark:text-paper-65 leading-relaxed mt-4 mb-6 relative z-10">
               &ldquo;{t.quote}&rdquo;
             </blockquote>
 
@@ -58,7 +58,7 @@ export function TestimonialsSection() {
                 <div className="font-semibold text-sm text-dark dark:text-white">
                   {t.name}
                 </div>
-                <div className="text-xs text-dark/40 dark:text-white/40">
+                <div className="text-xs text-ink-40 dark:text-paper-40">
                   {t.role}, {t.company}
                 </div>
               </div>

@@ -31,7 +31,7 @@ export function FaqPageClient() {
             
             {/* Search Bar */}
             <div className="relative max-w-xl mx-auto">
-              <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none text-dark/40 dark:text-white/40">
+              <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none text-ink-40 dark:text-paper-40">
                 <Search size={20} />
               </div>
               <input
@@ -58,7 +58,7 @@ export function FaqPageClient() {
               <h3 className="font-display font-bold text-xl text-dark dark:text-white mb-3">
                 Still have questions?
               </h3>
-              <p className="text-dark/60 dark:text-white/60 mb-6 leading-relaxed">
+              <p className="text-ink-60 dark:text-paper-60 mb-6 leading-relaxed">
                 Our legal experts are available 24/7 to guide you through any step of the ODR process.
               </p>
               <div className="space-y-4">
@@ -86,11 +86,11 @@ export function FaqPageClient() {
               <Accordion items={filteredFaqs} />
             ) : (
               <div className="text-center py-20 bg-white dark:bg-dark-800 rounded-3xl border border-cream-300 dark:border-white/10 shadow-glass">
-                <div className="text-dark/40 dark:text-white/40 mb-4 flex justify-center">
+                <div className="text-ink-40 dark:text-paper-40 mb-4 flex justify-center">
                   <Search size={48} />
                 </div>
                 <h3 className="font-display font-bold text-xl text-dark dark:text-white mb-2">No results found</h3>
-                <p className="text-dark/60 dark:text-white/60">Try searching for different keywords or contact our support.</p>
+                <p className="text-ink-60 dark:text-paper-60">Try searching for different keywords or contact our support.</p>
               </div>
             )}
           </div>
@@ -101,7 +101,7 @@ export function FaqPageClient() {
       <section className="py-20 bg-gold-gradient">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-3xl text-white mb-6">Ready to Experience Digital Justice?</h2>
-          <p className="text-white/80 mb-10 max-w-xl mx-auto">Join 70+ Banks and 500+ Enterprises resolving disputes faster with PDR Court.</p>
+          <p className="text-paper-80 mb-10 max-w-xl mx-auto">Join 70+ Banks and 500+ Enterprises resolving disputes faster with PDR Court.</p>
           <a href="/#contact" className="btn-secondary bg-white text-primary px-8 py-4 inline-flex items-center gap-2">
             Start Your Case <ArrowRight size={18} />
           </a>

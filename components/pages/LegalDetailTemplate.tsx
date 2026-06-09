@@ -21,7 +21,7 @@ export default function LegalDetailTemplate({ page }: { page: FooterExperiencePa
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">
               {page.title}
             </h1>
-            <p className="text-lg md:text-xl text-white/60 leading-relaxed font-light">
+            <p className="text-lg md:text-xl text-paper-60 leading-relaxed font-light">
               {page.description}
             </p>
           </motion.div>
@@ -35,12 +35,12 @@ export default function LegalDetailTemplate({ page }: { page: FooterExperiencePa
             
             {/* Table of Contents / Sidebar navigation */}
             <div className="hidden lg:block sticky top-32">
-              <h4 className="text-sm font-bold text-dark/40 uppercase tracking-widest mb-6">In this document</h4>
+              <h4 className="text-sm font-bold text-ink-40 uppercase tracking-widest mb-6">In this document</h4>
               <nav className="space-y-3 border-l-2 border-cream-300">
                 {hasSections ? (
                   page.sections.map((s, idx) => (
                     s.heading && (
-                      <a key={idx} href={`#section-${idx}`} className="block pl-4 text-sm text-dark/60 hover:text-primary hover:border-l-2 hover:border-primary -ml-[2px] transition-all">
+                      <a key={idx} href={`#section-${idx}`} className="block pl-4 text-sm text-ink-60 hover:text-primary hover:border-l-2 hover:border-primary -ml-[2px] transition-all">
                         {s.heading.slice(0, 40)}{s.heading.length > 40 ? '...' : ''}
                       </a>
                     )
@@ -54,7 +54,7 @@ export default function LegalDetailTemplate({ page }: { page: FooterExperiencePa
               <div className="mt-12 p-6 bg-white rounded-2xl border border-cream-300 shadow-sm">
                 <Scale className="w-6 h-6 text-primary mb-4" />
                 <h5 className="font-bold text-dark mb-2">Legal Support</h5>
-                <p className="text-xs text-dark/60 mb-4">Need help understanding our policies?</p>
+                <p className="text-xs text-ink-60 mb-4">Need help understanding our policies?</p>
                 <a href="mailto:legal@pdrcourt.com" className="text-sm text-primary font-bold hover:underline">Contact Legal Team</a>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function LegalDetailTemplate({ page }: { page: FooterExperiencePa
                           {section.heading}
                         </h2>
                       )}
-                      <div className="space-y-4 prose prose-p:text-dark/70 prose-li:text-dark/70 max-w-none">
+                      <div className="space-y-4 prose prose-p:text-ink-70 prose-li:text-ink-70 max-w-none">
                         {section.content.map((p, pIdx) => (
                           <p key={pIdx} className="leading-relaxed">{p}</p>
                         ))}
@@ -79,14 +79,14 @@ export default function LegalDetailTemplate({ page }: { page: FooterExperiencePa
                   ))}
                 </div>
               ) : (
-                <div className="space-y-6 prose prose-lg prose-p:text-dark/70 max-w-none">
+                <div className="space-y-6 prose prose-lg prose-p:text-ink-70 max-w-none">
                   {page.lines.map((line, i) => {
                     if (!line.trim()) return null;
                     const isHeading = line.length < 100 && !line.endsWith('.') && !line.endsWith(',') && !line.endsWith(';');
                     if (isHeading && line.length > 3) {
                       return <h2 key={i} className="text-xl font-bold text-dark mt-8 mb-4">{line}</h2>;
                     }
-                    return <p key={i} className="text-dark/70 leading-relaxed mb-4">{line}</p>;
+                    return <p key={i} className="text-ink-70 leading-relaxed mb-4">{line}</p>;
                   })}
                 </div>
               )}

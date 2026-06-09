@@ -27,7 +27,7 @@ export default function TimelineSection({ items, title = 'Our Growth Story', sub
                 <div className={`flex-1 ${i % 2 === 0 ? 'md:text-right' : ''}`}>
                   <div className="rounded-2xl bg-cream border border-cream-300 p-5 inline-block hover:shadow-gold transition-all">
                     <p className="text-xs font-bold text-primary uppercase tracking-wide mb-1">{item.date}</p>
-                    <p className="text-sm text-dark/70 leading-relaxed">{item.title}</p>
+                    <p className="text-sm text-ink-70 leading-relaxed">{item.title}</p>
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-4 h-4 rounded-full bg-gold-gradient shadow-gold z-10 hidden md:block" />

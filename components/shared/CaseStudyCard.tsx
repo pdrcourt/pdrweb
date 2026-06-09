@@ -31,13 +31,13 @@ export default function CaseStudyCard({ title, description, category, date, inde
         {title}
       </h3>
       
-      <p className="text-sm text-dark/60 dark:text-white/60 leading-relaxed mb-4 line-clamp-3">
+      <p className="text-sm text-ink-60 dark:text-paper-60 leading-relaxed mb-4 line-clamp-3">
         {description}
       </p>
       
       <div className="flex items-center justify-between">
         {date && (
-          <div className="flex items-center gap-2 text-xs text-dark/40 dark:text-white/40">
+          <div className="flex items-center gap-2 text-xs text-ink-40 dark:text-paper-40">
             <Calendar className="w-3 h-3" />
             {date}
           </div>

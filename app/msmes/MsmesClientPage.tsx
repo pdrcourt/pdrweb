@@ -115,7 +115,7 @@ export default function MsmesClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 For <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">MSMEs.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 border-l-4 border-primary pl-6 py-2">
                 PDR COURT’s ADR platform leverages advanced technology to facilitate effective dispute resolution for MSMEs, driving productivity and highlighting their significant contribution to the economy.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -146,7 +146,7 @@ export default function MsmesClientPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-display font-bold text-dark leading-tight">Safeguard Your Business from Future Conflicts</h3>
-                <p className="text-dark/60 font-semibold text-sm mt-1">With a focus on technological innovation, we empower users with advanced software tools that simplify resolution.</p>
+                <p className="text-ink-60 font-semibold text-sm mt-1">With a focus on technological innovation, we empower users with advanced software tools that simplify resolution.</p>
               </div>
             </div>
             <a href="#sales" className="btn-primary py-3.5 px-8 text-sm whitespace-nowrap">Contact Sales Team</a>
@@ -163,7 +163,7 @@ export default function MsmesClientPage() {
               <h2 className="text-3xl lg:text-4xl font-display font-bold text-dark leading-tight">
                 We Practice What We Preach
               </h2>
-              <div className="space-y-6 text-dark/70 font-medium leading-relaxed">
+              <div className="space-y-6 text-ink-70 font-medium leading-relaxed">
                 <p>
                   A quick review of our case studies for MSME owners highlights the fact that PDR COURT acts strictly on execution. Our expert line-up, utilizing a structured multi-layered recovery workflow, goes the extra mile to reach secure settlements.
                 </p>
@@ -193,7 +193,7 @@ export default function MsmesClientPage() {
                 <span className="text-6xl lg:text-8xl font-display font-extrabold text-primary/30 leading-none">5</span>
                 <div>
                   <h3 className="text-2xl font-display font-bold text-dark">Simple Steps</h3>
-                  <p className="text-dark/60 font-bold text-sm">towards rapid ODR resolution</p>
+                  <p className="text-ink-60 font-bold text-sm">towards rapid ODR resolution</p>
                 </div>
               </div>
               <div className="grid grid-cols-5 gap-3 pt-6 border-t border-cream-300 text-center">
@@ -210,7 +210,7 @@ export default function MsmesClientPage() {
               <div>
                 <span className="section-label">Institutional Integration</span>
                 <h3 className="text-3xl font-display font-bold text-dark mt-2 mb-4">Why you need to Choose PDR COURT</h3>
-                <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+                <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                   PDR COURT’s ADR platform integrates the latest technology to empower MSMEs, providing highly efficient dispute resolution that boosts productivity and supports their vital role in the national economy.
                 </p>
               </div>
@@ -227,7 +227,7 @@ export default function MsmesClientPage() {
                     <div className="w-8 h-8 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5 shadow-sm">
                       {idx + 1}
                     </div>
-                    <p className="text-sm text-dark/80 font-bold leading-relaxed">{tr}</p>
+                    <p className="text-sm text-ink-80 font-bold leading-relaxed">{tr}</p>
                   </motion.div>
                 ))}
               </div>
@@ -243,7 +243,7 @@ export default function MsmesClientPage() {
           <div className="text-center mb-16">
             <span className="section-label mx-auto">Macro-Economic Indicators</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-dark mt-4">Delayed Payments Facts</h2>
-            <p className="text-dark/60 font-semibold text-sm mt-2 max-w-2xl mx-auto">Understanding the structural capital lock bottlenecks facing Indian MSEs.</p>
+            <p className="text-ink-60 font-semibold text-sm mt-2 max-w-2xl mx-auto">Understanding the structural capital lock bottlenecks facing Indian MSEs.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -253,11 +253,11 @@ export default function MsmesClientPage() {
                   <AlertTriangle className="w-3.5 h-3.5" /> Economic Times Analysis
                 </div>
                 <h3 className="text-xl font-bold text-dark mb-4">Economic Times Quantitative Analysis</h3>
-                <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                   A recent quantitative analysis by Economic Times estimates that approximately <span className="text-primary font-bold">₹10.7 Lakh Crore</span> is stuck as delayed payments to MSMEs in India, amounting to 6% of India’s GVA (Gross Value Added) for FY 2020-21. 
                 </p>
               </div>
-              <p className="text-xs text-dark/60 font-bold mt-6 border-t border-cream-300 pt-4">
+              <p className="text-xs text-ink-60 font-bold mt-6 border-t border-cream-300 pt-4">
                 This report indicates that though MSMEs have regulatory safeguards for delayed payments, a tremendous amount still remains to be solved at the ground level.
               </p>
             </div>
@@ -268,11 +268,11 @@ export default function MsmesClientPage() {
                   <TrendingUp className="w-3.5 h-3.5" /> Govt. Samadhan Portal
                 </div>
                 <h3 className="text-xl font-bold text-dark mb-4">Samadhan Portal Limitations</h3>
-                <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+                <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                   Samadhan (the government-appointed platform launched for MSMEs to raise disputes over non-payment of dues) had complaints raised by over <span className="text-primary font-bold">1.08 Lakh MSE applications</span> with delayed capital totaling <span className="text-primary font-bold">₹28,085 Crore</span> since its launch in October 2017.
                 </p>
               </div>
-              <p className="text-xs text-dark/60 font-bold mt-6 border-t border-cream-300 pt-4">
+              <p className="text-xs text-ink-60 font-bold mt-6 border-t border-cream-300 pt-4">
                 This serves as a sure-shot indicator of the extreme structural limitations of formal litigious remedies, requiring rapid institutional private ODR alternatives.
               </p>
             </div>
@@ -289,7 +289,7 @@ export default function MsmesClientPage() {
           </blockquote>
           <span className="block text-sm font-bold text-primary">— Minister Narayan Rane</span>
           
-          <div className="pt-8 border-t border-cream-300 text-sm text-dark/70 font-semibold leading-relaxed space-y-6 max-w-2xl mx-auto">
+          <div className="pt-8 border-t border-cream-300 text-sm text-ink-70 font-semibold leading-relaxed space-y-6 max-w-2xl mx-auto">
             <p>
               The MSME sector is evidently gaining priority in the economic development of the country. This sector not only represents the maximum workforce of the country but also contributes more than half of the country&apos;s output.
             </p>
@@ -310,10 +310,10 @@ export default function MsmesClientPage() {
             <div className="space-y-6">
               <span className="section-label">Continuous Commitment</span>
               <h3 className="text-2xl font-bold text-dark">Minimal Impact, Maximum Continuity</h3>
-              <p className="text-sm text-dark/70 font-semibold leading-relaxed">
+              <p className="text-sm text-ink-70 font-semibold leading-relaxed">
                 At PDR COURT, we understand these core capital locks, and our teams work relentlessly to achieve smooth and timely settlement of any disagreements or disputes so that businesses are minimally impacted.
               </p>
-              <p className="text-xs text-dark/60 font-bold">
+              <p className="text-xs text-ink-60 font-bold">
                 Our advanced platform streamlines the resolution process, ensuring efficiency and transparency. Leveraging state-of-the-art software solutions, we empower businesses to resolve conflicts effortlessly.
               </p>
             </div>
@@ -328,10 +328,10 @@ export default function MsmesClientPage() {
             <div className="space-y-6">
               <span className="section-label">Empathetic Resolution</span>
               <h3 className="text-3xl font-display font-bold text-dark">Our 360-Degree Recovery Process</h3>
-              <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+              <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                 We understand that resolving disputes involves complex, multifaceted strategies that prioritize human needs. After thorough research, the PDR COURT team has developed a unique, step-by-step recovery process designed for quick and effective settlements.
               </p>
-              <p className="text-xs text-dark/60 leading-relaxed font-bold">
+              <p className="text-xs text-ink-60 leading-relaxed font-bold">
                 Our solution-based methodology consists of three to five stages, tailored to each dispute&apos;s specifics. With intensive training, our team cultivates empathetic insights to address complex scenarios, enabling us to identify core issues from various perspectives for efficient resolution.
               </p>
             </div>
@@ -381,7 +381,7 @@ export default function MsmesClientPage() {
                 <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-xs font-bold flex-shrink-0 mt-0.5">
                   {idx + 1}
                 </div>
-                <p className="text-sm text-dark/80 font-bold leading-relaxed">{rs}</p>
+                <p className="text-sm text-ink-80 font-bold leading-relaxed">{rs}</p>
               </motion.div>
             ))}
           </div>
@@ -397,10 +397,10 @@ export default function MsmesClientPage() {
               <h3 className="text-2xl font-display font-bold text-dark mt-2">Impartial Counseling</h3>
             </div>
             <div className="md:w-2/3 space-y-4">
-              <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+              <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                 We understand that disputes take a lot of time and effort to resolve, and often, there is a question of losing business relationships. PDR COURT acts as a completely impartial counsel to guide you through intense negotiation situations.
               </p>
-              <p className="text-dark/70 font-semibold text-sm leading-relaxed">
+              <p className="text-ink-70 font-semibold text-sm leading-relaxed">
                 PDR COURT serves as an ADR platform that employs the latest technology to improve Nyaya Panchayat operations, ensuring justice is accessible and efficient via our state-of-the-art digital tools.
               </p>
             </div>
@@ -415,12 +415,12 @@ export default function MsmesClientPage() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-label">Consulting Desk</span>
               <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark mt-4 mb-6">Talk to our Experts</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-8">
+              <p className="text-lg text-ink-70 leading-relaxed mb-8">
                 Request a dedicated custom consultation on delayed payments, structural contract locks, or invoice dispute resolution mechanisms.
               </p>
               
               <div className="bg-cream rounded-[2.5rem] border border-cream-300 p-8 space-y-6 shadow-sm">
-                <div className="space-y-4 text-sm font-semibold text-dark/70">
+                <div className="space-y-4 text-sm font-semibold text-ink-70">
                   <p className="flex items-center gap-2 text-dark font-bold"><Phone className="w-4 h-4 text-primary" /> +91 8976955540</p>
                   <p className="flex items-center gap-2 text-primary font-bold"><Mail className="w-4 h-4 text-primary" /> legal@pdrcourt.com</p>
                 </div>
@@ -437,19 +437,19 @@ export default function MsmesClientPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">First Name</label>
                     <input type="text" name="SingleLine" value={formData.SingleLine} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Last Name</label>
                     <input type="text" name="SingleLine1" value={formData.SingleLine1} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Email Address</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Email Address</label>
                     <input type="email" name="Email" value={formData.Email} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-2">Tel / Mobile</label>
+                    <label className="block text-sm font-medium text-ink-70 mb-2">Tel / Mobile</label>
                     <input type="tel" name="PhoneNumber_countrycode" value={formData.PhoneNumber_countrycode} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                   </div>
                 </div>
@@ -458,26 +458,26 @@ export default function MsmesClientPage() {
                   <h5 className="text-sm font-bold text-dark uppercase tracking-wider mb-4">Business Details</h5>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Name of Business</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Name of Business</label>
                       <input type="text" name="SingleLine2" value={formData.SingleLine2} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Your Position</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Your Position</label>
                       <input type="text" name="SingleLine3" value={formData.SingleLine3} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Type of Industry</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Type of Industry</label>
                       <input type="text" name="SingleLine4" value={formData.SingleLine4} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-dark/70 mb-2">Serving Customer Size</label>
+                      <label className="block text-sm font-medium text-ink-70 mb-2">Serving Customer Size</label>
                       <input type="text" name="SingleLine5" value={formData.SingleLine5} onChange={handleInputChange} required className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium" />
                     </div>
                   </div>
                 </div>
 
                 <div className="border-t border-cream-300 pt-6">
-                  <label className="block text-sm font-medium text-dark/70 mb-2">How much Average Contracts done Monthly</label>
+                  <label className="block text-sm font-medium text-ink-70 mb-2">How much Average Contracts done Monthly</label>
                   <select name="Dropdown" value={formData.Dropdown} onChange={handleInputChange} className="w-full bg-white border border-cream-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors text-dark font-medium">
                     <option value="-Select-">Select your Contracts size</option>
                     <option value="Less than 5,000 per month">Less than 5,000 per month</option>
@@ -490,7 +490,7 @@ export default function MsmesClientPage() {
                 <div className="border-t border-cream-300 pt-6">
                   <label className="flex items-start gap-3 cursor-pointer">
                     <input type="checkbox" name="DecisionBox" checked={formData.DecisionBox} onChange={handleInputChange} className="w-5 h-5 mt-0.5 text-primary focus:ring-primary border-cream-300 rounded" />
-                    <span className="text-xs text-dark/70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
+                    <span className="text-xs text-ink-70 leading-relaxed">I provide my consent to PDR COURT to contact me through email or Telephone.</span>
                   </label>
                 </div>
 

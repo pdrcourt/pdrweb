@@ -127,7 +127,7 @@ export function FooterExperiencePage({ page }: { page: PageData }) {
             <h1 className="max-w-4xl font-display text-5xl font-bold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
               {page.title}
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/82 sm:text-xl">
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-paper-82 sm:text-xl">
               {page.description}
             </p>
 
@@ -150,7 +150,7 @@ export function FooterExperiencePage({ page }: { page: PageData }) {
           >
             <div className="absolute right-0 top-0 h-32 w-32 rounded-[2rem] border border-white/20 bg-white/10 backdrop-blur-xl" />
             <div className="absolute bottom-8 left-0 z-10 max-w-xs rounded-2xl border border-white/20 bg-white/15 p-5 text-white shadow-2xl backdrop-blur-xl">
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">{sectionNames[page.kind]}</p>
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-paper-60">{sectionNames[page.kind]}</p>
               <p className="mt-3 text-2xl font-bold">{highlights[0] ?? "Structured digital resolution"}</p>
             </div>
             <div className="relative ml-auto mt-8 h-[430px] overflow-hidden rounded-[2rem] border border-white/25 bg-white/10 shadow-2xl backdrop-blur">
@@ -173,7 +173,7 @@ export function FooterExperiencePage({ page }: { page: PageData }) {
           <div className={isEven ? "lg:order-2" : ""}>
             <p className="section-label">Overview</p>
             <h2 className="heading-lg mb-6">Built into a clear, guided digital experience.</h2>
-            <div className="space-y-5 text-base leading-8 text-dark/65">
+            <div className="space-y-5 text-base leading-8 text-ink-65">
               {paragraphs.slice(0, 4).map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -213,7 +213,7 @@ export function FooterExperiencePage({ page }: { page: PageData }) {
                 {paragraphs.slice(4, 7).concat(highlights.slice(6, 9)).slice(0, 3).map((item, index) => (
                   <div key={`${item}-${index}`} className="rounded-2xl bg-cream p-5">
                     <span className="text-xs font-bold uppercase tracking-widest text-primary">0{index + 1}</span>
-                    <p className="mt-4 text-sm leading-6 text-dark/70">{item}</p>
+                    <p className="mt-4 text-sm leading-6 text-ink-70">{item}</p>
                   </div>
                 ))}
               </div>
@@ -228,7 +228,7 @@ export function FooterExperiencePage({ page }: { page: PageData }) {
             <div>
               <p className="section-label">Experience Design</p>
               <h2 className="heading-lg mb-6">A premium route through the content, not a document dump.</h2>
-              <p className="text-lg leading-8 text-dark/60">
+              <p className="text-lg leading-8 text-ink-60">
                 The source material has been reorganized into decision-ready sections, visual cards, process moments, and navigable routes while preserving its core legal and business meaning.
               </p>
               <div className="mt-8 grid grid-cols-2 gap-4">
@@ -270,7 +270,7 @@ export function FooterExperiencePage({ page }: { page: PageData }) {
                     <Icon name={index % 2 ? "ArrowRight" : page.icon} />
                   </span>
                   <h3 className="text-xl font-bold text-dark group-hover:text-primary">{link.title}</h3>
-                  <p className="mt-3 line-clamp-3 text-sm leading-6 text-dark/55">{link.description}</p>
+                  <p className="mt-3 line-clamp-3 text-sm leading-6 text-ink-55">{link.description}</p>
                 </a>
               ))}
             </div>
@@ -281,7 +281,7 @@ export function FooterExperiencePage({ page }: { page: PageData }) {
       <section className={`relative bg-gradient-to-br ${page.accent} px-4 py-20 text-white sm:px-6 lg:px-8`}>
         <div className="absolute inset-0 bg-dark/25" />
         <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.24em] text-white/65">Ready for the next step?</p>
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-paper-65">Ready for the next step?</p>
           <h2 className="mt-4 max-w-3xl font-display text-4xl font-bold leading-tight md:text-5xl">
             Move from uncertainty to structured resolution with PDR COURT.
           </h2>

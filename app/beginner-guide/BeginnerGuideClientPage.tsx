@@ -78,7 +78,7 @@ export default function BeginnerGuideClientPage() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Decide with a <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-amber-200">Well-Researched Mindset.</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light mb-10 max-w-lg">
+              <p className="text-lg md:text-xl text-paper-70 leading-relaxed font-light mb-10 max-w-lg">
                 {"Our beginner's guide highlights a step-by-step approach outlining the processes required to avail of our ADR services."}
               </p>
               
@@ -86,7 +86,7 @@ export default function BeginnerGuideClientPage() {
                 <a href="#video-guide" className="btn-primary w-full sm:w-auto flex items-center justify-center gap-2">
                   <PlayCircle className="w-5 h-5" /> Watch Guide
                 </a>
-                <a href="mailto:legal@pdrcourt.com" className="group flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                <a href="mailto:legal@pdrcourt.com" className="group flex items-center gap-2 text-paper-70 hover:text-white transition-colors">
                   <span className="font-bold">Got Questions?</span>
                   <span className="text-primary-300 underline underline-offset-4 group-hover:text-primary-200">legal@pdrcourt.com</span>
                 </a>
@@ -98,7 +98,7 @@ export default function BeginnerGuideClientPage() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-3xl rounded-full" />
                 <img src="/images/pdr-court-app.png" alt="Mobile Application" className="w-48 mx-auto mb-6 hover:scale-105 transition-transform duration-500 drop-shadow-2xl" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 <h3 className="text-2xl font-bold text-white mb-2">Get all your Deals Secured!</h3>
-                <p className="text-white/60 mb-8">Sign up today and protect your business.</p>
+                <p className="text-paper-60 mb-8">Sign up today and protect your business.</p>
                 <Link href="/register" className="btn-primary w-full flex items-center justify-center gap-2">
                   Create Free Account <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -131,7 +131,7 @@ export default function BeginnerGuideClientPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="section-label">Real-world Context</span>
             <h2 className="heading-lg text-dark mt-4">In-Depth Case Studies</h2>
-            <p className="text-lg text-dark/60 mt-4">For an indepth understanding, please refer to the articles below detailing real arbitration cases.</p>
+            <p className="text-lg text-ink-60 mt-4">For an indepth understanding, please refer to the articles below detailing real arbitration cases.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -144,7 +144,7 @@ export default function BeginnerGuideClientPage() {
                   <h4 className="text-xl font-bold text-dark mb-4 group-hover:text-primary transition-colors line-clamp-2">
                     {article.title}
                   </h4>
-                  <p className="text-dark/60 leading-relaxed text-sm mb-8 flex-1 line-clamp-3">
+                  <p className="text-ink-60 leading-relaxed text-sm mb-8 flex-1 line-clamp-3">
                     {article.description}
                   </p>
                   <div className="flex items-center gap-2 text-sm font-bold text-dark uppercase tracking-widest mt-auto group-hover:text-primary transition-colors">
@@ -171,7 +171,7 @@ export default function BeginnerGuideClientPage() {
             <div>
               <span className="section-label">Mobile Experience</span>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mt-4 mb-6">The App</h2>
-              <p className="text-lg text-dark/70 leading-relaxed mb-10">
+              <p className="text-lg text-ink-70 leading-relaxed mb-10">
                 With PDR COURT as their ADR platform, arbitrators can efficiently review testimony and evidence presented by the parties in dispute, whether during in-person hearings or through our advanced digital tools.
               </p>
               
@@ -181,14 +181,14 @@ export default function BeginnerGuideClientPage() {
                   <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors shadow-lg shadow-dark/20 hover:shadow-xl hover:shadow-dark/30">
                     <Download className="w-8 h-8" />
                     <div className="flex flex-col">
-                      <span className="text-xs text-white/70">Download on the</span>
+                      <span className="text-xs text-paper-70">Download on the</span>
                       <span className="text-lg font-bold leading-none">App Store</span>
                     </div>
                   </a>
                   <a href="#" className="flex items-center gap-4 bg-dark text-white px-6 py-3 rounded-2xl hover:bg-dark/90 transition-colors shadow-lg shadow-dark/20 hover:shadow-xl hover:shadow-dark/30">
                     <Download className="w-8 h-8" />
                     <div className="flex flex-col">
-                      <span className="text-xs text-white/70">GET IT ON</span>
+                      <span className="text-xs text-paper-70">GET IT ON</span>
                       <span className="text-lg font-bold leading-none">Google Play</span>
                     </div>
                   </a>

@@ -74,34 +74,40 @@ export default function ResourcesLegalPageClient() {
     <>
       <Navbar />
       <main className="bg-cream">
-        {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
-          <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-royal/10 blur-[130px]" />
-          <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+        {/* ════════ HERO — light editorial ════════ */}
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-24 md:pb-32">
+          <svg
+            className="pointer-events-none absolute inset-0 w-full h-full"
+            viewBox="0 0 1440 820"
+            preserveAspectRatio="xMidYMid slice"
+            aria-hidden
+          >
+            <g fill="none" stroke="#834009" strokeWidth="1" opacity="0.09">
+              <path d="M-50 250 C 420 90, 900 430, 1490 180" />
+              <path d="M-50 540 C 460 620, 980 360, 1490 600" />
+              <path d="M300 -50 C 380 360, 240 640, 560 980" />
+              <ellipse cx="720" cy="410" rx="680" ry="300" />
+            </g>
+          </svg>
+          <span className="absolute top-28 right-8 md:right-14 w-3 h-3 rounded-full bg-dark/70" />
+
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease }}
               >
-                <span className="eyebrow-royal mb-6">
+                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-primary mb-6">
+                  <span className="inline-block w-7 h-px bg-primary/60" />
                   <Scale className="w-3.5 h-3.5" />
                   Resources &amp; Legal
                 </span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
-                  Rules, policies, and the{" "}
-                  <span className="gold-text">trust behind them</span>
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
+                  Rules, policies &amp; the{" "}
+                  <span className="italic text-ink-55">trust behind them</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   We believe everyone must get the best judgement and follow a
                   just system — so businesses and society remain dispute-free.
                   Read our rules, policies, terms and legal disclaimers.
@@ -115,38 +121,15 @@ export default function ResourcesLegalPageClient() {
                   </Link>
                 </div>
               </motion.div>
+            </div>
+          </div>
 
-              {/* navy compliance panel */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative rounded-[2rem] bg-royal-mesh text-white p-8 md:p-10 shadow-royal-lg overflow-hidden"
-              >
-                <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300">
-                  <ShieldCheck className="w-4 h-4" />
-                  Transparency &amp; Compliance
-                </span>
-                <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                  Everything we ask of you — written down, and made plain.
-                </p>
-                <div className="mt-7 space-y-2.5">
-                  {SIGNALS.map((s) => (
-                    <div
-                      key={s.text}
-                      className="flex items-center gap-3.5 rounded-xl bg-white/[0.06] border border-white/10 p-3.5"
-                    >
-                      <span className="flex-shrink-0 w-9 h-9 rounded-lg bg-gold-gradient text-white flex items-center justify-center">
-                        <s.icon className="w-4 h-4" />
-                      </span>
-                      <span className="text-sm font-semibold text-white/90">
-                        {s.text}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
+          {/* giant clipped brand word */}
+          <div className="pointer-events-none absolute -bottom-[3vw] left-0 right-0 overflow-hidden">
+            <div className={SECTION}>
+              <span className="block font-editorial font-semibold text-dark/[0.05] leading-none whitespace-nowrap text-[clamp(3.5rem,16vw,16rem)]">
+                PDR COURT
+              </span>
             </div>
           </div>
         </section>
@@ -156,10 +139,10 @@ export default function ResourcesLegalPageClient() {
           <div className={SECTION}>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="eyebrow justify-center">Policies &amp; Documents</span>
-              <h2 className="heading-lg mt-3">
-                Our legal <span className="accent-serif">framework</span>
+              <h2 className="mt-3 font-editorial font-medium text-dark leading-[1.05] text-[clamp(2rem,5vw,3.4rem)]">
+                Our legal <span className="italic text-ink-65">framework</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Every policy that governs your use of the PDR COURT platform —
                 clearly organised and easy to find.
               </p>
@@ -182,7 +165,7 @@ export default function ResourcesLegalPageClient() {
                 <h3 className="text-2xl font-display font-bold text-white mb-2">
                   Rules &amp; Guidelines
                 </h3>
-                <p className="text-sm text-white/65 leading-relaxed flex-1 max-w-md">
+                <p className="text-sm text-paper-65 leading-relaxed flex-1 max-w-md">
                   Formed to inform everyone involved about the procedure PDR
                   COURT sets for Arbitration, Conciliation and Mediation.
                 </p>
@@ -203,7 +186,7 @@ export default function ResourcesLegalPageClient() {
                 <h3 className="text-xl font-display font-bold text-dark mb-2">
                   Terms &amp; Conditions
                 </h3>
-                <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                <p className="text-sm text-ink-60 leading-relaxed flex-1">
                   The terms on which users may make use of our website — whether
                   as a guest or an account holder.
                 </p>
@@ -226,7 +209,7 @@ export default function ResourcesLegalPageClient() {
                   <h3 className="text-lg font-display font-bold text-dark mb-2">
                     {s.title}
                   </h3>
-                  <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                  <p className="text-sm text-ink-60 leading-relaxed flex-1">
                     {s.text}
                   </p>
                   <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-royal">
@@ -246,10 +229,10 @@ export default function ResourcesLegalPageClient() {
               <span className="eyebrow-royal justify-center">
                 Rules of Procedure
               </span>
-              <h2 className="heading-lg mt-3">
-                How proceedings <span className="accent-serif">run</span>
+              <h2 className="mt-3 font-editorial font-medium text-dark leading-[1.05] text-[clamp(2rem,5vw,3.4rem)]">
+                How proceedings <span className="italic text-ink-65">run</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 The detailed procedural rules for each route to resolution.
               </p>
             </div>
@@ -273,7 +256,7 @@ export default function ResourcesLegalPageClient() {
                     <h3 className="text-lg font-display font-bold text-dark mb-2">
                       {p.title}
                     </h3>
-                    <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                    <p className="text-sm text-ink-60 leading-relaxed flex-1">
                       {p.text}
                     </p>
                     <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-royal">
@@ -296,7 +279,7 @@ export default function ResourcesLegalPageClient() {
                   <Mail className="w-7 h-7 text-primary" />
                   Need clarity on a policy?
                 </h3>
-                <p className="text-dark/55 mt-2">
+                <p className="text-ink-55 mt-2">
                   Have a question about our rules, terms or disclaimers? Write
                   to us at{" "}
                   <a

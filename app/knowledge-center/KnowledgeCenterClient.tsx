@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import { motion } from "framer-motion";
 import {
   Library,
@@ -81,25 +82,24 @@ export default function KnowledgeCenterClient({
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-royal-mesh text-white pt-32 md:pt-40 pb-20 md:pb-24">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-          <div className="pointer-events-none absolute -top-20 right-10 w-[460px] h-[460px] rounded-full bg-royal/40 blur-[120px]" />
-          <div className="pointer-events-none absolute bottom-0 -left-24 w-[380px] h-[380px] rounded-full bg-primary/20 blur-[120px]" />
+        <section className="relative overflow-hidden bg-cream pt-32 md:pt-40 pb-20 md:pb-24">
+          <EditorialHeroDecor />
+          <div className="pointer-events-none absolute bottom-0 -left-24 w-[380px] h-[380px] rounded-full bg-primary/10 blur-[120px]" />
           <div className={`relative ${SECTION} text-center`}>
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-300 text-[11px] font-bold uppercase tracking-[0.2em] mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-md border border-primary/20 text-primary text-[11px] font-bold uppercase tracking-[0.2em] mb-6">
                 <Library className="w-4 h-4" />
                 Knowledge Center
               </span>
-              <h1 className="text-4xl md:text-6xl font-display font-bold leading-[1.08] max-w-3xl mx-auto">
+              <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5rem)] max-w-3xl mx-auto">
                 Master Alternative{" "}
                 <span className="gold-text">Dispute Resolution</span>
               </h1>
-              <p className="mt-6 text-lg text-white/60 leading-relaxed max-w-2xl mx-auto">
+              <p className="mt-6 text-lg text-ink-60 leading-relaxed max-w-2xl mx-auto">
                 Foundational guides, in-depth articles and the latest courtroom
                 updates — curated for individuals, businesses and legal
                 professionals.
@@ -111,13 +111,13 @@ export default function KnowledgeCenterClient({
                 className="mt-9 max-w-xl mx-auto"
               >
                 <div className="flex items-center gap-3 rounded-2xl bg-white p-2 shadow-royal-lg">
-                  <Search className="w-5 h-5 text-dark/40 ml-3 flex-shrink-0" />
+                  <Search className="w-5 h-5 text-ink-40 ml-3 flex-shrink-0" />
                   <input
                     type="text"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search articles and guides…"
-                    className="flex-1 min-w-0 bg-transparent text-dark placeholder:text-dark/40 outline-none text-sm"
+                    className="flex-1 min-w-0 bg-transparent text-dark placeholder:text-ink-40 outline-none text-sm"
                   />
                   <span className="flex-shrink-0 pill-cta text-sm">
                     Search
@@ -125,14 +125,14 @@ export default function KnowledgeCenterClient({
                 </div>
               </form>
               <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
-                <span className="text-xs text-white/40 uppercase tracking-wider">
+                <span className="text-xs text-ink-50 uppercase tracking-wider">
                   Popular:
                 </span>
                 {POPULAR.map((p) => (
                   <button
                     key={p}
                     onClick={() => setQuery(p)}
-                    className="text-xs font-semibold rounded-full border border-white/15 bg-white/[0.06] px-3 py-1 text-white/70 hover:border-amber-300/40 hover:text-white transition-colors"
+                    className="text-xs font-semibold rounded-full border border-cream-300 bg-white px-3 py-1 text-ink-60 hover:border-primary/40 hover:text-primary transition-colors"
                   >
                     {p}
                   </button>
@@ -170,7 +170,7 @@ export default function KnowledgeCenterClient({
                     <h3 className="text-xl font-display font-bold text-dark mb-2">
                       {p.title}
                     </h3>
-                    <p className="text-sm text-dark/60 leading-relaxed flex-1">
+                    <p className="text-sm text-ink-60 leading-relaxed flex-1">
                       {p.desc}
                     </p>
                     <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-royal">
@@ -199,10 +199,10 @@ export default function KnowledgeCenterClient({
                     <Link
                       key={t.label}
                       href={t.href}
-                      className="group flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-dark/65 hover:bg-royal/[0.06] hover:text-royal transition-colors"
+                      className="group flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-ink-65 hover:bg-royal/[0.06] hover:text-royal transition-colors"
                     >
                       {t.label}
-                      <ChevronRight className="w-4 h-4 text-dark/20 group-hover:text-royal group-hover:translate-x-0.5 transition-all" />
+                      <ChevronRight className="w-4 h-4 text-ink-20 group-hover:text-royal group-hover:translate-x-0.5 transition-all" />
                     </Link>
                   ))}
                 </nav>
@@ -215,7 +215,7 @@ export default function KnowledgeCenterClient({
                     <span className="section-label">Most Read</span>
                     <h2 className="heading-md mt-1">Foundational reading</h2>
                   </div>
-                  <span className="text-sm text-dark/45">
+                  <span className="text-sm text-ink-45">
                     {filtered.length}{" "}
                     {filtered.length === 1 ? "article" : "articles"}
                     {q && (
@@ -233,8 +233,8 @@ export default function KnowledgeCenterClient({
 
                 {filtered.length === 0 ? (
                   <div className="rounded-2xl border border-dashed border-cream-300 bg-cream p-12 text-center">
-                    <Search className="w-8 h-8 text-dark/20 mx-auto mb-3" />
-                    <p className="text-dark/55">
+                    <Search className="w-8 h-8 text-ink-20 mx-auto mb-3" />
+                    <p className="text-ink-55">
                       No articles match &ldquo;{query}&rdquo;.
                     </p>
                     <button
@@ -269,7 +269,7 @@ export default function KnowledgeCenterClient({
                           <h3 className="text-base font-display font-bold text-dark group-hover:text-royal transition-colors leading-snug mb-2 line-clamp-2">
                             {a.title}
                           </h3>
-                          <p className="text-sm text-dark/55 leading-relaxed line-clamp-2">
+                          <p className="text-sm text-ink-55 leading-relaxed line-clamp-2">
                             {a.excerpt}
                           </p>
                         </div>
@@ -315,7 +315,7 @@ export default function KnowledgeCenterClient({
                   <h3 className="text-base font-display font-bold text-dark group-hover:text-royal transition-colors leading-snug mb-2 line-clamp-2">
                     {n.title}
                   </h3>
-                  <p className="text-sm text-dark/55 leading-relaxed line-clamp-3">
+                  <p className="text-sm text-ink-55 leading-relaxed line-clamp-3">
                     {n.excerpt}
                   </p>
                 </Link>
@@ -333,7 +333,7 @@ export default function KnowledgeCenterClient({
                   <GraduationCap className="w-7 h-7 text-primary" />
                   Still have questions?
                 </h3>
-                <p className="text-dark/55 mt-2">
+                <p className="text-ink-55 mt-2">
                   Move from learning to resolving — our experts will guide you
                   the rest of the way.
                 </p>

@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
@@ -68,16 +69,9 @@ export default function PricingPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-24">
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-24">
           <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[130px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION} text-center`}>
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -85,10 +79,10 @@ export default function PricingPageClient() {
               transition={{ duration: 0.7, ease }}
             >
               <span className="eyebrow justify-center mb-6">Pricing</span>
-              <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+              <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                 We believe in <span className="gold-text">value pricing</span>
               </h1>
-              <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-2xl mx-auto">
+              <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-2xl mx-auto">
                 High-quality, valuable, and cost-effective dispute resolution —
                 starting as low as ₹500 per agreement, invoice, purchase order,
                 work order, or contract.
@@ -121,18 +115,18 @@ export default function PricingPageClient() {
                       Most chosen
                     </span>
                   </div>
-                  <h2 className="mt-5 text-xl font-display font-semibold text-white/90">
+                  <h2 className="mt-5 text-xl font-display font-semibold text-paper-90">
                     Dispute Resolution Paper
                   </h2>
                   <div className="mt-4 flex items-end gap-3">
                     <span className="text-6xl md:text-7xl font-display font-bold gold-text leading-none">
                       ₹500
                     </span>
-                    <span className="text-white/55 text-sm mb-2">
+                    <span className="text-paper-55 text-sm mb-2">
                       per agreement / invoice / PO / WO / contract
                     </span>
                   </div>
-                  <p className="mt-4 text-white/60 text-sm">
+                  <p className="mt-4 text-paper-60 text-sm">
                     For a contract worth up to{" "}
                     <span className="text-white font-semibold">₹5,00,000</span>.
                   </p>
@@ -142,7 +136,7 @@ export default function PricingPageClient() {
                         <span className="mt-0.5 w-5 h-5 rounded-full bg-primary/20 text-primary-300 flex items-center justify-center flex-shrink-0">
                           <Check className="w-3 h-3" />
                         </span>
-                        <span className="text-sm text-white/75">{it}</span>
+                        <span className="text-sm text-paper-75">{it}</span>
                       </li>
                     ))}
                   </ul>
@@ -167,7 +161,7 @@ export default function PricingPageClient() {
                 <h2 className="mt-5 text-2xl font-display font-bold text-dark">
                   Custom & Enterprise
                 </h2>
-                <p className="mt-3 text-dark/60 leading-relaxed">
+                <p className="mt-3 text-ink-60 leading-relaxed">
                   Stay one step ahead — fortify your enterprise against future
                   conflicts with a plan tailored to your volume and industry.
                   Talk to our sales team for a custom quote.
@@ -178,14 +172,14 @@ export default function PricingPageClient() {
                     className="flex items-center gap-3 rounded-xl bg-cream-100 border border-cream-300 px-4 py-3 hover:border-primary/40 transition-colors"
                   >
                     <Mail className="w-4 h-4 text-primary" />
-                    <span className="text-dark/70">legal@pdrcourt.com</span>
+                    <span className="text-ink-70">legal@pdrcourt.com</span>
                   </a>
                   <a
                     href="tel:8976955540"
                     className="flex items-center gap-3 rounded-xl bg-cream-100 border border-cream-300 px-4 py-3 hover:border-primary/40 transition-colors"
                   >
                     <Phone className="w-4 h-4 text-primary" />
-                    <span className="text-dark/70">+91 89769 55540</span>
+                    <span className="text-ink-70">+91 89769 55540</span>
                   </a>
                 </div>
                 <Link href="/contact" className="btn-outline mt-auto pt-7">
@@ -226,7 +220,7 @@ export default function PricingPageClient() {
                   <h3 className="font-display font-bold text-dark mb-1.5">
                     {s.title}
                   </h3>
-                  <p className="text-xs text-dark/55 leading-relaxed">{s.text}</p>
+                  <p className="text-xs text-ink-55 leading-relaxed">{s.text}</p>
                 </motion.div>
               ))}
             </div>
@@ -259,7 +253,7 @@ export default function PricingPageClient() {
                   <h3 className="text-xl font-display font-bold text-dark mb-3">
                     {w.title}
                   </h3>
-                  <p className="text-sm text-dark/60 leading-relaxed">
+                  <p className="text-sm text-ink-60 leading-relaxed">
                     {w.text}
                   </p>
                 </motion.div>
@@ -290,7 +284,7 @@ export default function PricingPageClient() {
                   <span className="mt-0.5 w-6 h-6 rounded-full bg-gold-gradient text-white flex items-center justify-center flex-shrink-0">
                     <Check className="w-3.5 h-3.5" />
                   </span>
-                  <span className="text-[15px] text-dark/75 leading-snug">
+                  <span className="text-[15px] text-ink-75 leading-snug">
                     {r}
                   </span>
                 </motion.div>
@@ -309,7 +303,7 @@ export default function PricingPageClient() {
                 <h2 className="max-w-2xl mx-auto text-2xl md:text-4xl font-display font-bold text-white leading-tight">
                   Secure your rights from just ₹500
                 </h2>
-                <p className="text-white/60 mt-4 max-w-xl mx-auto leading-relaxed">
+                <p className="text-paper-60 mt-4 max-w-xl mx-auto leading-relaxed">
                   Protect every deal with a legally enforceable agreement —
                   affordable, fast, and built on trust.
                 </p>

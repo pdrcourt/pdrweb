@@ -8,6 +8,7 @@ import SiblingLinksSection from '@/components/sections/SiblingLinksSection';
 import ProcessFlowSection from '@/components/sections/ProcessFlowSection';
 import RecoveryProcessSection from '@/components/sections/RecoveryProcessSection';
 import ReasonsWhySection from '@/components/sections/ReasonsWhySection';
+import EditorialHeroDecor from '@/components/ui/EditorialHeroDecor';
 
 export default function ServiceDetailTemplate({ page }: { page: FooterExperiencePage }) {
   const hasSections = page.sections && page.sections.length > 0;
@@ -16,24 +17,21 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
   return (
     <div className="bg-cream min-h-screen">
       {/* Immersive Service Hero */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-dark">
-        <div className="absolute inset-0">
-          <img src={page.image} alt={page.title} className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/50 to-transparent" />
-        </div>
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-cream">
+        <EditorialHeroDecor />
+        <div className="pointer-events-none absolute -top-24 -right-20 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[140px]" />
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary-300 text-sm font-medium mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8">
                 <Shield className="w-4 h-4" />
                 <span>{page.eyebrow}</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+              <h1 className="font-editorial font-medium text-[clamp(2.6rem,7vw,5rem)] text-ink-85 mb-6 leading-[1.0] tracking-tight">
                 {page.title}
               </h1>
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-10 max-w-xl">
+              <p className="text-lg md:text-xl text-ink-60 leading-relaxed mb-10 max-w-xl">
                 {page.description}
               </p>
               
@@ -42,30 +40,9 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
                   Get Started
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link href="#details" className="btn-secondary bg-white/5 border-white/20 text-white hover:bg-white/10">
+                <Link href="#details" className="btn-outline">
                   View Details
                 </Link>
-              </div>
-            </motion.div>
-            
-            {/* Right side floating card for Services */}
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="hidden lg:block relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary-600/30 to-amber-500/30 blur-3xl rounded-full" />
-              <div className="relative glass-card bg-white/10 border-white/20 p-8 rounded-2xl backdrop-blur-xl">
-                <h3 className="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Key Benefits</h3>
-                <ul className="space-y-4">
-                  {(page.highlights && page.highlights.length > 0 ? page.highlights : [
-                    "Guaranteed fast turnaround within 60 days.",
-                    "Highly cost-effective compared to traditional courts.",
-                    "Binding awards enforceable under the Arbitration Act.",
-                    "Experienced panel of neutral expert arbitrators."
-                  ]).slice(0, 4).map((highlight, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-white/80">{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </motion.div>
           </div>
@@ -81,7 +58,7 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
               <div className="text-center mb-14">
                 <span className="section-label">Enterprise Solutions</span>
                 <h2 className="heading-lg text-dark mt-2">Vendor & Contract Dispute Resolution</h2>
-                <p className="body-lg text-dark/60 max-w-2xl mx-auto mt-3">{"Maximize your enterprise's operational efficiency and protect cashflows against long legal bottlenecks."}</p>
+                <p className="body-lg text-ink-60 max-w-2xl mx-auto mt-3">{"Maximize your enterprise's operational efficiency and protect cashflows against long legal bottlenecks."}</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
@@ -90,10 +67,10 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
                   <div>
                     <span className="text-xs font-bold text-red-500 uppercase tracking-widest block mb-4">The Challenge</span>
                     <h3 className="text-2xl font-display font-bold text-dark mb-4">Unresponsive Borrowers & High NPA</h3>
-                    <p className="text-sm text-dark/60 leading-relaxed mb-6">
+                    <p className="text-sm text-ink-60 leading-relaxed mb-6">
                       Traditional recovery and dispute methods suffer from massive legal backlogs, non-cooperative counterparties, rising litigation expenses, and a continuous drain on company resources.
                     </p>
-                    <ul className="space-y-3 text-sm text-dark/70">
+                    <ul className="space-y-3 text-sm text-ink-70">
                       <li className="flex items-center gap-2">❌ Delays of 3-5 years in traditional civil courts</li>
                       <li className="flex items-center gap-2">❌ Exploding legal and operational overheads</li>
                       <li className="flex items-center gap-2">❌ Strained business relations and broken contract values</li>
@@ -106,10 +83,10 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
                   <div>
                     <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-4">Our Methodology</span>
                     <h3 className="text-2xl font-display font-bold text-dark mb-4">Indic PDR COURT ADR Solution</h3>
-                    <p className="text-sm text-dark/60 leading-relaxed mb-6">
+                    <p className="text-sm text-ink-60 leading-relaxed mb-6">
                       Leverage our modern digital legal-tech platform to fast-track debt collections, handle employee/vendor conflicts, and secure legally binding awards in less than 60 days.
                     </p>
-                    <ul className="space-y-3 text-sm text-dark/70">
+                    <ul className="space-y-3 text-sm text-ink-70">
                       <li className="flex items-center gap-2">✨ Legally binding awards enforceable as a court decree</li>
                       <li className="flex items-center gap-2">✨ 100% digital case filing, notification, and hearings</li>
                       <li className="flex items-center gap-2">✨ Empaneled legal experts across multiple industries</li>
@@ -140,7 +117,7 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
             <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
               <span className="section-label">Partner With Us</span>
               <h2 className="heading-lg text-dark mt-2">Have Custom Enterprise Needs?</h2>
-              <p className="body-lg text-dark/60 mt-3 max-w-xl mx-auto">Contact our enterprise sales desk today to design custom arbitration protocols, setup automated API reporting, or empanel dedicated neutrals for your sector.</p>
+              <p className="body-lg text-ink-60 mt-3 max-w-xl mx-auto">Contact our enterprise sales desk today to design custom arbitration protocols, setup automated API reporting, or empanel dedicated neutrals for your sector.</p>
               <div className="mt-8 flex justify-center gap-4">
                 <Link href="/contact" className="btn-primary">
                   Contact Sales Team
@@ -169,7 +146,7 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
                       )}
                       <div className="space-y-4">
                         {section.content.map((p, pIdx) => (
-                          <motion.p key={pIdx} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: pIdx * 0.1 }} className="text-lg text-dark/70 leading-relaxed">
+                          <motion.p key={pIdx} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: pIdx * 0.1 }} className="text-lg text-ink-70 leading-relaxed">
                             {p}
                           </motion.p>
                         ))}
@@ -194,7 +171,7 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
               /* Fallback generic layout if no structured sections */
               <div className="max-w-4xl mx-auto space-y-6">
                 {page.paragraphs.map((p, idx) => (
-                  <p key={idx} className="text-lg text-dark/70 leading-relaxed">{p}</p>
+                  <p key={idx} className="text-lg text-ink-70 leading-relaxed">{p}</p>
                 ))}
               </div>
             )}

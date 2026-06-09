@@ -48,7 +48,7 @@ export default function MediaCenterPageClient() {
                       <Icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
                     </div>
                     <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">{link.title}</h3>
-                    <p className="text-sm text-dark/60 leading-relaxed mb-4">{link.desc}</p>
+                    <p className="text-sm text-ink-60 leading-relaxed mb-4">{link.desc}</p>
                     <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">Explore <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" /></span>
                   </motion.a>
                 );
@@ -75,7 +75,7 @@ export default function MediaCenterPageClient() {
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="text-xs font-bold text-primary bg-primary/10 rounded-full px-3 py-1">{a.cat}</span>
-                      <span className="text-xs text-dark/40">{a.date}</span>
+                      <span className="text-xs text-ink-40">{a.date}</span>
                     </div>
                     <h3 className="font-semibold text-dark mb-2 group-hover:text-primary transition-colors">{a.title}</h3>
                     <a href="/articles" className="inline-flex items-center gap-1 text-sm text-primary font-semibold mt-2">
@@ -95,9 +95,9 @@ export default function MediaCenterPageClient() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-6">For Press &amp; Media Inquiries</h2>
-                <p className="text-white/60 leading-relaxed mb-6">For any press inquiries, interviews, or media coverage requests, please contact our communications team.</p>
+                <p className="text-paper-60 leading-relaxed mb-6">For any press inquiries, interviews, or media coverage requests, please contact our communications team.</p>
                 <div className="space-y-3">
-                  <a href="mailto:legal@pdrcourt.com" className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors">
+                  <a href="mailto:legal@pdrcourt.com" className="flex items-center gap-3 text-paper-70 hover:text-primary transition-colors">
                     <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center"><Globe className="w-4 h-4 text-primary" /></span>
                     legal@pdrcourt.com
                   </a>
@@ -107,7 +107,7 @@ export default function MediaCenterPageClient() {
                 className="rounded-2xl bg-white/5 border border-white/10 p-8">
                 <FolderOpen className="w-10 h-10 text-primary mb-4" />
                 <h3 className="text-xl font-bold text-white mb-3">Download Media Kit</h3>
-                <p className="text-sm text-white/50 mb-6">Access our brand guidelines, logos, and visual assets for media use.</p>
+                <p className="text-sm text-paper-50 mb-6">Access our brand guidelines, logos, and visual assets for media use.</p>
                 <a href="/media-kit" className="btn-primary">Download Kit <ArrowRight className="w-4 h-4" /></a>
               </motion.div>
             </div>

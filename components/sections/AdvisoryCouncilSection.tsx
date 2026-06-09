@@ -39,14 +39,14 @@ export function AdvisoryCouncilSection() {
         <motion.div className="order-1 lg:order-2 text-left" variants={itemVariants}>
           <SectionBadge align="start">{councilContent.badge}</SectionBadge>
           <h2 className="heading-lg mb-6 leading-tight text-left">{councilContent.headline}</h2>
-          <p className="body-lg text-dark/60 dark:text-white/60 mb-8 text-left">
+          <p className="body-lg text-ink-60 dark:text-paper-60 mb-8 text-left">
             {councilContent.subheading}
           </p>
           
           <div className="flex flex-col gap-4">
             <div className="flex items-start gap-4">
               <div className="w-1 h-12 bg-primary rounded-full mt-1" />
-              <p className="text-sm italic text-dark/50 dark:text-white/50">
+              <p className="text-sm italic text-ink-50 dark:text-paper-50">
                 &ldquo;Our council provides the strategic foresight needed to bridge the gap between traditional legal wisdom and the speed of the digital age.&rdquo;
               </p>
             </div>
@@ -72,7 +72,7 @@ export function AdvisoryCouncilSection() {
         className="text-center mt-20 pt-10 border-t border-primary/10"
         variants={itemVariants}
       >
-        <p className="text-dark/40 dark:text-white/40 italic text-sm max-w-xl mx-auto">
+        <p className="text-ink-40 dark:text-paper-40 italic text-sm max-w-xl mx-auto">
           &ldquo;The PDR Court Advisory Council ensures that every digital resolution is backed by decades of legal precedent and technological excellence.&rdquo;
         </p>
       </motion.div>

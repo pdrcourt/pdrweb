@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import GrowthStatsCard from "@/components/pages/GrowthStatsCard";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -73,30 +74,23 @@ export default function InvestorsPageClient() {
       <Navbar />
       <main className="bg-cream">
         {/* ════════ HERO ════════ */}
-        <section className="relative overflow-hidden bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28">
+        <section className="relative overflow-hidden bg-cream pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="pointer-events-none absolute -top-32 -right-24 w-[520px] h-[520px] rounded-full bg-primary/10 blur-[130px]" />
           <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.5) 1px,transparent 1px)",
-              backgroundSize: "76px 76px",
-            }}
-          />
+          <EditorialHeroDecor />
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease }}
               >
                 <span className="eyebrow mb-6">Investor Relations</span>
-                <h1 className="text-4xl md:text-6xl font-display font-bold text-dark leading-[1.05] tracking-tight">
+                <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
                   Invest in the leader of{" "}
                   <span className="gold-text">ADR innovation</span>
                 </h1>
-                <p className="mt-6 text-lg md:text-xl text-dark/55 leading-relaxed max-w-xl">
+                <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
                   Join PDR COURT, an innovative ADR platform, and discover how
                   your investment can help revolutionize dispute resolution
                   services across India.
@@ -108,46 +102,6 @@ export default function InvestorsPageClient() {
                   <Link href="/about" className="btn-outline">
                     About PDR COURT
                   </Link>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className="relative"
-              >
-                <div className="relative rounded-[2rem] bg-dark text-white p-8 md:p-10 shadow-gold-lg overflow-hidden">
-                  <div className="pointer-events-none absolute -top-20 -right-16 w-72 h-72 rounded-full bg-primary/25 blur-[90px]" />
-                  <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />
-                  <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-primary-300">
-                    <LineChart className="w-4 h-4" />
-                    Why PDR COURT
-                  </span>
-                  <p className="mt-4 text-xl font-display font-semibold leading-snug">
-                    Investing in PDR COURT is investing in success, bottom line
-                    &amp; profit.
-                  </p>
-                  <div className="mt-7 space-y-3">
-                    {WHY_INVEST.map((w) => (
-                      <div
-                        key={w.title}
-                        className="flex items-start gap-3 rounded-xl bg-white/[0.06] border border-white/10 p-3.5"
-                      >
-                        <span className="w-9 h-9 flex-shrink-0 rounded-lg bg-primary/15 text-primary-300 flex items-center justify-center">
-                          <w.icon className="w-4 h-4" />
-                        </span>
-                        <div>
-                          <div className="text-sm font-semibold text-white">
-                            {w.title}
-                          </div>
-                          <div className="text-xs text-white/50 leading-relaxed mt-0.5">
-                            {w.text}
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </motion.div>
             </div>
@@ -177,14 +131,14 @@ export default function InvestorsPageClient() {
                 transition={{ duration: 0.6, ease, delay: 0.1 }}
                 className="space-y-5"
               >
-                <p className="text-lg text-dark/75 leading-relaxed">
+                <p className="text-lg text-ink-75 leading-relaxed">
                   With a proven track record of high performance, PDR COURT
                   stands at the forefront of technology in the ADR space. Our
                   state-of-the-art, user-friendly software enhances the Online
                   Dispute Resolution experience and positions us as industry
                   leaders.
                 </p>
-                <p className="text-lg text-dark/75 leading-relaxed">
+                <p className="text-lg text-ink-75 leading-relaxed">
                   Investors benefit from our commitment to transparency — with
                   access to comprehensive financial reports, business plans, and
                   P&amp;L sheets. By investing in PDR COURT, you align with a
@@ -209,7 +163,7 @@ export default function InvestorsPageClient() {
               <h2 className="heading-lg mt-3">
                 Our story <span className="accent-serif">so far</span>
               </h2>
-              <p className="mt-4 text-dark/55 leading-relaxed">
+              <p className="mt-4 text-ink-55 leading-relaxed">
                 Dedicated to building a global platform of trust that
                 revolutionizes the justice-seeking process through
                 state-of-the-art technology.
@@ -238,7 +192,7 @@ export default function InvestorsPageClient() {
                         <div className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
                           {m.date}
                         </div>
-                        <p className="text-sm text-dark/70 leading-relaxed">
+                        <p className="text-sm text-ink-70 leading-relaxed">
                           {m.text}
                         </p>
                       </div>
@@ -273,10 +227,10 @@ export default function InvestorsPageClient() {
                   <h3 className="mt-4 text-3xl md:text-4xl font-display font-bold leading-tight">
                     PDR COURT <span className="gold-text">2.0</span>
                   </h3>
-                  <p className="mt-2 text-sm font-semibold text-white/50 uppercase tracking-wider">
+                  <p className="mt-2 text-sm font-semibold text-paper-50 uppercase tracking-wider">
                     Rolling out from March 2024
                   </p>
-                  <p className="mt-5 text-white/65 leading-relaxed">
+                  <p className="mt-5 text-paper-65 leading-relaxed">
                     The next generation of our platform — rebuilt around
                     security, usability, and deeper support for the businesses
                     we serve.
@@ -300,7 +254,7 @@ export default function InvestorsPageClient() {
                   <div className="flex items-center gap-3 rounded-xl bg-gold-gradient px-5 py-4 mt-4">
                     <BookOpen className="w-5 h-5 text-white flex-shrink-0" />
                     <div>
-                      <div className="text-[10px] font-bold uppercase tracking-widest text-white/70">
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-paper-70">
                         Upcoming Book
                       </div>
                       <div className="font-display font-bold text-white leading-tight">
@@ -323,7 +277,7 @@ export default function InvestorsPageClient() {
                 Partner with a platform building the future of dispute
                 resolution
               </h2>
-              <p className="text-dark/55 mt-4 max-w-xl mx-auto">
+              <p className="text-ink-55 mt-4 max-w-xl mx-auto">
                 Reach out to our team for financial reports, business plans, and
                 a detailed investment overview.
               </p>

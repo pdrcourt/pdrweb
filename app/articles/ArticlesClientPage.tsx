@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, BookOpen, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import SiblingLinksSection from '@/components/sections/SiblingLinksSection';
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 
 interface Article {
   title: string;
@@ -17,24 +18,22 @@ export default function ArticlesClientPage({ articles }: { articles: Article[] }
   return (
     <div className="bg-cream min-h-screen">
       {/* Premium Media Hero */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark overflow-hidden">
-        <div className="absolute inset-0 opacity-40 mix-blend-overlay">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900/40 via-dark to-dark" />
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] animate-pulse" />
-        </div>
-        
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-cream overflow-hidden">
+        <EditorialHeroDecor />
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] animate-pulse" />
+
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary-300 text-sm font-medium mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-md border border-primary/20 text-primary text-sm font-medium mb-8">
               <BookOpen className="w-4 h-4" />
               <span>Media Center</span>
             </div>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
+
+            <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)] mb-6">
               Articles & Resources
             </h1>
-            
-            <p className="text-lg md:text-xl text-white/60 leading-relaxed font-light">
+
+            <p className="text-lg md:text-xl text-ink-60 leading-relaxed font-light">
               Discover Alternative Dispute Resolution (ADR): A Smart, Cost-Effective Approach to Legal Matters. Explore insights that illuminate the methods, benefits, and precautions of ADR—designed to empower your decision-making in a tech-driven world.
             </p>
           </motion.div>
@@ -93,7 +92,7 @@ export default function ArticlesClientPage({ articles }: { articles: Article[] }
                     {article.title}
                   </h3>
                   
-                  <p className="text-sm text-dark/70 leading-relaxed mb-8 flex-1">
+                  <p className="text-sm text-ink-70 leading-relaxed mb-8 flex-1">
                     {article.excerpt}
                   </p>
                   

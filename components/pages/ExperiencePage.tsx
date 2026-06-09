@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import GrowthStatsCard from "@/components/pages/GrowthStatsCard";
 import { LucideIcon } from "@/components/ui/LucideIcon";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -47,7 +48,7 @@ function Block({ block, first }: { block: ContentBlock; first: boolean }) {
         </h3>
       );
     return (
-      <h4 id={id} className="scroll-mt-28 mt-7 mb-2 text-lg font-display font-semibold text-dark/90">
+      <h4 id={id} className="scroll-mt-28 mt-7 mb-2 text-lg font-display font-semibold text-ink-90">
         {block.text}
       </h4>
     );
@@ -55,7 +56,7 @@ function Block({ block, first }: { block: ContentBlock; first: boolean }) {
   if (block.type === "paragraph")
     return (
       <p
-        className={`my-4 text-[1.05rem] leading-[1.8] text-dark/80 prose-anchor ${
+        className={`my-4 text-[1.05rem] leading-[1.8] text-ink-80 prose-anchor ${
           first
             ? "first-letter:float-left first-letter:font-display first-letter:font-bold first-letter:text-primary first-letter:text-[3.4rem] first-letter:leading-[0.8] first-letter:mr-3 first-letter:mt-1"
             : ""
@@ -70,7 +71,7 @@ function Block({ block, first }: { block: ContentBlock; first: boolean }) {
           <li key={i} className="flex gap-3.5">
             <span className="mt-[11px] w-1.5 h-1.5 rounded-full bg-gold-gradient flex-shrink-0" />
             <span
-              className="flex-1 text-[1.02rem] leading-[1.75] text-dark/80 prose-anchor"
+              className="flex-1 text-[1.02rem] leading-[1.75] text-ink-80 prose-anchor"
               dangerouslySetInnerHTML={{ __html: it.html }}
             />
           </li>
@@ -80,14 +81,14 @@ function Block({ block, first }: { block: ContentBlock; first: boolean }) {
   // quote
   return (
     <blockquote
-      className="my-7 rounded-2xl rounded-tl-none bg-cream-100 border border-cream-300 p-6 text-lg italic text-dark/75 prose-anchor"
+      className="my-7 rounded-2xl rounded-tl-none bg-cream-100 border border-cream-300 p-6 text-lg italic text-ink-75 prose-anchor"
       dangerouslySetInnerHTML={{ __html: block.html }}
     />
   );
 }
 
 export default function ExperiencePage({ cfg, intro, blocks }: Props) {
-  const dark = cfg.hero === "dark";
+  const dark = false; // editorial: always light cream hero
   const firstParaIdx = blocks.findIndex(
     (b) => b.type === "paragraph" && b.text.length >= 120,
   );
@@ -100,8 +101,8 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
         <section
           className={`relative overflow-hidden ${
             dark
-              ? "bg-dark text-white pt-32 md:pt-40 pb-24 md:pb-28"
-              : "bg-hero-gradient pt-28 md:pt-36 pb-20 md:pb-28"
+              ? "bg-dark text-dark pt-32 md:pt-40 pb-24 md:pb-28"
+              : "bg-cream pt-28 md:pt-36 pb-20 md:pb-28"
           }`}
         >
           {dark ? (
@@ -118,18 +119,10 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
               <div className="pointer-events-none absolute bottom-0 -left-24 w-[420px] h-[420px] rounded-full bg-amber-400/10 blur-[120px]" />
             </>
           )}
-          <div
-            className="pointer-events-none absolute inset-0"
-            style={{
-              opacity: dark ? 0.05 : 0.04,
-              backgroundImage:
-                "linear-gradient(rgba(131,64,9,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(131,64,9,.6) 1px,transparent 1px)",
-              backgroundSize: "78px 78px",
-            }}
-          />
+          <EditorialHeroDecor />
 
           <div className={`relative ${SECTION}`}>
-            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+            <div className="max-w-3xl">
               {/* left */}
               <motion.div
                 initial={{ opacity: 0, y: 26 }}
@@ -138,7 +131,7 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
               >
                 <span
                   className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] ${
-                    dark ? "text-primary-300" : "text-primary"
+                    dark ? "text-primary" : "text-primary"
                   }`}
                 >
                   <span
@@ -150,15 +143,15 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
                   {cfg.eyebrow}
                 </span>
                 <h1
-                  className={`mt-6 text-4xl md:text-6xl font-display font-bold leading-[1.05] tracking-tight ${
-                    dark ? "text-white" : "text-dark"
+                  className={`mt-6 font-editorial font-medium text-[clamp(2.6rem,7vw,5rem)] leading-[1.0] tracking-tight ${
+                    dark ? "text-dark" : "text-dark"
                   }`}
                 >
                   {cfg.headline} <span className="gold-text">{cfg.accent}</span>
                 </h1>
                 <p
                   className={`mt-6 text-lg md:text-xl leading-relaxed max-w-xl ${
-                    dark ? "text-white/65" : "text-dark/55"
+                    dark ? "text-ink-65" : "text-ink-55"
                   }`}
                 >
                   {intro}
@@ -170,7 +163,7 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
                   {dark ? (
                     <Link
                       href={cfg.secondary.href}
-                      className="inline-flex items-center justify-center rounded-full border border-white/30 text-white hover:bg-white/10 font-semibold transition-all duration-200 px-7 py-3.5"
+                      className="inline-flex items-center justify-center rounded-full border border-white/30 text-dark hover:bg-white/10 font-semibold transition-all duration-200 px-7 py-3.5"
                     >
                       {cfg.secondary.label}
                     </Link>
@@ -179,48 +172,6 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
                       {cfg.secondary.label}
                     </Link>
                   )}
-                </div>
-              </motion.div>
-
-              {/* right — situational panel */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease, delay: 0.15 }}
-                className={`relative rounded-[2rem] p-8 md:p-10 overflow-hidden ${
-                  dark
-                    ? "bg-white/[0.04] border border-white/10 backdrop-blur-sm"
-                    : "bg-dark text-white shadow-gold-lg"
-                }`}
-              >
-                <div className="pointer-events-none absolute -top-20 -right-16 w-72 h-72 rounded-full bg-primary/20 blur-[90px]" />
-                {!dark && <div className="absolute top-0 left-0 right-0 h-px bg-gold-gradient" />}
-                <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-primary-300">
-                  <LucideIcon name={cfg.icon} className="w-4 h-4" />
-                  {cfg.panelTitle}
-                </span>
-                <p className="mt-4 text-lg font-display font-semibold leading-snug text-white">
-                  {cfg.panelLead}
-                </p>
-                <div className="mt-6 space-y-3">
-                  {cfg.highlights.map((h) => (
-                    <div
-                      key={h.title}
-                      className="flex items-start gap-3.5 rounded-xl bg-white/[0.06] border border-white/10 p-3.5"
-                    >
-                      <span className="w-9 h-9 flex-shrink-0 rounded-lg bg-primary/15 text-primary-300 flex items-center justify-center">
-                        <LucideIcon name={h.icon} className="w-4 h-4" />
-                      </span>
-                      <div>
-                        <div className="text-sm font-semibold text-white">
-                          {h.title}
-                        </div>
-                        <div className="text-xs text-white/55 leading-relaxed mt-0.5">
-                          {h.text}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
                 </div>
               </motion.div>
             </div>
@@ -232,7 +183,7 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
           <div className={SECTION}>
             <article className="max-w-3xl mx-auto">
               {blocks.length === 0 && (
-                <p className="text-lg text-dark/70">{intro}</p>
+                <p className="text-lg text-ink-70">{intro}</p>
               )}
               {blocks.map((b, i) => (
                 <Block key={i} block={b} first={i === firstParaIdx} />
@@ -251,7 +202,7 @@ export default function ExperiencePage({ cfg, intro, blocks }: Props) {
                 <h2 className="max-w-2xl mx-auto text-2xl md:text-4xl font-display font-bold text-white leading-tight">
                   {cfg.closeHeading}
                 </h2>
-                <p className="text-white/60 mt-4 max-w-xl mx-auto leading-relaxed">
+                <p className="text-paper-60 mt-4 max-w-xl mx-auto leading-relaxed">
                   {cfg.closeText}
                 </p>
                 <div className="mt-8 flex flex-wrap justify-center gap-4">
