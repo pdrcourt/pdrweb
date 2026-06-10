@@ -18,7 +18,7 @@ export function ServicesSection() {
       {/* Header */}
       <motion.div className="text-center mb-12" variants={itemVariants}>
         <SectionBadge>{servicesContent.badge}</SectionBadge>
-        <h2 className="heading-lg mb-4">{servicesContent.headline}</h2>
+        <h2 className="font-editorial font-medium text-ink-90 text-[clamp(2rem,4.6vw,3.4rem)] leading-[1.05] mb-4">{servicesContent.headline}</h2>
         <p className="body-lg max-w-2xl mx-auto">{servicesContent.subheading}</p>
       </motion.div>
 
@@ -61,8 +61,8 @@ export function ServicesSection() {
             className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 w-full"
           >
             {/* Left Content */}
-            <div className="w-full lg:w-1/2 flex flex-col items-start text-left order-2 lg:order-1 px-4 lg:px-0">
-              <h3 className="text-3xl md:text-4xl font-display font-semibold text-dark dark:text-white mb-6">
+            <div className="w-full lg:w-1/2 flex flex-col items-start text-left order-2 lg:order-2 px-4 lg:px-0">
+              <h3 className="text-3xl md:text-4xl font-editorial font-medium text-ink-90 mb-6">
                 {activeService.title}
               </h3>
               <p className="text-lg text-ink-70 dark:text-paper-70 leading-relaxed mb-8">
@@ -87,8 +87,8 @@ export function ServicesSection() {
             </div>
 
             {/* Right Image */}
-            <div className="w-full lg:w-1/2 order-1 lg:order-2 px-4 lg:px-0">
-              <div className="relative w-full aspect-square md:aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-2xl border border-cream-300 dark:border-white/10 group">
+            <div className="w-full lg:w-1/2 order-1 lg:order-1 px-4 lg:px-0">
+              <div className="relative w-full aspect-square md:aspect-video lg:aspect-square rounded-[2rem] overflow-hidden shadow-gold-lg border border-primary/15 group">
                 <Image
                   src={activeService.image}
                   alt={activeService.title}
@@ -96,7 +96,7 @@ export function ServicesSection() {
                   className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                   priority
                 />
-                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 dark:ring-white/10 rounded-3xl pointer-events-none" />
+                <div className="absolute inset-0 ring-1 ring-inset ring-primary/10 rounded-[2rem] pointer-events-none" />
               </div>
             </div>
           </motion.div>

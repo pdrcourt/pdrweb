@@ -5,6 +5,7 @@ import Image from "next/image";
 import { heroContent } from "@/data/content";
 import { Button } from "@/components/ui/Button";
 import { Zap, Lock } from "lucide-react";
+import EditorialHeroDecor from "@/components/ui/EditorialHeroDecor";
 
 export function HeroSection() {
   return (
@@ -14,16 +15,8 @@ export function HeroSection() {
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] animate-pulse" />
         <div className="absolute top-1/2 -left-20 w-[400px] h-[400px] bg-primary/8 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />
-        {/* Grid pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(131,64,9,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(131,64,9,0.4) 1px, transparent 1px)",
-            backgroundSize: "80px 80px",
-          }}
-        />
       </div>
+      <EditorialHeroDecor />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -42,7 +35,7 @@ export function HeroSection() {
               </div>
 
               {/* Headline */}
-              <h1 className="heading-xl mb-6">
+              <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.8rem,6vw,5rem)] mb-6">
                 {heroContent.headline}
                 <br />
                 <span className="gold-text">
@@ -85,7 +78,7 @@ export function HeroSection() {
                 animate={{ y: [0, -15, 0] }}
                 transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
               >
-                <div className="rounded-4xl overflow-hidden shadow-gold-lg border border-white/50 dark:border-white/10 relative h-[520px] glass-card !bg-transparent p-4">
+                <div className="rounded-4xl overflow-hidden shadow-gold-lg border border-cream-300 relative h-[520px] bg-white p-4">
                   <div className="relative h-full w-full rounded-3xl overflow-hidden shadow-2xl">
                     <Image
                       src={heroContent.image}
@@ -99,7 +92,7 @@ export function HeroSection() {
 
                 {/* Floating badges */}
                 <motion.div
-                  className="absolute -top-4 -left-6 bg-white/80 dark:bg-dark-800/80 backdrop-blur-md rounded-2xl shadow-gold px-5 py-4 flex items-center gap-3 border border-white/40 dark:border-white/10"
+                  className="absolute -top-4 -left-6 bg-white rounded-2xl shadow-gold px-5 py-4 flex items-center gap-3 border border-cream-300"
                   animate={{ y: [0, -8, 0] }}
                   transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 0.5 }}
                 >
@@ -113,7 +106,7 @@ export function HeroSection() {
                 </motion.div>
 
                 <motion.div
-                  className="absolute -bottom-4 -right-4 bg-white/80 dark:bg-dark-800/80 backdrop-blur-md rounded-2xl shadow-gold px-5 py-4 flex items-center gap-3 border border-white/40 dark:border-white/10"
+                  className="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-gold px-5 py-4 flex items-center gap-3 border border-cream-300"
                   animate={{ y: [0, 8, 0] }}
                   transition={{ repeat: Infinity, duration: 6, ease: "easeInOut", delay: 1 }}
                 >

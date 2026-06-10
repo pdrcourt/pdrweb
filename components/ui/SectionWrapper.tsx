@@ -6,12 +6,13 @@ interface SectionWrapperProps {
   children: React.ReactNode;
   id?: string;
   className?: string;
-  background?: "cream" | "white" | "dark" | "gold-subtle" | "transparent";
+  background?: "cream" | "warm" | "white" | "dark" | "gold-subtle" | "transparent";
   padded?: boolean;
 }
 
 const bgMap: Record<string, string> = {
   cream: "bg-cream dark:bg-dark",
+  warm: "bg-cream-200 dark:bg-dark-800",
   white: "bg-white dark:bg-dark-800",
   dark: "bg-dark dark:bg-dark",
   "gold-subtle": "bg-gold-subtle",

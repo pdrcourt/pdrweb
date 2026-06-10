@@ -16,7 +16,7 @@ export function PartnersSection() {
         {/* Header */}
         <motion.div className="text-center mb-16 mx-auto px-4" variants={itemVariants}>
           <SectionBadge>{partnersContent.badge}</SectionBadge>
-          <h2 className="heading-md mb-4">{partnersContent.headline}</h2>
+          <h2 className="font-editorial font-medium text-ink-90 text-[clamp(2rem,4.6vw,3.4rem)] leading-[1.05] mb-4">{partnersContent.headline}</h2>
           {partnersContent.subheading && (
             <p className="text-lg text-ink-60 dark:text-paper-60 mb-12">
               {partnersContent.subheading}
@@ -64,7 +64,7 @@ export function PartnersSection() {
             {partnersContent.reports?.map((report) => (
               <div 
                 key={report.year}
-                className="bg-cream-50 dark:bg-dark-900/50 rounded-3xl p-8 border border-cream-200 dark:border-white/5 relative overflow-hidden group"
+                className="rounded-[1.75rem] p-8 border border-primary/15 relative overflow-hidden group"
               >
                 <div className="absolute top-0 right-0 p-6 opacity-5 font-display text-8xl font-bold">
                   {report.year}
@@ -122,7 +122,7 @@ export function PartnersSection() {
             {marqueeItems.map((partner, i) => (
               <div
                 key={`${partner.name}-${i}`}
-                className="flex-shrink-0 flex items-center justify-center px-10 py-6 rounded-2xl bg-white dark:bg-dark-800 border border-cream-200 dark:border-white/10 shadow-sm hover:shadow-gold hover:border-primary/30 transition-all duration-300 group cursor-default min-w-[220px] h-[100px]"
+                className="flex-shrink-0 flex items-center justify-center px-10 py-6 rounded-2xl bg-white dark:bg-dark-800 border border-cream-300 dark:border-white/10 shadow-gold hover:shadow-gold-lg hover:border-primary/30 transition-all duration-300 group cursor-default min-w-[220px] h-[100px]"
               >
                 {partner.logo ? (
                   <Image

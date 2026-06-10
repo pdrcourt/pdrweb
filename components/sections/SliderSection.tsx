@@ -20,7 +20,7 @@ export function SliderSection() {
   const slide = sliderContent.slides[currentSlide];
 
   return (
-    <SectionWrapper id="platform-tour" background="cream" className="overflow-hidden">
+    <SectionWrapper id="platform-tour" background="warm" className="overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <motion.div
@@ -32,11 +32,11 @@ export function SliderSection() {
             <span className="w-1.5 h-1.5 rounded-full bg-primary" />
             Discover PDR Court
           </motion.div>
-          <h2 className="heading-lg mb-4">The Future of Dispute Resolution</h2>
+          <h2 className="font-editorial font-medium text-ink-90 text-[clamp(2rem,4.6vw,3.4rem)] leading-[1.05] mb-4">The Future of Dispute Resolution</h2>
           <p className="body-lg max-w-2xl mx-auto">See how our platform empowers enterprises to resolve disputes seamlessly.</p>
         </div>
 
-        <div className="relative rounded-3xl overflow-hidden bg-white dark:bg-dark-800 shadow-glass border border-cream-300 dark:border-white/10 min-h-[500px] md:min-h-[600px] flex items-center justify-center">
+        <div className="relative rounded-3xl overflow-hidden bg-white dark:bg-dark-800 shadow-gold border border-cream-300 dark:border-white/10 min-h-[500px] md:min-h-[600px] flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={slide.id}
@@ -66,9 +66,7 @@ export function SliderSection() {
                 </div>
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-dark dark:text-white leading-[1.1] mb-4">
                   {slide.headline}{" "}
-                  <span className="bg-gold-gradient bg-clip-text text-transparent">
-                    {slide.headlineAccent}
-                  </span>
+                  <span className="gold-text">{slide.headlineAccent}</span>
                 </h3>
                 <p className="text-base md:text-lg text-ink-70 dark:text-paper-70 leading-relaxed">
                   {slide.subheading}

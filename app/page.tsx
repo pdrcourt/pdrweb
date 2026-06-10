@@ -8,6 +8,7 @@ import { ProcessSection } from "@/components/sections/ProcessSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { PartnersSection } from "@/components/sections/PartnersSection";
 import { AdvisoryCouncilSection } from "@/components/sections/AdvisoryCouncilSection";
+import { FaqSection } from "@/components/sections/FaqSection";
 import { CtaSection } from "@/components/sections/CtaSection";
 
 export default function Home() {
@@ -18,11 +19,12 @@ export default function Home() {
         <HeroSection />
         <StatsSection />
         <SliderSection />
-        <PartnersSection />
         <ServicesSection />
         <ProcessSection />
+        <PartnersSection />
         <FeaturesSection />
         <AdvisoryCouncilSection />
+        <FaqSection limit={6} />
         <CtaSection />
       </main>
       <Footer />

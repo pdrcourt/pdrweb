@@ -7,13 +7,15 @@ import { SectionBadge } from "@/components/ui/Badge";
 import { Accordion } from "@/components/ui/Accordion";
 import { MessageSquare, ArrowRight } from "lucide-react";
 
-export function FaqSection() {
+export function FaqSection({ limit }: { limit?: number } = {}) {
+  const items =
+    typeof limit === "number" ? faqContent.items.slice(0, limit) : faqContent.items;
   return (
-    <SectionWrapper id="faq" background="white">
+    <SectionWrapper id="faq" background="warm">
       {/* Header */}
       <motion.div className="text-center mb-14" variants={itemVariants}>
         <SectionBadge>{faqContent.badge}</SectionBadge>
-        <h2 className="heading-lg mb-4">{faqContent.headline}</h2>
+        <h2 className="font-editorial font-medium text-ink-90 text-[clamp(2rem,4.6vw,3.4rem)] leading-[1.05] mb-4">{faqContent.headline}</h2>
         <p className="body-lg max-w-2xl mx-auto">{faqContent.subheading}</p>
       </motion.div>
 
@@ -43,7 +45,7 @@ export function FaqSection() {
             </a>
           </div>
 
-          <div className="rounded-2xl bg-white dark:bg-dark-800 border border-cream-300 dark:border-white/10 shadow-glass p-6">
+          <div className="rounded-2xl bg-white dark:bg-dark-800 border border-cream-300 dark:border-white/10 shadow-gold p-6">
             <h4 className="font-semibold text-dark dark:text-white text-sm mb-3">Quick Stats</h4>
             <div className="space-y-3">
               {[
@@ -62,7 +64,7 @@ export function FaqSection() {
 
         {/* Right: Accordion */}
         <div className="lg:col-span-2">
-          <Accordion items={faqContent.items} />
+          <Accordion items={items} />
         </div>
       </motion.div>
     </SectionWrapper>
