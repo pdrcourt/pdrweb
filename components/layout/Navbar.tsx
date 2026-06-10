@@ -50,7 +50,7 @@ export function Navbar() {
           ref={dropdownRef}
         >
           {/* ─── LEFT — Desktop nav links (hug the inner edge, toward the logo) ─── */}
-          <div className="hidden md:flex items-center gap-1 whitespace-nowrap justify-self-end">
+          <div className="hidden md:flex items-center gap-1 whitespace-nowrap justify-self-start">
             {navContent.links.filter((l) => !RIGHT_NAV_LABELS.has(l.label)).map((link) =>
               link.children ? (
                 <div key={link.label} className="relative">
@@ -116,7 +116,7 @@ export function Navbar() {
           <div className="justify-self-center" aria-hidden />
 
           {/* ─── RIGHT — Nav links (Join Us / About) + CTAs / mobile hamburger ─── */}
-          <div className="md:justify-self-start justify-self-end flex items-center gap-4 whitespace-nowrap">
+          <div className="justify-self-end flex items-center gap-4 whitespace-nowrap">
             {/* Right-side nav links */}
             <div className="hidden md:flex items-center gap-1">
               {navContent.links
