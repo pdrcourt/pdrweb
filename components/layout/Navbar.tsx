@@ -240,7 +240,8 @@ export function Navbar() {
                     >
                       {link.label}
                     </a>
-                  ),
+                  ),   
+                  
                 )}
               </div>
               <div className="flex flex-col gap-3">
