@@ -4,6 +4,7 @@ import ArticlesClientPage from "./ArticlesClientPage";
 import { getAllByCategory } from "@/lib/migrated-content";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "Articles & Resources | PDR COURT",
   description:
     "PDR COURT articles & resources illuminate Alternate Dispute Resolution — the most cost-effective method to resolve legal matters.",

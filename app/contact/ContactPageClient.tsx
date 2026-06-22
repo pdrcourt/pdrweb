@@ -67,7 +67,7 @@ const OFFICES = [
 const SEGMENTS = [
   { icon: Briefcase, title: "Enterprises", text: "Customised ADR solutions for corporates.", href: "/enterprise" },
   { icon: Handshake, title: "Partners", text: "Collaborate and grow alongside PDR COURT.", href: "/partners" },
-  { icon: Newspaper, title: "Media", text: "Press enquiries, assets, and announcements.", href: "/media-kit" },
+  // { icon: Newspaper, title: "Media", text: "Press enquiries, assets, and announcements.", href: "/media-kit" },
 ];
 
 export default function ContactPageClient() {

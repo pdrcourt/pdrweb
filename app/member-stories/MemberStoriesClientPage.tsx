@@ -229,10 +229,10 @@ export default function MemberStoriesClientPage() {
       <div className="bg-cream border-t border-cream-300">
         <SiblingLinksSection 
           links={[
-            { title: "Case Studies", route: "/case-studies", description: "Real-world results." },
+            // { title: "Case Studies", route: "/case-studies", description: "Real-world results." },
             { title: "Beginner's Guide", route: "/beginner-guide", description: "Step-by-step instructions." },
             { title: "Media Center", route: "/media-center", description: "News and updates." }
-          ]} 
+          ]}
           parentRoute="/information" 
           currentRoute="/member-stories" 
           kind="Information" 

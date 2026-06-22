@@ -8,6 +8,7 @@ const SLUG = "faqs";
 export function generateMetadata(): Metadata {
   const p = getBySlug("any", SLUG);
   return {
+    robots: { index: false, follow: false },
     title: p ? `${p.title} | PDR COURT` : "PDR COURT",
     description: p?.description || undefined,
     keywords: p?.keywords || undefined,

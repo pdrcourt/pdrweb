@@ -322,14 +322,14 @@ export default function FaqsClientPage() {
 
       {/* Sibling Links */}
       <div className="bg-cream border-t border-cream-300">
-        <SiblingLinksSection 
+        <SiblingLinksSection
           links={[
-            { title: "Media Centre", route: "/media-center", description: "Our publications hub." },
-            { title: "Newsroom", route: "/newsroom", description: "Headlines & judgments." },
-            { title: "Articles", route: "/articles", description: "ADR perspectives." },
-            { title: "Media Kit", route: "/media-kit", description: "Press assets." },
-            { title: "Press Release", route: "/press-release", description: "Our milestones." }
-          ]} 
+            { title: "Media Centre", route: "/media-center", description: "Our publications hub." }
+            // { title: "Newsroom", route: "/newsroom", description: "Headlines & judgments." },
+            // { title: "Articles", route: "/articles", description: "ADR perspectives." },
+            // { title: "Media Kit", route: "/media-kit", description: "Press assets." },
+            // { title: "Press Release", route: "/press-release", description: "Our milestones." }
+          ]}
           parentRoute="/media-center" 
           currentRoute="/faqs" 
           kind="General" 

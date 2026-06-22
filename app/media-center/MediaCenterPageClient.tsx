@@ -26,25 +26,25 @@ const PRESS_SIGNALS = [
   { icon: Radio, text: "Breaking ADR news" },
 ];
 
-const SECONDARY = [
-  {
-    icon: Package,
-    title: "Media Kit",
-    href: "/media-kit",
-    text: "A comprehensive press kit for reporters and media connections who wish to write about us.",
-  },
-  {
-    icon: Megaphone,
-    title: "Press Release",
-    href: "/press-release",
-    text: "Our latest announcements, events, partnerships, book releases, awards and new hires.",
-  },
-  {
-    icon: HelpCircle,
-    title: "FAQs",
-    href: "/faqs",
-    text: "A quick, reliable reference for your concerns — immediate answers about our services.",
-  },
+const SECONDARY: { icon: typeof Package; title: string; href: string; text: string }[] = [
+  // {
+  //   icon: Package,
+  //   title: "Media Kit",
+  //   href: "/media-kit",
+  //   text: "A comprehensive press kit for reporters and media connections who wish to write about us.",
+  // },
+  // {
+  //   icon: Megaphone,
+  //   title: "Press Release",
+  //   href: "/press-release",
+  //   text: "Our latest announcements, events, partnerships, book releases, awards and new hires.",
+  // },
+  // {
+  //   icon: HelpCircle,
+  //   title: "FAQs",
+  //   href: "/faqs",
+  //   text: "A quick, reliable reference for your concerns — immediate answers about our services.",
+  // },
 ];
 
 export default function MediaCenterPageClient() {
@@ -81,9 +81,9 @@ export default function MediaCenterPageClient() {
                   <a href="#explore" className="btn-primary">
                     Explore the center
                   </a>
-                  <Link href="/newsroom" className="btn-outline">
+                  {/* <Link href="/newsroom" className="btn-outline">
                     Visit the newsroom
-                  </Link>
+                  </Link> */}
                 </div>
               </motion.div>
             </div>
@@ -106,7 +106,7 @@ export default function MediaCenterPageClient() {
 
             <div className="grid lg:grid-cols-6 gap-5">
               {/* Newsroom — featured navy */}
-              <Link
+              {/* <Link
                 href="/newsroom"
                 className="group relative overflow-hidden rounded-3xl bg-royal-mesh text-white lg:col-span-3 p-8 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-royal-lg"
               >
@@ -129,10 +129,10 @@ export default function MediaCenterPageClient() {
                   Read the latest
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
-              </Link>
+              </Link> */}
 
               {/* Articles */}
-              <Link
+              {/* <Link
                 href="/articles"
                 className="group gradient-border lg:col-span-3 p-7 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-royal"
               >
@@ -150,7 +150,7 @@ export default function MediaCenterPageClient() {
                   Browse articles
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
-              </Link>
+              </Link> */}
 
               {/* secondary trio */}
               {SECONDARY.map((s) => (
@@ -200,9 +200,9 @@ export default function MediaCenterPageClient() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">
-                <Link href="/media-kit" className="btn-primary">
+                {/* <Link href="/media-kit" className="btn-primary">
                   Get the media kit
-                </Link>
+                </Link> */}
                 <Link href="/contact" className="btn-outline">
                   Connect with us
                 </Link>

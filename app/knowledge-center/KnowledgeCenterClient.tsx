@@ -46,12 +46,12 @@ const PATHS = [
     desc: "An end-to-end walk-through of the PDR COURT dispute resolution journey.",
     href: "/how-it-works",
   },
-  {
-    icon: BookOpen,
-    title: "Article Library",
-    desc: "Browse the complete catalogue of ADR insights and explainers.",
-    href: "/articles",
-  },
+  // {
+  //   icon: BookOpen,
+  //   title: "Article Library",
+  //   desc: "Browse the complete catalogue of ADR insights and explainers.",
+  //   href: "/articles",
+  // },
 ];
 
 const TOPICS = [
@@ -62,7 +62,7 @@ const TOPICS = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Beginner's Guide", href: "/beginner-guide" },
   { label: "Rules & Procedure", href: "/rules" },
-  { label: "FAQs", href: "/faqs" },
+  // { label: "FAQs", href: "/faqs" },
 ];
 
 const POPULAR = ["Arbitration", "Conciliation", "Mediation", "Settlement"];
@@ -293,13 +293,13 @@ export default function KnowledgeCenterClient({
                 </span>
                 <h2 className="heading-md mt-2">Latest from the courts</h2>
               </div>
-              <Link
+              {/* <Link
                 href="/newsroom"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-royal hover:gap-3 transition-all"
               >
                 View all updates
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </Link> */}
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {recentNews.map((n) => (
@@ -342,9 +342,9 @@ export default function KnowledgeCenterClient({
                 <Link href="/talk-to-us" className="btn-primary">
                   Talk to an expert
                 </Link>
-                <Link href="/faqs" className="btn-outline">
+                {/* <Link href="/faqs" className="btn-outline">
                   Read the FAQs
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

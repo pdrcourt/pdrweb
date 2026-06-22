@@ -28,20 +28,20 @@ export default function InformationClientPage() {
       href: "/ethos",
       color: "from-emerald-500/20 to-transparent"
     },
-    {
-      title: "Case Studies",
-      description: "Review our detailed case studies to evaluate how we manage and resolve complex, real-life commercial disputes.",
-      icon: FileText,
-      href: "/case-studies",
-      color: "from-purple-500/20 to-transparent"
-    },
-    {
-      title: "Member Stories",
-      description: "Each case is unique in its own way. Explore member stories that highlight the flexibility and exposure of our services.",
-      icon: Quote,
-      href: "/member-stories",
-      color: "from-rose-500/20 to-transparent"
-    }
+    // {
+    //   title: "Case Studies",
+    //   description: "Review our detailed case studies to evaluate how we manage and resolve complex, real-life commercial disputes.",
+    //   icon: FileText,
+    //   href: "/case-studies",
+    //   color: "from-purple-500/20 to-transparent"
+    // },
+    // {
+    //   title: "Member Stories",
+    //   description: "Each case is unique in its own way. Explore member stories that highlight the flexibility and exposure of our services.",
+    //   icon: Quote,
+    //   href: "/member-stories",
+    //   color: "from-rose-500/20 to-transparent"
+    // }
   ];
 
   const processPillars = [
@@ -220,9 +220,9 @@ export default function InformationClientPage() {
         <SiblingLinksSection 
           links={[
             { title: "How it Works", route: "/how-it-works", description: "Process breakdown." },
-            { title: "Beginner's Guide", route: "/beginner-guide", description: "Step-by-step instructions." },
-            { title: "Case Studies", route: "/case-studies", description: "Real-world results." }
-          ]} 
+            { title: "Beginner's Guide", route: "/beginner-guide", description: "Step-by-step instructions." }
+            // { title: "Case Studies", route: "/case-studies", description: "Real-world results." }
+          ]}
           parentRoute="/" 
           currentRoute="/information" 
           kind="Information" 

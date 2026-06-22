@@ -6,57 +6,57 @@ import Link from 'next/link';
 import SiblingLinksSection from '@/components/sections/SiblingLinksSection';
 
 export default function BeginnerGuideClientPage() {
-  const articles = [
-    {
-      title: "Movie Studio V. Production House",
-      description: "The claimant in this case is a movie studio based in Mumbai offering services of private screening and post-production works like editing, sound recording, etc.",
-      href: "/articles/movie-studio-vs-production-house"
-    },
-    {
-      title: "Shipping Company V. Manufacturing Business",
-      description: "Brief facts giving rise to this dispute of Non-payment of the invoice: a dispute arose between the parties, who..",
-      href: "/articles/shipping-company-vs-manufacturing-business"
-    },
-    {
-      title: "Post Production Studio V. Entertainment Company",
-      description: "Cras nec lectus non leo consequat sagittis. Mauris dignissim urna vitae odio hendrerit, vel tincidunt elit facilisis...",
-      href: "/articles/post-production-studio-vs-entertainment-company"
-    },
-    {
-      title: "Textile Manufacturer V. Wholesaler of Textile",
-      description: "Financial disputes need to be resolved as quickly as possible. The claimant (a Private Limited Company engaged...",
-      href: "/articles/textile-manufacturer-vs-textile-wholesaler"
-    },
-    {
-      title: "NBFC V. A self-employed resident of India",
-      description: "Arbitration is a part of any dispute arising between parties to an agreement. Courts also encourage this practice...",
-      href: "/articles/nbfc-vs-individual"
-    },
-    {
-      title: "NBFC V. Businessman",
-      description: "A self-employed businessman (the respondent) from Andhra Pradesh, India, entered into a financial loan ...",
-      href: "/articles/nbfc-vs-businessman"
-    },
-    {
-      title: "NBFC V. Small Businessman",
-      description: "PDR COURT has been impanelled as the Arbitrator for a Pvt. Ltd. incorporated under the Companies Act, 1956...",
-      href: "/articles/nbfc-vs-small-businessman"
-    },
-    {
-      title: "Private Limited Company V. Textile Wholesaler",
-      description: "Invoice Settlement Mediation was entered into by the claimant, a Private Limited Company engaged in ...",
-      href: "/articles/private-limited-company-vs-textile-wholesaler"
-    },
-    {
-      title: "Movie Studio V. Movie Production House",
-      description: "This case of disagreement is between a Private studio based in Mumbai and a Movie production house..",
-      href: "/articles/movie-studio-vs-movie-production-house"
-    },
-    {
-      title: "Private Ltd. Company V. Plastic Manufacturer",
-      description: "This dispute arose between a Private Limited company that was engaged in the manufacturing of plastic ...",
-      href: "/articles/private-limited-company-vs-plastic-manufacturer"
-    }
+  const articles: { title: string; description: string; href: string }[] = [
+    // {
+    //   title: "Movie Studio V. Production House",
+    //   description: "The claimant in this case is a movie studio based in Mumbai offering services of private screening and post-production works like editing, sound recording, etc.",
+    //   href: "/articles/movie-studio-vs-production-house"
+    // },
+    // {
+    //   title: "Shipping Company V. Manufacturing Business",
+    //   description: "Brief facts giving rise to this dispute of Non-payment of the invoice: a dispute arose between the parties, who..",
+    //   href: "/articles/shipping-company-vs-manufacturing-business"
+    // },
+    // {
+    //   title: "Post Production Studio V. Entertainment Company",
+    //   description: "Cras nec lectus non leo consequat sagittis. Mauris dignissim urna vitae odio hendrerit, vel tincidunt elit facilisis...",
+    //   href: "/articles/post-production-studio-vs-entertainment-company"
+    // },
+    // {
+    //   title: "Textile Manufacturer V. Wholesaler of Textile",
+    //   description: "Financial disputes need to be resolved as quickly as possible. The claimant (a Private Limited Company engaged...",
+    //   href: "/articles/textile-manufacturer-vs-textile-wholesaler"
+    // },
+    // {
+    //   title: "NBFC V. A self-employed resident of India",
+    //   description: "Arbitration is a part of any dispute arising between parties to an agreement. Courts also encourage this practice...",
+    //   href: "/articles/nbfc-vs-individual"
+    // },
+    // {
+    //   title: "NBFC V. Businessman",
+    //   description: "A self-employed businessman (the respondent) from Andhra Pradesh, India, entered into a financial loan ...",
+    //   href: "/articles/nbfc-vs-businessman"
+    // },
+    // {
+    //   title: "NBFC V. Small Businessman",
+    //   description: "PDR COURT has been impanelled as the Arbitrator for a Pvt. Ltd. incorporated under the Companies Act, 1956...",
+    //   href: "/articles/nbfc-vs-small-businessman"
+    // },
+    // {
+    //   title: "Private Limited Company V. Textile Wholesaler",
+    //   description: "Invoice Settlement Mediation was entered into by the claimant, a Private Limited Company engaged in ...",
+    //   href: "/articles/private-limited-company-vs-textile-wholesaler"
+    // },
+    // {
+    //   title: "Movie Studio V. Movie Production House",
+    //   description: "This case of disagreement is between a Private studio based in Mumbai and a Movie production house..",
+    //   href: "/articles/movie-studio-vs-movie-production-house"
+    // },
+    // {
+    //   title: "Private Ltd. Company V. Plastic Manufacturer",
+    //   description: "This dispute arose between a Private Limited company that was engaged in the manufacturing of plastic ...",
+    //   href: "/articles/private-limited-company-vs-plastic-manufacturer"
+    // }
   ];
 
   return (
@@ -96,7 +96,6 @@ export default function BeginnerGuideClientPage() {
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="hidden lg:block relative z-10">
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden text-center max-w-md mx-auto">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-3xl rounded-full" />
-                <img src="/images/pdr-court-app.png" alt="Mobile Application" className="w-48 mx-auto mb-6 hover:scale-105 transition-transform duration-500 drop-shadow-2xl" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 <h3 className="text-2xl font-bold text-white mb-2">Get all your Deals Secured!</h3>
                 <p className="text-paper-60 mb-8">Sign up today and protect your business.</p>
                 <Link href="/register" className="btn-primary w-full flex items-center justify-center gap-2">
@@ -205,8 +204,8 @@ export default function BeginnerGuideClientPage() {
           links={[
             { title: "How it Works", route: "/how-it-works", description: "Process breakdown." },
             { title: "Our Ethos", route: "/ethos", description: "Core principles." },
-            { title: "Case Studies", route: "/case-studies", description: "Real-world results." }
-          ]} 
+            // { title: "Case Studies", route: "/case-studies", description: "Real-world results." }
+          ]}
           parentRoute="/information" 
           currentRoute="/beginner-guide" 
           kind="Information" 

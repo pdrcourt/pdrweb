@@ -9,10 +9,10 @@ import { MessageSquare, Share2, FolderOpen, FileText, Globe, ArrowRight } from '
 
 const mediaLinks = [
   { title: 'FAQ', desc: 'Most common queries people have about our dispute resolution services.', icon: MessageSquare, href: '/faq' },
-  { title: 'Press Release', desc: 'Official press releases and announcements from PDR COURT.', icon: Share2, href: '/press-release' },
-  { title: 'Media Kit', desc: 'Brand assets, logos, and visual guidelines for media professionals.', icon: FolderOpen, href: '/media-kit' },
-  { title: 'Articles', desc: 'Articles on dispute resolution, legal tech, and industry insights.', icon: FileText, href: '/articles' },
-  { title: 'Newsroom', desc: 'Latest news, updates, and press coverage about PDR COURT.', icon: Globe, href: '/newsroom' },
+  // { title: 'Press Release', desc: 'Official press releases and announcements from PDR COURT.', icon: Share2, href: '/press-release' },
+  // { title: 'Media Kit', desc: 'Brand assets, logos, and visual guidelines for media professionals.', icon: FolderOpen, href: '/media-kit' },
+  // { title: 'Articles', desc: 'Articles on dispute resolution, legal tech, and industry insights.', icon: FileText, href: '/articles' },
+  // { title: 'Newsroom', desc: 'Latest news, updates, and press coverage about PDR COURT.', icon: Globe, href: '/newsroom' },
 ];
 
 const articles = [
@@ -78,9 +78,9 @@ export default function MediaCenterPageClient() {
                       <span className="text-xs text-ink-40">{a.date}</span>
                     </div>
                     <h3 className="font-semibold text-dark mb-2 group-hover:text-primary transition-colors">{a.title}</h3>
-                    <a href="/articles" className="inline-flex items-center gap-1 text-sm text-primary font-semibold mt-2">
+                    {/* <a href="/articles" className="inline-flex items-center gap-1 text-sm text-primary font-semibold mt-2">
                       Read <ArrowRight className="w-3 h-3" />
-                    </a>
+                    </a> */}
                   </div>
                 </motion.div>
               ))}
@@ -108,7 +108,7 @@ export default function MediaCenterPageClient() {
                 <FolderOpen className="w-10 h-10 text-primary mb-4" />
                 <h3 className="text-xl font-bold text-white mb-3">Download Media Kit</h3>
                 <p className="text-sm text-paper-50 mb-6">Access our brand guidelines, logos, and visual assets for media use.</p>
-                <a href="/media-kit" className="btn-primary">Download Kit <ArrowRight className="w-4 h-4" /></a>
+                {/* <a href="/media-kit" className="btn-primary">Download Kit <ArrowRight className="w-4 h-4" /></a> */}
               </motion.div>
             </div>
           </div>

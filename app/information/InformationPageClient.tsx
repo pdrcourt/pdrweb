@@ -46,18 +46,18 @@ const DIRECTORY = [
     href: "/ethos",
     text: "Our Constitution — how we exercise our power and stay accountable to those we serve.",
   },
-  {
-    icon: BarChart3,
-    title: "Case Studies",
-    href: "/case-studies",
-    text: "Review our case studies to evaluate how we deal with actual, real-life cases.",
-  },
-  {
-    icon: Users,
-    title: "Member Stories",
-    href: "/member-stories",
-    text: "Every case is unique in its own way — adding flexibility and exposure to our services.",
-  },
+  // {
+  //   icon: BarChart3,
+  //   title: "Case Studies",
+  //   href: "/case-studies",
+  //   text: "Review our case studies to evaluate how we deal with actual, real-life cases.",
+  // },
+  // {
+  //   icon: Users,
+  //   title: "Member Stories",
+  //   href: "/member-stories",
+  //   text: "Every case is unique in its own way — adding flexibility and exposure to our services.",
+  // },
 ];
 
 export default function InformationPageClient() {

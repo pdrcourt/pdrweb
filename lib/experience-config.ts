@@ -133,7 +133,7 @@ export const EXPERIENCE_CONFIG: Record<string, ExperienceConfig> = {
     hero: "light", icon: "GraduationCap", eyebrow: "Beginner's Guide",
     headline: "New to ADR?", accent: "Start here",
     primary: { label: "Explore the process", href: "/how-it-works" },
-    secondary: { label: "Read articles", href: "/articles" },
+    secondary: { label: "Read articles", href: "#" },
     panelTitle: "Your first 15 minutes", panelLead: "A gentle introduction to alternative dispute resolution.",
     highlights: [
       { icon: "BookOpen", title: "The basics", text: "What ADR is — and why it beats litigation." },
@@ -160,7 +160,7 @@ export const EXPERIENCE_CONFIG: Record<string, ExperienceConfig> = {
   "member-stories": {
     hero: "light", icon: "Quote", eyebrow: "Member Stories",
     headline: "Real people,", accent: "real resolutions",
-    primary: { label: "Read case studies", href: "/case-studies" },
+    primary: { label: "Read case studies", href: "#" },
     secondary: { label: "Start your case", href: "/lodge-dispute" },
     panelTitle: "Voices of our members", panelLead: "Hear from the people who trusted PDR COURT.",
     highlights: [
@@ -193,7 +193,7 @@ export const EXPERIENCE_CONFIG: Record<string, ExperienceConfig> = {
     hero: "light", icon: "Package", eyebrow: "Media Kit",
     headline: "Press & brand", accent: "assets",
     primary: { label: "Contact press team", href: "/contact" },
-    secondary: { label: "Visit newsroom", href: "/newsroom" },
+    secondary: { label: "Visit newsroom", href: "#" },
     panelTitle: "For journalists", panelLead: "Logos, brand guidelines, and company facts in one place.",
     highlights: [
       { icon: "Package", title: "Brand assets", text: "Logos, colours, and usage guidelines." },
@@ -206,7 +206,7 @@ export const EXPERIENCE_CONFIG: Record<string, ExperienceConfig> = {
   "press-release": {
     hero: "light", icon: "Newspaper", eyebrow: "Press Releases",
     headline: "PDR COURT in", accent: "the news",
-    primary: { label: "Visit newsroom", href: "/newsroom" },
+    primary: { label: "Visit newsroom", href: "#" },
     secondary: { label: "Contact press team", href: "/contact" },
     panelTitle: "Official announcements", panelLead: "Milestones, launches, and strategic updates.",
     highlights: [

@@ -27,37 +27,37 @@ export default function MediaCenterClientPage() {
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const mediaRoutes = [
-    {
-      title: "Newsroom",
-      description: "Get the Top Headlines on Alternate Dispute Resolution from across the globe, Supreme Court Judgements, settlements, and updates.",
-      href: "/newsroom",
-      icon: Newspaper
-    },
-    {
-      title: "Articles",
-      description: "Get an insight into Alternative Dispute Resolution (ADR) as a sensible, cost-effective method to resolve commercial and legal matters.",
-      href: "/articles",
-      icon: BookOpen
-    },
-    {
-      title: "Media Kit",
-      description: "Our comprehensive Media Kit is specially designed for journalists, partners, and media professionals wishing to feature our ADR progress.",
-      href: "/media-kit",
-      icon: Download
-    },
-    {
-      title: "Press Release",
-      description: "Stay updated on our latest institutional announcements, PAN India events, strategic partnerships, and milestones.",
-      href: "/press-release",
-      icon: Radio
-    },
-    {
-      title: "FAQs",
-      description: "Find instant answers to common questions about PDR COURT arbitration, mediation processes, fees, and membership advantages.",
-      href: "/faqs",
-      icon: HelpCircle
-    }
+  const mediaRoutes: { title: string; description: string; href: string; icon: typeof Newspaper }[] = [
+    // {
+    //   title: "Newsroom",
+    //   description: "Get the Top Headlines on Alternate Dispute Resolution from across the globe, Supreme Court Judgements, settlements, and updates.",
+    //   href: "/newsroom",
+    //   icon: Newspaper
+    // },
+    // {
+    //   title: "Articles",
+    //   description: "Get an insight into Alternative Dispute Resolution (ADR) as a sensible, cost-effective method to resolve commercial and legal matters.",
+    //   href: "/articles",
+    //   icon: BookOpen
+    // },
+    // {
+    //   title: "Media Kit",
+    //   description: "Our comprehensive Media Kit is specially designed for journalists, partners, and media professionals wishing to feature our ADR progress.",
+    //   href: "/media-kit",
+    //   icon: Download
+    // },
+    // {
+    //   title: "Press Release",
+    //   description: "Stay updated on our latest institutional announcements, PAN India events, strategic partnerships, and milestones.",
+    //   href: "/press-release",
+    //   icon: Radio
+    // },
+    // {
+    //   title: "FAQs",
+    //   description: "Find instant answers to common questions about PDR COURT arbitration, mediation processes, fees, and membership advantages.",
+    //   href: "/faqs",
+    //   icon: HelpCircle
+    // }
   ];
 
   const valuePoints = [
@@ -320,9 +320,6 @@ export default function MediaCenterClientPage() {
                   </a>
                 </div>
               </div>
-              <div className="flex justify-center relative">
-                <img src="/images/pdr-court-app.png" alt="App Preview" className="max-h-[400px] w-auto drop-shadow-2xl" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-              </div>
             </div>
           </div>
         </div>
@@ -335,9 +332,9 @@ export default function MediaCenterClientPage() {
             <h4 className="text-2xl font-display font-bold text-dark mb-2">Access the Newsroom</h4>
             <p className="text-ink-70">Read major alternate dispute resolution stories globally.</p>
           </div>
-          <Link href="/newsroom" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-dark text-white font-bold hover:bg-primary transition-colors">
+          {/* <Link href="/newsroom" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-dark text-white font-bold hover:bg-primary transition-colors">
             Go to Newsroom <ArrowRight className="w-5 h-5" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

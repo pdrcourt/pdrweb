@@ -22,6 +22,7 @@ export function generateMetadata({
   const page = getBySlug("case-studies", params.slug);
   if (!page) return { title: "Case Study Not Found | PDR COURT" };
   return {
+    robots: { index: false, follow: false },
     title: `${page.title} | PDR COURT`,
     description: page.description || page.excerpt,
   };

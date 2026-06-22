@@ -11,6 +11,7 @@ const MIGRATED_SLUG = "member-stories";
 export function generateMetadata(): Metadata {
   const p = getBySlug("any", MIGRATED_SLUG);
   return {
+    robots: { index: false, follow: false },
     title: p ? `${p.title} | PDR COURT` : "PDR COURT",
     description: p?.description || undefined,
   };

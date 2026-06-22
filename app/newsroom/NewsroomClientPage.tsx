@@ -173,10 +173,10 @@ export default function NewsroomClientPage({ newsItems }: Props) {
         <SiblingLinksSection
           links={[
             { title: 'Media Centre', route: '/media-center', description: 'Our publications hub.' },
-            { title: 'Articles', route: '/articles', description: 'ADR perspectives.' },
-            { title: 'Media Kit', route: '/media-kit', description: 'Press assets.' },
-            { title: 'Press Release', route: '/press-release', description: 'Our milestones.' },
-            { title: 'FAQs', route: '/faqs', description: 'Platform answers.' },
+            // { title: 'Articles', route: '/articles', description: 'ADR perspectives.' },
+            // { title: 'Media Kit', route: '/media-kit', description: 'Press assets.' },
+            // { title: 'Press Release', route: '/press-release', description: 'Our milestones.' },
+            // { title: 'FAQs', route: '/faqs', description: 'Platform answers.' },
           ]}
           parentRoute="/media-center"
           currentRoute="/newsroom"

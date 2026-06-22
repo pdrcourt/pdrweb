@@ -184,8 +184,6 @@ export default function ServicesClientPage() {
             
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative mx-auto max-w-md">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-amber-500/20 rounded-full blur-3xl opacity-50" />
-              <img src="/images/pdr-court-app.png" alt="PDR COURT Mobile App" className="relative z-10 w-full h-auto" 
-                   onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             </motion.div>
           </div>
         </div>

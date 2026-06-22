@@ -11,8 +11,8 @@ const infoLinks = [
   { title: 'How it Works', desc: 'Connect with us for more information, guidance and to know more about our services.', icon: Settings, href: '/how-it-works' },
   { title: "Beginner's Guide", desc: 'Step-by-step approach outlining the steps & processes to avail our services.', icon: BookOpen, href: '/beginner-guide' },
   { title: 'Our Ethos', desc: 'Our Constitution lays down how we exercise our power and accountability.', icon: Heart, href: '/ethos' },
-  { title: 'Case Studies', desc: 'Review our case studies to evaluate how we deal with actual real-life cases.', icon: FileCheck, href: '/case-studies' },
-  { title: 'Member Stories', desc: 'Each case is unique, adding flexibility and exposure to our services.', icon: Star, href: '/member-stories' },
+  // { title: 'Case Studies', desc: 'Review our case studies to evaluate how we deal with actual real-life cases.', icon: FileCheck, href: '/case-studies' },
+  // { title: 'Member Stories', desc: 'Each case is unique, adding flexibility and exposure to our services.', icon: Star, href: '/member-stories' },
 ];
 
 const features = [

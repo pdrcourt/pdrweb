@@ -151,8 +151,8 @@ const sections: SectionDefinition[] = [
     accent: "from-primary-600 via-amber-500 to-stone-900",
     icon: "Lightbulb",
     children: [
-      { key: "member-stories", title: "Member Stories", route: "/member-stories", image: "/images/about-team.png", icon: "Star" },
-      { key: "case-studies", title: "Case Studies", route: "/case-studies", image: "/images/process.png", icon: "FileCheck" },
+      // { key: "member-stories", title: "Member Stories", route: "/member-stories", image: "/images/about-team.png", icon: "Star" },
+      // { key: "case-studies", title: "Case Studies", route: "/case-studies", image: "/images/process.png", icon: "FileCheck" },
       { key: "our-ethos", title: "Our Ethos", route: "/ethos", image: "/images/about-mission.png", icon: "Heart" },
       { key: "beginners-guide", title: "Beginner Guide", route: "/beginner-guide", image: "/images/hero-illustration.png", icon: "Lightbulb" },
       { key: "how-it-works", title: "How It Works", route: "/how-it-works", image: "/images/features_main.png", icon: "RefreshCw" },
@@ -171,10 +171,10 @@ const sections: SectionDefinition[] = [
     icon: "Video",
     children: [
       { key: "faqs", title: "FAQ", route: "/faq", image: "/images/offer_mediation.png", icon: "MessageSquare" },
-      { key: "press-release", title: "Press Release", route: "/press-release", image: "/images/hero_slide_1.png", icon: "Share2" },
-      { key: "mediakit", title: "Media Kit", route: "/media-kit", image: "/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png", icon: "FolderOpen" },
-      { key: "articles", title: "Articles", route: "/articles", image: "/images/hero_slide_2.png", icon: "FileText" },
-      { key: "news", title: "Newsroom", route: "/newsroom", image: "/images/hero_slide_3.png", icon: "Globe" },
+      // { key: "press-release", title: "Press Release", route: "/press-release", image: "/images/hero_slide_1.png", icon: "Share2" },
+      // { key: "mediakit", title: "Media Kit", route: "/media-kit", image: "/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png", icon: "FolderOpen" },
+      // { key: "articles", title: "Articles", route: "/articles", image: "/images/hero_slide_2.png", icon: "FileText" },
+      // { key: "news", title: "Newsroom", route: "/newsroom", image: "/images/hero_slide_3.png", icon: "Globe" },
     ],
   },
 ];

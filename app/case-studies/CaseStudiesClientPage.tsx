@@ -130,7 +130,6 @@ export default function CaseStudiesClientPage({ caseStudies: caseStudiesProp }: 
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="hidden lg:block relative z-10">
               <div className="bg-white/70 backdrop-blur-xl border border-cream-300 rounded-3xl p-8 shadow-2xl relative overflow-hidden max-w-md mx-auto">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl rounded-full" />
-                <img src="/images/pdr-court-app.png" alt="Mobile Application" className="w-48 mx-auto mb-6 hover:-translate-y-2 transition-transform duration-500 drop-shadow-2xl" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 <h3 className="text-2xl font-bold text-dark mb-2 text-center">Get all your Deals Secured!</h3>
                 <p className="text-ink-60 mb-8 text-center">Sign up today and experience secure agreements.</p>
                 <Link href="/register" className="btn-primary w-full flex items-center justify-center gap-2">
@@ -227,12 +226,12 @@ export default function CaseStudiesClientPage({ caseStudies: caseStudiesProp }: 
 
       {/* Sibling Links */}
       <div className="bg-white border-t border-cream-300">
-        <SiblingLinksSection 
+        <SiblingLinksSection
           links={[
             { title: "Beginner's Guide", route: "/beginner-guide", description: "Step-by-step instructions." },
-            { title: "Our Ethos", route: "/ethos", description: "Core principles." },
-            { title: "Member Stories", route: "/member-stories", description: "Client experiences." }
-          ]} 
+            { title: "Our Ethos", route: "/ethos", description: "Core principles." }
+            // { title: "Member Stories", route: "/member-stories", description: "Client experiences." }
+          ]}
           parentRoute="/information" 
           currentRoute="/case-studies" 
           kind="Information" 

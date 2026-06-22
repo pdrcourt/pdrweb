@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { getAllSlugs } from "@/lib/migrated-content";
 
 const BASE_URL = "https://www.pdrcourt.in";
 
@@ -36,14 +35,7 @@ const SECONDARY = [
   "knowledge-center",
   "beginner-guide",
   "ethos",
-  "case-studies",
-  "member-stories",
   "media-center",
-  "newsroom",
-  "articles",
-  "media-kit",
-  "press-release",
-  "faqs",
   "join-us",
   "careers",
   "careers/arbitrator",
@@ -94,21 +86,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  const detailEntries = (
-    category: "articles" | "news" | "case-studies",
-    base: string,
-  ): MetadataRoute.Sitemap =>
-    getAllSlugs(category).map((slug) => ({
-      url: `${BASE_URL}${base}/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    }));
-
-  return [
-    ...staticEntries,
-    ...detailEntries("articles", "/articles"),
-    ...detailEntries("news", "/newsroom"),
-    ...detailEntries("case-studies", "/case-studies"),
-  ];
+  // Blog pages (articles / newsroom / case-studies + their detail pages,
+  // media-kit / press-release / faqs / member-stories) are intentionally
+  // excluded from the sitemap — they are also robots-noindexed.
+  return staticEntries;
 }

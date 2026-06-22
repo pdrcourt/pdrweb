@@ -159,9 +159,9 @@ export default function EthosClientPage() {
         <SiblingLinksSection 
           links={[
             { title: "Beginner's Guide", route: "/beginner-guide", description: "Step-by-step instructions." },
-            { title: "Case Studies", route: "/case-studies", description: "Real-world results." },
-            { title: "Member Stories", route: "/member-stories", description: "Client experiences." }
-          ]} 
+            // { title: "Case Studies", route: "/case-studies", description: "Real-world results." },
+            // { title: "Member Stories", route: "/member-stories", description: "Client experiences." }
+          ]}
           parentRoute="/information" 
           currentRoute="/ethos" 
           kind="Information" 

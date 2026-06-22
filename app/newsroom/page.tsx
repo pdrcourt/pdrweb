@@ -4,6 +4,7 @@ import NewsroomClientPage, { NewsItem } from "./NewsroomClientPage";
 import { getAllByCategory } from "@/lib/migrated-content";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "Newsroom | PDR COURT",
   description:
     "Explore the latest headlines, legal updates, Supreme Court judgments, and strategic announcements regarding ODR and arbitration from PDR COURT.",

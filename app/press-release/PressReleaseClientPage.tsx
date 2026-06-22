@@ -286,11 +286,11 @@ export default function PressReleaseClientPage() {
         <SiblingLinksSection 
           links={[
             { title: "Media Centre", route: "/media-center", description: "Our publications hub." },
-            { title: "Newsroom", route: "/newsroom", description: "Headlines & judgments." },
-            { title: "Articles", route: "/articles", description: "ADR perspectives." },
-            { title: "Media Kit", route: "/media-kit", description: "Press assets." },
-            { title: "FAQs", route: "/faqs", description: "Platform answers." }
-          ]} 
+            // { title: "Newsroom", route: "/newsroom", description: "Headlines & judgments." },
+            // { title: "Articles", route: "/articles", description: "ADR perspectives." },
+            // { title: "Media Kit", route: "/media-kit", description: "Press assets." },
+            // { title: "FAQs", route: "/faqs", description: "Platform answers." }
+          ]}
           parentRoute="/media-center" 
           currentRoute="/press-release" 
           kind="General" 

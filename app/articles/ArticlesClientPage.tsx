@@ -111,12 +111,12 @@ export default function ArticlesClientPage({ articles }: { articles: Article[] }
 
       {/* Sibling Links */}
       <div className="bg-white border-t border-cream-300">
-        <SiblingLinksSection 
+        <SiblingLinksSection
           links={[
-            { title: "Press Release", route: "/press-release", description: "Official announcements." },
-            { title: "Media Kit", route: "/media-kit", description: "Downloadable brand assets." },
-            { title: "Newsroom", route: "/newsroom", description: "Latest company news." }
-          ]} 
+            // { title: "Press Release", route: "/press-release", description: "Official announcements." },
+            // { title: "Media Kit", route: "/media-kit", description: "Downloadable brand assets." },
+            // { title: "Newsroom", route: "/newsroom", description: "Latest company news." }
+          ]}
           parentRoute="/media-center" 
           currentRoute="/articles" 
           kind="Media" 

@@ -227,6 +227,12 @@ export default function MigratedDetailTemplate({
   // Structured data — Article / NewsArticle for rich search results.
   const SITE_URL = "https://www.pdrcourt.in";
   const pageUrl = `${SITE_URL}${indexHref}/${page.slug}`;
+  // Blog detail pages (articles / newsroom / case-studies) are robots-noindexed,
+  // so their Article structured data is suppressed too.
+  const isBlogDetail =
+    indexHref === "/articles" ||
+    indexHref === "/newsroom" ||
+    indexHref === "/case-studies";
   const articleLd = {
     "@context": "https://schema.org",
     "@type": page.category === "news" ? "NewsArticle" : "Article",
@@ -251,12 +257,14 @@ export default function MigratedDetailTemplate({
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleLd).replace(/</g, "\\u003c"),
-        }}
-      />
+      {!isBlogDetail && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(articleLd).replace(/</g, "\\u003c"),
+          }}
+        />
+      )}
       <Navbar />
       <main className="bg-cream">
         {/* CONTEXT BAR */}

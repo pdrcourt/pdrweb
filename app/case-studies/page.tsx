@@ -4,6 +4,7 @@ import CaseStudiesClientPage, { CaseStudyItem } from "./CaseStudiesClientPage";
 import { getAllByCategory } from "@/lib/migrated-content";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "Case Studies | PDR COURT",
   description:
     "Gain a comprehensive perspective of PDR COURT as an ADR platform. Review, read, and analyze our real-life case studies.",

@@ -63,7 +63,6 @@ export default function HowItWorksClientPage() {
           <div className="grid lg:grid-cols-[1fr_2fr] gap-16 items-center">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-amber-500/20 rounded-full blur-3xl opacity-50" />
-              <img src="/images/pdr-court-app.png" alt="Mobile App" className="relative z-10 w-full h-auto drop-shadow-2xl hover:-translate-y-2 transition-transform duration-500" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             </motion.div>
             
             <div className="space-y-6">
