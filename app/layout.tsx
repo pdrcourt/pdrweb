@@ -118,6 +118,11 @@ const jsonLd = {
         url: `${SITE_URL}/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png`,
       },
       description: SITE_DESCRIPTION,
+      founder: {
+        "@type": "Person",
+        name: "Mahadev Gitte",
+        jobTitle: "Founder & Chief Executive Officer",
+      },
       email: "legal@pdrcourt.com",
       telephone: "+91-8976955540",
       contactPoint: {
@@ -138,6 +143,7 @@ const jsonLd = {
         addressCountry: "IN",
       },
       sameAs: [
+        "https://www.wikidata.org/wiki/Q140378037",
         "https://www.facebook.com/pdrcourt",
         "https://www.instagram.com/pdrcourt/",
         "https://www.linkedin.com/company/pdrcourt",
