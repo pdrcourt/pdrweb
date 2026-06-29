@@ -114,7 +114,7 @@ export default function MediaCenterClientPage() {
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark text-white overflow-hidden border-b-8 border-primary">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark/95 to-primary-950/40 z-10" />
-          <img src="/images/young-happy-businessman-using-digital-tablet.jpg" alt="Media Hub" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+          <img decoding="async" src="/images/young-happy-businessman-using-digital-tablet.jpg" alt="Media Hub" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
         </div>
         
         <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -186,7 +186,7 @@ export default function MediaCenterClientPage() {
                 Write to us at <a href="mailto:legal@pdrcourt.com" className="text-primary font-bold underline">legal@pdrcourt.com</a> or fill out the query form for immediate support.
               </p>
               <div className="aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl relative">
-                <img src="/images/young-professional-girl.jpg" alt="Professional Representative" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/young-professional-girl.jpg" alt="Professional Representative" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </motion.div>
 
@@ -313,10 +313,10 @@ export default function MediaCenterClientPage() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a href="#play-store" className="hover:scale-105 transition-transform">
-                    <img src="/images/googleplay.png" alt="Google Play" className="h-12 w-auto" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                    <img loading="lazy" decoding="async" src="/images/googleplay.png" alt="Google Play" className="h-12 w-auto" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                   </a>
                   <a href="#app-store" className="hover:scale-105 transition-transform">
-                    <img src="/images/appstore.png" alt="App Store" className="h-12 w-auto" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                    <img loading="lazy" decoding="async" src="/images/appstore.png" alt="App Store" className="h-12 w-auto" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                   </a>
                 </div>
               </div>

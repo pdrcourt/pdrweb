@@ -2,13 +2,15 @@ import React from "react";
 import { Metadata } from "next";
 import CaseStudiesClientPage, { CaseStudyItem } from "./CaseStudiesClientPage";
 import { getAllByCategory } from "@/lib/migrated-content";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  robots: { index: false, follow: false },
+export const metadata: Metadata = buildMetadata({
   title: "Case Studies | PDR COURT",
   description:
     "Gain a comprehensive perspective of PDR COURT as an ADR platform. Review, read, and analyze our real-life case studies.",
-};
+  path: "/case-studies",
+  noindex: true,
+});
 
 function categorize(title: string, slug: string): string {
   const s = (title + " " + slug).toLowerCase();

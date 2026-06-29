@@ -69,7 +69,7 @@ export default function AboutClientPage() {
             </motion.div>
             
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative h-[500px] rounded-[3rem] overflow-hidden border border-cream-300 shadow-2xl">
-              <img src="/images/happy-woman-posing.jpg" alt="About PDR Court" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg width="800" height="600" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="100%25" height="100%25" fill="%2301142D"/%3E%3C/svg%3E'; }} />
+              <img decoding="async" src="/images/happy-woman-posing.jpg" alt="About PDR Court" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg width="800" height="600" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="100%25" height="100%25" fill="%2301142D"/%3E%3C/svg%3E'; }} />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent" />
               <div className="absolute bottom-8 left-8 right-8">
                 <div className="p-6 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl">

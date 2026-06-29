@@ -163,7 +163,7 @@ export default function AboutDetailTemplate({ page }: { page: FooterExperiencePa
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8">
               {/* Feature Image Block */}
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="md:col-span-12 lg:col-span-5 h-[400px] lg:h-[600px] rounded-[2rem] overflow-hidden relative group">
-                <img src={page.image} alt={page.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                <img decoding="async" src={page.image} alt={page.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent" />
                 <div className="absolute bottom-8 left-8 right-8">
                   <span className="px-4 py-2 bg-primary/90 backdrop-blur text-white text-sm font-bold rounded-full mb-4 inline-block">

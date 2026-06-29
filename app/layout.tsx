@@ -13,15 +13,14 @@ const fraunces = Fraunces({
   display: "swap",
 });
 
-const SITE_URL = "https://www.pdrcourt.in";
+const SITE_URL = "https://pdrcourt.com";
 const SITE_NAME = "PDR Court";
 const SITE_DESCRIPTION =
-  "PDR Court is India's most advanced Online Dispute Resolution (ODR) platform offering Arbitration, Mediation, Negotiation and Conciliation. Resolve disputes faster and at a fraction of the cost.";
+  "India's advanced Online Dispute Resolution platform — Arbitration, Mediation, Conciliation & Negotiation. Resolve disputes online, faster and for less.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title:
-    "PDR Court | Online Dispute Resolution Platform — Fast, Secure & Legally Binding",
+  title: "PDR Court | Online Dispute Resolution (ODR) Platform",
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
   authors: [{ name: SITE_NAME, url: SITE_URL }],
@@ -78,11 +77,11 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: {
-    icon: "/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png",
-    shortcut: "/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png",
-    apple: "/images/PDR_LOGO_WITH_BG_-_Color_Dark-removebg-preview.png",
-  },
+  // Paste your Search Console code into NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+  // (e.g. in .env) to emit the <meta name="google-site-verification"> tag.
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
   formatDetection: { telephone: false, email: false, address: false },
 };
 
@@ -100,10 +99,19 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": ["Organization", "LegalService"],
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       alternateName: "PDR COURT",
+      areaServed: "IN",
+      priceRange: "₹₹",
+      serviceType: [
+        "Online Dispute Resolution",
+        "Arbitration",
+        "Mediation",
+        "Conciliation",
+        "Negotiation",
+      ],
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",

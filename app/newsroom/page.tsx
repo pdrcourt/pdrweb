@@ -2,13 +2,15 @@ import React from "react";
 import { Metadata } from "next";
 import NewsroomClientPage, { NewsItem } from "./NewsroomClientPage";
 import { getAllByCategory } from "@/lib/migrated-content";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  robots: { index: false, follow: false },
+export const metadata: Metadata = buildMetadata({
   title: "Newsroom | PDR COURT",
   description:
     "Explore the latest headlines, legal updates, Supreme Court judgments, and strategic announcements regarding ODR and arbitration from PDR COURT.",
-};
+  path: "/newsroom",
+  noindex: true,
+});
 
 function categorize(title: string, slug: string): string {
   const s = (title + " " + slug).toLowerCase();

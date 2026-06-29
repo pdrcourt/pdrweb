@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://www.pdrcourt.in";
+const BASE_URL = "https://pdrcourt.com";
 
 // Canonical static routes. Duplicate aliases (/terms, /privacy, /cookies,
 // /faq, /careers/erp-manager, /solutions/individuals etc.) are deliberately
@@ -60,6 +60,15 @@ const LEGAL = [
   "cookie-policy",
 ];
 
+// Indexable long-form guides (top-of-funnel content).
+const GUIDES = [
+  "guides",
+  "guides/cheque-bounce-recovery",
+  "guides/recover-msme-delayed-payments",
+  "guides/arbitration-clause-for-contracts",
+  "guides/arbitration-vs-mediation-vs-conciliation",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const url = (path: string) => (path ? `${BASE_URL}/${path}` : BASE_URL);
@@ -83,6 +92,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "yearly" as const,
       priority: 0.4,
+    })),
+    ...GUIDES.map((p) => ({
+      url: url(p),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     })),
   ];
 

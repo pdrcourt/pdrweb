@@ -3,17 +3,14 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SolutionPageTemplate } from "@/components/templates/SolutionPageTemplate";
 import { negotiationContent } from "@/data/content";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Structured Negotiation | PDR Court — Resolve on Your Own Terms",
   description:
     "PDR Court Structured Negotiation gives parties a platform-guided framework to reach bilateral agreements independently — the fastest, most cost-effective form of online dispute resolution.",
-  openGraph: {
-    title: "Structured Negotiation | PDR Court",
-    description: "Platform-guided direct negotiation. Resolve disputes in 24–48 hours without a third party.",
-    url: "https://www.pdrcourt.in/solutions/negotiation",
-  },
-};
+  path: "/solutions/negotiation",
+});
 
 export default function NegotiationPage() {
   return (

@@ -156,7 +156,7 @@ export default function ServiceDetailTemplate({ page }: { page: FooterExperience
                     {/* Visual Side (Decorative box / Image block) */}
                     <div className="flex-1 relative w-full aspect-[4/3] rounded-3xl overflow-hidden group">
                       <div className="absolute inset-0 bg-dark/5 group-hover:bg-transparent transition-colors z-10" />
-                      <img src={page.image} alt={section.heading || 'Service Feature'} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                      <img decoding="async" src={page.image} alt={section.heading || 'Service Feature'} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                       {/* Glassmorphic overlay badge */}
                       <div className="absolute bottom-6 left-6 right-6 p-6 glass-card bg-white/80 backdrop-blur-md rounded-2xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                         <p className="font-bold text-dark flex items-center gap-2">

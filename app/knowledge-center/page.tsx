@@ -1,13 +1,15 @@
 import React from "react";
 import { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import KnowledgeCenterClient from "./KnowledgeCenterClient";
 import { getAllByCategory } from "@/lib/migrated-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Knowledge Center | PDR COURT",
   description:
     "Explore ADR fundamentals, Indian arbitration law, mediation playbooks, and curated learning paths in the PDR COURT Knowledge Center.",
-};
+  path: "/knowledge-center",
+});
 
 export default function KnowledgeCenterPage() {
   const topArticles = getAllByCategory("articles")

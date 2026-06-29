@@ -28,7 +28,7 @@ export default function EthosClientPage() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark text-white overflow-hidden border-b-8 border-primary">
         <div className="absolute inset-0">
-          <img src="/images/smiling-excutive-boss.jpg" alt="Leadership" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+          <img decoding="async" src="/images/smiling-excutive-boss.jpg" alt="Leadership" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent" />
         </div>
         
@@ -56,7 +56,7 @@ export default function EthosClientPage() {
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
             <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative text-center p-12 bg-cream rounded-[3rem] border border-cream-300 shadow-xl overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-              <img src="/images/pdr-court-graphic.png" alt="Emblem" className="w-48 mx-auto mb-8 drop-shadow-2xl relative z-10" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img loading="lazy" decoding="async" src="/images/pdr-court-graphic.png" alt="Emblem" className="w-48 mx-auto mb-8 drop-shadow-2xl relative z-10" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               <h3 className="text-3xl font-display font-light text-primary mb-2 relative z-10">|| धर्मेण न्यायः स्थाप्यते ||</h3>
               <h3 className="text-2xl font-bold text-dark tracking-widest uppercase relative z-10">Truth Shall Prevail</h3>
             </motion.div>
@@ -119,7 +119,7 @@ export default function EthosClientPage() {
             <div className="relative aspect-[3/4] max-w-sm mx-auto w-full">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-amber-500/20 rounded-[3rem] -rotate-3 blur-xl opacity-50" />
               <div className="relative h-full rounded-[3rem] overflow-hidden border border-cream-300 shadow-2xl">
-                <img src="/images/smiling-holding-phone.jpg" alt="Using App" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/smiling-holding-phone.jpg" alt="Using App" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
             

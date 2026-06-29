@@ -51,7 +51,7 @@ export default function JoinUsClientPage() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark text-white overflow-hidden border-b-8 border-primary">
         <div className="absolute inset-0">
-          <img src="/images/work-culture.jpg" alt="Work Culture" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+          <img decoding="async" src="/images/work-culture.jpg" alt="Work Culture" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent" />
         </div>
         
@@ -139,7 +139,7 @@ export default function JoinUsClientPage() {
                 An environment <br/> built on <span className="text-primary italic font-light">Empathy</span>
               </h2>
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl mt-8">
-                <img src="/images/corporate-woman-smiling.jpg" alt="Culture" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/corporate-woman-smiling.jpg" alt="Culture" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </motion.div>
             

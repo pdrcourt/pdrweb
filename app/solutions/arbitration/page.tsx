@@ -3,17 +3,14 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SolutionPageTemplate } from "@/components/templates/SolutionPageTemplate";
 import { arbitrationContent } from "@/data/content";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Online Arbitration | PDR Court — Binding Decisions Without Courtrooms",
   description:
     "PDR Court Online Arbitration delivers legally binding awards through certified arbitrators — entirely online. Faster, cheaper, and enforceable under the Arbitration & Conciliation Act, 1996.",
-  openGraph: {
-    title: "Online Arbitration | PDR Court",
-    description: "Legally binding arbitration awards delivered online. Certified arbitrators. No courtroom required.",
-    url: "https://www.pdrcourt.in/solutions/arbitration",
-  },
-};
+  path: "/solutions/arbitration",
+});
 
 export default function ArbitrationPage() {
   return (

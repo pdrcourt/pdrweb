@@ -225,7 +225,7 @@ export default function MigratedDetailTemplate({
   );
 
   // Structured data — Article / NewsArticle for rich search results.
-  const SITE_URL = "https://www.pdrcourt.in";
+  const SITE_URL = "https://pdrcourt.com";
   const pageUrl = `${SITE_URL}${indexHref}/${page.slug}`;
   // Blog detail pages (articles / newsroom / case-studies) are robots-noindexed,
   // so their Article structured data is suppressed too.
@@ -255,15 +255,40 @@ export default function MigratedDetailTemplate({
     },
   };
 
+  // BreadcrumbList structured data — drives breadcrumb rich results.
+  const crumbs = [{ name: "Home", item: SITE_URL }];
+  if (indexHref && indexHref !== "/") {
+    crumbs.push({ name: indexLabel, item: `${SITE_URL}${indexHref}` });
+  }
+  crumbs.push({ name: page.title, item: pageUrl });
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      item: c.item,
+    })),
+  };
+
   return (
     <>
       {!isBlogDetail && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(articleLd).replace(/</g, "\\u003c"),
-          }}
-        />
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(articleLd).replace(/</g, "\\u003c"),
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(breadcrumbLd).replace(/</g, "\\u003c"),
+            }}
+          />
+        </>
       )}
       <Navbar />
       <main className="bg-cream">

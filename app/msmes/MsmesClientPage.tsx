@@ -126,10 +126,10 @@ export default function MsmesClientPage() {
 
             <div className="relative flex justify-center items-center lg:h-[450px]">
               <div className="w-72 h-96 rounded-[3rem] overflow-hidden border-4 border-white/10 shadow-2xl relative z-20 hover:scale-105 transition-transform duration-300">
-                <img src="/images/midaged-businessman.jpg" alt="Midaged Businessman" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img decoding="async" src="/images/midaged-businessman.jpg" alt="Midaged Businessman" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
               <div className="w-64 h-80 rounded-[3rem] overflow-hidden border-4 border-white/10 shadow-2xl absolute left-8 top-16 z-10 hover:scale-105 transition-transform duration-300 hidden md:block">
-                <img src="/images/indian-professional-shaking-hands.jpg" alt="Indian Shaking Hands" className="w-full h-full object-cover opacity-70" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/indian-professional-shaking-hands.jpg" alt="Indian Shaking Hands" className="w-full h-full object-cover opacity-70" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function MsmesClientPage() {
               </div>
             </div>
             <div className="relative h-[400px] rounded-[3rem] overflow-hidden border border-cream-300 shadow-xl">
-              <img src="/images/business-meeting.jpg" alt="Business Meeting" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img loading="lazy" decoding="async" src="/images/business-meeting.jpg" alt="Business Meeting" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function MsmesClientPage() {
             {/* 5 Steps Panel */}
             <div className="space-y-8 lg:sticky lg:top-32">
               <div className="relative w-64 h-80 rounded-[2rem] overflow-hidden border-4 border-cream-200 shadow-lg mb-8">
-                <img src="/images/smiling-woman.jpg" alt="Smiling Woman" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/smiling-woman.jpg" alt="Smiling Woman" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
               <div className="flex gap-4 items-center">
                 <span className="text-6xl lg:text-8xl font-display font-extrabold text-primary/30 leading-none">5</span>
@@ -305,7 +305,7 @@ export default function MsmesClientPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[300px] rounded-[2.5rem] overflow-hidden border border-cream-300 shadow-md">
-              <img src="/images/law-balance.jpg" alt="Law Balance" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img loading="lazy" decoding="async" src="/images/law-balance.jpg" alt="Law Balance" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             </div>
             <div className="space-y-6">
               <span className="section-label">Continuous Commitment</span>
@@ -364,7 +364,7 @@ export default function MsmesClientPage() {
               </h2>
             </div>
             <div className="relative h-[250px] rounded-[2.5rem] overflow-hidden border border-cream-300 shadow-md">
-              <img src="/images/man-with-mobilephone.jpg" alt="Man with Mobile Phone" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img loading="lazy" decoding="async" src="/images/man-with-mobilephone.jpg" alt="Man with Mobile Phone" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             </div>
           </div>
 
@@ -427,7 +427,7 @@ export default function MsmesClientPage() {
               </div>
               
               <div className="relative h-[200px] rounded-[2rem] overflow-hidden border border-cream-300 shadow-md mt-8 hidden lg:block">
-                <img src="/images/professionals-at-work.jpg" alt="Professionals at work" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/professionals-at-work.jpg" alt="Professionals at work" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </motion.div>
 

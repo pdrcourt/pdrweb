@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import MigratedDetailTemplate from "@/components/pages/MigratedDetailTemplate";
+import { buildMetadata } from "@/lib/seo";
 import {
   getBySlug,
   getRelated,
@@ -28,11 +29,12 @@ export function generateMetadata({
 }): Metadata {
   const page = getBySlug("any", params.slug);
   if (!page) return { title: "Page Not Found | PDR COURT" };
-  return {
+  return buildMetadata({
     title: `${page.title} | PDR COURT`,
     description: page.description || page.excerpt,
     keywords: page.keywords || undefined,
-  };
+    path: `/${params.slug}`,
+  });
 }
 
 export default function CatchAllPage({ params }: { params: { slug: string } }) {

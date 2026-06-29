@@ -147,7 +147,7 @@ export default function CaseStudiesClientPage({ caseStudies: caseStudiesProp }: 
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <div className="aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl border border-cream-300 relative">
-                <img src="/images/team-members-on-discussion.jpg" alt="Team Discussion" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img decoding="async" src="/images/team-members-on-discussion.jpg" alt="Team Discussion" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </motion.div>
             

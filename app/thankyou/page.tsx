@@ -1,11 +1,14 @@
 import React from "react";
 import { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import SimplePageTemplate from "@/components/pages/SimplePageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Thank You | PDR COURT",
   description: "Thank you for reaching out to PDR COURT. Our team will respond within one business day.",
-};
+  path: "/thankyou",
+  noindex: true,
+});
 
 export default function ThankYouPage() {
   return (

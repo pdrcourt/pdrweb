@@ -7,6 +7,7 @@ import {
   getRelated,
   getPrevNext,
 } from "@/lib/migrated-content";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -21,11 +22,12 @@ export function generateMetadata({
 }): Metadata {
   const page = getBySlug("articles", params.slug);
   if (!page) return { title: "Article Not Found | PDR COURT" };
-  return {
-    robots: { index: false, follow: false },
+  return buildMetadata({
     title: `${page.title} | PDR COURT`,
     description: page.description || page.excerpt,
-  };
+    path: `/articles/${params.slug}`,
+    noindex: true,
+  });
 }
 
 export default function ArticleDetailPage({

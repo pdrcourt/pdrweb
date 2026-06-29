@@ -3,17 +3,14 @@ import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { SolutionPageTemplate } from "@/components/templates/SolutionPageTemplate";
 import { conciliationContent } from "@/data/content";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Online Conciliation | PDR Court - Proactive Settlement Support",
   description:
     "PDR Court Online Conciliation connects parties with expert conciliators who propose balanced settlement terms through a secure digital ADR process.",
-  openGraph: {
-    title: "Online Conciliation | PDR Court",
-    description: "Proactive, confidential, and legally recognized online conciliation.",
-    url: "https://www.pdrcourt.in/solutions/conciliation",
-  },
-};
+  path: "/solutions/conciliation",
+});
 
 export default function ConciliationPage() {
   return (

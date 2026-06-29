@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LegalDocPage from "@/components/pages/LegalDocPage";
+import { buildMetadata } from "@/lib/seo";
 import { getBySlug } from "@/lib/migrated-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Disclaimer | PDR COURT",
   description:
     "PDR COURT will not be held responsible for damages arising from the use of our website, products, or services. Please review these disclaimers carefully.",
-};
+  path: "/disclaimer",
+});
 
 export default function DisclaimerPage() {
   const page = getBySlug("any", "disclaimer");

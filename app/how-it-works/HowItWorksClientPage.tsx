@@ -50,7 +50,7 @@ export default function HowItWorksClientPage() {
             </motion.div>
             
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative h-[600px] hidden lg:block rounded-[3rem] overflow-hidden shadow-2xl border border-white/10">
-              <img src="/images/woman-using-mobilephone.jpg" alt="Quick & Easy" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img decoding="async" src="/images/woman-using-mobilephone.jpg" alt="Quick & Easy" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent" />
             </motion.div>
           </div>
@@ -145,7 +145,7 @@ export default function HowItWorksClientPage() {
             Watch our Explainer Video to get a <br/> <span className="font-bold text-primary-300">complete overview of our services.</span>
           </h2>
           <div className="relative aspect-[16/9] rounded-[2rem] overflow-hidden border border-white/20 bg-black group shadow-2xl">
-            <img src="/images/vidposter.jpg" alt="Video Thumbnail" className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+            <img loading="lazy" decoding="async" src="/images/vidposter.jpg" alt="Video Thumbnail" className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             <div className="absolute inset-0 flex items-center justify-center">
               <button className="w-24 h-24 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all shadow-xl">
                 <PlayCircle className="w-12 h-12 text-white" />
@@ -162,7 +162,7 @@ export default function HowItWorksClientPage() {
             <div className="relative aspect-[3/4] max-w-sm mx-auto w-full">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-amber-500/20 rounded-[3rem] -rotate-6 blur-xl" />
               <div className="relative h-full rounded-[3rem] overflow-hidden border border-cream-300 shadow-2xl">
-                <img src="/images/smiling-holding-phone.jpg" alt="Using App" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/smiling-holding-phone.jpg" alt="Using App" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
             

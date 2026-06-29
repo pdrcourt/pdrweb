@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LegalDocPage from "@/components/pages/LegalDocPage";
+import { buildMetadata } from "@/lib/seo";
 import { getBySlug } from "@/lib/migrated-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy | PDR COURT",
   description:
     "PDR COURT respects your privacy. Read, understand, and agree to the terms of this Privacy Policy — what data we collect and how we use it.",
-};
+  path: "/privacy-policy",
+});
 
 export default function PrivacyPolicyPage() {
   const page = getBySlug("any", "privacy-policy");

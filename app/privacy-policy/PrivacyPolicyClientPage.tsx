@@ -43,7 +43,7 @@ export default function PrivacyPolicyClientPage() {
               </div>
               
               <div className="w-64 h-80 rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl absolute left-8 top-16 z-10 hover:scale-105 transition-transform duration-300 hidden md:block">
-                <img src="/images/corporate-man-smiling.jpg" alt="Corporate Man" className="w-full h-full object-cover opacity-30" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img decoding="async" src="/images/corporate-man-smiling.jpg" alt="Corporate Man" className="w-full h-full object-cover opacity-30" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
           </div>

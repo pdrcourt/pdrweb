@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ExperiencePage from "@/components/pages/ExperiencePage";
 import { EXPERIENCE_CONFIG } from "@/lib/experience-config";
 import { getBySlug } from "@/lib/migrated-content";
+import { buildMetadata } from "@/lib/seo";
 
 // Auto-generated — situational ExperiencePage layout.
 const ROUTE = "press-release";
@@ -10,11 +11,12 @@ const MIGRATED_SLUG = "press-release";
 
 export function generateMetadata(): Metadata {
   const p = getBySlug("any", MIGRATED_SLUG);
-  return {
-    robots: { index: false, follow: false },
+  return buildMetadata({
     title: p ? `${p.title} | PDR COURT` : "PDR COURT",
     description: p?.description || undefined,
-  };
+    path: "/press-release",
+    noindex: true,
+  });
 }
 
 export default function Page() {

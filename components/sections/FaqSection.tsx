@@ -10,8 +10,25 @@ import { MessageSquare, ArrowRight } from "lucide-react";
 export function FaqSection({ limit }: { limit?: number } = {}) {
   const items =
     typeof limit === "number" ? faqContent.items.slice(0, limit) : faqContent.items;
+
+  // FAQPage structured data — eligible for FAQ rich results in search.
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((it) => ({
+      "@type": "Question",
+      name: it.question,
+      acceptedAnswer: { "@type": "Answer", text: it.answer },
+    })),
+  };
   return (
     <SectionWrapper id="faq" background="warm">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqLd).replace(/</g, "\\u003c"),
+        }}
+      />
       {/* Header */}
       <motion.div className="text-center mb-14" variants={itemVariants}>
         <SectionBadge>{faqContent.badge}</SectionBadge>

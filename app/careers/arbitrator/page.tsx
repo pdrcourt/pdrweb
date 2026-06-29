@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ExperiencePage from "@/components/pages/ExperiencePage";
 import { EXPERIENCE_CONFIG } from "@/lib/experience-config";
 import { getBySlug } from "@/lib/migrated-content";
+import { buildMetadata } from "@/lib/seo";
 
 // Auto-generated — situational ExperiencePage layout.
 const ROUTE = "careers/arbitrator";
@@ -10,10 +11,14 @@ const MIGRATED_SLUG = "arbitrator";
 
 export function generateMetadata(): Metadata {
   const p = getBySlug("any", MIGRATED_SLUG);
-  return {
-    title: p ? `${p.title} | PDR COURT` : "PDR COURT",
-    description: p?.description || undefined,
-  };
+  if (!p) return { title: "PDR COURT" };
+  return buildMetadata({
+    title: `${p.title} | PDR COURT`,
+    description:
+      p.description ||
+      "Become an arbitrator with PDR COURT — preside over commercial and civil disputes, deliver impartial awards, and join India's leading panel of ADR professionals.",
+    path: "/careers/arbitrator",
+  });
 }
 
 export default function Page() {

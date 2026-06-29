@@ -132,14 +132,14 @@ export default function LodgeDisputePageClient() {
                   Lodge a Dispute
                 </span>
                 <h1 className="font-editorial font-medium text-ink-85 leading-[1.0] tracking-tight text-[clamp(2.6rem,7vw,5.5rem)]">
-                  Lodge your dispute —{" "}
-                  <span className="gold-text">save time and money</span>
+                  File a dispute online —{" "}
+                  <span className="gold-text">fast, fair, binding</span>
                 </h1>
                 <p className="mt-6 text-lg md:text-xl text-ink-55 leading-relaxed max-w-xl">
-                  Easily file your dispute with PDR COURT, where our experts
-                  ensure quick resolutions with guaranteed TATs for timely
-                  negotiations and settlements. Rely on us for a fair and just
-                  outcome.
+                  Lodge your dispute online with PDR COURT and resolve it through
+                  conciliation or arbitration — with guaranteed turnaround times,
+                  enforceable outcomes, and none of the cost or delay of going to
+                  court.
                 </p>
                 <div className="mt-9 flex flex-wrap gap-4">
                   <Link href="/appointment" className="btn-primary">

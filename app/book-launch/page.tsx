@@ -1,12 +1,14 @@
 import React from "react";
 import { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import SimplePageTemplate from "@/components/pages/SimplePageTemplate";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Dispute Resolution via Negotiation — Book Launch | PDR COURT",
   description:
     "Explore the official PDR COURT companion book on Negotiation, Mediation, Conciliation, and Alternate Dispute Resolution.",
-};
+  path: "/book-launch",
+});
 
 export default function BookLaunchPage() {
   return (

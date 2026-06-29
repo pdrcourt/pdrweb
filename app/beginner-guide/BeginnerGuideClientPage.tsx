@@ -65,7 +65,7 @@ export default function BeginnerGuideClientPage() {
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark text-white overflow-hidden border-b-8 border-primary">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark/90 to-primary-900/40" />
-          <img src="/images/young-boy-smiling.jpg" alt="Smiling Boy" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+          <img decoding="async" src="/images/young-boy-smiling.jpg" alt="Smiling Boy" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -111,7 +111,7 @@ export default function BeginnerGuideClientPage() {
       <section id="video-guide" className="py-20 lg:py-32 bg-white relative">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative aspect-[16/9] rounded-[2rem] overflow-hidden border border-cream-300 bg-dark shadow-2xl group mb-12">
-            <img src="/images/vidposter.jpg" alt="Video Thumbnail" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+            <img loading="lazy" decoding="async" src="/images/vidposter.jpg" alt="Video Thumbnail" className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors duration-500">
               <button className="w-24 h-24 rounded-full bg-white/90 backdrop-blur-md border border-white flex items-center justify-center hover:scale-110 transition-transform shadow-2xl group-hover:bg-primary group-hover:text-white group-hover:border-primary text-primary">
                 <PlayCircle className="w-12 h-12" />
@@ -163,7 +163,7 @@ export default function BeginnerGuideClientPage() {
             <div className="relative aspect-[3/4] max-w-sm mx-auto w-full">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-amber-500/20 rounded-[3rem] rotate-3 blur-xl opacity-50" />
               <div className="relative h-full rounded-[3rem] overflow-hidden border border-cream-300 shadow-2xl">
-                <img src="/images/smiling-holding-phone.jpg" alt="Using App" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/smiling-holding-phone.jpg" alt="Using App" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
             

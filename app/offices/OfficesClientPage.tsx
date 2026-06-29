@@ -44,7 +44,7 @@ export default function OfficesClientPage() {
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark text-white overflow-hidden border-b-8 border-primary">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark/90 to-primary-900/40 z-10" />
-          <img src="/images/business-people-in-a-meeting.jpg" alt="Business Meeting" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+          <img decoding="async" src="/images/business-people-in-a-meeting.jpg" alt="Business Meeting" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
         </div>
         
         <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

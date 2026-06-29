@@ -10,6 +10,15 @@ import { PartnersSection } from "@/components/sections/PartnersSection";
 import { AdvisoryCouncilSection } from "@/components/sections/AdvisoryCouncilSection";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { CtaSection } from "@/components/sections/CtaSection";
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "PDR Court | Online Dispute Resolution (ODR) Platform",
+  description:
+    "India's advanced Online Dispute Resolution platform — Arbitration, Mediation, Conciliation & Negotiation. Resolve disputes online, faster and for less.",
+  path: "/",
+});
 
 export default function Home() {
   return (

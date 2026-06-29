@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LegalDocPage from "@/components/pages/LegalDocPage";
+import { buildMetadata } from "@/lib/seo";
 import { getBySlug } from "@/lib/migrated-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Mediation Rules | PDR COURT",
   description:
     "The rules and procedure governing mediation proceedings conducted on the PDR COURT platform.",
-};
+  path: "/mediation-rules",
+});
 
 export default function MediationRulesPage() {
   const page = getBySlug("any", "mediation-rules");

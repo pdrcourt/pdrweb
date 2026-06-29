@@ -79,7 +79,7 @@ export default function ServicesClientPage() {
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative hidden lg:block">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary-600/30 to-amber-500/30 blur-2xl rounded-[3rem] opacity-50" />
               <div className="relative aspect-[4/3] rounded-[2rem] overflow-hidden border border-white/20 bg-dark/50 backdrop-blur-xl group">
-                <img src="/images/business-meeting.jpg" alt="Business Meeting" className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" 
+                <img decoding="async" src="/images/business-meeting.jpg" alt="Business Meeting" className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
                      onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/30 transition-all group-hover:scale-110">

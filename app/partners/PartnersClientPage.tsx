@@ -83,7 +83,7 @@ export default function PartnersClientPage() {
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-200 to-amber-200 rounded-[3rem] rotate-3 opacity-50 blur-lg" />
               <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-cream-300 shadow-2xl">
-                <img src="/images/smiling-business-members.jpg" alt="Partnerships" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img decoding="async" src="/images/smiling-business-members.jpg" alt="Partnerships" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </motion.div>
           </div>
@@ -161,7 +161,7 @@ export default function PartnersClientPage() {
                 Join our network to leverage cutting edge ADR tools. Please provide your details and partnership interests below.
               </p>
               <div className="aspect-[4/3] rounded-3xl overflow-hidden border border-cream-300 hidden lg:block">
-                <img src="/images/business-group.jpg" alt="Business Group" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/business-group.jpg" alt="Business Group" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
             

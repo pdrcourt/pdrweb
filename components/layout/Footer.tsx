@@ -295,6 +295,9 @@ export function Footer() {
         <div className="mt-10 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-paper-35">
           <span>{footerContent.copyright}</span>
           <div className="flex items-center gap-5">
+            <a href="/guides" className="hover:text-primary transition-colors">
+              Guides
+            </a>
             <a href="/privacy-policy" className="hover:text-primary transition-colors">
               Privacy Policy
             </a>

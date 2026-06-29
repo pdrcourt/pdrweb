@@ -107,7 +107,7 @@ export default function MediaKitClientPage() {
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-dark text-white overflow-hidden border-b-8 border-primary">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark/95 to-primary-950/40 z-10" />
-          <img src="/images/business-meeting.jpg" alt="Media Kit" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+          <img decoding="async" src="/images/business-meeting.jpg" alt="Media Kit" className="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 mix-blend-luminosity mask-image-gradient-l" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
         </div>
         
         <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -181,7 +181,7 @@ export default function MediaKitClientPage() {
                 className="bg-white rounded-[2.5rem] overflow-hidden border border-cream-300 p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
                 
                 <div className="flex justify-center items-center h-48 bg-cream rounded-2xl p-6 mb-6 overflow-hidden">
-                  <img src={asset.image} alt={asset.title} className="max-h-full object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                  <img loading="lazy" decoding="async" src={asset.image} alt={asset.title} className="max-h-full object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 </div>
 
                 <div>

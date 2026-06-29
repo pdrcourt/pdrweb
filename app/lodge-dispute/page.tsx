@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import LodgeDisputePageClient from "./LodgeDisputePageClient";
 
-export const metadata: Metadata = {
-  title: "Lodge a Dispute | PDR COURT",
+export const metadata: Metadata = buildMetadata({
+  title: "File a Dispute Online | Lodge a Case | PDR Court",
   description:
-    "Lodge your dispute with PDR COURT for quick, guaranteed-TAT resolutions through conciliation and arbitration — a fair, just outcome that saves time and money.",
-};
+    "File a dispute online with PDR Court and resolve it through conciliation or arbitration — guaranteed turnaround, enforceable outcomes, and none of the cost or delay of court.",
+  path: "/lodge-dispute",
+});
 
 export default function LodgeDisputePage() {
   return <LodgeDisputePageClient />;

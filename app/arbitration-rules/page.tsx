@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LegalDocPage from "@/components/pages/LegalDocPage";
+import { buildMetadata } from "@/lib/seo";
 import { getBySlug } from "@/lib/migrated-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Arbitration Rules | PDR COURT",
   description:
     "The rules and procedure governing arbitration proceedings conducted on the PDR COURT platform.",
-};
+  path: "/arbitration-rules",
+});
 
 export default function ArbitrationRulesPage() {
   const page = getBySlug("any", "arbitration-rules");

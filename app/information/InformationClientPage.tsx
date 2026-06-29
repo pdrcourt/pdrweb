@@ -87,7 +87,7 @@ export default function InformationClientPage() {
             <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative h-[600px] hidden lg:block">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-200 to-amber-200 rounded-[3rem] rotate-3 opacity-50 blur-lg" />
               <div className="relative h-full rounded-[3rem] overflow-hidden border border-cream-300 shadow-2xl">
-                <img src="/images/happy-manager.jpg" alt="Support" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img decoding="async" src="/images/happy-manager.jpg" alt="Support" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </motion.div>
           </div>
@@ -142,7 +142,7 @@ export default function InformationClientPage() {
                 Write to us at legal@pdrcourt.com; or, use the form to send us a quick inquiry.
               </p>
               <div className="w-full h-64 rounded-3xl overflow-hidden mt-8 hidden lg:block">
-                <img src="/images/man-clapping.jpg" alt="Contact Us" className="w-full h-full object-cover opacity-60 mix-blend-luminosity" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img loading="lazy" decoding="async" src="/images/man-clapping.jpg" alt="Contact Us" className="w-full h-full object-cover opacity-60 mix-blend-luminosity" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
             </div>
             

@@ -68,8 +68,9 @@ export default function ArticlesClientPage({ articles }: { articles: Article[] }
                     </span>
                   </div>
                   {/* Using standard img for broad compatibility given unknown real paths */}
-                  <img 
-                    src={article.image} 
+                  <img
+                    decoding="async"
+                    src={article.image}
                     alt={article.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     onError={(e) => {
