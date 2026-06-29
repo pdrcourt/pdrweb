@@ -225,7 +225,7 @@ export default function MigratedDetailTemplate({
   );
 
   // Structured data — Article / NewsArticle for rich search results.
-  const SITE_URL = "https://pdrcourt.com";
+  const SITE_URL = "https://www.pdrcourt.com";
   const pageUrl = `${SITE_URL}${indexHref}/${page.slug}`;
   // Blog detail pages (articles / newsroom / case-studies) are robots-noindexed,
   // so their Article structured data is suppressed too.

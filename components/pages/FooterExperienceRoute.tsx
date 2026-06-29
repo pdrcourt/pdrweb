@@ -21,7 +21,7 @@ export function metadataForFooterRoute(route: string): Metadata {
     openGraph: {
       title: `${page.title} | PDR COURT`,
       description: page.description,
-      url: `https://pdrcourt.com${page.route}`,
+      url: `https://www.pdrcourt.com${page.route}`,
       images: [{ url: page.image, width: 1200, height: 630, alt: page.title }],
     },
   };

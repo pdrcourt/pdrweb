@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 // Keeping this in one place means OG/canonical stay consistent site-wide.
 // ─────────────────────────────────────────────────────────────────────────
 
-export const SITE_URL = "https://pdrcourt.com";
+export const SITE_URL = "https://www.pdrcourt.com";
 export const SITE_NAME = "PDR Court";
 const DEFAULT_OG_IMAGE = "/images/hero-illustration.png";
 

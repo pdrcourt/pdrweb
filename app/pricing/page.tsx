@@ -17,7 +17,7 @@ const pricingLd = {
   provider: {
     "@type": "Organization",
     name: "PDR Court",
-    url: "https://pdrcourt.com",
+    url: "https://www.pdrcourt.com",
   },
   areaServed: "IN",
   offers: {
@@ -25,7 +25,7 @@ const pricingLd = {
     price: "500",
     priceCurrency: "INR",
     description: "Dispute resolution agreements starting at ₹500",
-    url: "https://pdrcourt.com/pricing",
+    url: "https://www.pdrcourt.com/pricing",
   },
 };
 

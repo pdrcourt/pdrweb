@@ -13,7 +13,7 @@ const fraunces = Fraunces({
   display: "swap",
 });
 
-const SITE_URL = "https://pdrcourt.com";
+const SITE_URL = "https://www.pdrcourt.com";
 const SITE_NAME = "PDR Court";
 const SITE_DESCRIPTION =
   "India's advanced Online Dispute Resolution platform — Arbitration, Mediation, Conciliation & Negotiation. Resolve disputes online, faster and for less.";

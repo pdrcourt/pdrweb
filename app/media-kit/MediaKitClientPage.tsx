@@ -71,10 +71,10 @@ export default function MediaKitClientPage() {
       subtitle: "Official institutional logo package",
       image: "/images/pdrcourt-logo-lowres.png",
       downloads: [
-        { label: "EPS", url: "https://pdrcourt.com/downloads/pdrcourt-logo.eps" },
-        { label: "CDR", url: "https://pdrcourt.com/downloads/pdrcourt-logo.cdr" },
-        { label: "PNG", url: "https://pdrcourt.com/downloads/pdrcourt-logo.png" },
-        { label: "PDF", url: "https://pdrcourt.com/downloads/pdrcourt-logo.pdf" }
+        { label: "EPS", url: "https://www.pdrcourt.com/downloads/pdrcourt-logo.eps" },
+        { label: "CDR", url: "https://www.pdrcourt.com/downloads/pdrcourt-logo.cdr" },
+        { label: "PNG", url: "https://www.pdrcourt.com/downloads/pdrcourt-logo.png" },
+        { label: "PDF", url: "https://www.pdrcourt.com/downloads/pdrcourt-logo.pdf" }
       ]
     },
     {
@@ -82,10 +82,10 @@ export default function MediaKitClientPage() {
       subtitle: "The Dharma Wheel & Pillar representation",
       image: "/images/pdr-court-graphic-1.png",
       downloads: [
-        { label: "EPS", url: "https://pdrcourt.com/downloads/pdrcourt-logo-symbol-display.eps" },
-        { label: "CDR", url: "https://pdrcourt.com/downloads/pdrcourt-logo-symbol-display.cdr" },
-        { label: "PNG", url: "https://pdrcourt.com/downloads/pdrcourt-logo-symbol-display.png" },
-        { label: "PDF", url: "https://pdrcourt.com/downloads/pdrcourt-logo-symbol-display.pdf" }
+        { label: "EPS", url: "https://www.pdrcourt.com/downloads/pdrcourt-logo-symbol-display.eps" },
+        { label: "CDR", url: "https://www.pdrcourt.com/downloads/pdrcourt-logo-symbol-display.cdr" },
+        { label: "PNG", url: "https://www.pdrcourt.com/downloads/pdrcourt-logo-symbol-display.png" },
+        { label: "PDF", url: "https://www.pdrcourt.com/downloads/pdrcourt-logo-symbol-display.pdf" }
       ]
     },
     {
@@ -93,10 +93,10 @@ export default function MediaKitClientPage() {
       subtitle: "Institutional deck assets and visual guidelines",
       image: "/images/presentation.jpg",
       downloads: [
-        { label: "EPS", url: "https://pdrcourt.com/downloads/pdrcourt-link-button.eps" },
-        { label: "SVG", url: "https://pdrcourt.com/downloads/pdrcourt-link-button.svg" },
-        { label: "PNG", url: "https://pdrcourt.com/downloads/pdrcourt-link-button.png" },
-        { label: "PDF", url: "https://pdrcourt.com/downloads/pdrcourt-link-button.pdf" }
+        { label: "EPS", url: "https://www.pdrcourt.com/downloads/pdrcourt-link-button.eps" },
+        { label: "SVG", url: "https://www.pdrcourt.com/downloads/pdrcourt-link-button.svg" },
+        { label: "PNG", url: "https://www.pdrcourt.com/downloads/pdrcourt-link-button.png" },
+        { label: "PDF", url: "https://www.pdrcourt.com/downloads/pdrcourt-link-button.pdf" }
       ]
     }
   ];
