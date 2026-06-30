@@ -117,7 +117,7 @@ export function Footer() {
 
       {/* ───── TOP BAR: Request Callback + Newsletter ───── */}
       <section className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-white/10">
           <TopBarForm {...footerContent.topBar.callback} />
           <TopBarForm {...footerContent.topBar.newsletter} />
         </div>
