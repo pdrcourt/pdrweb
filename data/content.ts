@@ -139,10 +139,10 @@ export const heroContent = {
 // STATS
 // ─────────────────────────────────────────────────────────────
 export const statsContent = [
-  { value: "500+", label: "Corporate Clients" },
-  { value: "12000+", label: "PIN codes served" },
-  { value: "65%", label: "savings in time and cost" },
-  { value: "7X", label: "increase in participation" },
+  { value: "50 Lac+", label: "cases reported" },
+  { value: "10000+", label: "PIN codes served" },
+  { value: "60%", label: "success record" },
+  { value: "10X", label: "increase in participation" },
 ];
 
 // ─────────────────────────────────────────────────────────────
